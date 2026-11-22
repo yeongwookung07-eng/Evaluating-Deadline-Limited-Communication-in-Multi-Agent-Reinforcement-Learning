@@ -1,27 +1,16 @@
 # Research completeness audit — 2026-11-22 KST
 
-Scope: the English KBS manuscript and the fetched public repository at `78ad1b5`. The scientific source, configurations, selected tests, English manuscript/figures/bibliography, small recorded results, dependencies and third-party attribution are present. This is sufficient for inspecting the implementation and its reported findings, **not a complete experimental reproduction release**.
+Scope: the canonical English KBS manuscript and this public checkout. This update extends the preceding raw-editorial release (`9a4c29b`) with original models and generated data, without new policy training or changed scientific claims.
 
-## Four-stage coverage
-
-| Stage | Included implementation and evidence | Remaining reproduction dependency |
+| Stage | Available evidence and inputs | Remaining limits |
 | --- | --- | --- |
-| Validate learned references | Training/evaluation code, YAML settings, per-seed results, failed XOR/SMACv2 gates | Original trained checkpoints and training traces; historical exact environment is not locked |
-| Account for delivery and computation | Transport/cache, Full–RR identity code/results, readiness raw logs and analysis | Full identity message histories/checkpoints; original hardware for timing replication |
-| Isolate sender choice | Full-state replay and intervention code, fresh-state and common-prefix raw logs, frozen aggregates | Checkpoints for new policy rollouts; raw-log recomputation is now available |
-| Check downstream use | Broadcast and receiver-input probe code/results; broadcast step logs | Receiver NPZ inputs/checkpoints for fitting and rerunning probes |
+| Validate learned references | All 180 final Hallway models and all 100 broadcast/XOR models, training logs, configurations and failed gates | Intermediate models, older adapted cohorts and exact historical dependency lock not included |
+| Account for delivery/computation | 240 original identity trace files, matched final Hallway models, readiness logs and analyses | Hardware timing is not portable; complete SMAC runtime/model not included |
+| Isolate sender choice | All 40 primary RR/DAC models, fresh/common-prefix raw logs and full-state intervention code | Only bounded seed-0 fresh replay rerun in this update, not entire campaigns |
+| Check downstream use | All 100 receiver NPZ inputs, original broadcast models and probe code | Saved-feature recomputation is not a new learned policy or training remedy |
 
-The local-clock counterexample, ten-seed cohorts, seed-level intervals, weighting distinctions, and failed learning gates remain part of the evidence. SMACv2 needs separately installed StarCraft II/maps and the declared upstream; its technical smoke does not establish learned benchmark generalization. DAC superiority and task-level necessity are not established.
+Actual checks: all 900 newly included artifacts pass hashes; all 280 models load strictly; all four probe types and policy accounting match the frozen 100-cell summary; seed-0 RR/DAC fresh-subset replay completes for two conditions in temporary output; the existing editorial audit matches all frozen fields; CPU tests: 45 passed, 1 skipped. See [validation](evidence/reviewer/VALIDATION.md).
 
-## Additions and actual verification
+[Reviewer guide](REVIEWER_GUIDE.md) maps questions, code, configurations, models, data and limitations. [Manifest/schema](evidence/reviewer/README.md) records exact artifact scope. This is not a full independent reproduction of every manuscript result. Prior claims about missing primary checkpoints/NPZ files are superseded by this update; historical audit text remains in Git history.
 
-- Four original logs, losslessly gzip-compressed (about 10 MB total), preserve all records rather than selecting successful seeds. Their source paths, raw byte counts and SHA-256 hashes are in `evidence/editorial/manifest.json`.
-- `python scripts/verify_editorial.py` reconstructs the existing editorial analysis in a temporary directory and compares every field to the frozen JSON. It verified 2,654 fresh states, 800 prefix episodes, timing/broadcast accounting and the original hidden-source CSV checks. Float tolerance: relative `1e-10`, absolute `1e-12`.
-- The configured CPU test suite passed: 45 passed, 1 skipped. Existing exclusions are documented in `REPRODUCE.md`; this is not a full training or paper rerun.
-- Current bounded claims are available in `claim.md`; this audit adds no scientific result or training authorization.
-
-## What still needs a separate artifact release
-
-A full release needs the exact matched checkpoints, remaining message/replay traces, receiver NPZ inputs, environment provenance and a complete mapping of those inputs to each rerun command. They remain in the original workspace; no public download location or complete release is claimed. Publishing unrelated historical runs or substituting newly trained policies would not close the matched-evidence gap. No new training or GPU job was launched during this audit.
-
-The manuscript still has pending author declarations. Publication format is not submission or acceptance. This audit did not rebuild the PDF, rerun probe fitting, or validate learned standard-benchmark transfer.
+Retain Oracle-assisted versus Oracle-free distinctions, seed-level uncertainty, weighting sensitivity, the zero-message local-clock solution and failed XOR/SMAC learning gates. No scheduler superiority, native baseline reproduction or learned standard-benchmark generalization is asserted. Manuscript declarations remain pending.

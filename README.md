@@ -3,7 +3,7 @@
 Research code accompanying the manuscript by **Yeong-woo Kung and Young-guk Ha**.
 This study separates traffic admission, timely delivery, sender selection, initialization, CPU readiness, and acting-policy use under action deadlines and receiver caching.
 
-[Paper (PDF)](experiments/deadline_comm/publication/kbs/kbs_main.pdf) · [LaTeX](experiments/deadline_comm/publication/kbs/kbs_main.tex) · [Reproduction](REPRODUCE.md) · [Evidence](EVIDENCE.md) · [Completeness audit](COMPLETENESS.md) · [Current claims](claim.md) · [Third-party attribution](THIRD_PARTY_NOTICES.md)
+[Paper (PDF)](experiments/deadline_comm/publication/kbs/kbs_main.pdf) · [LaTeX](experiments/deadline_comm/publication/kbs/kbs_main.tex) · [Reviewer guide](REVIEWER_GUIDE.md) · [Reproduction](REPRODUCE.md) · [Evidence](EVIDENCE.md) · [Completeness audit](COMPLETENESS.md) · [Current claims](claim.md) · [Third-party attribution](THIRD_PARTY_NOTICES.md)
 
 The contribution is a controlled evaluation framework and its implementation and analysis. QMIX and Hallway are existing components credited to their original sources. DAC is an evaluated heuristic, not a generally superior scheduler. The manuscript is prepared in KBS format; submission or acceptance is not asserted. Author declarations remain pending.
 
@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Source, settings, tests, manuscript and small recorded results are included. Four compressed raw logs and a safe editorial audit are now included; trained checkpoints, receiver NPZ inputs and remaining detailed traces are not included. Full experimental reproduction requires those inputs; no downloadable Release is claimed. See [한국어 구성 안내](GUIDE_KO.md) and [verification instructions](REPRODUCE.md). A successful unit test is not a full paper rerun.
+Source, settings, tests, manuscript, recorded results, **280 original trained checkpoints**, **100 receiver-input datasets**, and losslessly compressed training/delivery logs are included. [Artifact manifest and schema](evidence/reviewer/README.md) record exact scope and hashes. Run `python scripts/verify_reviewer.py --probes --smoke` for CPU input verification, probe recomputation and isolated replay. Some historical/SMAC dependencies remain omitted; see [remaining gaps](REVIEWER_GUIDE.md#remaining-gaps). A successful check is not a full paper rerun.
 
 | Component | Location | Status |
 | --- | --- | --- |
@@ -31,3 +31,5 @@ All commands run from the repository root. Preserved historical configurations c
 | Work / date | Status | Entry, inputs, command and result |
 | --- | --- | --- |
 | Public evidence completeness / 2026-11-22 | Completed audit; full experiment reproduction remains incomplete | `python scripts/verify_editorial.py`; `evidence/editorial/manifest.json`; four historical logs reproduce all fields of `experiments/deadline_comm/tmlr_revision/results/editorial_audit.json`. No new experiment/config/training. See [audit](COMPLETENESS.md). |
+
+| Reviewer models and datasets / 2026-11-22 | Completed existing-artifact addition; no new training | `python scripts/verify_reviewer.py --probes --smoke`; 280 models, 100 NPZ inputs, 520 compressed logs; [validation](evidence/reviewer/VALIDATION.md). |

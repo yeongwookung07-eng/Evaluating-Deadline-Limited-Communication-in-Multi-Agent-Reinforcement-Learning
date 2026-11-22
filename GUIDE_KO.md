@@ -42,3 +42,7 @@ Oracle-assisted Hallway와 Oracle-free broadcast는 별도 근거입니다. 400�
 대용량 체크포인트, NPZ 입력, 추가한 editorial 로그 4개 외의 상세 단계별 trace, 가상환경, 학습 로그 전체, 과거의 다른 연구, 분할 업로드 ZIP은 제외했습니다. 원본 작업 공간에는 그대로 남아 있습니다. 따라서 이 폴더만으로 코드 테스트와 작은 결과 열람은 가능하지만, 모든 논문 실험을 다시 실행할 수 있는 완전한 데이터 배포본은 아닙니다. 이전 문서의 역사적 실행 경로나 생략된 artifact 링크는 원본 작업 공간을 가리킬 수 있습니다.
 
 2026-11-22 보완: 원본 로그 4개를 압축해 추가했습니다. `python scripts/verify_editorial.py`로 체크포인트 없이 기존 editorial 분석 전체를 재검산할 수 있습니다. 신규 학습은 수행하지 않았습니다. 전체 재현의 남은 조건은 [완전성 점검](COMPLETENESS.md)에 기록했습니다.
+
+## 2026-11-22 모델·데이터 보완
+
+기존 최종 체크포인트 280개, receiver NPZ 100개, 압축 학습·동일성 로그 520개를 추가했습니다. 이전의 “체크포인트/NPZ 미포함” 안내는 이 범위에서 변경되었습니다. `REVIEWER_GUIDE.md`와 `evidence/reviewer/manifest.json`이 현재 포함 범위를 정의합니다. `python scripts/verify_reviewer.py --probes --smoke`로 CPU 검증할 수 있습니다. 새 정책 학습은 수행하지 않았으며, SMAC 실행 환경과 일부 과거 실험 입력은 여전히 별도입니다.

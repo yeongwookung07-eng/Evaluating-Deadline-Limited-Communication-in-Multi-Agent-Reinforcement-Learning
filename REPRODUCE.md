@@ -13,19 +13,22 @@ The default selection covers transport, cache, replay, training arithmetic, send
 
 ## Frozen evidence and checkpoint evaluation
 
-This folder contains source, configurations and small recorded results, plus **four compressed raw editorial logs**, but no trained checkpoints or receiver NPZ inputs. There is no packaged or published Release dependency. The supported editorial verification below works from this checkout alone. It checks compressed and uncompressed hashes, expands logs into a temporary directory, runs the unchanged scientific audit, and compares every field with the frozen result. It leaves tracked results untouched. No YAML config or checkpoint is required. Consult `EVIDENCE.md` for the corresponding run directories.
+Exact original final models and receiver inputs are now included: 180 Hallway checkpoints, 100 broadcast/XOR checkpoints and 100 NPZ cells. [Reviewer guide](REVIEWER_GUIDE.md) maps experiments to settings and inputs. [Manifest](evidence/reviewer/manifest.json) records hashes. CPU verification preserves recorded outputs:
 
 ```bash
+python scripts/verify_reviewer.py --probes --smoke
 python scripts/verify_editorial.py
 ```
 
-This reconstructs recorded denominators, confidence intervals and controls; it does not retrain policies. The following frozen-policy command still requires omitted original checkpoints at their recorded paths and is **not runnable from this checkout alone**:
+The first checks all artifact hashes and model loads, recomputes four probe types from saved features in every cell, and runs seed-0 RR/DAC fresh-subset replay in a temporary directory. The second reconstructs the frozen editorial audit from four compressed original logs. Neither trains an acting policy. The exact available test scope/results are in [validation](evidence/reviewer/VALIDATION.md).
+
+The original fresh command is now supplied with its required models:
 
 ```bash
 python -m experiments.deadline_comm.tmlr_revision.experiments --kind fresh --config experiments/deadline_comm/configs/tmlr_fresh.yaml --smoke
 ```
 
-It uses fixed seed-0 RR/DAC checkpoints and writes a new `_smoke` output. Use a copy of the config with a fresh `output` path if that directory exists. The full configs retain seeds 0–9, reset rules, conditions and checkpoint selection; no new training was performed for this export. `settings.py`, `report.py`, `editorial_audit.py` and `robustness/report.py` retain analysis/plotting code. Some historical packaging/report helpers refer to omitted old manuscript bundles; they are not the supported public build path.
+It writes the configured `_smoke` directory and refuses an existing directory. Prefer the temporary wrapper above or a copied config with a unique `output`. Full configs preserve ten seeds, matched checkpoints and reset protocols. Some historical reports/bundle helpers and secondary runs still need omitted inputs; see the guide's remaining gaps. No new full campaign or historical GPU allocation is authorized by these instructions.
 
 ## Paper
 

@@ -1,6 +1,6 @@
 # Paper evidence map
 
-All paths below start at `experiments/deadline_comm/`. Small per-seed and aggregate JSON/CSV are in Git at their original paths; four raw editorial logs are supplied losslessly compressed in `evidence/editorial/`; model checkpoints and other detailed traces remain omitted. Selection retains every seed within the declared cohorts, including unsuccessful controls.
+All paths below start at `experiments/deadline_comm/`. Small per-seed and aggregate JSON/CSV are in Git at their original paths; four raw editorial logs are supplied losslessly compressed in `evidence/editorial/`; 280 original final checkpoints and 100 receiver NPZ inputs are now included at their original paths. Additional training and identity logs are in `evidence/reviewer/`; see its manifest for the exact scope. Some secondary/SMAC inputs remain omitted. Selection retains every seed within the declared cohorts, including unsuccessful controls.
 
 | Claim/control | Code | Evidence under `runs/` |
 | --- | --- | --- |

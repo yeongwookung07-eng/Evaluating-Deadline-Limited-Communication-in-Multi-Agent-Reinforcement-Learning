@@ -13,3 +13,8 @@ __pycache__/
 *.spl
 *.abs
 .DS_Store
+
+# Exact original final cohorts and receiver inputs in reviewer manifest.
+!experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001/*/checkpoint_1500.pt
+!experiments/deadline_comm/runs/hidden_mechanism_20261119_001/*/final.pt
+!experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/*.npz
