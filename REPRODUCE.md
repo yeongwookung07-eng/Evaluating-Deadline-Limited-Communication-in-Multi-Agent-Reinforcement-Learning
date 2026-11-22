@@ -13,13 +13,13 @@ The default selection covers transport, cache, replay, training arithmetic, send
 
 ## Frozen evidence and checkpoint evaluation
 
-This folder contains source, configurations and small recorded results, but **no trained checkpoints, NPZ inputs or detailed message traces**. There is no packaged or published Release dependency. The following audit and frozen-policy commands require those original inputs to be copied from the research workspace into matching relative paths first; they are not runnable from this folder alone. Consult `EVIDENCE.md` for the corresponding run directories.
+This folder contains source, configurations and small recorded results, plus **four compressed raw editorial logs**, but no trained checkpoints or receiver NPZ inputs. There is no packaged or published Release dependency. The supported editorial verification below works from this checkout alone. It checks compressed and uncompressed hashes, expands logs into a temporary directory, runs the unchanged scientific audit, and compares every field with the frozen result. It leaves tracked results untouched. No YAML config or checkpoint is required. Consult `EVIDENCE.md` for the corresponding run directories.
 
 ```bash
-python -m experiments.deadline_comm.tmlr_revision.editorial_audit
+python scripts/verify_editorial.py
 ```
 
-This reconstructs recorded denominators, confidence intervals and controls; it does not retrain policies. A bounded frozen-policy fresh-message smoke uses:
+This reconstructs recorded denominators, confidence intervals and controls; it does not retrain policies. The following frozen-policy command still requires omitted original checkpoints at their recorded paths and is **not runnable from this checkout alone**:
 
 ```bash
 python -m experiments.deadline_comm.tmlr_revision.experiments --kind fresh --config experiments/deadline_comm/configs/tmlr_fresh.yaml --smoke

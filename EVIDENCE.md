@@ -1,6 +1,6 @@
 # Paper evidence map
 
-All paths below start at `experiments/deadline_comm/`. Small per-seed and aggregate JSON/CSV are in Git at their original paths; detailed traces and model checkpoints are omitted and remain in the original research workspace. Selection retains every seed within the declared cohorts, including unsuccessful controls.
+All paths below start at `experiments/deadline_comm/`. Small per-seed and aggregate JSON/CSV are in Git at their original paths; four raw editorial logs are supplied losslessly compressed in `evidence/editorial/`; model checkpoints and other detailed traces remain omitted. Selection retains every seed within the declared cohorts, including unsuccessful controls.
 
 | Claim/control | Code | Evidence under `runs/` |
 | --- | --- | --- |
@@ -14,3 +14,5 @@ All paths below start at `experiments/deadline_comm/`. Small per-seed and aggreg
 | Failed SMACv2 learning and technical smoke | `standard_benchmarks/`, `smac_protocol/` | `smacv2_pilot_20261119_001`, `smacv2_protocol_20261121_001`, `smacv2_protocol_20261121_001_smoke` |
 
 Aggregate tables, per-seed estimates and intervals are in `tmlr_revision/results/{summary,editorial_audit,robustness_summary}.json`. State-weighted and episode-weighted results must not be conflated. Fixed readiness and measured CPU timing answer different questions. Equal payload counts do not imply equal sender information. Historical reports may describe earlier manuscript versions; the KBS English manuscript is canonical.
+
+Run `python scripts/verify_editorial.py` to verify the raw-log hashes and recompute the editorial audit without changing stored results. See [artifact provenance](evidence/editorial/README.md). This does not verify every manuscript claim from raw data.
