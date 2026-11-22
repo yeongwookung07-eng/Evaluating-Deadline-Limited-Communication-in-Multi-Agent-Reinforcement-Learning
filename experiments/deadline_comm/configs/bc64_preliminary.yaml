@@ -1,0 +1,19 @@
+checkpoint: experiments/deadline_comm/runs/online_oracle_bc64_001/checkpoint_1500.pt
+calibration_seed: 1100000
+calibration_episodes: 20
+calibration_iterations: 14
+evaluation_seed: 1200000
+evaluation_episodes: 20
+repeats: 3
+r_post_ns: 450000
+target_bytes: 120
+budget_tolerance: 0.05
+conditions:
+  - {name: fast_5ms, bandwidth_bytes_s: 1000000, deadline_ns: 5000000}
+  - {name: medium_5ms, bandwidth_bytes_s: 100000, deadline_ns: 5000000}
+  - {name: slow_5ms, bandwidth_bytes_s: 20000, deadline_ns: 5000000}
+  - {name: medium_2.5ms, bandwidth_bytes_s: 100000, deadline_ns: 2500000}
+  - {name: medium_2ms, bandwidth_bytes_s: 100000, deadline_ns: 2000000}
+  - {name: medium_1.5ms, bandwidth_bytes_s: 100000, deadline_ns: 1500000}
+  - {name: near_zero_5ms, bandwidth_bytes_s: 1.0e30, deadline_ns: 5000000, latency_ns: 0}
+output_name: bc64_preliminary_001

@@ -1,0 +1,15 @@
+seed: 0
+episodes: 16
+oracle_episodes: 50
+batch_size: 16
+replay_capacity: 2000
+epsilon_start: 1.0
+epsilon_end: 0.05
+evaluation_interval: 8
+evaluation_episodes: 2
+target_update_interval: 100
+gamma: 0.99
+learning_rate: 0.0005
+grad_clip: 10.0
+output_name: fixed_horizon_smoke_001
+bootstrap_timeouts: false

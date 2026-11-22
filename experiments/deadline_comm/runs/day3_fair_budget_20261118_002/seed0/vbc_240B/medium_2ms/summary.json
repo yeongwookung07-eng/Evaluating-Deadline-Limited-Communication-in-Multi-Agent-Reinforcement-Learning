@@ -1,0 +1,16 @@
+{
+  "mean_return": 6.0,
+  "offered_B_step": 240.0,
+  "goodput_payload_B_step": 41.806451612903224,
+  "wasted_pct": 73.87096774193549,
+  "cache_invalid_pct": 20.2150542168848,
+  "drop_pct": 73.87096774193549,
+  "deadline_misses": 0,
+  "budget_eligible": true,
+  "seed": 0,
+  "method": "vbc",
+  "budget": 240,
+  "condition": "medium_2ms",
+  "step_p95_us": 1898.884,
+  "cpu_p95_us": 1217.435
+}

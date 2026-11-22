@@ -1,0 +1,534 @@
+{
+  "hidden_original_csv_verified_cells": 300,
+  "fresh": [
+    {
+      "condition": "slow_5ms",
+      "arm": "rr_cap",
+      "states": 646,
+      "branches": 3230,
+      "seed_states": [
+        70,
+        47,
+        70,
+        70,
+        66,
+        48,
+        70,
+        70,
+        70,
+        65
+      ],
+      "seed_branches": [
+        350,
+        235,
+        350,
+        350,
+        330,
+        240,
+        350,
+        350,
+        350,
+        325
+      ],
+      "metrics": {
+        "range": [
+          1.9651612571825336,
+          1.518510406508009,
+          2.4118121078570582
+        ],
+        "regret": [
+          1.0336783783592296,
+          0.6353711473169079,
+          1.4319856094015513
+        ],
+        "effect": [
+          18.863901169752232,
+          15.329901011106868,
+          22.397901328397598
+        ],
+        "random_regret": [
+          0.97786470621577,
+          0.7414035166560997,
+          1.2143258957754404
+        ]
+      },
+      "postcoverage_states": 352,
+      "postcoverage_range_mean": 0.0
+    },
+    {
+      "condition": "slow_5ms",
+      "arm": "dac",
+      "states": 687,
+      "branches": 3435,
+      "seed_states": [
+        61,
+        70,
+        70,
+        70,
+        70,
+        70,
+        66,
+        70,
+        70,
+        70
+      ],
+      "seed_branches": [
+        305,
+        350,
+        350,
+        350,
+        350,
+        350,
+        330,
+        350,
+        350,
+        350
+      ],
+      "metrics": {
+        "range": [
+          1.410836704279327,
+          0.9411876754137837,
+          1.8804857331448703
+        ],
+        "regret": [
+          0.46032219146973236,
+          0.18976117994273,
+          0.7308832029967347
+        ],
+        "effect": [
+          13.944432616563764,
+          9.445490222136861,
+          18.443375010990668
+        ],
+        "random_regret": [
+          0.6423845007451565,
+          0.42292619592861935,
+          0.8618428055616937
+        ]
+      },
+      "postcoverage_states": 385,
+      "postcoverage_range_mean": 0.05194805194805195
+    },
+    {
+      "condition": "medium_2ms",
+      "arm": "rr_cap",
+      "states": 661,
+      "branches": 6610,
+      "seed_states": [
+        70,
+        41,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        60,
+        70
+      ],
+      "seed_branches": [
+        700,
+        410,
+        700,
+        700,
+        700,
+        700,
+        700,
+        700,
+        600,
+        700
+      ],
+      "metrics": {
+        "range": [
+          1.8277003484320555,
+          0.927272055107902,
+          2.728128641756209
+        ],
+        "regret": [
+          0.7248548199767713,
+          0.19476830485976904,
+          1.2549413350937735
+        ],
+        "effect": [
+          16.968060394889662,
+          9.991573622658578,
+          23.944547167120746
+        ],
+        "random_regret": [
+          0.9602380952380951,
+          0.38908351455464185,
+          1.5313926759215484
+        ]
+      },
+      "postcoverage_states": 461,
+      "postcoverage_range_mean": 0.0650759219088937
+    },
+    {
+      "condition": "medium_2ms",
+      "arm": "dac",
+      "states": 660,
+      "branches": 6600,
+      "seed_states": [
+        70,
+        39,
+        70,
+        70,
+        61,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "seed_branches": [
+        700,
+        390,
+        700,
+        700,
+        610,
+        700,
+        700,
+        700,
+        700,
+        700
+      ],
+      "metrics": {
+        "range": [
+          2.098276586801177,
+          0.7879215155404069,
+          3.408631658061947
+        ],
+        "regret": [
+          1.2027502552092715,
+          0.18021285451712843,
+          2.2252876559014148
+        ],
+        "effect": [
+          18.16225304749895,
+          11.131225268286038,
+          25.193280826711863
+        ],
+        "random_regret": [
+          1.0579835465081369,
+          0.2573865902705408,
+          1.858580502745733
+        ]
+      },
+      "postcoverage_states": 460,
+      "postcoverage_range_mean": 0.043478260869565216
+    }
+  ],
+  "prefix": [
+    {
+      "condition": "slow_5ms",
+      "arm": "rr_cap",
+      "episodes": 200,
+      "survivors": 183,
+      "set_diff_episodes": 43,
+      "action_diff_episodes": 35,
+      "set_diff_steps": 200,
+      "action_diff_steps": 89,
+      "common_steps": 1631,
+      "different_lengths": 2,
+      "mean_remaining": 9,
+      "mean_rr_steps": 9,
+      "mean_dac_steps": 8.912568306010929,
+      "unresolved_group_histogram": {
+        "1": 155,
+        "0": 27,
+        "2": 1
+      },
+      "survivor_effect": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "slow_5ms",
+      "arm": "dac",
+      "episodes": 200,
+      "survivors": 190,
+      "set_diff_episodes": 83,
+      "action_diff_episodes": 59,
+      "set_diff_steps": 331,
+      "action_diff_steps": 191,
+      "common_steps": 1704,
+      "different_lengths": 0,
+      "mean_remaining": 9,
+      "mean_rr_steps": 8.968421052631578,
+      "mean_dac_steps": 8.968421052631578,
+      "unresolved_group_histogram": {
+        "0": 11,
+        "1": 141,
+        "2": 38
+      },
+      "survivor_effect": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "medium_2ms",
+      "arm": "rr_cap",
+      "episodes": 200,
+      "survivors": 199,
+      "set_diff_episodes": 184,
+      "action_diff_episodes": 144,
+      "set_diff_steps": 1649,
+      "action_diff_steps": 640,
+      "common_steps": 1897,
+      "different_lengths": 10,
+      "mean_remaining": 11,
+      "mean_rr_steps": 9.964824120603016,
+      "mean_dac_steps": 9.532663316582914,
+      "unresolved_group_histogram": {
+        "1": 135,
+        "2": 64
+      },
+      "survivor_effect": [
+        0.3631578947368421,
+        -0.24973276833914715,
+        0.9760485578128314
+      ]
+    },
+    {
+      "condition": "medium_2ms",
+      "arm": "dac",
+      "episodes": 200,
+      "survivors": 200,
+      "set_diff_episodes": 196,
+      "action_diff_episodes": 176,
+      "set_diff_steps": 1694,
+      "action_diff_steps": 866,
+      "common_steps": 1997,
+      "different_lengths": 13,
+      "mean_remaining": 11,
+      "mean_rr_steps": 10.13,
+      "mean_dac_steps": 10.18,
+      "unresolved_group_histogram": {
+        "1": 125,
+        "2": 75
+      },
+      "survivor_effect": [
+        -0.35,
+        -1.0254979571424307,
+        0.3254979571424308
+      ]
+    }
+  ],
+  "timing": [
+    {
+      "arm": "rr_cap",
+      "total_steps": 1270,
+      "credit_below_three": 638,
+      "credit_at_least_three": 632,
+      "ready_le310_given_credit": 216,
+      "attempt_three_but_deliver_less": 415,
+      "deliver_three": 216,
+      "admission_below_three_with_credit": 1
+    },
+    {
+      "arm": "dac",
+      "total_steps": 1296,
+      "credit_below_three": 426,
+      "credit_at_least_three": 870,
+      "ready_le310_given_credit": 0,
+      "attempt_three_but_deliver_less": 357,
+      "admission_below_three_with_credit": 513
+    }
+  ],
+  "broadcast": [
+    {
+      "condition": "slow_5ms",
+      "method": "periodic",
+      "normal": {
+        "k": 1,
+        "attempt": 2.5,
+        "accuracy": 0.5030625,
+        "q": 0.1
+      },
+      "source_aware": {
+        "k": 1,
+        "attempt": 1,
+        "accuracy": 0.7155625,
+        "q": 1
+      },
+      "gain": [
+        21.25,
+        6.010899269987677,
+        36.489100730012325
+      ]
+    },
+    {
+      "condition": "slow_5ms",
+      "method": "rr_cap",
+      "normal": {
+        "k": 1,
+        "attempt": 1,
+        "accuracy": 0.5335624999999999,
+        "q": 0.2
+      },
+      "source_aware": {
+        "k": 1,
+        "attempt": 1,
+        "accuracy": 0.787875,
+        "q": 1
+      },
+      "gain": [
+        25.43125,
+        12.929060383203929,
+        37.933439616796065
+      ]
+    },
+    {
+      "condition": "slow_5ms",
+      "method": "dac",
+      "normal": {
+        "k": 1,
+        "attempt": 1,
+        "accuracy": 0.51275,
+        "q": 0.16975
+      },
+      "source_aware": {
+        "k": 1,
+        "attempt": 1,
+        "accuracy": 0.7131875,
+        "q": 1
+      },
+      "gain": [
+        20.04375,
+        4.988673880985123,
+        35.09882611901487
+      ]
+    },
+    {
+      "condition": "medium_2ms",
+      "method": "periodic",
+      "normal": {
+        "k": 2,
+        "attempt": 2.5,
+        "accuracy": 0.5195625,
+        "q": 0.3
+      },
+      "source_aware": {
+        "k": 2,
+        "attempt": 2,
+        "accuracy": 0.5729375,
+        "q": 1
+      },
+      "gain": [
+        5.3375,
+        0.19636039756237533,
+        10.478639602437624
+      ]
+    },
+    {
+      "condition": "medium_2ms",
+      "method": "rr_cap",
+      "normal": {
+        "k": 2,
+        "attempt": 2,
+        "accuracy": 0.5613125,
+        "q": 0.4
+      },
+      "source_aware": {
+        "k": 2,
+        "attempt": 2,
+        "accuracy": 0.650375,
+        "q": 1
+      },
+      "gain": [
+        8.906249999999996,
+        2.251302124299417,
+        15.561197875700575
+      ]
+    },
+    {
+      "condition": "medium_2ms",
+      "method": "dac",
+      "normal": {
+        "k": 2,
+        "attempt": 2,
+        "accuracy": 0.5393125,
+        "q": 0.31975
+      },
+      "source_aware": {
+        "k": 2,
+        "attempt": 2,
+        "accuracy": 0.6546875,
+        "q": 1
+      },
+      "gain": [
+        11.5375,
+        0.8444237959167253,
+        22.230576204083274
+      ]
+    },
+    {
+      "condition": "medium_5ms",
+      "method": "periodic",
+      "normal": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.5316875,
+        "q": 0.5
+      },
+      "source_aware": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.57025,
+        "q": 1
+      },
+      "gain": [
+        3.856250000000002,
+        0.30244999078995516,
+        7.410050009210049
+      ]
+    },
+    {
+      "condition": "medium_5ms",
+      "method": "rr_cap",
+      "normal": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.580375,
+        "q": 0.5
+      },
+      "source_aware": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.68475,
+        "q": 1
+      },
+      "gain": [
+        10.437499999999998,
+        2.4957774840697073,
+        18.379222515930287
+      ]
+    },
+    {
+      "condition": "medium_5ms",
+      "method": "dac",
+      "normal": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.552,
+        "q": 0.39375
+      },
+      "source_aware": {
+        "k": 2.5,
+        "attempt": 2.5,
+        "accuracy": 0.6563125,
+        "q": 1
+      },
+      "gain": [
+        10.431250000000002,
+        0.6544682140276752,
+        20.20803178597233
+      ]
+    }
+  ],
+  "scope": "Seed-level t intervals are descriptive and unadjusted. Prefix unresolved groups reconstructed by replaying logged prefix actions, not inferred from active-agent flags. Broadcast attempted counts reconstructed from deterministic gate semantics; CPU overhead of diagnostic source selection was not measured."
+}

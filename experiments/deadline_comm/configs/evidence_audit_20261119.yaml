@@ -1,0 +1,13 @@
+{
+  "question": "Do existing results support communication utility and DAC selector superiority?",
+  "source": "experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001",
+  "output": "experiments/deadline_comm/runs/evidence_audit_20261119_001",
+  "contract": "Recompute all 720 episode means, 72 aggregates and 60 paired seed bootstrap intervals. Preserve all seeds and conditions.",
+  "strongest_control": "Same-cap credit Round-Robin; fixed-readiness same-checkpoint diagnostic separately",
+  "competing_explanation": "Communication-aware learning or capacity capping, rather than priority-based sender selection, explains benefit",
+  "adoption_criterion": "No general DAC superiority claim unless matched-condition evidence supports it; report unfavorable and inconclusive effects",
+  "statistics": "Original percentile bootstrap; supplemental exact two-sided paired sign-flip test assumes exchangeability/symmetric null differences, Holm correction separately for 3 matched utility contrasts and all 12 DAC-RR contrasts",
+  "budget": "Read-only evidence reanalysis, no training, CPU, under 5 minutes",
+  "seeds": [0,1,2,3,4,5,6,7,8,9],
+  "limitations": "Post-hoc audit, not preregistered confirmatory testing; one Oracle-assisted environment"
+}

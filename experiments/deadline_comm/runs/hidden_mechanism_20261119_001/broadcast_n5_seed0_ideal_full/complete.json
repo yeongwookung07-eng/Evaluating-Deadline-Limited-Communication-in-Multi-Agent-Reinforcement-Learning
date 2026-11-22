@@ -1,0 +1,23 @@
+{
+  "seconds": 186.4127418550197,
+  "job": {
+    "name": "broadcast_n5_seed0_ideal_full",
+    "task": "broadcast",
+    "n": 5,
+    "seed": 0,
+    "method": "ideal_full"
+  },
+  "device": "cuda:1",
+  "learner": {
+    "optimizer": "adam",
+    "learning_rate": 0.0005,
+    "gamma": 0.99,
+    "grad_clip": 10.0,
+    "target_update_interval": 100,
+    "bootstrap_timeouts": false,
+    "bc_weight": 0.0
+  },
+  "oracle_episodes": 0,
+  "bc_weight": 0,
+  "updates": 1000
+}

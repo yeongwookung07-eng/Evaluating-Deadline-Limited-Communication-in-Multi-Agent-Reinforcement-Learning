@@ -1,0 +1,45 @@
+# Registered bounded wiring validation, not a performance or convergence study.
+question: Can recurrent communication learning and causal deadline evaluation complete consistently?
+hypothesis: Delivery masks reproduce the same cached utilities during replay.
+strongest_control: Same policy weights and environment seeds for all five gates.
+falsification: Any future-message leakage, inconsistent replay, nonfinite loss, or missing artifact fails smoke.
+environment:
+  n_agents: 5
+  state_numbers: [4, 4, 4, 4, 4]
+  group_ids: [0, 0, 1, 1, 1]
+policy:
+  hidden_dim: 16
+  message_dim: 8
+  mixer: qmix
+harness:
+  deadline_ns: 5000000
+  r_post_ns: 1000000
+  training_ready_ns: 500000
+  link:
+    bandwidth_bytes_s: 100000
+    latency_ns: 50000
+    header_bytes: 16
+  gate:
+    period: 2
+    p: 0.5
+    q_threshold: 0.1
+    message_threshold: 0.1
+learner:
+  optimizer: adam
+  learning_rate: 0.0005
+  gamma: 0.99
+  grad_clip: 10.0
+  target_update_interval: 2
+training:
+  episodes: 10
+  batch_size: 2
+  replay_capacity: 20
+  epsilon: 0.2
+  method: mixed
+evaluation:
+  seed: 41000
+  episodes: 2
+  warmup_episodes: 1
+  budget_tolerance: 0.05
+  conditions:
+    - name: smoke

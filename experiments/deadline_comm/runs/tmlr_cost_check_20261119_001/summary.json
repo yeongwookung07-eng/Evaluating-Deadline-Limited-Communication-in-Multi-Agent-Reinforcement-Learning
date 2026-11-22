@@ -1,0 +1,6 @@
+{
+  "cells": 300,
+  "steps": 6000,
+  "mismatches": 0,
+  "scope": "Replay first saved episode of each of 300 broadcast cells; verify observed accuracy, delivered sets and attempted wire accounting. No new training or claims from additional resets."
+}

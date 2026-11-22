@@ -1,0 +1,7 @@
+seeds: [0, 1, 2]
+updates: 199
+oracle_episodes: 50
+control_episodes: 50
+evaluation_episodes: 30
+timing_repeats: 3
+r_post_ns: 450000

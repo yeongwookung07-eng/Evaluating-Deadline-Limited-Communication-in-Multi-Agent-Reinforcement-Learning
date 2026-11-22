@@ -1,0 +1,15 @@
+{
+  "seed": 4,
+  "family": "scratch_medium_5ms",
+  "arm": "periodic",
+  "deployment": "periodic",
+  "condition": "medium_2ms",
+  "mean_return": 10.2,
+  "offered_B_step": 122.07106598984771,
+  "goodput_payload_B_step": 64.0,
+  "wasted_pct": 21.357285429141715,
+  "cache_invalid_pct": 10.152284604341245,
+  "drop_pct": 21.357285429141715,
+  "deadline_misses": 1,
+  "budget_eligible": true
+}

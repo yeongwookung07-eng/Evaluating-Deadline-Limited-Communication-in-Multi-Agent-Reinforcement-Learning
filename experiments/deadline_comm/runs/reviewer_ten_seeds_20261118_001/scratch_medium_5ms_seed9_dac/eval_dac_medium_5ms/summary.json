@@ -1,0 +1,15 @@
+{
+  "seed": 9,
+  "family": "scratch_medium_5ms",
+  "arm": "dac",
+  "deployment": "dac",
+  "condition": "medium_5ms",
+  "mean_return": 7.0,
+  "offered_B_step": 119.96526772793054,
+  "goodput_payload_B_step": 79.9768451519537,
+  "wasted_pct": 0.0,
+  "cache_invalid_pct": 6.049204250061736,
+  "drop_pct": 0.0,
+  "deadline_misses": 0,
+  "budget_eligible": true
+}

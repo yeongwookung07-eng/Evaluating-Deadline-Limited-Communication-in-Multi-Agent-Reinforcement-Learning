@@ -1,0 +1,13 @@
+# Snapshot checks — 2026-11-22 KST
+
+Executed from this `github/` directory in the existing installed Python environment:
+
+```bash
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q
+```
+
+Result: **45 passed, 1 skipped in 3.53 seconds**. No training or GPU job was launched. This checks the configured transport/cache/replay/intervention and protocol test selection, not full paper reproduction or a newly provisioned environment.
+
+`pytest.ini` explicitly excludes `test_day2_gap_closure.py`, whose two historical tests require omitted day2 fixtures. An integration-artifact check in `test_pipeline.py` skips because its earlier smoke directory is absent. Original test code is retained. Checkpoints, NPZ inputs and detailed traces are not distributed here. Raw evidence audits, frozen-policy evaluation and manuscript compilation were not rerun for this folder reorganization.
+
+`FILES.sha256` records all shipped files except itself; verify from this directory with `sha256sum -c FILES.sha256`. Python sources, configs, small results and the paper were retained from the previous selected export; documentation was updated for this simpler distribution. Original research files and results were not deleted.

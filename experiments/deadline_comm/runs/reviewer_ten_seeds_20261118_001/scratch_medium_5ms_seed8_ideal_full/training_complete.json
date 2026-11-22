@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "seconds": 245.25035985396244,
+  "final_checkpoint": "experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001/scratch_medium_5ms_seed8_ideal_full/checkpoint_1500.pt",
+  "job": {
+    "name": "scratch_medium_5ms_seed8_ideal_full",
+    "family": "scratch_medium_5ms",
+    "seed": 8,
+    "arm": "ideal_full",
+    "training_condition": [
+      100000,
+      5.0
+    ],
+    "updates": 1500
+  }
+}

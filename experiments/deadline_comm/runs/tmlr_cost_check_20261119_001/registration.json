@@ -1,0 +1,7 @@
+{
+  "output": "experiments/deadline_comm/runs/tmlr_cost_check_20261119_001",
+  "episode": 0,
+  "max_steps": 6000,
+  "wall_seconds": 300,
+  "scope": "Replay first saved episode of each of 300 broadcast cells; verify observed accuracy, delivered sets and attempted wire accounting. No new training or claims from additional resets."
+}

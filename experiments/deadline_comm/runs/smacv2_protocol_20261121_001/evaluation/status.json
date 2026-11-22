@@ -1,0 +1,5 @@
+{
+  "stage": "failed",
+  "error": "AssertionError('Native full-episode replay mismatch; paired causal conclusions blocked')",
+  "completed_episodes": 320
+}

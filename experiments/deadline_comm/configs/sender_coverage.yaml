@@ -1,0 +1,4 @@
+source: experiments/deadline_comm/runs/q2_priority_20261118_001
+output: experiments/deadline_comm/runs/sender_coverage_20261119_001
+question: First reception, missed sender coverage, complete reception gaps and reward-adjacent freshness
+scope: Existing 36 cells, no new rollouts; correlate rather than claim causal importance

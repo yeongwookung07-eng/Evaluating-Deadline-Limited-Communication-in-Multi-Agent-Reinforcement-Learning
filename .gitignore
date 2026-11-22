@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.pt
+*.npz
+*.jsonl
+*.zip
+*.aux
+*.blg
+*.log
+*.out
+*.spl
+*.abs
+.DS_Store

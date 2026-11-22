@@ -1,0 +1,67 @@
+question: Which CPU phases and virtual link waiting account for elapsed control time?
+hypothesis: Burst concentration and CPU gate/cache work can alter deadline rankings.
+strongest_control: Same policy weights and environment seeds for all five gates.
+falsification: Phase attribution is descriptive; return/trace changes confound cross-condition
+  causal attribution.
+environment:
+  n_agents: 5
+  state_numbers:
+  - 4
+  - 4
+  - 4
+  - 4
+  - 4
+  group_ids:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+policy:
+  hidden_dim: 16
+  message_dim: 8
+  mixer: qmix
+harness:
+  deadline_ns: 5000000
+  r_post_ns: 1000000
+  training_ready_ns: 500000
+  link:
+    bandwidth_bytes_s: 100000
+    latency_ns: 50000
+    header_bytes: 16
+  gate:
+    period: 2
+    p: 0.5
+    q_threshold: 0.1
+    message_threshold: 0.1
+learner:
+  optimizer: adam
+  learning_rate: 0.0005
+  gamma: 0.99
+  grad_clip: 10.0
+  target_update_interval: 2
+training:
+  episodes: 200
+  batch_size: 2
+  replay_capacity: 100
+  epsilon: 0.2
+  method: mixed
+evaluation:
+  seed: 41000
+  episodes: 20
+  warmup_episodes: 2
+  budget_tolerance: 0.05
+  conditions:
+  - name: slow
+    link:
+      bandwidth_bytes_s: 20000
+  - name: medium
+    link:
+      bandwidth_bytes_s: 100000
+  - name: fast
+    link:
+      bandwidth_bytes_s: 1000000
+  - name: near_zero_network
+    link:
+      bandwidth_bytes_s: 1.0e+30
+      latency_ns: 0

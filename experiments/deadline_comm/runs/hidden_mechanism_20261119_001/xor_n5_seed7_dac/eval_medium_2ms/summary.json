@@ -1,0 +1,16 @@
+{
+  "task": "xor",
+  "n_agents": 5,
+  "seed": 7,
+  "method": "dac",
+  "condition": "medium_2ms",
+  "mean_return": 10.16,
+  "offered_B_step": 93.6,
+  "goodput_payload_B_step": 62.4,
+  "wasted_pct": 0.0,
+  "cache_invalid_pct": 9.040000209212304,
+  "drop_pct": 0.0,
+  "deadline_misses": 0,
+  "budget_eligible": false,
+  "accuracy": 0.508
+}

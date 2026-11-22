@@ -1,0 +1,37 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Fresh-subset sensitivity. Effect columns are percentages: original equal-state weighting, equal-episode weighting, and equal-state weighting restricted to unresolved tasks. Both weight seeds equally. Direct factual minus uniform-subset suffix return uses the identical sampled state and received count; unadjusted 95\% t intervals over ten seeds. Episode weighting first averages sampled states within an episode.}\label{tab:robust_strata}
+\begin{tabular}{lllllll}\toprule
+Condition & Weights & State & Episode & Unresolved & Paired state [CI] & Paired episode [CI]\\\midrule
+medium\_2ms & dac & 18.16 & 19.48 & 22.21 & -0.145 [-0.439, 0.149] & -0.249 [-0.636, 0.139]\\
+medium\_2ms & rr\_cap & 16.97 & 19.14 & 25.92 & 0.235 [0.100, 0.371] & 0.195 [-0.027, 0.418]\\
+slow\_5ms & dac & 13.94 & 14.76 & 16.48 & 0.182 [0.008, 0.356] & 0.130 [-0.064, 0.324]\\
+slow\_5ms & rr\_cap & 18.86 & 21.79 & 24.19 & -0.056 [-0.277, 0.166] & -0.178 [-0.526, 0.171]\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Independent-process measurements at Medium/2.25 ms. Each process uses the same ten seeds, three evaluation resets and two discarded warmups per cell, pinned to the same allowed CPU. Values are means of seed means. Repeats are not additional training seeds; this shorter protocol is separate from the original ten-reset timing study.}\label{tab:robust_cpu}
+\begin{tabular}{lllll}\toprule
+Process & Weights & Ready ($\mu$s) & Gate ($\mu$s) & Delivered/step\\\midrule
+1 & rr\_cap & 336.0 & 126.6 & 2.213\\
+1 & dac & 403.0 & 204.9 & 2.000\\
+2 & rr\_cap & 338.2 & 126.8 & 2.005\\
+2 & dac & 409.6 & 208.6 & 2.000\\
+3 & rr\_cap & 341.5 & 128.5 & 2.003\\
+3 & dac & 409.1 & 209.1 & 2.000\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption{Broadcast receiver probes, percent accuracy on held-out episodes. Same frozen checkpoints and fixed-readiness reset cohort as the decomposition, but fit on the first ten episodes and evaluate only the last ten. Ten seed means; paired aggregate-probe minus acting-policy gain has unadjusted 95\% t intervals. Ridge probes do not alter the acting policy. Source-aware preserves factual delivered count, not necessarily offered traffic.}\label{tab:receiver_probe}
+\begin{tabular}{lllllll}\toprule
+Condition & Weights & Selection & Acting & Aggregate & Full input & Aggregate gain [CI]\\\midrule
+medium\_2ms & dac & normal & 53.35 & 66.11 & 66.45 & 12.762 [9.462, 16.063]\\
+medium\_2ms & dac & source\_aware & 65.09 & 100.00 & 100.00 & 34.913 [19.340, 50.485]\\
+medium\_2ms & ideal\_full & normal & 100.00 & 100.00 & 100.00 & 0.000 [0.000, 0.000]\\
+medium\_2ms & rr\_cap & normal & 54.98 & 67.62 & 68.96 & 12.650 [7.865, 17.435]\\
+medium\_2ms & rr\_cap & source\_aware & 64.17 & 99.91 & 99.99 & 35.737 [23.908, 47.567]\\
+slow\_5ms & dac & normal & 50.27 & 55.09 & 57.33 & 4.812 [1.345, 8.280]\\
+slow\_5ms & dac & source\_aware & 70.94 & 100.00 & 100.00 & 29.062 [11.900, 46.225]\\
+slow\_5ms & ideal\_full & normal & 100.00 & 100.00 & 100.00 & 0.000 [0.000, 0.000]\\
+slow\_5ms & rr\_cap & normal & 51.90 & 56.52 & 58.92 & 4.625 [2.226, 7.024]\\
+slow\_5ms & rr\_cap & source\_aware & 78.44 & 100.00 & 100.00 & 21.562 [7.189, 35.936]\\
+\bottomrule\end{tabular}\end{table}

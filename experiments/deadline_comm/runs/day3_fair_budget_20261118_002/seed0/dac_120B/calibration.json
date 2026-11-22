@@ -1,0 +1,18 @@
+{
+  "method": "dac",
+  "budget": 120,
+  "selected": {
+    "parameter": 0,
+    "offered_B_step": 118.15384615384616,
+    "error": 1.8461538461538396
+  },
+  "eligible": true,
+  "candidates": [
+    {
+      "parameter": 0,
+      "offered_B_step": 118.15384615384616,
+      "error": 1.8461538461538396
+    }
+  ],
+  "reference": "fast_5ms"
+}

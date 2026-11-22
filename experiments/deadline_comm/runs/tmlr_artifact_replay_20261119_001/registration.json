@@ -1,0 +1,7 @@
+{
+  "source_hashes": {
+    "anonymous_code_settings.zip": "d5bfb5f95644e54f1823d8cf7be1f6d6ec707b8cf1fdb76440b9df4f856c659a",
+    "evidence_checkpoints.zip": "fee0b2be0b6bac79a7fb4409cf0f550db8e78a8247946c7da4bdad5e5c9c5c1f"
+  },
+  "scope": "Clean working directory on same installed software environment, not a new OS/container; no training."
+}

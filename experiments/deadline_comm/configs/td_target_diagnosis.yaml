@@ -1,0 +1,12 @@
+seeds: [0, 1, 2]
+updates: 199
+train_episodes_per_source: 50
+validation_episodes_per_source: 5
+evaluation_episodes: 30
+conditions:
+  control: {gamma: 0.99, target_update_interval: 2}
+  A_gamma_zero: {gamma: 0.0, target_update_interval: 2}
+  B_fixed_target: {gamma: 0.99, target_update_interval: 200}
+  C_period_50: {gamma: 0.99, target_update_interval: 50}
+validation_updates: [0, 1, 25, 50, 75, 100, 125, 150, 175, 199]
+output_name: td_target_diagnosis_001

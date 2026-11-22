@@ -1,0 +1,8 @@
+runtime: experiments/deadline_comm/runs/smacv2_runtime_20261119_001
+python: python3
+upstream_commit: 577ab5a2cff2391f8df582da5731ea9cd6adf3c6
+source_url: https://codeload.github.com/oxwhirl/smacv2/zip/577ab5a2cff2391f8df582da5731ea9cd6adf3c6
+sc2_url: https://blzdistsc2-a.akamaihd.net/Linux/SC2.4.10.zip
+maps_url: https://github.com/oxwhirl/smacv2/releases/download/maps/SMAC_Maps.zip
+setup_wall_seconds: 1800
+smoke_output: experiments/deadline_comm/runs/smacv2_smoke_20261119_001

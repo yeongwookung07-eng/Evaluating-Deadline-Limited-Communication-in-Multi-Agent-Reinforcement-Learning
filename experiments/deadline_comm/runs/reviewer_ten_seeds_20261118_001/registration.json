@@ -1,0 +1,2062 @@
+{
+  "spec": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "devices": [
+      "cuda:0",
+      "cuda:1"
+    ],
+    "base_run": "experiments/deadline_comm/runs/day2_dac_marl_main_20261118_001",
+    "continuation_updates": 0,
+    "scratch_updates": 1500,
+    "oracle_episodes": 50,
+    "batch_size": 16,
+    "wall_limit_hours": 32,
+    "checkpoint_interval": 250,
+    "evaluation_episodes": 50,
+    "warmup_episodes": 2,
+    "training_conditions": [
+      [
+        "slow",
+        5.0
+      ],
+      [
+        "medium",
+        2.0
+      ],
+      [
+        "medium",
+        5.0
+      ]
+    ],
+    "conditions": [
+      [
+        "slow",
+        5.0
+      ],
+      [
+        "medium",
+        2.0
+      ],
+      [
+        "medium",
+        5.0
+      ],
+      [
+        "medium",
+        1.5
+      ]
+    ],
+    "links": {
+      "medium": 100000,
+      "slow": 20000
+    },
+    "evaluation_seed_start": 8200000,
+    "training_seed_start": 8100000,
+    "methods": [
+      "full",
+      "periodic",
+      "dac",
+      "no_comm",
+      "ideal_full",
+      "rr_cap"
+    ],
+    "preflight_selection_config": "experiments/deadline_comm/configs/q2_priority.yaml"
+  },
+  "jobs": [
+    {
+      "name": "scratch_slow_5ms_seed0_full",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed0_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed0_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed0_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed0_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed0_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 0,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_full",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed1_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 1,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_full",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed2_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 2,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_full",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed3_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 3,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_full",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed4_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 4,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_full",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed5_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 5,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_full",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed6_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 6,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_full",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed7_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 7,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_full",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed8_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 8,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_full",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_periodic",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "periodic",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_dac",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "dac",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_no_comm",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "no_comm",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_ideal_full",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "ideal_full",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_slow_5ms_seed9_rr_cap",
+      "family": "scratch_slow_5ms",
+      "seed": 9,
+      "arm": "rr_cap",
+      "training_condition": [
+        20000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_full",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed0_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 0,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_full",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed1_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 1,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_full",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed2_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 2,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_full",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed3_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 3,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_full",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed4_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 4,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_full",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed5_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 5,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_full",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed6_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 6,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_full",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed7_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 7,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_full",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed8_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 8,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_full",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_periodic",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_dac",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_no_comm",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_ideal_full",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_2ms_seed9_rr_cap",
+      "family": "scratch_medium_2ms",
+      "seed": 9,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        2.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_full",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed0_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 0,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_full",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed1_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 1,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_full",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed2_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 2,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_full",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed3_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 3,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_full",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed4_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 4,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_full",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed5_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 5,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_full",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed6_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 6,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_full",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed7_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 7,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_full",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed8_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 8,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_full",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_periodic",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "periodic",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_dac",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "dac",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_no_comm",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "no_comm",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_ideal_full",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "ideal_full",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    },
+    {
+      "name": "scratch_medium_5ms_seed9_rr_cap",
+      "family": "scratch_medium_5ms",
+      "seed": 9,
+      "arm": "rr_cap",
+      "training_condition": [
+        100000,
+        5.0
+      ],
+      "updates": 1500
+    }
+  ],
+  "total_updates": 270000,
+  "smoke": false,
+  "entrypoint_sha256": "77167d790f0e638064c33e4c8fb2983dc1a601cb02e948717e0b8367e24319e8",
+  "registered_unix": 1794994561.6132078
+}

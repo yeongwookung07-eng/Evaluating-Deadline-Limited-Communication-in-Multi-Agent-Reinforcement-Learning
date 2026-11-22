@@ -1,0 +1,5 @@
+source: experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001
+output: experiments/deadline_comm/runs/review_revision_20261119_001
+bootstrap_resamples: 20000
+equivalence_margin: 1.0
+seed: 191119

@@ -1,0 +1,34 @@
+{
+  "output": "experiments/deadline_comm/runs/tmlr_cpu_repeats_20261119_001/repeat1/rollouts",
+  "repeats": 3,
+  "seeds": [
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "checkpoints": [
+    "dac",
+    "rr_cap"
+  ],
+  "deadlines_ms": [
+    2.0,
+    2.25,
+    2.5
+  ],
+  "episodes": 3,
+  "reset_base": 14300000,
+  "wall_hours": 1,
+  "snapshot_steps": [
+    0,
+    2,
+    4
+  ],
+  "scope": "Sequential independent processes on one common allowed CPU. Paired rollouts plus same-state selector timing snapshots. No simultaneous own diagnostic workloads; no claim of exclusive-host or second-machine timing. Repeats are not additional training seeds."
+}
