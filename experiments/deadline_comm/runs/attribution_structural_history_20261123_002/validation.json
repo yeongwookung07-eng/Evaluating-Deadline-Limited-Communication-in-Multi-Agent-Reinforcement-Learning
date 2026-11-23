@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "transport_count_reconstructions": 39818,
+  "single_packet_identity_pairs": 400,
+  "medium_first_sender_mismatch_t": 1,
+  "prefix_changed_returns": {
+    "slow": 0,
+    "medium": 15
+  },
+  "scope": "Independent arithmetic checks on original records; no training or inference"
+}

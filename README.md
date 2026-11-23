@@ -33,3 +33,5 @@ All commands run from the repository root. Preserved historical configurations c
 | Public evidence completeness / 2026-11-22 | Completed audit; full experiment reproduction remains incomplete | `python scripts/verify_editorial.py`; `evidence/editorial/manifest.json`; four historical logs reproduce all fields of `experiments/deadline_comm/tmlr_revision/results/editorial_audit.json`. No new experiment/config/training. See [audit](COMPLETENESS.md). |
 
 | Reviewer models and datasets / 2026-11-22 | Completed existing-artifact addition; no new training | `python scripts/verify_reviewer.py --probes --smoke`; 280 models, 100 NPZ inputs, 520 compressed logs; [validation](evidence/reviewer/VALIDATION.md). |
+
+Current 2026-11-23 standalone package: start with [REVIEWER_RELEASE.md](REVIEWER_RELEASE.md); its evidence map and checksum manifest supplement the earlier release descriptions.

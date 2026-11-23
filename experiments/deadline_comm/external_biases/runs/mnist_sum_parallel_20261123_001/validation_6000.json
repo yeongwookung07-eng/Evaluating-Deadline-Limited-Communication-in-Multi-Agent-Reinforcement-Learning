@@ -1,0 +1,116 @@
+[
+  {
+    "seed": 0,
+    "arm": "no_bias",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.083984375,
+      "expected": 0.08769539703553164,
+      "shuffled": 0.08755846878193552,
+      "zero": 0.0872808717499538,
+      "exact": 0.08759440682160857,
+      "cic": 0.0010823925880458773,
+      "original_listener_power": 0.0,
+      "original_speaker_power": 0.00302724726498127,
+      "uniform_speaker_expected": 0.0889250710606575,
+      "optimal_label_listener": 0.1132812425494194,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  },
+  {
+    "seed": 0,
+    "arm": "both",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.1337890625,
+      "expected": 0.14648811401355033,
+      "shuffled": 0.09172861098151941,
+      "zero": 0.0956245149123447,
+      "exact": 0.14733126799366403,
+      "cic": 0.06265663650117403,
+      "original_listener_power": 0.23704209923744202,
+      "original_speaker_power": 0.09246846288442612,
+      "uniform_speaker_expected": 0.09336284548044205,
+      "optimal_label_listener": 0.350323349237442,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  },
+  {
+    "seed": 1,
+    "arm": "no_bias",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.083984375,
+      "expected": 0.08751076373937394,
+      "shuffled": 0.08752444477522658,
+      "zero": 0.08714887297901441,
+      "exact": 0.08750919191425055,
+      "cic": 0.0005830987768860041,
+      "original_listener_power": 0.0,
+      "original_speaker_power": 0.001990250777453184,
+      "uniform_speaker_expected": 0.08871813118457794,
+      "optimal_label_listener": 0.11328125,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  },
+  {
+    "seed": 1,
+    "arm": "both",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.15234375,
+      "expected": 0.16116418046665804,
+      "shuffled": 0.0968652241450679,
+      "zero": 0.0938957099299331,
+      "exact": 0.16221834785184025,
+      "cic": 0.03771179659835866,
+      "original_listener_power": 0.27803128957748413,
+      "original_speaker_power": 0.08986666053533554,
+      "uniform_speaker_expected": 0.09589320421218872,
+      "optimal_label_listener": 0.39131253957748413,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  },
+  {
+    "seed": 2,
+    "arm": "no_bias",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.0869140625,
+      "expected": 0.09004637195221221,
+      "shuffled": 0.09010391178708232,
+      "zero": 0.08993725194568469,
+      "exact": 0.09014479974666756,
+      "cic": 0.0007540848464770988,
+      "original_listener_power": 0.0,
+      "original_speaker_power": 0.0024932436645030975,
+      "uniform_speaker_expected": 0.09160862863063812,
+      "optimal_label_listener": 0.11328125,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  },
+  {
+    "seed": 2,
+    "arm": "both",
+    "updates": 6000,
+    "validation": {
+      "sampled": 0.259765625,
+      "expected": 0.26862740332163204,
+      "shuffled": 0.0922832452517865,
+      "zero": 0.09773489358974699,
+      "exact": 0.27578715168318557,
+      "cic": 0.08367734590456166,
+      "original_listener_power": 0.3637586534023285,
+      "original_speaker_power": 0.19858355820178986,
+      "uniform_speaker_expected": 0.09658936411142349,
+      "optimal_label_listener": 0.4770399034023285,
+      "pairs": 1024,
+      "seed": 231123
+    }
+  }
+]

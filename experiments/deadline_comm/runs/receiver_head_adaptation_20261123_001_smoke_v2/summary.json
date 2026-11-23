@@ -1,0 +1,232 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "arm": "original",
+      "accuracy": 0.38749999999999996,
+      "mean_return": 7.75,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 0.4,
+      "cpu_total_us": 779.241,
+      "diagnostic_selection_us": 0.0,
+      "deadline_miss_fraction": 0.05
+    },
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "arm": "adapted",
+      "accuracy": 0.51875,
+      "mean_return": 10.375,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 0.4,
+      "cpu_total_us": 758.412825,
+      "diagnostic_selection_us": 0.0,
+      "deadline_miss_fraction": 0.025
+    },
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "arm": "shuffled",
+      "accuracy": 0.4875,
+      "mean_return": 9.75,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 0.4,
+      "cpu_total_us": 755.65725,
+      "diagnostic_selection_us": 0.0,
+      "deadline_miss_fraction": 0.025
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "arm": "original",
+      "accuracy": 0.38749999999999996,
+      "mean_return": 7.75,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 1.0,
+      "cpu_total_us": 2090.02195,
+      "diagnostic_selection_us": 1238.979475,
+      "deadline_miss_fraction": 1.0
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "arm": "adapted",
+      "accuracy": 0.63125,
+      "mean_return": 12.625,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 1.0,
+      "cpu_total_us": 2065.244475,
+      "diagnostic_selection_us": 1214.16345,
+      "deadline_miss_fraction": 1.0
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "arm": "shuffled",
+      "accuracy": 0.61875,
+      "mean_return": 12.375,
+      "wire_B_step": 96.0,
+      "payload_B_step": 64.0,
+      "source_delivery": 1.0,
+      "cpu_total_us": 2045.810325,
+      "diagnostic_selection_us": 1200.787625,
+      "deadline_miss_fraction": 1.0
+    }
+  ],
+  "probes": [
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "policy_accuracy": 0.3875,
+      "aggregate": 0.66875,
+      "full_input": 0.65
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "policy_accuracy": 0.3875,
+      "aggregate": 1.0,
+      "full_input": 1.0
+    }
+  ],
+  "training": [
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "arm": "adapted",
+      "cpu_wall_ns": 61774936,
+      "updates": 10,
+      "initial_loss": 0.6900826096534729,
+      "final_loss": 0.6835237741470337,
+      "labeled_timesteps": 200,
+      "receiver_examples": 800,
+      "parameters": 4930
+    },
+    {
+      "seed": 0,
+      "scheduler": "normal",
+      "arm": "shuffled",
+      "cpu_wall_ns": 7512320,
+      "updates": 10,
+      "initial_loss": 0.6971546411514282,
+      "final_loss": 0.6928218007087708,
+      "labeled_timesteps": 200,
+      "receiver_examples": 800,
+      "parameters": 4930
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "arm": "adapted",
+      "cpu_wall_ns": 8057251,
+      "updates": 10,
+      "initial_loss": 0.6825442314147949,
+      "final_loss": 0.6714281439781189,
+      "labeled_timesteps": 200,
+      "receiver_examples": 800,
+      "parameters": 4930
+    },
+    {
+      "seed": 0,
+      "scheduler": "source_aware",
+      "arm": "shuffled",
+      "cpu_wall_ns": 7496410,
+      "updates": 10,
+      "initial_loss": 0.694811999797821,
+      "final_loss": 0.6906887888908386,
+      "labeled_timesteps": 200,
+      "receiver_examples": 800,
+      "parameters": 4930
+    }
+  ],
+  "aggregate": {
+    "normal": {
+      "adapted_minus_original": {
+        "mean": 13.125000000000009,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          13.125000000000009
+        ]
+      },
+      "adapted_minus_shuffled": {
+        "mean": 3.1250000000000053,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          3.1250000000000053
+        ]
+      },
+      "shuffled_minus_original": {
+        "mean": 10.000000000000004,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          10.000000000000004
+        ]
+      },
+      "aggregate_probe_minus_policy": {
+        "mean": 28.124999999999993,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          28.124999999999993
+        ]
+      },
+      "diagnostic_adoption_gate": false
+    },
+    "source_aware": {
+      "adapted_minus_original": {
+        "mean": 24.375000000000004,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          24.375000000000004
+        ]
+      },
+      "adapted_minus_shuffled": {
+        "mean": 1.2499999999999956,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          1.2499999999999956
+        ]
+      },
+      "shuffled_minus_original": {
+        "mean": 23.125000000000007,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          23.125000000000007
+        ]
+      },
+      "aggregate_probe_minus_policy": {
+        "mean": 61.25000000000001,
+        "n": 1,
+        "ci95": null,
+        "seed_values": [
+          61.25000000000001
+        ]
+      },
+      "diagnostic_adoption_gate": false
+    }
+  },
+  "checks": {
+    "historical_feature_policy_cells": 2,
+    "unchanged_source_head_checks": 6,
+    "frozen_parameter_checks": 6,
+    "matched_delivery_cells": 4
+  },
+  "original_learning_gate": {
+    "seeds": 10,
+    "passed": 10
+  },
+  "scope": "CPU-only supervised follower-head adaptation of existing Oracle-free learned broadcast models; not new MARL training or standard-benchmark evidence.",
+  "wall_seconds": 1.2036033309996128
+}

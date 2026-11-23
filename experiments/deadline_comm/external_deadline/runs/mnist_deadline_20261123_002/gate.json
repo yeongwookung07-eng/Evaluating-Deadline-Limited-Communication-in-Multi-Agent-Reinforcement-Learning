@@ -1,0 +1,10 @@
+{
+  "selected_updates": 12000,
+  "summary_sha256": "f7e3e8c62610b99effd8ae00a3550c891fbd73552e3e4195a70f2ebadd8edeca",
+  "validation_sha256": "848114e4aede352aae0c352e4afc2d32378750861785fa2fe27d75a3f49610b3",
+  "checkpoints": {
+    "0": "experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed0_both_12000.pt",
+    "1": "experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed1_both_12000.pt",
+    "2": "experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed2_both_12000.pt"
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed0_rr_cap/final.pt",
+    "sha256": "8fe82113e094c39a3c286017a2d7d82dd70cb08a8a46d39fd83c3c3820d52ba1"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed0_rr_cap_medium_2ms_normal.npz",
+    "sha256": "f36caf3388f2a86444117a83fc7221e6b122f95d7583fe74b751b95d3bb1c102"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed0_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "667a8bf7a5a4ba6576a6eb42ac375af486e101cae773fa8d4b2775ce1864251c"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed1_rr_cap/final.pt",
+    "sha256": "2a1588df54044f76c99905a2bd29797b2946f72e435a87a2c8b9f5373c96ac45"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed1_rr_cap_medium_2ms_normal.npz",
+    "sha256": "81574fa4b7a7113181970e16fc57de49d03d18acba32678efa2073fad8ae899b"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed1_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "097eba583b73085586afd702da2cb6f252b645b4615bb4448ff33e77ca4a092a"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed2_rr_cap/final.pt",
+    "sha256": "7641345d951f42c56a2e20be65585942614e9002a2f3a7d0316b55d6fdf8089c"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed2_rr_cap_medium_2ms_normal.npz",
+    "sha256": "8c328f5269a615b044dc7d42f45388ad61abda4aa45dce4a780297d7d3e7b1e2"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed2_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "233999443d0ef453daa6619aee5d7d3b1cb67be86bd50f6f0652db0dea02a99a"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed3_rr_cap/final.pt",
+    "sha256": "7452afffe21658653324c0d2aa4db42a1d65331746089ef6fae7316230563ec4"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed3_rr_cap_medium_2ms_normal.npz",
+    "sha256": "da6b69d861a123a44dae236100334c703be9703250cbc8935e443defa10561b8"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed3_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "ea57953db7aa2844dc2b518947ba0ea6d90251497cc7b281c4ac5ef9f71c49a3"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed4_rr_cap/final.pt",
+    "sha256": "b2778adfc1d1d7b944d9b4f5b10a0d399edd45e286bb8612a108d3e254a38dd3"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed4_rr_cap_medium_2ms_normal.npz",
+    "sha256": "e7baf6a0ba0913c46bd011344e806726a0252992c40289c914c3469b29f2c1e2"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed4_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "ead63470af47d5621a9e92e4add5538623d48bd164e5036690615e818690af43"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed5_rr_cap/final.pt",
+    "sha256": "0d018b60e8faef22dcd153ed865d95ca25873fa0125ea93335c085fdb1d81340"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed5_rr_cap_medium_2ms_normal.npz",
+    "sha256": "8e8b061dd34c4140b3551f593b9f4d08cbc77593c15731476c9a382805faf1f2"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed5_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "d87da2a3f289b44f3526bb88b30c6e9086eaed69bb9d9cff77400799ad038210"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed6_rr_cap/final.pt",
+    "sha256": "c7903761e1ca0ee1290d1abc22f9f967a89a7498ea7ae9a54b1bec25db6e21e6"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed6_rr_cap_medium_2ms_normal.npz",
+    "sha256": "078a08efd7ae86f9b2b1961e3399877940606c7e1d57fd9af3fb56ff0e2bf301"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed6_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "85ae5a85e1619284eb4409704e5cb46f94aceb2fbc57fb2887a0f6a921fa90bf"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed7_rr_cap/final.pt",
+    "sha256": "4218249b43f30adf160e0922c3a01d80036834d2df36e928a6d5b8236afe0dbc"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed7_rr_cap_medium_2ms_normal.npz",
+    "sha256": "452a97b30ab756368cc6bd5e39a5b67239e5727c4180fb4b6b744ae4d660778d"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed7_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "4ff0441d106c35f9d275494ec38eac99a3619f5e8acbdb707bdf3b993ee284d9"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed8_rr_cap/final.pt",
+    "sha256": "724fe05d1cf5b8cbb47d645abcd0c43d7549fd9993113b1c5e4d388fbd9f6891"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed8_rr_cap_medium_2ms_normal.npz",
+    "sha256": "f45d266346d97c6458a22916a276895fbf9988649f97f9f50c134b1ffba8ae12"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed8_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "fd9ef7fa75506c037aafaa1b6673e50122bd3a3d8ca8fa9d422ff8cd92b5c412"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed9_rr_cap/final.pt",
+    "sha256": "96606ef98992027d58ca16a59e5df177af1bc65887cacfafba8158304f08ea76"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed9_rr_cap_medium_2ms_normal.npz",
+    "sha256": "9fb7a461ad703788611c12ce23174e5c5c6cbcd6a527a45f138bcafbcae40478"
+  },
+  {
+    "path": "experiments/deadline_comm/runs/tmlr_receiver_probe_20261119_001/seed9_rr_cap_medium_2ms_source_aware.npz",
+    "sha256": "fafa396a6ada037e07fff4c46ae41185033f6150baaa026f1b59f47439fb109a"
+  }
+]

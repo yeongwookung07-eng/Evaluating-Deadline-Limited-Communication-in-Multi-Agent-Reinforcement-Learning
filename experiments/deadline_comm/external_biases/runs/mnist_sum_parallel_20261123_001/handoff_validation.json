@@ -1,0 +1,15 @@
+{
+  "all_six_checkpoint_values_exact": true,
+  "fields": [
+    "speaker",
+    "listener",
+    "ospeaker",
+    "olistener",
+    "rng",
+    "pair_rng",
+    "updates"
+  ],
+  "common_update": 1500,
+  "device": "CPU",
+  "training_changed": false
+}

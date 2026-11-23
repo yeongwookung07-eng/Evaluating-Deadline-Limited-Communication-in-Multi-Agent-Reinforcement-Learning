@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -43,6 +43,17 @@
   \bibinfo{booktitle}{Proceedings of the 36th International Conference on
   Machine Learning}, pp. \bibinfo{pages}{1538--1546}.
 \newblock \URLprefix \url{https://proceedings.mlr.press/v97/das19a.html}.
+%Type = Inproceedings
+\bibitem[{Eccles et~al.(2019)Eccles, Bachrach, Lever, Lazaridou and
+  Graepel}]{eccles2019biases}
+\bibinfo{author}{Eccles, T.}, \bibinfo{author}{Bachrach, Y.},
+  \bibinfo{author}{Lever, G.}, \bibinfo{author}{Lazaridou, A.},
+  \bibinfo{author}{Graepel, T.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Biases for emergent communication in multi-agent
+  reinforcement learning}, in: \bibinfo{booktitle}{Advances in Neural
+  Information Processing Systems}.
+\newblock \URLprefix
+  \url{https://proceedings.neurips.cc/paper/2019/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}.
 %Type = Inproceedings
 \bibitem[{Foerster et~al.(2016)Foerster, Assael, de~Freitas and
   Whiteson}]{foerster2016learning}

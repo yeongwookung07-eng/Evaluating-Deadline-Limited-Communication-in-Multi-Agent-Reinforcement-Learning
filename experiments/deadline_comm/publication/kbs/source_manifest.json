@@ -1,0 +1,18 @@
+{
+  "source": "experiments/deadline_comm/publication/tmlr/tmlr_main.tex",
+  "source_sha256": "fac2e305e206945e06e6ec83ab233a07010703a6eca4ee24519a2e9449f21ad1",
+  "tmlr_pdf_sha256": "d2895cc8a70cabfc39ec64d1ae32e7157a10dff6e9619f7918b4b50bfea41f94",
+  "template": "User-uploaded els-cas-templates v2.4; cas-dc two-column",
+  "guide_url": "https://www.sciencedirect.com/journal/knowledge-based-systems/publish/guide-for-authors",
+  "guide_access": "403; journal-specific requirements not fully verified",
+  "experimental_content_changed": true,
+  "template_source": "experiments/deadline_comm/publication/els-cas-templates",
+  "template_hashes": {
+    "cas-dc.cls": "9f7dd6cfc91f7ce52d0db29579894662e1dd8ae96d42cf18d6d0c697e42464f5",
+    "cas-common.sty": "e95a01f4b33531d01ade231669fcc1e42f52193dddcb22ead5b63240eb952f8f",
+    "cas-model2-names.bst": "6f6204eb7670d762042ab363c2d05cf87196052bfbdf6dbee51a1327a8ce479a"
+  },
+  "editorial_revision": "Four-stage attribution protocol, consolidated validity discussion; existing scientific table values preserved",
+  "local_template_patch": "cas-common.sty: add hss inside intentional zero-width keyword box to suppress spurious overfull warning; uploaded template untouched",
+  "scientific_revision": "2026-11-23 KBS decision study. Pre-revision paper and status preserved in pre_transfer_revision_20261123.zip. Source and tmlr_pdf hashes refer to original TMLR baseline."
+}

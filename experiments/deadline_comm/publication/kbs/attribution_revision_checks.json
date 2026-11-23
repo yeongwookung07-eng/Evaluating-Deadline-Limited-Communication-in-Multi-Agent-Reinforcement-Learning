@@ -1,0 +1,9 @@
+{
+  "scientific_tables_unchanged": 7,
+  "four_stage_protocol_unchanged": true,
+  "new_experiments": false,
+  "smacv2_gate_checked": "experiments/deadline_comm/runs/smacv2_pilot_20261119_001/learning_gate.json",
+  "external_benchmark_replication": "not established",
+  "related_work_table": "tab:attribution_map",
+  "preserved_reference": "jung2023splitting"
+}

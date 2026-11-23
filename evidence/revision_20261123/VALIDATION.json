@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-23",
+  "phase": "Scientific-stage checks and final frozen-paper refresh passed; archive extraction receipt is supplied beside ZIP.",
+  "commands": [
+    "python scripts/verify_submission.py --recompute --tests --external-data <separately-verified-local-mnist>"
+  ],
+  "tests": {
+    "passed": 59,
+    "skipped": 1,
+    "seconds": 3.78
+  },
+  "original_evidence": {
+    "strict_checkpoint_loads": 280,
+    "probe_cells": 100,
+    "probe_types": 4,
+    "editorial_recomputation": true,
+    "seed0_two_condition_replay": true
+  },
+  "new_evidence": {
+    "structural_pairs": 2400,
+    "prefix_pairs": 800,
+    "timing_cells": 56,
+    "receiver_actual_episodes": 1200,
+    "receiver_actual_steps": 24000,
+    "external_final_models": 6,
+    "external_common1500_models": 6,
+    "external_deployment_old_test_pair_overlap_per_seed": [
+      0,
+      0,
+      0
+    ],
+    "external_saved_array_recomputation": true,
+    "external_model_inference_regeneration": true,
+    "external_results_json_and_npz_match": true,
+    "float_relative_tolerance": 1e-10,
+    "float_absolute_tolerance": 1e-12
+  },
+  "execution": "CPU only; no new policy training, dataset download or external upload in release validation. MNIST reused separately with verified official checksums and is excluded from ZIP.",
+  "environment": {
+    "python": "3.13.12",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "scipy": "1.18.0",
+    "yaml": "6.0.3"
+  },
+  "frozen_paper": {
+    "pages": 17,
+    "sha256": {
+      "kbs_main.tex": "e210d48ef4a091e5d419c791e8867b4dcbe68b750d04f7c435e134e7fdab0588",
+      "kbs_main.pdf": "f2e3f5051804fcdb886d7ba39921e2ad7a79f284adb2d2fca8477138a31ca399",
+      "kbs_source.zip": "3497853c3ad1ebe3dfa516da1c4e7a3c8f5c0b1a4c55ac4fb168e627e64dceb7"
+    }
+  }
+}
