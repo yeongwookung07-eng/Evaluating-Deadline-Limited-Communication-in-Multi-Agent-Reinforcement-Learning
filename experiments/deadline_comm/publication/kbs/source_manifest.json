@@ -12,7 +12,7 @@
     "cas-common.sty": "e95a01f4b33531d01ade231669fcc1e42f52193dddcb22ead5b63240eb952f8f",
     "cas-model2-names.bst": "6f6204eb7670d762042ab363c2d05cf87196052bfbdf6dbee51a1327a8ce479a"
   },
-  "editorial_revision": "Four-stage attribution protocol, consolidated validity discussion; existing scientific table values preserved",
+  "editorial_revision": "KBS submission edition. Matched-episode estimand, message-arrival reward identity, scope of timing/uncertainty, support for code and artifact access, and AI declarations. Scientific evidence unchanged from releases 001 and 002.",
   "local_template_patch": "cas-common.sty: add hss inside intentional zero-width keyword box to suppress spurious overfull warning; uploaded template untouched",
   "scientific_revision": "2026-11-23 KBS decision study. Pre-revision paper and status preserved in pre_transfer_revision_20261123.zip. Source and tmlr_pdf hashes refer to original TMLR baseline."
 }

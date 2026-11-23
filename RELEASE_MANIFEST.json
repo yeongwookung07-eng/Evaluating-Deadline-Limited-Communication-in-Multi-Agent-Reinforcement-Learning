@@ -1,5 +1,5 @@
 {
-  "release": "kbs_reviewer_20261123_001",
+  "release": "kbs_reviewer_20261123_003",
   "date": "2026-11-23",
   "files": [
     {
@@ -49,8 +49,8 @@
     },
     {
       "path": "REVIEWER_RELEASE.md",
-      "bytes": 3912,
-      "sha256": "8f4f92b5f6aecbc5a35db507282fb86799284cbdeadc3d00dcd91ce1ac8b9228"
+      "bytes": 4177,
+      "sha256": "7b16c5acf5a72cae8285694861811b321792a0449efe452ecf9b3d4d0441f714"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -3853,14 +3853,19 @@
       "sha256": "4931d2f130443edf42e0ceb0d49906120cb5a42bb3bd706bb99a93780d2b14ea"
     },
     {
+      "path": "experiments/deadline_comm/publication/kbs/Highlights.docx",
+      "bytes": 37011,
+      "sha256": "ff8faf894220b8bc81b551c862964d50a898893b37728ad81c7556a62e8f93f0"
+    },
+    {
       "path": "experiments/deadline_comm/publication/kbs/Highlights.txt",
       "bytes": 317,
       "sha256": "ab629b8a364857f2ec716faf7ff676389d5d243381edab3fe2a92044c2c657bb"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/README.md",
-      "bytes": 7719,
-      "sha256": "89cbb1d685463222afaf4dc33135499b2d33f3a960b964669b5f6a794c2197cf"
+      "bytes": 9143,
+      "sha256": "1f594bd37a7994437f0d881d4b53c07204eac36c54ed73ca985f5bf4bc43f8d5"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/attribution_revision_checks.json",
@@ -3869,8 +3874,8 @@
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/build.py",
-      "bytes": 1792,
-      "sha256": "383cd1a99442837c87ca9575147525e9e7bb5ca5fdeda22ea5d95d2256605570"
+      "bytes": 3762,
+      "sha256": "02cb71e4c6dc62d4ce6f3a4e9cb8b79cbb5b38dd43a350ccb6459247c319073f"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/cas-common.sty",
@@ -3914,18 +3919,28 @@
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/kbs_main.pdf",
-      "bytes": 645779,
-      "sha256": "f2e3f5051804fcdb886d7ba39921e2ad7a79f284adb2d2fca8477138a31ca399"
+      "bytes": 516285,
+      "sha256": "8c8bb6590b40e948e91c7e8d26f859bc64e892d4d7ccf5536995caa65039324d"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/kbs_main.tex",
-      "bytes": 78050,
-      "sha256": "e210d48ef4a091e5d419c791e8867b4dcbe68b750d04f7c435e134e7fdab0588"
+      "bytes": 44241,
+      "sha256": "13e5bef1bcf0602c7a7f801d87df365aa995cd98040ff671a3bac689188ce95b"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/kbs_source.zip",
-      "bytes": 134224,
-      "sha256": "3497853c3ad1ebe3dfa516da1c4e7a3c8f5c0b1a4c55ac4fb168e627e64dceb7"
+      "bytes": 130596,
+      "sha256": "68aa1e590560a539d7d6fa7c0fa724c0ed97691232d447d58433e8785844193b"
+    },
+    {
+      "path": "experiments/deadline_comm/publication/kbs/kbs_supplement.pdf",
+      "bytes": 320501,
+      "sha256": "1ba6a045760f19dad15c24610e08d45c4a5d05eb6dc157318e77c3dc4cee4499"
+    },
+    {
+      "path": "experiments/deadline_comm/publication/kbs/kbs_supplement.tex",
+      "bytes": 28997,
+      "sha256": "9fe8417fef32e376326ff43ec7471c5309173d18374b28e9cbcefc635cca8260"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/plot_receiver_gain.py",
@@ -3944,13 +3959,13 @@
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/source_manifest.json",
-      "bytes": 1421,
-      "sha256": "30fdc865d9a2f56b9eccd49f4793426e577d126c8ecfb5a9a76742f440a71425"
+      "bytes": 1539,
+      "sha256": "84ffa11091aa031adad5d86ab31d945424404471c3a198b67f2d9a1e6dbf5f03"
     },
     {
       "path": "experiments/deadline_comm/publication/kbs/validation.json",
-      "bytes": 169,
-      "sha256": "7712538eacadd078947450771037492e625a1e50a80a807c5b7e68631a328ba4"
+      "bytes": 195,
+      "sha256": "49b708c47db8d4e83d159c42cc8cc65838ba084a9c3ebfc23c2875b2e70e61e3"
     },
     {
       "path": "experiments/deadline_comm/publication/tmlr/tmlr_main.pdf",

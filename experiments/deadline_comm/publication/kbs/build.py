@@ -1,18 +1,94 @@
+"""Build and validate the KBS manuscript, supplement and portable submission sources."""
+
+import hashlib
+import json
 from pathlib import Path
-import subprocess,json,re,hashlib,zipfile
-P=Path(__file__).resolve().parent
+import re
+import subprocess
+import zipfile
+
+
+PAPER = Path(__file__).resolve().parent
+DOCUMENTS = ("kbs_main", "kbs_supplement")
+
+
+def compile_document(name, output_log):
+    latex = ["pdflatex", "-interaction=nonstopmode", "-halt-on-error", f"{name}.tex"]
+    options = dict(cwd=PAPER, stdout=output_log, stderr=subprocess.STDOUT, check=True)
+    subprocess.run(latex, **options)
+    aux = (PAPER / f"{name}.aux").read_text()
+    if r"\bibdata{" in aux:
+        subprocess.run(["bibtex", name], **options)
+    elif r"\citation{" in aux and not (PAPER / f"{name}.bbl").exists():
+        raise ValueError(f"{name} cites references without a bibliography")
+    for _ in range(3):
+        subprocess.run(latex, **options)
+
+    log = (PAPER / f"{name}.log").read_text()
+    for warning in ("undefined references", "undefined citations", "multiply defined",
+                    "Missing character", "Overfull", "Rerun to get cross-references right"):
+        if warning in log:
+            raise ValueError(f"{name}.log: {warning}")
+    pdf_text = subprocess.check_output(
+        ["pdftotext", "-layout", str(PAPER / f"{name}.pdf"), "-"], text=True
+    )
+    return pdf_text
+
+
+def check_historical_source():
+    """The research checkout retains the original TMLR files outside the KBS tree."""
+    repository = PAPER.parents[3] if len(PAPER.parents) > 3 else None
+    tmlr = PAPER.parent / "tmlr"
+    if not (tmlr.is_dir() or
+            (repository and (repository / "AGENTS.md").exists()
+             and (repository / "docs/RESEARCH_CHARTER.md").exists())):
+        return None
+    manifest = json.loads((PAPER / "source_manifest.json").read_text())
+    for source, expected in ((repository / manifest["source"], manifest["source_sha256"]),
+                             (tmlr / "tmlr_main.pdf", manifest["tmlr_pdf_sha256"])):
+        if hashlib.sha256(source.read_bytes()).hexdigest() != expected:
+            raise ValueError(f"Original manuscript checksum mismatch: {source}")
+    return True
+
+
+def write_source_zip():
+    inputs = [
+        PAPER / filename for filename in (
+            "cas-dc.cls", "cas-common.sty", "cas-model2-names.bst", "references.bib",
+            "build.py",
+        )
+    ]
+    for name in DOCUMENTS:
+        inputs.append(PAPER / f"{name}.tex")
+        if r"\bibdata{" in (PAPER / f"{name}.aux").read_text():
+            inputs.append(PAPER / f"{name}.bbl")
+    inputs.extend(sorted((PAPER / "figures").glob("*.pdf")))
+    with zipfile.ZipFile(PAPER / "kbs_source.zip", "w", zipfile.ZIP_DEFLATED) as archive:
+        for path in inputs:
+            archive.write(path, path.relative_to(PAPER))
+
+
 def main():
- with (P/'build.log').open('w') as f:
-  for c in [['pdflatex','-interaction=nonstopmode','-halt-on-error','kbs_main.tex'],['bibtex','kbs_main'],['pdflatex','-interaction=nonstopmode','-halt-on-error','kbs_main.tex'],['pdflatex','-interaction=nonstopmode','-halt-on-error','kbs_main.tex'],['pdflatex','-interaction=nonstopmode','-halt-on-error','kbs_main.tex']]:subprocess.run(c,cwd=P,stdout=f,stderr=subprocess.STDOUT,check=True)
- log=(P/'kbs_main.log').read_text();txt=subprocess.check_output(['pdftotext','-layout',str(P/'kbs_main.pdf'),'-'],text=True)
- for bad in ['undefined references','multiply defined','Missing character','Overfull']:assert bad not in log,bad
- assert 'Under review as submission to TMLR' not in txt
- assert 'Yeong-woo Kung' in txt and 'Young-guk Ha' in txt
- manifest=json.loads((P/'source_manifest.json').read_text());assert hashlib.sha256(Path(manifest['source']).read_bytes()).hexdigest()==manifest['source_sha256']
- assert hashlib.sha256((P.parent/'tmlr/tmlr_main.pdf').read_bytes()).hexdigest()==manifest['tmlr_pdf_sha256']
- state=dict(pages=len([x for x in txt.split('\f') if x.strip()]),numerical_citations=bool(re.search(r'\[1[,\]]',txt)),tmlr_preserved=True,compiled=True,author_details_pending=True,journal_guide_fully_verified=False)
- (P/'validation.json').write_text(json.dumps(state,indent=2));print(state)
- with zipfile.ZipFile(P/'kbs_source.zip','w',zipfile.ZIP_DEFLATED) as z:
-  for f in P.rglob('*'):
-   if f.suffix in ['.tex','.bib','.bbl','.cls','.bst','.sty'] or f.parent.name=='figures' or f.name in ['Highlights.txt','AUTHOR_INFORMATION_PENDING.txt','README.md','build.py']:z.write(f,f.relative_to(P))
-if __name__=='__main__':main()
+    with (PAPER / "build.log").open("w") as output_log:
+        main_text, supplement_text = [compile_document(name, output_log) for name in DOCUMENTS]
+    if "Under review as submission to TMLR" in main_text:
+        raise ValueError("Obsolete submission header")
+    for author in ("Yeong-woo Kung", "Young-guk Ha"):
+        if author not in main_text:
+            raise ValueError(f"Missing author: {author}")
+    state = dict(
+        pages=sum(bool(page.strip()) for page in main_text.split("\f")),
+        supplement_pages=sum(bool(page.strip()) for page in supplement_text.split("\f")),
+        numerical_citations=bool(re.search(r"\[1[,\]]", main_text)),
+        tmlr_preserved=check_historical_source(),
+        compiled=True,
+        author_details_pending=True,
+        journal_guide_fully_verified=False,
+    )
+    (PAPER / "validation.json").write_text(json.dumps(state, indent=2) + "\n")
+    write_source_zip()
+    print(state)
+
+
+if __name__ == "__main__":
+    main()
