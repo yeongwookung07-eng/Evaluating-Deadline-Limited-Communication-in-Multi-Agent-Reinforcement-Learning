@@ -1,6 +1,6 @@
-# Reviewer release — submission manuscript, 2026-11-23
+# Reviewer release for the KBS analysis manuscript
 
-Main paper (10 pages): [PDF](experiments/deadline_comm/publication/kbs/kbs_main.pdf). Supplement (8 pages): [PDF](experiments/deadline_comm/publication/kbs/kbs_supplement.pdf). The verified scientific evidence is preserved from release 002.
+Main paper (10 pages) [PDF](experiments/deadline_comm/publication/kbs/kbs_main.pdf). Supplement (8 pages) [PDF](experiments/deadline_comm/publication/kbs/kbs_supplement.pdf). Scientific evidence is identical to release 003.
 
 This standalone folder is the current paper/evidence snapshot. No git checkout, original absolute path or GPU is needed for CPU verification. The current English paper is `experiments/deadline_comm/publication/kbs/kbs_main.pdf`; `RELEASE_MANIFEST.json` binds it to the included results and code. `evidence/revision_20261123/EVIDENCE_MAP.json` maps each new result to its entrypoint/config/artifacts. Historical failed runs and gates remain explicit.
 

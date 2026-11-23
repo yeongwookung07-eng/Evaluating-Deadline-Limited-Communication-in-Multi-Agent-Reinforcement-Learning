@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{14}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,16 +11,6 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
-%Type = Misc
-\bibitem[{Alibotaiken et~al.(2026)Alibotaiken, Wang, Ajayi, Li and
-  Cheng}]{alibotaiken2026freshness}
-\bibinfo{author}{Alibotaiken, A.}, \bibinfo{author}{Wang, S.},
-  \bibinfo{author}{Ajayi, O.T.}, \bibinfo{author}{Li, M.},
-  \bibinfo{author}{Cheng, Y.}, \bibinfo{year}{2026}.
-\newblock \bibinfo{title}{A survey of freshness-aware wireless networking with
-  reinforcement learning}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2512.21412v2}.
-  \bibinfo{note}{arXiv preprint arXiv:2512.21412v2; revised November 2, 2026}.
 %Type = Article
 \bibitem[{Ayan et~al.(2022)Ayan, Kutsevol, Ozkan and
   Kellerer}]{ayan2022semantics}
@@ -64,34 +54,6 @@
   reinforcement learning}, in: \bibinfo{booktitle}{Advances in Neural
   Information Processing Systems}.
 \newblock \URLprefix \url{https://arxiv.org/abs/1605.06676}.
-%Type = Misc
-\bibitem[{Gong et~al.(2022)Gong, Cui, Gu, Lyu, Hoang and
-  Niyato}]{gong2022hierarchical}
-\bibinfo{author}{Gong, S.}, \bibinfo{author}{Cui, L.}, \bibinfo{author}{Gu,
-  B.}, \bibinfo{author}{Lyu, B.}, \bibinfo{author}{Hoang, D.T.},
-  \bibinfo{author}{Niyato, D.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Hierarchical deep reinforcement learning for
-  age-of-information minimization in {IRS}-aided and wireless-powered wireless
-  networks}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2212.13390}.
-  \bibinfo{note}{arXiv preprint arXiv:2212.13390}.
-%Type = Inproceedings
-\bibitem[{Han et~al.(2023)Han, Dastani and Wang}]{han2023model}
-\bibinfo{author}{Han, S.}, \bibinfo{author}{Dastani, M.},
-  \bibinfo{author}{Wang, S.}, \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Model-based sparse communication in multi-agent
-  reinforcement learning}, in: \bibinfo{booktitle}{Proceedings of the
-  International Conference on Autonomous Agents and Multiagent Systems}.
-\newblock \URLprefix \url{https://dspace.library.uu.nl/handle/1874/428765}.
-%Type = Article
-\bibitem[{Han et~al.(2025)Han, Dastani and Wang}]{han2025sparse}
-\bibinfo{author}{Han, S.}, \bibinfo{author}{Dastani, M.},
-  \bibinfo{author}{Wang, S.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Sparse communication in multi-agent deep
-  reinforcement learning}.
-\newblock \bibinfo{journal}{Neurocomputing} \bibinfo{volume}{625},
-  \bibinfo{pages}{129344}.
-\newblock \DOIprefix\doi{10.1016/j.neucom.2025.129344}.
 %Type = Article
 \bibitem[{Hu et~al.(2023)Hu, Zhu, Zhao, Zhao and Hao}]{hu2023event}
 \bibinfo{author}{Hu, G.}, \bibinfo{author}{Zhu, Y.}, \bibinfo{author}{Zhao,
@@ -102,14 +64,6 @@
 \newblock \bibinfo{journal}{IEEE Transactions on Neural Networks and Learning
   Systems} \bibinfo{volume}{34}, \bibinfo{pages}{3966--3978}.
 \newblock \DOIprefix\doi{10.1109/TNNLS.2021.3121546}.
-%Type = Article
-\bibitem[{Huang and Zhou(2024)}]{huang2024qmnet}
-\bibinfo{author}{Huang, X.}, \bibinfo{author}{Zhou, S.}, \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{{QMNet}: Importance-aware message exchange for
-  decentralized multi-agent reinforcement learning}.
-\newblock \bibinfo{journal}{IEEE Transactions on Mobile Computing}
-  \bibinfo{volume}{23}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2307.09051}.
 %Type = Article
 \bibitem[{Jung and Lee(2023)}]{jung2023splitting}
 \bibinfo{author}{Jung, S.}, \bibinfo{author}{Lee, H.W.}, \bibinfo{year}{2023}.
@@ -138,23 +92,6 @@
   reinforcement learning}, in: \bibinfo{booktitle}{International Conference on
   Learning Representations}.
 \newblock \URLprefix \url{https://arxiv.org/abs/1902.01554}.
-%Type = Misc
-\bibitem[{Liu et~al.(2022)Liu, Zhang, Gong and Chen}]{liu2022optimizing}
-\bibinfo{author}{Liu, J.}, \bibinfo{author}{Zhang, R.}, \bibinfo{author}{Gong,
-  A.}, \bibinfo{author}{Chen, H.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Optimizing age of information in wireless uplink
-  networks with partial observations}.
-\newblock \URLprefix \url{https://arxiv.org/abs/2202.03152}.
-  \bibinfo{note}{arXiv preprint arXiv:2202.03152}.
-%Type = Inproceedings
-\bibitem[{Liu et~al.(2020)Liu, Wang, Hu, Hao, Chen and Gao}]{liu2020game}
-\bibinfo{author}{Liu, Y.}, \bibinfo{author}{Wang, W.}, \bibinfo{author}{Hu,
-  Y.}, \bibinfo{author}{Hao, J.}, \bibinfo{author}{Chen, X.},
-  \bibinfo{author}{Gao, Y.}, \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{Multi-agent game abstraction via graph attention
-  neural network}, in: \bibinfo{booktitle}{Proceedings of the AAAI Conference
-  on Artificial Intelligence}.
-\newblock \URLprefix \url{https://arxiv.org/abs/1911.10715}.
 %Type = Inproceedings
 \bibitem[{Lowe et~al.(2019)Lowe, Foerster, Boureau, Pineau and
   Dauphin}]{lowe2019pitfalls}
@@ -178,25 +115,6 @@
   \bibinfo{pages}{4295--4304}.
 \newblock \URLprefix \url{https://proceedings.mlr.press/v80/rashid18a.html}.
 %Type = Inproceedings
-\bibitem[{Singh et~al.(2019)Singh, Jain and Sukhbaatar}]{singh2019learning}
-\bibinfo{author}{Singh, A.}, \bibinfo{author}{Jain, T.},
-  \bibinfo{author}{Sukhbaatar, S.}, \bibinfo{year}{2019}.
-\newblock \bibinfo{title}{Learning when to communicate at scale in multiagent
-  cooperative and competitive tasks}, in: \bibinfo{booktitle}{International
-  Conference on Learning Representations}.
-\newblock \URLprefix \url{https://arxiv.org/abs/1812.09755}.
-%Type = Inproceedings
-\bibitem[{Srinivasan et~al.(2025)Srinivasan, Zhang and
-  Tirkkonen}]{srinivasan2025asynchronous}
-\bibinfo{author}{Srinivasan, A.}, \bibinfo{author}{Zhang, J.},
-  \bibinfo{author}{Tirkkonen, O.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Asynchronous multi-agent reinforcement learning for
-  scheduling in subnetworks}, in: \bibinfo{booktitle}{2025 IEEE 101st Vehicular
-  Technology Conference (VTC2025-Spring)}.
-\newblock \URLprefix
-  \url{https://users.aalto.fi/~oltirkko/pubs/Srinivasan2025_VTCS.pdf},
-  \DOIprefix\doi{10.1109/VTC2025-Spring65109.2025.11174624}.
-%Type = Inproceedings
 \bibitem[{Sukhbaatar et~al.(2016)Sukhbaatar, Szlam and
   Fergus}]{sukhbaatar2016learning}
 \bibinfo{author}{Sukhbaatar, S.}, \bibinfo{author}{Szlam, A.},
@@ -205,26 +123,6 @@
   backpropagation}, in: \bibinfo{booktitle}{Advances in Neural Information
   Processing Systems}.
 \newblock \URLprefix \url{https://arxiv.org/abs/1605.07736}.
-%Type = Inproceedings
-\bibitem[{Wang et~al.(2020)Wang, He, Yu, Qiu, An and Rabinovich}]{wang2020imac}
-\bibinfo{author}{Wang, R.}, \bibinfo{author}{He, X.}, \bibinfo{author}{Yu, R.},
-  \bibinfo{author}{Qiu, W.}, \bibinfo{author}{An, B.},
-  \bibinfo{author}{Rabinovich, Z.}, \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{Learning efficient multi-agent communication: An
-  information bottleneck approach}, in: \bibinfo{booktitle}{Proceedings of the
-  37th International Conference on Machine Learning}, pp.
-  \bibinfo{pages}{9908--9918}.
-\newblock \URLprefix \url{https://proceedings.mlr.press/v119/wang20i.html}.
-%Type = Inproceedings
-\bibitem[{Yuan et~al.(2022)Yuan, Wang, Zhang, Wang, Zhang, Yu and
-  Zhang}]{yuan2022incentive}
-\bibinfo{author}{Yuan, L.}, \bibinfo{author}{Wang, J.}, \bibinfo{author}{Zhang,
-  F.}, \bibinfo{author}{Wang, C.}, \bibinfo{author}{Zhang, Z.},
-  \bibinfo{author}{Yu, Y.}, \bibinfo{author}{Zhang, C.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Multi-agent incentive communication via decentralized
-  teammate modeling}, in: \bibinfo{booktitle}{Proceedings of the AAAI
-  Conference on Artificial Intelligence}, pp. \bibinfo{pages}{9466--9474}.
-\newblock \DOIprefix\doi{10.1609/aaai.v36i9.21179}.
 %Type = Inproceedings
 \bibitem[{Yuan et~al.(2023)Yuan, Chung, Yuan and Fu}]{yuan2023dacom}
 \bibinfo{author}{Yuan, T.}, \bibinfo{author}{Chung, H.M.},
@@ -254,14 +152,5 @@
   Information Processing Systems}.
 \newblock \URLprefix
   \url{https://proceedings.neurips.cc/paper_files/paper/2020/hash/c82b013313066e0702d58dc70db033ca-Abstract.html}.
-%Type = Article
-\bibitem[{Zhu et~al.(2024)Zhu, Dastani and Wang}]{zhu2024survey}
-\bibinfo{author}{Zhu, C.}, \bibinfo{author}{Dastani, M.},
-  \bibinfo{author}{Wang, S.}, \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{A survey of multi-agent deep reinforcement learning
-  with communication}.
-\newblock \bibinfo{journal}{Autonomous Agents and Multi-Agent Systems}
-  \bibinfo{volume}{38}, \bibinfo{pages}{4}.
-\newblock \DOIprefix\doi{10.1007/s10458-023-09633-6}.
 
 \end{thebibliography}

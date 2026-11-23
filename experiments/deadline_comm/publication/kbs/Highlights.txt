@@ -1,4 +1,4 @@
-- Sender histories can diverge even when delivered counts match at every step.
-- At equal offered cost, timely admission gains 10.59 points on MNIST-sum.
-- Receiver-head adaptation improves normal-access broadcast accuracy by 6.43 points.
-- Selector cost changes delivery near packet-specific preparation thresholds.
+- Two rules saved 80% of bytes per step. Only round-robin preserved every action.
+- With two slots, sender IDs diverged at the second decision in all 400 comparisons.
+- At equal byte cost, timing-informed admission gained 10.59 points on MNIST-sum.
+- Fitting the receiver improved return by 1.29 per episode at fixed packet readiness.

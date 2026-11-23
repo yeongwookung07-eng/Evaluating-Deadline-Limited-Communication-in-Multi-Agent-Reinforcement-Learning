@@ -1,6 +1,11 @@
 Authors, in order: Yeong-woo Kung; Young-guk Ha
-Affiliations: awaiting author information
-Corresponding author and email: awaiting designation
+Shared affiliation: Smart Computing Laboratory, Department of Computer Science & Engineering, Konkuk University, Seoul 05029, Republic of Korea
+Corresponding author: Young-guk Ha (second author)
+Corresponding email: not supplied
 Funding, competing interests, CRediT roles: awaiting author confirmation
 Data availability/public URL: awaiting author decision
-Generative AI assistance disclosure: drafting, translation and editing assistance was used; authors must review and finalize the declaration and take responsibility for the content. No author approval is asserted here.
+Publisher disclosure wording for the authors to review before submission
+Methods (research software). OpenAI Codex assisted with implementing experiment and evaluation scripts, verifying checkpoint and rollout outputs, and preparing plotting code for recorded seed-level results.
+Manuscript preparation (immediately before the references). OpenAI Codex assisted with drafting, translation, organization and language editing of the manuscript.
+The publisher asks authors to confirm their review and responsibility. Only the authors can supply that confirmation. These statements are kept outside the present research-text edition; this note alone does not complete the manuscript disclosure.
+Publisher policy: https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals

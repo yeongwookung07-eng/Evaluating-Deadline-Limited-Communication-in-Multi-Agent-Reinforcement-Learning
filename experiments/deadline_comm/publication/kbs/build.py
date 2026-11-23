@@ -73,15 +73,26 @@ def main():
         main_text, supplement_text = [compile_document(name, output_log) for name in DOCUMENTS]
     if "Under review as submission to TMLR" in main_text:
         raise ValueError("Obsolete submission header")
-    for author in ("Yeong-woo Kung", "Young-guk Ha"):
-        if author not in main_text:
-            raise ValueError(f"Missing author: {author}")
+    for pdf_text in (main_text, supplement_text):
+        title_page = pdf_text.split("\f", 1)[0]
+        required = ("Yeong-woo Kung", "Young-guk Ha", "Smart Computing Laboratory",
+                    "Konkuk University", "05029", "Republic of Korea", "Corresponding author")
+        for item in required:
+            if item not in title_page:
+                raise ValueError(f"Missing title-page information: {item}")
+        if title_page.index("Yeong-woo Kung") > title_page.index("Young-guk Ha"):
+            raise ValueError("Incorrect author order")
+    if r"\csgdef{mark@corau2}{1}" not in (PAPER / "kbs_main.aux").read_text():
+        raise ValueError("Corresponding author marker missing for second author")
     state = dict(
         pages=sum(bool(page.strip()) for page in main_text.split("\f")),
         supplement_pages=sum(bool(page.strip()) for page in supplement_text.split("\f")),
         numerical_citations=bool(re.search(r"\[1[,\]]", main_text)),
         tmlr_preserved=check_historical_source(),
         compiled=True,
+        corresponding_author="Young-guk Ha",
+        affiliation_verified=True,
+        corresponding_email_supplied=False,
         author_details_pending=True,
         journal_guide_fully_verified=False,
     )
