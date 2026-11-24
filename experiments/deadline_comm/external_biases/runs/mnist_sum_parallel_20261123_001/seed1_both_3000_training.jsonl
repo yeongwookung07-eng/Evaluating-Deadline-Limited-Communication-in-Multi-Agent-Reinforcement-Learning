@@ -1,0 +1,15 @@
+{"update": 1600, "batch_reward": 0.03125, "elapsed": 8.75537741696462}
+{"update": 1700, "batch_reward": 0.125, "elapsed": 17.337335044983774}
+{"update": 1800, "batch_reward": 0.09375, "elapsed": 26.005360326962546}
+{"update": 1900, "batch_reward": 0.0625, "elapsed": 34.56728438194841}
+{"update": 2000, "batch_reward": 0.09375, "elapsed": 43.03351349197328}
+{"update": 2100, "batch_reward": 0.09375, "elapsed": 51.90875842189416}
+{"update": 2200, "batch_reward": 0.21875, "elapsed": 61.017227021977305}
+{"update": 2300, "batch_reward": 0.0625, "elapsed": 69.93244727188721}
+{"update": 2400, "batch_reward": 0.03125, "elapsed": 78.83102257503197}
+{"update": 2500, "batch_reward": 0.0625, "elapsed": 87.99596388801001}
+{"update": 2600, "batch_reward": 0.125, "elapsed": 95.49189554085024}
+{"update": 2700, "batch_reward": 0.09375, "elapsed": 102.61109840101562}
+{"update": 2800, "batch_reward": 0.09375, "elapsed": 109.48816633806564}
+{"update": 2900, "batch_reward": 0.03125, "elapsed": 116.52902763686143}
+{"update": 3000, "batch_reward": 0.125, "elapsed": 123.35679860692471}
