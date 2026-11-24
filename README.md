@@ -1,6 +1,6 @@
 # Evaluating Deadline-Limited Communication in Multi-Agent Reinforcement Learning
 
-**Delivery, Computation, and Control** — Yeong-woo Kung and Young-guk Ha.
+**Delivery, Computation, and Control**
 
 Experiment code, recorded results, trained checkpoints and analysis of communication under deadlines and cached reception. The study separates offered traffic, timely delivery, sender choice, initialization, CPU preparation and the acting policy's use of received information.
 
@@ -36,10 +36,3 @@ The experiments ask when lower traffic represents different received information
 - [Experiment map and configurations](docs/EXPERIMENTS.md)
 - [Recorded findings and limitations](docs/RESULTS.md)
 - [References and attribution](docs/REFERENCES.md)
-
-## Repository record
-
-| Date | Work | Status and commands |
-| --- | --- | --- |
-| 2026-11-24 | Initial selection of this study's code and analysis documents | Source edition published; retained in Git history. |
-| 2026-11-24 | Add downloadable settings, results, checkpoints, paper and execution helpers | Completed; validation in [setup](docs/REPRODUCE.md). Entry: `experiments/verify_results.py --recompute --tests`; settings: `experiments/deadline_comm/configs/`; artifacts: `results/`, `checkpoints/`. |
