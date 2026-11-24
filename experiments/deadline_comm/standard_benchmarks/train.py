@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch.nn import functional as F
-from framework.buffers.episode import Episode
+from models.shared.buffers.episode import Episode
 from ..common import load_config
 from ..day2.io import atomic_json
 from ..day2.policy import DecayedPolicy

@@ -1,0 +1,16 @@
+{
+  "task": "broadcast",
+  "n_agents": 5,
+  "seed": 5,
+  "method": "dac",
+  "condition": "medium_5ms",
+  "mean_return": 12.26,
+  "offered_B_step": 120.0,
+  "goodput_payload_B_step": 80.0,
+  "wasted_pct": 0.0,
+  "cache_invalid_pct": 3.0000001192092896,
+  "drop_pct": 0.0,
+  "deadline_misses": 0,
+  "budget_eligible": true,
+  "accuracy": 0.613
+}

@@ -1,0 +1,156 @@
+\begin{thebibliography}{14}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Ayan et~al.(2022)Ayan, Kutsevol, Ozkan and
+  Kellerer}]{ayan2022semantics}
+\bibinfo{author}{Ayan, O.}, \bibinfo{author}{Kutsevol, P.},
+  \bibinfo{author}{Ozkan, H.Y.}, \bibinfo{author}{Kellerer, W.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Semantics- and task-oriented scheduling for networked
+  control systems in practice}.
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{10},
+  \bibinfo{pages}{115673--115690}.
+\newblock \DOIprefix\doi{10.1109/ACCESS.2022.3218410}.
+%Type = Inproceedings
+\bibitem[{Das et~al.(2019)Das, Gervet, Romoff, Batra, Parikh, Rabbat and
+  Pineau}]{das2019tarmac}
+\bibinfo{author}{Das, A.}, \bibinfo{author}{Gervet, T.},
+  \bibinfo{author}{Romoff, J.}, \bibinfo{author}{Batra, D.},
+  \bibinfo{author}{Parikh, D.}, \bibinfo{author}{Rabbat, M.},
+  \bibinfo{author}{Pineau, J.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{TarMAC}: Targeted multi-agent communication}, in:
+  \bibinfo{booktitle}{Proceedings of the 36th International Conference on
+  Machine Learning}, pp. \bibinfo{pages}{1538--1546}.
+\newblock \URLprefix \url{https://proceedings.mlr.press/v97/das19a.html}.
+%Type = Inproceedings
+\bibitem[{Eccles et~al.(2019)Eccles, Bachrach, Lever, Lazaridou and
+  Graepel}]{eccles2019biases}
+\bibinfo{author}{Eccles, T.}, \bibinfo{author}{Bachrach, Y.},
+  \bibinfo{author}{Lever, G.}, \bibinfo{author}{Lazaridou, A.},
+  \bibinfo{author}{Graepel, T.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Biases for emergent communication in multi-agent
+  reinforcement learning}, in: \bibinfo{booktitle}{Advances in Neural
+  Information Processing Systems}.
+\newblock \URLprefix
+  \url{https://proceedings.neurips.cc/paper/2019/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}.
+%Type = Inproceedings
+\bibitem[{Foerster et~al.(2016)Foerster, Assael, de~Freitas and
+  Whiteson}]{foerster2016learning}
+\bibinfo{author}{Foerster, J.N.}, \bibinfo{author}{Assael, Y.M.},
+  \bibinfo{author}{de~Freitas, N.}, \bibinfo{author}{Whiteson, S.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Learning to communicate with deep multi-agent
+  reinforcement learning}, in: \bibinfo{booktitle}{Advances in Neural
+  Information Processing Systems}.
+\newblock \URLprefix \url{https://arxiv.org/abs/1605.06676}.
+%Type = Article
+\bibitem[{Hu et~al.(2023)Hu, Zhu, Zhao, Zhao and Hao}]{hu2023event}
+\bibinfo{author}{Hu, G.}, \bibinfo{author}{Zhu, Y.}, \bibinfo{author}{Zhao,
+  D.}, \bibinfo{author}{Zhao, M.}, \bibinfo{author}{Hao, J.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Event-triggered communication network with
+  limited-bandwidth constraint for multi-agent reinforcement learning}.
+\newblock \bibinfo{journal}{IEEE Transactions on Neural Networks and Learning
+  Systems} \bibinfo{volume}{34}, \bibinfo{pages}{3966--3978}.
+\newblock \DOIprefix\doi{10.1109/TNNLS.2021.3121546}.
+%Type = Article
+\bibitem[{Jung and Lee(2023)}]{jung2023splitting}
+\bibinfo{author}{Jung, S.}, \bibinfo{author}{Lee, H.W.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Optimization framework for splitting {DNN} inference
+  jobs over computing networks}.
+\newblock \bibinfo{journal}{Computer Networks} \bibinfo{volume}{232},
+  \bibinfo{pages}{109814}.
+\newblock \DOIprefix\doi{10.1016/j.comnet.2023.109814}.
+%Type = Inproceedings
+\bibitem[{Kaul et~al.(2012)Kaul, Yates and Gruteser}]{kaul2012real}
+\bibinfo{author}{Kaul, S.}, \bibinfo{author}{Yates, R.},
+  \bibinfo{author}{Gruteser, M.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Real-time status: How often should one update?}, in:
+  \bibinfo{booktitle}{IEEE INFOCOM}.
+\newblock \URLprefix
+  \url{https://www.winlab.rutgers.edu/~gruteser/papers/sanjitnew.pdf},
+  \DOIprefix\doi{10.1109/INFCOM.2012.6195689}.
+%Type = Inproceedings
+\bibitem[{Kim et~al.(2019)Kim, Moon, Hostallero, Kang, Lee, Son and
+  Yi}]{kim2019schedule}
+\bibinfo{author}{Kim, D.}, \bibinfo{author}{Moon, S.},
+  \bibinfo{author}{Hostallero, D.}, \bibinfo{author}{Kang, W.J.},
+  \bibinfo{author}{Lee, T.}, \bibinfo{author}{Son, K.}, \bibinfo{author}{Yi,
+  Y.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Learning to schedule communication in multi-agent
+  reinforcement learning}, in: \bibinfo{booktitle}{International Conference on
+  Learning Representations}.
+\newblock \URLprefix \url{https://arxiv.org/abs/1902.01554}.
+%Type = Inproceedings
+\bibitem[{Lowe et~al.(2019)Lowe, Foerster, Boureau, Pineau and
+  Dauphin}]{lowe2019pitfalls}
+\bibinfo{author}{Lowe, R.}, \bibinfo{author}{Foerster, J.},
+  \bibinfo{author}{Boureau, Y.L.}, \bibinfo{author}{Pineau, J.},
+  \bibinfo{author}{Dauphin, Y.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{On the pitfalls of measuring emergent communication},
+  in: \bibinfo{booktitle}{Proceedings of AAMAS}, pp. \bibinfo{pages}{693--701}.
+\newblock \URLprefix
+  \url{https://ifaamas.org/Proceedings/aamas2019/pdfs/p693.pdf}.
+%Type = Inproceedings
+\bibitem[{Rashid et~al.(2018)Rashid, Samvelyan, Schroeder, Farquhar, Foerster
+  and Whiteson}]{rashid2018qmix}
+\bibinfo{author}{Rashid, T.}, \bibinfo{author}{Samvelyan, M.},
+  \bibinfo{author}{Schroeder, C.}, \bibinfo{author}{Farquhar, G.},
+  \bibinfo{author}{Foerster, J.}, \bibinfo{author}{Whiteson, S.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{QMIX}: Monotonic value function factorisation for
+  deep multi-agent reinforcement learning}, in: \bibinfo{booktitle}{Proceedings
+  of the 35th International Conference on Machine Learning}, pp.
+  \bibinfo{pages}{4295--4304}.
+\newblock \URLprefix \url{https://proceedings.mlr.press/v80/rashid18a.html}.
+%Type = Inproceedings
+\bibitem[{Sukhbaatar et~al.(2016)Sukhbaatar, Szlam and
+  Fergus}]{sukhbaatar2016learning}
+\bibinfo{author}{Sukhbaatar, S.}, \bibinfo{author}{Szlam, A.},
+  \bibinfo{author}{Fergus, R.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Learning multiagent communication with
+  backpropagation}, in: \bibinfo{booktitle}{Advances in Neural Information
+  Processing Systems}.
+\newblock \URLprefix \url{https://arxiv.org/abs/1605.07736}.
+%Type = Inproceedings
+\bibitem[{Yuan et~al.(2023)Yuan, Chung, Yuan and Fu}]{yuan2023dacom}
+\bibinfo{author}{Yuan, T.}, \bibinfo{author}{Chung, H.M.},
+  \bibinfo{author}{Yuan, J.}, \bibinfo{author}{Fu, X.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{{DACOM}: Learning delay-aware communication for
+  multi-agent reinforcement learning}, in: \bibinfo{booktitle}{Proceedings of
+  the AAAI Conference on Artificial Intelligence}, pp.
+  \bibinfo{pages}{11763--11771}.
+\newblock \URLprefix
+  \url{https://ojs.aaai.org/index.php/AAAI/article/view/26389},
+  \DOIprefix\doi{10.1609/aaai.v37i10.26389}.
+%Type = Inproceedings
+\bibitem[{Zhang et~al.(2019)Zhang, Zhang and Lin}]{zhang2019efficient}
+\bibinfo{author}{Zhang, S.Q.}, \bibinfo{author}{Zhang, Q.},
+  \bibinfo{author}{Lin, J.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Efficient communication in multi-agent reinforcement
+  learning via variance based control}, in: \bibinfo{booktitle}{Advances in
+  Neural Information Processing Systems}.
+\newblock \URLprefix
+  \url{https://proceedings.neurips.cc/paper_files/paper/2019/hash/14cfdb59b5bda1fc245aadae15b1984a-Abstract.html}.
+%Type = Inproceedings
+\bibitem[{Zhang et~al.(2020)Zhang, Zhang and Lin}]{zhang2020succinct}
+\bibinfo{author}{Zhang, S.Q.}, \bibinfo{author}{Zhang, Q.},
+  \bibinfo{author}{Lin, J.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Succinct and robust multi-agent communication with
+  temporal message control}, in: \bibinfo{booktitle}{Advances in Neural
+  Information Processing Systems}.
+\newblock \URLprefix
+  \url{https://proceedings.neurips.cc/paper_files/paper/2020/hash/c82b013313066e0702d58dc70db033ca-Abstract.html}.
+
+\end{thebibliography}

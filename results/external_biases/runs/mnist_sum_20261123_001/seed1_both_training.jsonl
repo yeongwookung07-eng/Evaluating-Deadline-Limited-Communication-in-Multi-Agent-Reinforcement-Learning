@@ -1,0 +1,15 @@
+{"update": 100, "batch_reward": 0.0625, "speaker_loss": -0.403634250164032, "listener_loss": 0.0891079530119896, "elapsed": 246.43010000512004}
+{"update": 200, "batch_reward": 0.125, "speaker_loss": -0.3168630599975586, "listener_loss": 0.22313669323921204, "elapsed": 253.12474902905524}
+{"update": 300, "batch_reward": 0.03125, "speaker_loss": -0.6622176766395569, "listener_loss": -0.01656378246843815, "elapsed": 259.74090471304953}
+{"update": 400, "batch_reward": 0.0625, "speaker_loss": -0.6257749795913696, "listener_loss": 0.044599637389183044, "elapsed": 266.3291192580946}
+{"update": 500, "batch_reward": 0.0625, "speaker_loss": -0.7574468851089478, "listener_loss": 0.047196343541145325, "elapsed": 272.90493130893447}
+{"update": 600, "batch_reward": 0.0625, "speaker_loss": -0.729788601398468, "listener_loss": 0.03765873238444328, "elapsed": 279.4910696630832}
+{"update": 700, "batch_reward": 0.03125, "speaker_loss": -0.7361092567443848, "listener_loss": 0.0019175505731254816, "elapsed": 286.1081523699686}
+{"update": 800, "batch_reward": 0.09375, "speaker_loss": -0.7480100393295288, "listener_loss": 0.11569272726774216, "elapsed": 292.68128094193526}
+{"update": 900, "batch_reward": 0.0625, "speaker_loss": -0.7984626889228821, "listener_loss": 0.08536352217197418, "elapsed": 299.2581225100439}
+{"update": 1000, "batch_reward": 0.0625, "speaker_loss": -0.8003624677658081, "listener_loss": 0.06934823840856552, "elapsed": 305.8597548950929}
+{"update": 1100, "batch_reward": 0.0625, "speaker_loss": -0.757051408290863, "listener_loss": 0.038457103073596954, "elapsed": 312.49256982607767}
+{"update": 1200, "batch_reward": 0.09375, "speaker_loss": -0.6325467824935913, "listener_loss": 0.13307133316993713, "elapsed": 319.09510233299807}
+{"update": 1300, "batch_reward": 0.09375, "speaker_loss": -0.7471625804901123, "listener_loss": 0.07933922111988068, "elapsed": 325.6358822879847}
+{"update": 1400, "batch_reward": 0.03125, "speaker_loss": -0.7839528918266296, "listener_loss": -0.01033235527575016, "elapsed": 332.1619450750295}
+{"update": 1500, "batch_reward": 0.1875, "speaker_loss": -0.4937913417816162, "listener_loss": 0.3266851305961609, "elapsed": 338.6701817510184}

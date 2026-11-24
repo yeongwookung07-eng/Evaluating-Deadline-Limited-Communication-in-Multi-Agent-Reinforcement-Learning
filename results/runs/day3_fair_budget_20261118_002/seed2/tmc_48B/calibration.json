@@ -1,0 +1,163 @@
+{
+  "method": "tmc",
+  "budget": 48,
+  "selected": {
+    "parameter": 1.609375,
+    "offered_B_step": 47.21951219512195,
+    "error": 0.7804878048780495
+  },
+  "eligible": true,
+  "candidates": [
+    {
+      "parameter": 0.0,
+      "offered_B_step": 240.0,
+      "error": 192.0
+    },
+    {
+      "parameter": 0.01,
+      "offered_B_step": 240.0,
+      "error": 192.0
+    },
+    {
+      "parameter": 0.03,
+      "offered_B_step": 240.0,
+      "error": 192.0
+    },
+    {
+      "parameter": 0.1,
+      "offered_B_step": 229.4794520547945,
+      "error": 181.4794520547945
+    },
+    {
+      "parameter": 0.3,
+      "offered_B_step": 155.83561643835617,
+      "error": 107.83561643835617
+    },
+    {
+      "parameter": 1.0,
+      "offered_B_step": 98.3132530120482,
+      "error": 50.31325301204819
+    },
+    {
+      "parameter": 3.0,
+      "offered_B_step": 24.0,
+      "error": 24.0
+    },
+    {
+      "parameter": 10.0,
+      "offered_B_step": 17.142857142857142,
+      "error": 30.857142857142858
+    },
+    {
+      "parameter": 30.0,
+      "offered_B_step": 17.142857142857142,
+      "error": 30.857142857142858
+    },
+    {
+      "parameter": 100.0,
+      "offered_B_step": 17.142857142857142,
+      "error": 30.857142857142858
+    },
+    {
+      "parameter": 2.0,
+      "offered_B_step": 36.6412213740458,
+      "error": 11.358778625954201
+    },
+    {
+      "parameter": 6.5,
+      "offered_B_step": 17.142857142857142,
+      "error": 30.857142857142858
+    },
+    {
+      "parameter": 1.5,
+      "offered_B_step": 63.23076923076923,
+      "error": 15.230769230769234
+    },
+    {
+      "parameter": 2.5,
+      "offered_B_step": 30.17142857142857,
+      "error": 17.82857142857143
+    },
+    {
+      "parameter": 1.75,
+      "offered_B_step": 38.47328244274809,
+      "error": 9.526717557251906
+    },
+    {
+      "parameter": 2.25,
+      "offered_B_step": 32.57142857142857,
+      "error": 15.42857142857143
+    },
+    {
+      "parameter": 1.625,
+      "offered_B_step": 45.65853658536585,
+      "error": 2.3414634146341484
+    },
+    {
+      "parameter": 1.875,
+      "offered_B_step": 37.37404580152672,
+      "error": 10.62595419847328
+    },
+    {
+      "parameter": 1.5625,
+      "offered_B_step": 56.34782608695652,
+      "error": 8.347826086956523
+    },
+    {
+      "parameter": 1.6875,
+      "offered_B_step": 43.707317073170735,
+      "error": 4.292682926829265
+    },
+    {
+      "parameter": 1.59375,
+      "offered_B_step": 51.51219512195122,
+      "error": 3.5121951219512226
+    },
+    {
+      "parameter": 1.65625,
+      "offered_B_step": 44.09756097560975,
+      "error": 3.9024390243902474
+    },
+    {
+      "parameter": 1.609375,
+      "offered_B_step": 47.21951219512195,
+      "error": 0.7804878048780495
+    },
+    {
+      "parameter": 1.640625,
+      "offered_B_step": 44.48780487804878,
+      "error": 3.5121951219512226
+    },
+    {
+      "parameter": 1.6015625,
+      "offered_B_step": 51.51219512195122,
+      "error": 3.5121951219512226
+    },
+    {
+      "parameter": 1.6171875,
+      "offered_B_step": 45.65853658536585,
+      "error": 2.3414634146341484
+    },
+    {
+      "parameter": 1.60546875,
+      "offered_B_step": 51.1219512195122,
+      "error": 3.121951219512198
+    },
+    {
+      "parameter": 1.61328125,
+      "offered_B_step": 46.829268292682926,
+      "error": 1.1707317073170742
+    },
+    {
+      "parameter": 1.607421875,
+      "offered_B_step": 51.1219512195122,
+      "error": 3.121951219512198
+    },
+    {
+      "parameter": 1.611328125,
+      "offered_B_step": 46.829268292682926,
+      "error": 1.1707317073170742
+    }
+  ],
+  "reference": "fast_5ms"
+}

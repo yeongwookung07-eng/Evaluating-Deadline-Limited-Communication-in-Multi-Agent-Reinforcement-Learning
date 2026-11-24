@@ -9,7 +9,7 @@ import random
 from pathlib import Path
 import numpy as np
 
-SOURCE = Path(__file__).resolve().parents[3] / "external/upstreams/CASEC-MACO-benchmark/src/envs/hallway.py"
+SOURCE = Path(__file__).resolve().parents[3] / "experiments/deadline_comm/environments/upstream/CASEC-MACO-benchmark/src/envs/hallway.py"
 
 class _NumpyProxy:
     int = int

@@ -1,0 +1,43 @@
+{
+  "method": "periodic",
+  "budget": 96,
+  "selected": {
+    "parameter": 3,
+    "offered_B_step": 80.0,
+    "error": 16.0
+  },
+  "eligible": false,
+  "candidates": [
+    {
+      "parameter": 1,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 2,
+      "offered_B_step": 122.18181818181819,
+      "error": 26.181818181818187
+    },
+    {
+      "parameter": 3,
+      "offered_B_step": 80.0,
+      "error": 16.0
+    },
+    {
+      "parameter": 4,
+      "offered_B_step": 63.79746835443038,
+      "error": 32.20253164556962
+    },
+    {
+      "parameter": 5,
+      "offered_B_step": 48.0,
+      "error": 48.0
+    },
+    {
+      "parameter": 6,
+      "offered_B_step": 38.666666666666664,
+      "error": 57.333333333333336
+    }
+  ],
+  "reference": "fast_5ms"
+}

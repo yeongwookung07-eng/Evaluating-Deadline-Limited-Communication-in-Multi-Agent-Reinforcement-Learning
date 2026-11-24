@@ -1,0 +1,16 @@
+{
+  "task": "xor",
+  "n_agents": 5,
+  "seed": 7,
+  "method": "rr_cap",
+  "condition": "medium_2ms",
+  "mean_return": 10.053333333333333,
+  "offered_B_step": 93.936,
+  "goodput_payload_B_step": 62.4,
+  "wasted_pct": 0.35769034236075625,
+  "cache_invalid_pct": 6.14000009149313,
+  "drop_pct": 0.35769034236075625,
+  "deadline_misses": 0,
+  "budget_eligible": false,
+  "accuracy": 0.5026666666666666
+}

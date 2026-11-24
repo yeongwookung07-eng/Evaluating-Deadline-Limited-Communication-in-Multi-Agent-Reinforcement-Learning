@@ -1,4 +1,4 @@
-"""Recompute manuscript denominators, treatment checks and costs from frozen logs."""
+"""Recompute sampled-state denominators, treatment checks and costs from frozen logs."""
 import json,itertools,statistics,collections,csv
 from pathlib import Path
 import numpy as np

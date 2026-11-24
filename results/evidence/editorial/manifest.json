@@ -1,0 +1,30 @@
+[
+  {
+    "source": "experiments/deadline_comm/runs/tmlr_fresh_20261119_001/states.jsonl",
+    "archive": "tmlr_fresh_20261119_001__states.jsonl.gz",
+    "sha256": "589a5aba984b3ad07e7669e7f9c06a3c1a8fe1beb5c1b8f0e371afd852873887",
+    "bytes": 3964668,
+    "compressed_sha256": "0d569c5805bd6c87ed9bd92172ea62bef5fdea9c92e9e6945bbf1f7e260a7035"
+  },
+  {
+    "source": "experiments/deadline_comm/runs/tmlr_prefix_20261119_001/episodes.jsonl",
+    "archive": "tmlr_prefix_20261119_001__episodes.jsonl.gz",
+    "sha256": "ebed579d1b81bd6b54c0ff01fe8c603aad2dfa908e86637f91e96b3d2a882cbf",
+    "bytes": 14036456,
+    "compressed_sha256": "5e46bb28e4a1c4935b003d5d613e71c38984b9dc8601971c6911675ada68169b"
+  },
+  {
+    "source": "experiments/deadline_comm/runs/tmlr_readiness_20261119_001/episodes.jsonl",
+    "archive": "tmlr_readiness_20261119_001__episodes.jsonl.gz",
+    "sha256": "15470d4e65e1b07fbd28b8a6f3130098527f02cb9e25fdd8cbaa3db8c7452056",
+    "bytes": 3326647,
+    "compressed_sha256": "4d3242a46419d5b073a3246753253109483c98a6ed781cd23f6f94114668bcff"
+  },
+  {
+    "source": "experiments/deadline_comm/runs/tmlr_broadcast_20261119_001/steps.jsonl",
+    "archive": "tmlr_broadcast_20261119_001__steps.jsonl.gz",
+    "sha256": "5a56c5c85844c79c435a75fe537aac2ded23d116857819898f8fad9a1e008da0",
+    "bytes": 47336403,
+    "compressed_sha256": "3faf2fea77ee578e8c51f2051669d32ba59e5580572c32ceb43fa8a96dab4a7b"
+  }
+]

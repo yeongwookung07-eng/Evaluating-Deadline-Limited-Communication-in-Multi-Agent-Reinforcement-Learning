@@ -131,7 +131,7 @@ def aggregate(spec,root,rows):
     for r in means:
         sd='NA' if r['return_mean_sd'] is None else f"{r['return_mean_sd']:.3f}"
         lines.append(f"| {r['condition']} | {r['mode']} | {r['arm']} | {r['return_mean']:.3f} ± {sd} | {100*r['win_rate']:.2f}% | {r['offered_b_per_step']:.2f} | {r['goodput_b_per_step']:.2f} |")
-    lines.extend(['',f"Full–RR 동일 이력: {summary['identity']['passed']}/{len(identities)} 에피소드 통과. 불일치는 identity.json에 보존.",'','CI는 paired.json 상당의 summary.json paired 필드에 있으며 학습 seed 3개 기준 탐색적 구간입니다. 환경 reset 반복을 독립 학습 seed처럼 세지 않습니다.','새 결과의 원고 반영 전 학습 gate, 독립 엔진 재현 검사, 원시 episodes/steps/messages를 함께 확인해야 합니다.'])
+    lines.extend(['',f"Full–RR 동일 이력: {summary['identity']['passed']}/{len(identities)} 에피소드 통과. 불일치는 identity.json에 보존.",'','CI는 paired.json 상당의 summary.json paired 필드에 있으며 학습 seed 3개 기준 탐색적 구간입니다. 환경 reset 반복을 독립 학습 seed처럼 세지 않습니다.','학습 기준, 독립 엔진 재현 검사와 원시 episodes/steps/messages를 함께 확인해야 합니다.'])
     (root/'RESULTS_KO.md').write_text('\n'.join(lines)+'\n')
     return summary
 

@@ -1,4 +1,4 @@
-"""Reviewer checks from raw episodes, messages and training logs; no pooled-episode CI."""
+"""Paired checks from raw episodes, messages and training logs; no pooled-episode CI."""
 import argparse,csv,json,hashlib
 from pathlib import Path
 from collections import defaultdict
@@ -61,7 +61,7 @@ def main(cfg):
         c['iqm_'+side]=sum(x*max(0,min((i+1)/n,.75)-max(i/n,.25)) for i,x in enumerate(v))/.5
     result['notes'][2]='IQM integrates central 50% of ten seed means with fractional boundary weights; no episode pseudoreplication.'
     (out/'summary.json').write_text(json.dumps(result,indent=2,allow_nan=False))
-    lines=['# Reviewer raw evidence audit','', '120 matched-condition cells / 6,000 episode returns verified. Independent unit: training seed.','', '|Condition|Contrast|Difference|t 95% CI|BCa 95% CI|TOST p (±1, exploratory)|Approx. MDE80|','|---|---|---:|---|---|---:|---:|']
+    lines=['# Paired return and uncertainty analysis','', '120 matched-condition cells / 6,000 episode returns verified. Independent unit: training seed.','', '|Condition|Contrast|Difference|t 95% CI|BCa 95% CI|TOST p (±1, exploratory)|Approx. MDE80|','|---|---|---:|---|---|---:|---:|']
     for c in comparisons:lines.append(f"|{c['condition']}|{c['left']}−{c['right']}|{c['mean']:.3f}|{c['t95']}|{c['bca95']}|{c['tost_p']:.4f}|{c['approx_mde80']:.3f}|")
     lines+=['','## Delivered-set identity (common step support only)','|Condition|Comparison|Equal/common steps|','|---|---|---|']
     for cond in conditions:

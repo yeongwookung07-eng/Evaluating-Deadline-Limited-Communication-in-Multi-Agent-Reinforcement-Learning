@@ -1,4 +1,4 @@
-"""Seed-level analysis of registered reviewer interventions; no outcome filtering."""
+"""Seed-level analysis of paired communication interventions; no outcome filtering."""
 import json,statistics,hashlib
 from pathlib import Path
 from collections import defaultdict
@@ -35,7 +35,7 @@ def main():
   pseed.append(dict(condition=k[0],checkpoint_arm=k[1],seed=k[2],episodes=len(v),cold_delta=float(np.mean([x['cold_delta'] for x in v])),warm_unconditional_delta=float(np.mean([x['warm_delta'] for x in v])),warm_survivor_delta=float(np.mean(survivors)) if survivors else None,survivor_count=len(survivors),warm_mean_absolute_delta=float(np.mean([abs(x['warm_delta']) for x in v])),warm_changed_fraction=float(np.mean([x['warm_delta']!=0 for x in v])),prefix_steps=float(np.mean([x['prefix_steps'] for x in v])),prefix_wire=float(np.mean([x['prefix_wire'] for x in v])),prefix_model_ns=float(np.mean([x['prefix_model_ns'] for x in v]))))
  bseed=json.loads((broadcast/'summary.json').read_text())['records'];rseed=json.loads((ready/'summary.json').read_text())['records']
  result=dict(fresh_states=fresh_count,fresh_seed=fseed,phase_seed=phase_seed,prefix_seed=pseed,broadcast_seed=bseed,readiness_seed=rseed,unit='training seed; unadjusted descriptive t intervals; no selection of successful checkpoints')
- (OUT/'summary.json').write_text(json.dumps(result,indent=2));tables=[];report=['# TMLR reviewer experiment results','', 'All intervals use independent training-seed summaries. Branch/episode counts are not the inference sample size.','']
+ (OUT/'summary.json').write_text(json.dumps(result,indent=2));tables=[];report=['# Communication intervention results','', 'All intervals use independent training-seed summaries. Branch/episode counts are not the inference sample size.','']
  def table(title,headers,rows):
   report.extend([title,'|'+'|'.join(headers)+'|','|'+'|'.join(['---']*len(headers))+'|',*['|'+'|'.join(r)+'|' for r in rows],''])
  fr=[];pr=[]
@@ -107,7 +107,7 @@ def main():
  axs[2].set_xlabel('Deadline (ms)');axs[2].set_ylabel('Delivered packets / step');axs[2].legend(fontsize=7)
  axs[0].set_title('Primary checkpoint subsets');axs[1].set_title('Slow / 5 ms');axs[2].set_title('Medium; weights trained at 2 ms')
  fig.tight_layout();fig.savefig(OUT/'diagnostics.pdf');fig.savefig(OUT/'diagnostics.png',dpi=180)
- # compact LaTeX tables kept separate for the manuscript builder
+ # Export the same numerical tables in LaTeX format.
  tex=[]
  for label,title,heads,rs in [('fresh','Feasible fresh-message interventions on primary checkpoints. Range and regret are hindsight diagnostics.', ['Condition','Weights','Range [95\\% CI]','Regret','Effect \\%'],fr),('prefix','Shared-prefix effects, including early termination in total-return contrasts.', ['Condition','Weights','Cold diff.','Prefix diff. [95\\% CI]','Survivors'],pr)]:
   esc=lambda x:x.replace('_',r'\_')

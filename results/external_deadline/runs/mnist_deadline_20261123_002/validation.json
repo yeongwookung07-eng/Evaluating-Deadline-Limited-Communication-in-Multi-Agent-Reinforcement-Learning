@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "matched_episode_deadline_checks": 15360,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "exact_marginal_verified": true,
+  "input_hashes_verified": true,
+  "equal_mean_offered_budget_verified": true,
+  "scope": "Saved arrays independently recomputed; structural input identity, not new rollout evidence"
+}

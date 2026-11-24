@@ -1,0 +1,11 @@
+{
+  "stage": "completed",
+  "cells": 6,
+  "wall_seconds": 1.2094459421932697,
+  "checks": {
+    "historical_feature_policy_cells": 2,
+    "unchanged_source_head_checks": 6,
+    "frozen_parameter_checks": 6,
+    "matched_delivery_cells": 4
+  }
+}

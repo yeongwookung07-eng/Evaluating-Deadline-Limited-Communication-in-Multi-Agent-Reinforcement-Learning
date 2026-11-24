@@ -1,0 +1,263 @@
+{
+  "initial_states": 1024,
+  "steps": 4428,
+  "min_return": 20.0,
+  "max_return": 20.0,
+  "mean_return": 20.0,
+  "local_history_keys": 120,
+  "ambiguous_local_histories": 39,
+  "scope": "Exact own observation/action histories under privileged Oracle trajectories; not proof against all locally learned policies",
+  "examples": [
+    {
+      "agent": 0,
+      "history": [
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 1,
+      "history": [
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 2,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 3,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 4,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 4,
+      "history": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          1
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 2,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 3,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 4,
+      "history": [
+        [
+          3.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          1
+        ],
+        [
+          2.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          1
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "agent": 2,
+      "history": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          "previous_action",
+          0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "labels": [
+        0,
+        1
+      ]
+    }
+  ],
+  "environment": {
+    "n_agents": 5,
+    "state_numbers": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "group_ids": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ]
+  }
+}

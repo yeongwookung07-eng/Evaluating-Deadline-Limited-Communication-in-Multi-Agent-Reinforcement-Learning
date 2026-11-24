@@ -34,8 +34,8 @@ def save_csv(path,rows):
 def manifest(config, phase, seed, checkpoint=None):
     import torch
     from .adapters.hallway import SOURCE
-    sources = list(ROOT.rglob('*.py')) + [SOURCE,ROOT.parents[1]/'framework/agents/rnn_agent.py',
-        ROOT.parents[1]/'framework/buffers/episode.py',ROOT.parents[1]/'framework/learners/td_learner.py',
+    sources = list(ROOT.rglob('*.py')) + [SOURCE,ROOT.parents[1]/'models/shared/agents/rnn_agent.py',
+        ROOT.parents[1]/'models/shared/buffers/episode.py',ROOT.parents[1]/'models/shared/learners/td_learner.py',
         ROOT.parents[1]/'models/qmix/interface.py']
     return dict(status='running',phase=phase,created_utc=datetime.now(timezone.utc).isoformat(),
         config=config,config_hash=hashlib.sha256(json.dumps(config,sort_keys=True).encode()).hexdigest(),seed=seed,python=sys.version,torch=torch.__version__,platform=platform.platform(),

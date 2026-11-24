@@ -1,0 +1,35 @@
+{
+  "mean_return": 5.986388683319092,
+  "win_rate": 0.0,
+  "episodes": [
+    {
+      "episode": 0,
+      "return_": 5.902771472930908,
+      "won": false,
+      "length": 48,
+      "terminated": true,
+      "truncated": false,
+      "initial_state_sha256": "5074a93e7d521ddb7f26c5a0e26e48809a21b6b0923650d293ce20901ba44011",
+      "scenario_seed": 52000000,
+      "simulator_seconds": 0.14406334282830358,
+      "rollout_inference_seconds": 0.03467685543000698
+    },
+    {
+      "episode": 1,
+      "return_": 6.070005893707275,
+      "won": false,
+      "length": 39,
+      "terminated": true,
+      "truncated": false,
+      "initial_state_sha256": "fb5abd23c629bca145f94e6fa0ede0a71f41da811fd5280c6c4b517f468a9736",
+      "scenario_seed": 52000001,
+      "simulator_seconds": 0.120243223849684,
+      "rollout_inference_seconds": 0.030111944070085883
+    }
+  ],
+  "environment_steps": 102004,
+  "updates": 2405,
+  "checkpoint": "experiments/deadline_comm/runs/smacv2_protocol_20261121_001_smoke/phase_102000/seed0/checkpoint_final.pt",
+  "seconds": 29.935014486312866,
+  "learning_gate": false
+}

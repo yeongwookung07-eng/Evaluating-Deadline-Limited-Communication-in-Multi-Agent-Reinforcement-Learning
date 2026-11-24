@@ -1,7 +1,7 @@
 """Local vectorized equivalent of CommLearner; padded transitions excluded."""
 import torch
 from torch.nn import functional as F
-from framework.buffers.episode import EpisodeBatch
+from models.shared.buffers.episode import EpisodeBatch
 from .learner import CommLearner
 from .td_targets import td_target
 

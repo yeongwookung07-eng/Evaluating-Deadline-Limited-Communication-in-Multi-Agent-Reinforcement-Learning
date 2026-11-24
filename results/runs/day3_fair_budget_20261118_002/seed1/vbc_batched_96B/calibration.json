@@ -1,0 +1,163 @@
+{
+  "method": "vbc",
+  "budget": 96,
+  "selected": {
+    "parameter": 0.03546875,
+    "offered_B_step": 95.65714285714286,
+    "error": 0.34285714285714164
+  },
+  "eligible": true,
+  "candidates": [
+    {
+      "parameter": 0.0,
+      "offered_B_step": 0.0,
+      "error": 96.0
+    },
+    {
+      "parameter": 0.01,
+      "offered_B_step": 25.37142857142857,
+      "error": 70.62857142857143
+    },
+    {
+      "parameter": 0.03,
+      "offered_B_step": 74.74285714285715,
+      "error": 21.257142857142853
+    },
+    {
+      "parameter": 0.1,
+      "offered_B_step": 214.62857142857143,
+      "error": 118.62857142857143
+    },
+    {
+      "parameter": 0.3,
+      "offered_B_step": 237.94285714285715,
+      "error": 141.94285714285715
+    },
+    {
+      "parameter": 1.0,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 3.0,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 10.0,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 30.0,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 100.0,
+      "offered_B_step": 240.0,
+      "error": 144.0
+    },
+    {
+      "parameter": 0.02,
+      "offered_B_step": 50.74285714285714,
+      "error": 45.25714285714286
+    },
+    {
+      "parameter": 0.065,
+      "offered_B_step": 172.8,
+      "error": 76.80000000000001
+    },
+    {
+      "parameter": 0.025,
+      "offered_B_step": 61.371428571428574,
+      "error": 34.628571428571426
+    },
+    {
+      "parameter": 0.0475,
+      "offered_B_step": 119.31428571428572,
+      "error": 23.314285714285717
+    },
+    {
+      "parameter": 0.0275,
+      "offered_B_step": 67.54285714285714,
+      "error": 28.457142857142856
+    },
+    {
+      "parameter": 0.03875,
+      "offered_B_step": 103.88571428571429,
+      "error": 7.885714285714286
+    },
+    {
+      "parameter": 0.034375,
+      "offered_B_step": 92.57142857142857,
+      "error": 3.4285714285714306
+    },
+    {
+      "parameter": 0.043125,
+      "offered_B_step": 111.77142857142857,
+      "error": 15.771428571428572
+    },
+    {
+      "parameter": 0.0321875,
+      "offered_B_step": 80.91428571428571,
+      "error": 15.085714285714289
+    },
+    {
+      "parameter": 0.0365625,
+      "offered_B_step": 102.51428571428572,
+      "error": 6.51428571428572
+    },
+    {
+      "parameter": 0.03328125,
+      "offered_B_step": 85.71428571428571,
+      "error": 10.285714285714292
+    },
+    {
+      "parameter": 0.03546875,
+      "offered_B_step": 95.65714285714286,
+      "error": 0.34285714285714164
+    },
+    {
+      "parameter": 0.034921875000000005,
+      "offered_B_step": 93.25714285714285,
+      "error": 2.7428571428571473
+    },
+    {
+      "parameter": 0.036015624999999996,
+      "offered_B_step": 99.77142857142857,
+      "error": 3.7714285714285722
+    },
+    {
+      "parameter": 0.035195312500000006,
+      "offered_B_step": 93.94285714285714,
+      "error": 2.057142857142864
+    },
+    {
+      "parameter": 0.035742187499999994,
+      "offered_B_step": 96.68571428571428,
+      "error": 0.6857142857142833
+    },
+    {
+      "parameter": 0.03533203125000001,
+      "offered_B_step": 95.65714285714286,
+      "error": 0.34285714285714164
+    },
+    {
+      "parameter": 0.035605468749999994,
+      "offered_B_step": 95.65714285714286,
+      "error": 0.34285714285714164
+    },
+    {
+      "parameter": 0.035263671875000006,
+      "offered_B_step": 93.94285714285714,
+      "error": 2.057142857142864
+    },
+    {
+      "parameter": 0.035400390625,
+      "offered_B_step": 95.65714285714286,
+      "error": 0.34285714285714164
+    }
+  ],
+  "reference": "fast_5ms"
+}

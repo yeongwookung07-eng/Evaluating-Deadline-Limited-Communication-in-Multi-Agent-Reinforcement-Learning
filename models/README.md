@@ -1,5 +1,5 @@
-# QMIX dependency
+# Model and learning components
 
-`qmix/interface.py` implements the monotonic value mixer used for centralized training; agent utilities and global state are its inputs. Shared recurrent agent utilities select decentralized actions during inference. The communication policy adds the sender message encoder and receiver-input action head in the experiment component.
+`shared/` contains the recurrent agent, episode/replay structures and TD-learner base. `qmix/interface.py` implements the monotonic QMIX mixer for centralized training: agent utilities and global state are its inputs. Decentralized actions use recurrent agent utilities at inference. The experiment policy adds message encoding and a receiver-input action head.
 
-This is an existing QMIX baseline component, with TD training and a monotonic mixing structure. It is not the proposed contribution and does not introduce learned coordination factors or a minimum graph. Architecture settings are recorded in the Markdown configuration catalogue. Reference: Rashid et al., QMIX, ICML 2018.
+The models use TD training and monotonic value mixing. They are baseline components, with no new coordination-factor objective. Architecture settings are in [the YAML catalogue](../docs/CONFIGURATION.md), saved weights in [checkpoints](../checkpoints/README.md), and tests in [tests](../tests/README.md). Reference: Rashid et al., QMIX, ICML 2018; see [references](../docs/REFERENCES.md).

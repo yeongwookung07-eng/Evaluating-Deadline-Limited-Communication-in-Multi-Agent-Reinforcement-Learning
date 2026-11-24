@@ -1,0 +1,16 @@
+{
+  "task": "broadcast",
+  "n_agents": 5,
+  "seed": 0,
+  "method": "rr_cap",
+  "condition": "medium_2ms",
+  "mean_return": 10.9,
+  "offered_B_step": 94.848,
+  "goodput_payload_B_step": 62.4,
+  "wasted_pct": 1.3157894736842106,
+  "cache_invalid_pct": 6.52000009715557,
+  "drop_pct": 1.3157894736842106,
+  "deadline_misses": 0,
+  "budget_eligible": false,
+  "accuracy": 0.545
+}

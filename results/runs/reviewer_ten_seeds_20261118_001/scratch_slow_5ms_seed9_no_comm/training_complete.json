@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "seconds": 244.02078030188568,
+  "final_checkpoint": "experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001/scratch_slow_5ms_seed9_no_comm/checkpoint_1500.pt",
+  "job": {
+    "name": "scratch_slow_5ms_seed9_no_comm",
+    "family": "scratch_slow_5ms",
+    "seed": 9,
+    "arm": "no_comm",
+    "training_condition": [
+      20000,
+      5.0
+    ],
+    "updates": 1500
+  }
+}

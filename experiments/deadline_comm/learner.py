@@ -1,7 +1,7 @@
 """Double-Q learning on recorded delivery histories, never re-running gates."""
 import torch
 from torch.nn import functional as F
-from framework.learners.td_learner import TDLearner
+from models.shared.learners.td_learner import TDLearner
 from .td_targets import td_target
 
 

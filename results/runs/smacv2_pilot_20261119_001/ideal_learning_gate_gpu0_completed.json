@@ -1,0 +1,59 @@
+[
+  {
+    "job": {
+      "race": "terran",
+      "arm": "ideal_full",
+      "seed": 0
+    },
+    "summary": {
+      "stage": "completed",
+      "environment_steps": 100012,
+      "updates": 2362,
+      "initial_win_rate": 0.0,
+      "final_win_rate": 0.09375,
+      "final_return": 8.482138391584158,
+      "parameters_changed": true,
+      "learning_gate": false,
+      "seconds": 1088.6227626800537,
+      "final_checkpoint": "experiments/deadline_comm/runs/smacv2_pilot_20261119_001/terran_seed0_ideal_full/checkpoint_100012.pt"
+    }
+  },
+  {
+    "job": {
+      "race": "terran",
+      "arm": "ideal_full",
+      "seed": 1
+    },
+    "summary": {
+      "stage": "completed",
+      "environment_steps": 100012,
+      "updates": 2305,
+      "initial_win_rate": 0.0,
+      "final_win_rate": 0.03125,
+      "final_return": 7.395621098577976,
+      "parameters_changed": true,
+      "learning_gate": false,
+      "seconds": 1113.3360040187836,
+      "final_checkpoint": "experiments/deadline_comm/runs/smacv2_pilot_20261119_001/terran_seed1_ideal_full/checkpoint_100012.pt"
+    }
+  },
+  {
+    "job": {
+      "race": "terran",
+      "arm": "ideal_full",
+      "seed": 2
+    },
+    "summary": {
+      "stage": "completed",
+      "environment_steps": 100013,
+      "updates": 2347,
+      "initial_win_rate": 0.0,
+      "final_win_rate": 0.09375,
+      "final_return": 8.407645802944899,
+      "parameters_changed": true,
+      "learning_gate": false,
+      "seconds": 1088.7065088748932,
+      "final_checkpoint": "experiments/deadline_comm/runs/smacv2_pilot_20261119_001/terran_seed2_ideal_full/checkpoint_100013.pt"
+    }
+  }
+]

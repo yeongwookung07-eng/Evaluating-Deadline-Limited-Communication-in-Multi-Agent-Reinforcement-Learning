@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "seconds": 255.04852477298118,
+  "final_checkpoint": "experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001/scratch_slow_5ms_seed6_dac/checkpoint_1500.pt",
+  "job": {
+    "name": "scratch_slow_5ms_seed6_dac",
+    "family": "scratch_slow_5ms",
+    "seed": 6,
+    "arm": "dac",
+    "training_condition": [
+      20000,
+      5.0
+    ],
+    "updates": 1500
+  }
+}

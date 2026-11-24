@@ -11,7 +11,7 @@ from .timing import Timer
 from .transport import SerialLink
 from .gates import Gate
 from .replay import CommEpisode
-from framework.buffers.episode import Episode
+from models.shared.buffers.episode import Episode
 
 class DeadlineCommHarness:
     def __init__(self, policy, method, config, seed=0, measured=True):

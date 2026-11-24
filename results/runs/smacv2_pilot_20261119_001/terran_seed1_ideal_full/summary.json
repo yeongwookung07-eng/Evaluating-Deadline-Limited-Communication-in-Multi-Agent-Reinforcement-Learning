@@ -1,0 +1,12 @@
+{
+  "stage": "completed",
+  "environment_steps": 100012,
+  "updates": 2305,
+  "initial_win_rate": 0.0,
+  "final_win_rate": 0.03125,
+  "final_return": 7.395621098577976,
+  "parameters_changed": true,
+  "learning_gate": false,
+  "seconds": 1113.3360040187836,
+  "final_checkpoint": "experiments/deadline_comm/runs/smacv2_pilot_20261119_001/terran_seed1_ideal_full/checkpoint_100012.pt"
+}

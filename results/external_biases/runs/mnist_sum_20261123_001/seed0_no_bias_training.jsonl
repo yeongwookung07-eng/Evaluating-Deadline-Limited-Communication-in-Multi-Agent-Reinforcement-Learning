@@ -1,0 +1,15 @@
+{"update": 100, "batch_reward": 0.0625, "speaker_loss": 0.09866412729024887, "listener_loss": 0.08738292753696442, "elapsed": 5.489802641095594}
+{"update": 200, "batch_reward": 0.0625, "speaker_loss": 0.09572330117225647, "listener_loss": 0.05078823119401932, "elapsed": 10.032578625017777}
+{"update": 300, "batch_reward": 0.0625, "speaker_loss": 0.09806905686855316, "listener_loss": 0.06039796769618988, "elapsed": 14.552415539044887}
+{"update": 400, "batch_reward": 0.0625, "speaker_loss": 0.09535453468561172, "listener_loss": 0.07262474298477173, "elapsed": 19.080811569932848}
+{"update": 500, "batch_reward": 0.09375, "speaker_loss": 0.18676161766052246, "listener_loss": 0.15794134140014648, "elapsed": 23.609260782133788}
+{"update": 600, "batch_reward": 0.0, "speaker_loss": -0.08980797976255417, "listener_loss": -0.07991700619459152, "elapsed": 28.134260005084798}
+{"update": 700, "batch_reward": 0.09375, "speaker_loss": 0.18703460693359375, "listener_loss": 0.15146338939666748, "elapsed": 32.70037498394959}
+{"update": 800, "batch_reward": 0.03125, "speaker_loss": 0.010112792253494263, "listener_loss": -0.003565266728401184, "elapsed": 37.23923005210236}
+{"update": 900, "batch_reward": 0.03125, "speaker_loss": 0.00310555100440979, "listener_loss": -0.01158258318901062, "elapsed": 41.74710490112193}
+{"update": 1000, "batch_reward": 0.125, "speaker_loss": 0.27766934037208557, "listener_loss": 0.12815925478935242, "elapsed": 46.24580136802979}
+{"update": 1100, "batch_reward": 0.0625, "speaker_loss": 0.09171418845653534, "listener_loss": 0.11813470721244812, "elapsed": 50.73411920899525}
+{"update": 1200, "batch_reward": 0.09375, "speaker_loss": 0.19384080171585083, "listener_loss": 0.1373455822467804, "elapsed": 55.24627723102458}
+{"update": 1300, "batch_reward": 0.0, "speaker_loss": -0.0897301509976387, "listener_loss": -0.07873869687318802, "elapsed": 59.75903304410167}
+{"update": 1400, "batch_reward": 0.09375, "speaker_loss": 0.196075439453125, "listener_loss": 0.1384674310684204, "elapsed": 64.31063365098089}
+{"update": 1500, "batch_reward": 0.03125, "speaker_loss": 0.007021576166152954, "listener_loss": 0.002972058951854706, "elapsed": 68.79089624295011}

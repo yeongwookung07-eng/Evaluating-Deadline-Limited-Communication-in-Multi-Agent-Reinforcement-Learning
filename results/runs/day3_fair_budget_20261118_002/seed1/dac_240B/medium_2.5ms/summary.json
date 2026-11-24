@@ -1,0 +1,16 @@
+{
+  "mean_return": 7.5,
+  "offered_B_step": 140.57142857142858,
+  "goodput_payload_B_step": 93.6,
+  "wasted_pct": 0.12195121951219512,
+  "cache_invalid_pct": 6.500000203294413,
+  "drop_pct": 0.12195121951219512,
+  "deadline_misses": 0,
+  "budget_eligible": false,
+  "seed": 1,
+  "method": "dac",
+  "budget": 240,
+  "condition": "medium_2.5ms",
+  "step_p95_us": 2210.1750500000003,
+  "cpu_p95_us": 1109.1224
+}

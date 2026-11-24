@@ -1,0 +1,11 @@
+{
+  "return_mean": 7.075550426136363,
+  "win_rate": 0.0,
+  "offered_b_per_step": 240.0,
+  "goodput_b_per_step": 32.0,
+  "waste_fraction": 0.8,
+  "action_miss_rate": 0.02127659574468085,
+  "cpu_episode_mean_us": 610.2539574468086,
+  "episodes": 1,
+  "steps": 47
+}

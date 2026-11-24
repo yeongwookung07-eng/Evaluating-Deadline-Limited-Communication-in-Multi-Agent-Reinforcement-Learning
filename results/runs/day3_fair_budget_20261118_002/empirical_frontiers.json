@@ -1,0 +1,650 @@
+[
+  {
+    "condition": "fast_5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 48
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 120
+  },
+  {
+    "condition": "fast_5ms",
+    "cost": "step_p95_us",
+    "method": "tmc",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2.5ms",
+    "cost": "step_p95_us",
+    "method": "tmc",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 48
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 120
+  },
+  {
+    "condition": "fast_2ms",
+    "cost": "step_p95_us",
+    "method": "tmc",
+    "budget": 120
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "offered_B_step",
+    "method": "vbc",
+    "budget": 240
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 48
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 120
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "tmc",
+    "budget": 120
+  },
+  {
+    "condition": "fast_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc",
+    "budget": 240
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_2.5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_2ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc",
+    "budget": 96
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc",
+    "budget": 120
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc",
+    "budget": 48
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 96
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 160
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 240
+  },
+  {
+    "condition": "medium_1.5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "tmc",
+    "budget": 48
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 96
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 160
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "offered_B_step",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 48
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 160
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "vbc_batched",
+    "budget": 120
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "tmc",
+    "budget": 96
+  },
+  {
+    "condition": "slow_5ms",
+    "cost": "step_p95_us",
+    "method": "periodic",
+    "budget": 96
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 96
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 160
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_2.5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 96
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 160
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_2ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 48
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 96
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 120
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 160
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "offered_B_step",
+    "method": "dac",
+    "budget": 240
+  },
+  {
+    "condition": "slow_1.5ms",
+    "cost": "step_p95_us",
+    "method": "dac",
+    "budget": 120
+  }
+]

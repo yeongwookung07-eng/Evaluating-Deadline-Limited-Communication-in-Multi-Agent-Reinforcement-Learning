@@ -1,0 +1,4 @@
+{
+  "passed": false,
+  "reason": "An overstrong post-run assertion required identical source actions across changed closed-loop histories. Only source-head weights and same-input output are fixed; changed follower messages can change source-head inputs. No primary experiment assertion failed. Recheck without this invalid invariant and explicitly count changed source actions."
+}

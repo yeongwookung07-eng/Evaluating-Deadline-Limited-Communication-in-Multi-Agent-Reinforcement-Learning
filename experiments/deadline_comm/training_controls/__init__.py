@@ -1,1 +1,1 @@
-"""Isolated, registered training-time controls for the deadline manuscript."""
+"""Training-time controls for deadline-limited communication."""

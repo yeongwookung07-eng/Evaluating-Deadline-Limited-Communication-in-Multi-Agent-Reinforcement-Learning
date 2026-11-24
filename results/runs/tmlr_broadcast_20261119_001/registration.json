@@ -1,0 +1,39 @@
+{
+  "output": "experiments/deadline_comm/runs/tmlr_broadcast_20261119_001",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "methods": [
+    "no_comm",
+    "ideal_full",
+    "periodic",
+    "rr_cap",
+    "dac"
+  ],
+  "conditions": [
+    [
+      "slow",
+      5.0
+    ],
+    [
+      "medium",
+      2.0
+    ],
+    [
+      "medium",
+      5.0
+    ]
+  ],
+  "episodes": 20,
+  "reset_base": 14200000,
+  "wall_hours": 3
+}

@@ -1,0 +1,15 @@
+{
+  "seed": 5,
+  "family": "scratch_slow_5ms",
+  "arm": "rr_cap",
+  "deployment": "rr_cap",
+  "condition": "medium_5ms",
+  "mean_return": 4.8,
+  "offered_B_step": 119.9080459770115,
+  "goodput_payload_B_step": 79.93869731800767,
+  "wasted_pct": 0.0,
+  "cache_invalid_pct": 5.747126665151896,
+  "drop_pct": 0.0,
+  "deadline_misses": 0,
+  "budget_eligible": true
+}

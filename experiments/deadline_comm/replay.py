@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from copy import deepcopy
 from collections import deque
 import numpy as np
-from framework.buffers.episode import Episode
+from models.shared.buffers.episode import Episode
 
 @dataclass
 class CommEpisode:

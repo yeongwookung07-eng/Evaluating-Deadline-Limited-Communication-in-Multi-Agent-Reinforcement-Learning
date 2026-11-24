@@ -1,0 +1,19 @@
+{
+  "seed": 0,
+  "arm": "no_bias",
+  "updates": 12000,
+  "validation": {
+    "sampled": 0.0849609375,
+    "expected": 0.08948379117737204,
+    "shuffled": 0.08928186979483144,
+    "zero": 0.08894168024016835,
+    "exact": 0.08931621420560987,
+    "cic": 0.001060593625339834,
+    "original_listener_power": 0.0,
+    "original_speaker_power": 0.003070210572332144,
+    "uniform_speaker_expected": 0.09170515835285187,
+    "optimal_label_listener": 0.11328125,
+    "pairs": 1024,
+    "seed": 231123
+  }
+}

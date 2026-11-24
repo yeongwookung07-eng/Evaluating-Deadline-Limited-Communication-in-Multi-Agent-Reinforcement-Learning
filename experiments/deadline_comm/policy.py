@@ -1,7 +1,7 @@
 """Communication-conditioned utilities with shared existing GRU and QMIX mixer."""
 import torch
 from torch import nn
-from framework.agents.rnn_agent import RNNAgent
+from models.shared.agents.rnn_agent import RNNAgent
 from models.qmix.interface import MonotonicMixer
 
 class CommPolicy(nn.Module):

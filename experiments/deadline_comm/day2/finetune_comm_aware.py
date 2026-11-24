@@ -4,7 +4,7 @@ import gc
 import numpy as np
 import torch
 from torch.nn import functional as F
-from framework.buffers.episode import Episode
+from models.shared.buffers.episode import Episode
 from ..replay import CommEpisode, StratifiedReplay
 from ..oracle_bc_learner import OracleBCLearner
 from ..adapters.hallway import Hallway

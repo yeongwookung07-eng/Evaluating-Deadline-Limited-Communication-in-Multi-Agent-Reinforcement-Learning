@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from framework.agents.rnn_agent import RNNAgent
+from models.shared.agents.rnn_agent import RNNAgent
 from models.base import RecurrentJointQ
 
 

@@ -2,7 +2,7 @@
 import numpy as np
 import torch
 from torch.nn import functional as F
-from framework.buffers.episode import Episode
+from models.shared.buffers.episode import Episode
 from .harness import DeadlineCommHarness, rollout
 from .hallway_oracle_check import oracle_actions
 from .replay import CommEpisode

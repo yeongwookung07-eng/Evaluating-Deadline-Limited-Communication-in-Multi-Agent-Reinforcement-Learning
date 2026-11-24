@@ -2,49 +2,44 @@
 
 **Delivery, Computation, and Control** — Yeong-woo Kung and Young-guk Ha.
 
-This repository contains the experiment and analysis code for a study of MARL communication evaluation. The central question is whether traffic and episodic return identify the control contribution of message selection under deadlines and persistent reception. The experiments separate admission, timely delivery, sender choice, prior history, CPU preparation and receiver information use.
+Experiment code, recorded results, trained checkpoints and analysis of communication under deadlines and cached reception. The study separates offered traffic, timely delivery, sender choice, initialization, CPU preparation and the acting policy's use of received information.
 
-The current source edition is **2026-11-24**. It contains Python code and Markdown documentation, including the experiment settings. Trained models, datasets, recorded traces and manuscript files are not bundled. The quantitative findings below describe completed experiments; checking this source release does not regenerate their results.
+## Download and run
 
-## Start here
-
-- [Research question, methods and scope](docs/RESEARCH.md)
-- [Experiment map and commands](docs/EXPERIMENTS.md)
-- [Recorded findings](docs/RESULTS.md)
-- [Setup and source checks](docs/REPRODUCE.md)
-- [Configuration catalogue](docs/configs/README.md)
-- [References and attribution](docs/REFERENCES.md)
-
-The evaluation follows four stages: validate a learned communication reference; match delivery opportunities and costs; isolate sender choice and prior history; test whether the acting receiver uses its information. Oracle-assisted Hallway, Oracle-free broadcast and the published MNIST-sum game answer different parts of this question. DAC is an evaluated heuristic, not a proposed universally superior scheduler.
-
-## Code layout
-
-| Directory | Role |
-| --- | --- |
-| `experiments/deadline_comm/` | Policy, cache, serial transport, learning and evaluation |
-| `reviewer_validation/`, `review_revision/` within that directory | Primary training controls and matched delivery histories |
-| `tmlr_revision/` and its `robustness/` directory | Sender substitution, withholding, shared prefixes, weighting, timing and probes |
-| `attribution_boundaries/` | Delivery-identity boundary and direct receiver-memory reset |
-| `receiver_adaptation/` | Supervised follower-head intervention and shuffled-label control |
-| `external_biases/`, `external_deadline/` | Learned MNIST-sum reference and modeled-deadline admission |
-| `smac_protocol/` | Technical smoke, learning and independent replay checks |
-| `framework/`, `models/qmix/` | Required recurrent-agent, replay, TD and QMIX components |
-| `external/upstreams/CASEC-MACO-benchmark/` | Attributed upstream Hallway source |
-
-Historical directory names are retained so imports and saved experiment paths stay recognizable. The export omits manuscript generation and unrelated coordination-graph research.
-
-## Quick source check
+Clone this repository, or choose **Code → Download ZIP** and extract it. Run from the repository directory:
 
 ```bash
-python -m pip install torch numpy PyYAML scipy matplotlib pytest
-python scripts/check_source.py
-python scripts/check_source.py --tests
+python -m pip install -r requirements.txt
+python experiments/prepare_inputs.py
+python experiments/verify_results.py --recompute --tests
 ```
 
-The checks use CPU only and do not launch an experiment campaign. Evaluation entry points require their documented checkpoints and traces. Configuration YAML files can be generated locally from the Markdown catalogue; see [setup](docs/REPRODUCE.md).
+Preparation verifies the included files and copies them to the original experiment paths. Verification loads checkpoints, recalculates recorded comparisons and runs CPU tests and a small frozen-policy replay. It does not train policies. The repository includes 375 checkpoint files; raw MNIST images and the StarCraft II simulator are separate dependencies. See [setup and execution](docs/REPRODUCE.md).
 
-## Edition record
+## Contents
 
-| Date | Work | Status |
+| Directory | Contents |
+| --- | --- |
+| [experiments](experiments/README.md) | Experiment implementations, YAML settings and reproduction commands |
+| [docs](docs/RESEARCH.md) | Research question, experiment map, findings and references |
+| [models](models/README.md) | Recurrent-agent, replay, TD and QMIX components |
+| [results](results/README.md) | Recorded summaries, paired traces, receiver inputs and file hashes |
+| [tests](tests/README.md) | Tests of delivery, cache, learning and replay contracts |
+| [paper](paper/README.md) | Main paper, supplement, figures and LaTeX source |
+| [checkpoints](checkpoints/README.md) | Saved Hallway, broadcast/XOR, receiver, MNIST-sum and SMACv2 models |
+
+## Analysis
+
+The experiments ask when lower traffic represents different received information, whether sender choices change control, how shared history changes comparisons, whether CPU preparation changes delivery, and whether the acting policy uses information present in its input. Oracle-assisted Hallway, Oracle-free broadcast and the MNIST-sum game are reported separately. Failed learning and replay checks are retained alongside the completed comparisons.
+
+- [Research question and evaluation protocol](docs/RESEARCH.md)
+- [Experiment map and configurations](docs/EXPERIMENTS.md)
+- [Recorded findings and limitations](docs/RESULTS.md)
+- [References and attribution](docs/REFERENCES.md)
+
+## Repository record
+
+| Date | Work | Status and commands |
 | --- | --- | --- |
-| 2026-11-24 | Curate this study's experiment code, dependencies, settings and research documents from the completed work | Prepared source edition; validation recorded in `docs/REPRODUCE.md`. No new scientific experiment or training campaign. |
+| 2026-11-24 | Initial selection of this study's code and analysis documents | Source edition published; retained in Git history. |
+| 2026-11-24 | Add downloadable settings, results, checkpoints, paper and execution helpers | Completed; validation in [setup](docs/REPRODUCE.md). Entry: `experiments/verify_results.py --recompute --tests`; settings: `experiments/deadline_comm/configs/`; artifacts: `results/`, `checkpoints/`. |

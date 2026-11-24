@@ -38,7 +38,7 @@ def trajectory(env, model, method, cfg, seed, oracle=False, epsilon=.05):
     import numpy as np
     import torch
     from torch.nn import functional as F
-    from framework.buffers.episode import Episode
+    from models.shared.buffers.episode import Episode
     from ..replay import CommEpisode
     from ..hallway_oracle_check import oracle_actions
     from ..day2.followup_harness import Day2Harness
@@ -227,7 +227,7 @@ def summarize(records,out):
     for r in aggregates:
         sd=r['mean_return_sd'];w=r['wasted_pct']
         lines.append(f"|{r['family']}|{r['arm']}|{r['deployment']}|{r['condition']}|{r['mean_return']:.2f} ± {sd if sd is not None else 'NA'}|{r['offered_B_step']:.2f}|{r['goodput_payload_B_step']:.2f}|{w if w is not None else 'NA'}|{r['all_budget_eligible']}|")
-    lines += ['', 'Interpretation: positive DAC-minus-arm return deltas favor DAC only in that paired seed/condition. Read paired_deltas.csv before any consistency claim. Different offered loads are not equal-budget evidence. Experimental outcomes do not automatically alter the manuscript.']
+    lines += ['', 'Interpretation: positive DAC-minus-arm return deltas favor DAC only in that paired seed/condition. Read paired_deltas.csv before any consistency claim. Different offered loads are not equal-budget evidence. ']
     (out/'REPORT.md').write_text('\n'.join(lines)+'\n')
 
 
