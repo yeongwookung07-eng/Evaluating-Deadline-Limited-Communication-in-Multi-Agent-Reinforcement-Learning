@@ -1,8 +1,0 @@
-{
-  "states": 2654,
-  "candidate_subsets": 19875,
-  "withhold_branches": 3975,
-  "cohort_seed_groups": 40,
-  "no_outcome_selection": true,
-  "all_combinations_complete": true
-}

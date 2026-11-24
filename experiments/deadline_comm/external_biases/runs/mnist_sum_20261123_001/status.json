@@ -1,6 +1,0 @@
-{
-  "stage": "handed_off",
-  "common_updates": 1500,
-  "destination": "experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001",
-  "reason": "Prospective parallel execution amendment; objective/data/RNG retained; any uncheckpointed later serial work discarded"
-}

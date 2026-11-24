@@ -1,7 +1,5 @@
-# models
+# QMIX dependency
 
-Supporting implementation for the deadline-limited communication evaluation.
+`qmix/interface.py` implements the monotonic value mixer used for centralized training; agent utilities and global state are its inputs. Shared recurrent agent utilities select decentralized actions during inference. The communication policy adds the sender message encoder and receiver-input action head in the experiment component.
 
-Inputs: repository-relative YAML settings, fixed checkpoints and matched reset seeds where required. Outputs: code-specific JSON/CSV estimates, traces or test assertions. Preserve checkpoint, cache, timing and replay controls when interpreting results. No new learning objective or universal scheduler advantage is claimed.
-
-This is a selected source snapshot. See the root `REPRODUCE.md` for supported commands/dependencies and `EVIDENCE.md` for evidence, seeds and limitations. Existing study artifacts are retained separately from new runs; heavyweight inputs are omitted from this source snapshot and remain in the original research workspace.
+This is an existing QMIX baseline component, with TD training and a monotonic mixing structure. It is not the proposed contribution and does not introduce learned coordination factors or a minimum graph. Architecture settings are recorded in the Markdown configuration catalogue. Reference: Rashid et al., QMIX, ICML 2018.

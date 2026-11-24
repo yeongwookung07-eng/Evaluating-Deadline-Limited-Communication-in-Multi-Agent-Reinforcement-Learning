@@ -1,7 +1,0 @@
-output: experiments/deadline_comm/runs/reviewer_native_schednet_20261118_001
-seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-controls: [native, round_robin]
-steps: 50000
-testing_steps: 2500
-wall_hours: 8
-scope: Author Predator-Prey task; native SchedNet versus local scheduling intervention. Not Hallway deadline comparison or paper-score reproduction.

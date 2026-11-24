@@ -1,4 +1,4 @@
-"""Optional no-PID continuation from the six included common checkpoints."""
+"""Optional no-PID continuation from six separately supplied common checkpoints."""
 import argparse
 import json
 import os

@@ -1,0 +1,62 @@
+# reviewer_ten_seeds.yaml
+
+Original experiment configuration. Materialize with `python scripts/materialize_configs.py`.
+
+Output path: `experiments/deadline_comm/configs/reviewer_ten_seeds.yaml`.
+
+SHA256: `146412a0215de5521ee8b04ee4179b145333d24aedb200038f2e5cd4fa866ed3`
+
+```yaml
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+devices:
+- cuda:0
+- cuda:1
+base_run: experiments/deadline_comm/runs/day2_dac_marl_main_20261118_001
+continuation_updates: 0
+scratch_updates: 1500
+oracle_episodes: 50
+batch_size: 16
+wall_limit_hours: 32
+checkpoint_interval: 250
+evaluation_episodes: 50
+warmup_episodes: 2
+training_conditions:
+- - slow
+  - 5.0
+- - medium
+  - 2.0
+- - medium
+  - 5.0
+conditions:
+- - slow
+  - 5.0
+- - medium
+  - 2.0
+- - medium
+  - 5.0
+- - medium
+  - 1.5
+links:
+  medium: 100000
+  slow: 20000
+evaluation_seed_start: 8200000
+training_seed_start: 8100000
+methods:
+- full
+- periodic
+- dac
+- no_comm
+- ideal_full
+- rr_cap
+preflight_selection_config: experiments/deadline_comm/configs/q2_priority.yaml
+```

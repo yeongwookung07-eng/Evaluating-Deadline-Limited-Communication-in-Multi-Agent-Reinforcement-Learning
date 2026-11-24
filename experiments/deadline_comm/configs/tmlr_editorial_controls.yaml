@@ -1,6 +1,0 @@
-output: experiments/deadline_comm/runs/tmlr_editorial_controls_20261119_001
-seeds: [0,1,2,3,4,5,6,7,8,9]
-episodes: 50
-reset_base: 8200000
-max_steps: 7000
-scope: Uniform independent random actions; no training or communication. Same reset set as primary evaluation. RNG seeds are not training seeds.

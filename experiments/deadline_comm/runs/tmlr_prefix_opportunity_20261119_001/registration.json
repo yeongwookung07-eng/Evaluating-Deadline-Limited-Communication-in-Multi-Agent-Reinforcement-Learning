@@ -1,7 +1,0 @@
-{
-  "output": "experiments/deadline_comm/runs/tmlr_prefix_opportunity_20261119_001",
-  "source": "experiments/deadline_comm/runs/tmlr_prefix_20261119_001/episodes.jsonl",
-  "max_episodes": 800,
-  "max_oracle_steps": 11200,
-  "scope": "Replay saved prefixes exactly; schedule unresolved groups at earliest distinct completion steps using global state. This privileged remaining-return reference tests reward opportunity, not learned-policy competence or a deployable baseline. All prefixes retained, no selection on outcome."
-}

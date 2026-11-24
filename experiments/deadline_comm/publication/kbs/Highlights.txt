@@ -1,4 +1,0 @@
-- Two rules saved 80% of bytes per step. Only round-robin preserved every action.
-- With two slots, sender IDs diverged at the second decision in all 400 comparisons.
-- At equal byte cost, timing-informed admission gained 10.59 points on MNIST-sum.
-- Fitting the receiver improved return by 1.29 per episode at fixed packet readiness.

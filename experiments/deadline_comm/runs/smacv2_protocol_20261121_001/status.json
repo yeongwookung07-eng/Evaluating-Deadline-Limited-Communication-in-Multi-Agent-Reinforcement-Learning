@@ -1,5 +1,0 @@
-{
-  "stage": "failed",
-  "error": "RuntimeError('Worker failed 1: experiments/deadline_comm/runs/smacv2_protocol_20261121_001/evaluation.stdout.log')",
-  "seconds": 6418.428007364273
-}

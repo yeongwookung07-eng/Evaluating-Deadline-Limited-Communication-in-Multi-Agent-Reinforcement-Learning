@@ -1,7 +1,0 @@
-output: experiments/deadline_comm/runs/review_native_20261119_001_smoke
-seeds: [0]
-controls: [native, round_robin]
-steps: 1000
-testing_steps: 100
-wall_hours: 0.25
-scope: Compatibility smoke only; no scientific score claim.

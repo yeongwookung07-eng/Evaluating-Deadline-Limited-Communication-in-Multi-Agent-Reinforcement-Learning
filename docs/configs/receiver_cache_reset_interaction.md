@@ -1,0 +1,29 @@
+# receiver_cache_reset_interaction.yaml
+
+Original experiment configuration. Materialize with `python scripts/materialize_configs.py`.
+
+Output path: `experiments/deadline_comm/configs/receiver_cache_reset_interaction.yaml`.
+
+SHA256: `9fe275a1d3dfc7f43cbf20303c848482ee971a77833b07a63bba3343e8b38dc5`
+
+```yaml
+question: Does invalidating receiver cache at the same genuinely reached common RR prefix change the subsequent DAC-minus-RR selector contrast?
+contract: Replay original Slow/5ms common RR prefix, then clone full state for retained/invalidated receiver memory crossed with RR/DAC; invalidate cache vectors and source timestamps only.
+strongest_control: Every genuine prefix and both retained suffix traces must exactly match original logs; reset must preserve all other harness state at the intervention boundary.
+competing_explanation: Original zero prefix contrast reflects joint history rather than cache specifically; resetting receipt can change behavior yet leave selector contrast zero.
+falsification: Any no-op mismatch blocks conclusions; interaction interval including zero cannot support changed selector advantage; no interpretation as natural cold-start mediation.
+adoption: Only a direct receiver-reset effect at these reached states; includes payload,validity,age and aggregation metadata jointly, not pure content or initialization effect.
+output: experiments/deadline_comm/runs/receiver_cache_reset_interaction_20261123_001
+source_prefix: experiments/deadline_comm/runs/tmlr_prefix_20261119_001/episodes.jsonl
+checkpoint_template: experiments/deadline_comm/runs/reviewer_ten_seeds_20261118_001/scratch_slow_5ms_seed{seed}_rr_cap/checkpoint_1500.pt
+seeds: [0,1,2,3,4,5,6,7,8,9]
+episodes: 20
+reset_base: 14100000
+condition: [slow,5.0]
+checkpoint_arm: rr_cap
+wall_seconds: 180
+threads: 1
+primary_estimand: episode-average interaction within seed then equally weighted10training seeds; early terminated episodes contribute zero suffix contrast
+secondary_estimand: survivor-only seed means explicitly conditional; no pooling of branches as independent samples
+status: registered_before_execution
+```

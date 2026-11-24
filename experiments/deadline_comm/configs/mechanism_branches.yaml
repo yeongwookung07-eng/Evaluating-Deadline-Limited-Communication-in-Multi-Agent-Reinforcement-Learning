@@ -1,9 +1,0 @@
-output: experiments/deadline_comm/runs/mechanism_branches_20261119_001
-checkpoint: experiments/deadline_comm/runs/day2_followup_20261118_001/seed{seed}/checkpoint_0500.pt
-seeds: [0, 1, 2]
-methods: [rr_cap, dac]
-conditions: [[slow, 5.0], [medium, 2.0]]
-links: {slow: 20000, medium: 100000}
-episodes: 10
-reset_base: 11000000
-wall_hours: 2

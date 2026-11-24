@@ -1,8 +1,0 @@
-main_run: experiments/deadline_comm/runs/day2_dac_marl_main_20261118_001
-output: experiments/deadline_comm/runs/day2_followup_20261118_001
-seeds: [0, 1, 2]
-updates: 500
-episodes: 20
-repeats: 3
-links: {fast: 1000000, medium: 100000, slow: 20000}
-deadlines_ms: [5.0, 2.5, 2.0, 1.5]

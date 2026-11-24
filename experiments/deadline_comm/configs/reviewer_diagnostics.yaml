@@ -1,9 +1,0 @@
-output: experiments/deadline_comm/runs/reviewer_diagnostics_20261118_001
-agents: [5, 10, 20, 50]
-seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-network_steps: 500
-bandwidth_bytes_s: 20000
-step_seconds: 0.005
-loss_probabilities: [0.0, 0.1, 0.3]
-retries: [0, 2]
-hidden_episodes: 100

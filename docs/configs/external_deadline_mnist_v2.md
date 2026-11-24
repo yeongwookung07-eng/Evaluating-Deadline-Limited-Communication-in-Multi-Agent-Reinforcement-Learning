@@ -1,0 +1,41 @@
+# external_deadline_mnist_v2.yaml
+
+Original experiment configuration. Materialize with `python scripts/materialize_configs.py`.
+
+Output path: `experiments/deadline_comm/configs/external_deadline_mnist_v2.yaml`.
+
+SHA256: `748d83b1b9969ccf603135a9fb204ca16a8f47e5476ec7d7a54e33ecc321bc1e`
+
+```yaml
+question: Does deadline accounting add a distinct actionable attribution beyond message shuffling and causal action influence on the same successfully learned external MNIST-sum policy?
+contract: One-step two-agent game; exact expected reward marginalizes all20messages and19actions; no cache or temporal-policy intervention.
+strongest_control: Identical frozen checkpoint,image pair,exogenous readiness and deadline; dropping only late offers must preserve received input and full action distribution exactly.
+competing_explanation: Offered-byte saving follows modeled timing alone; original causal influence detects use but does not distinguish admission saving from changed timely delivery.
+falsification: Gate failure blocks diagnosis; any Full-admit distribution discrepancy falsifies identity; restoration without correct-sum gain prevents recommending delivery restoration.
+adoption: Only passing3seed validation supports conditional modeled deadline diagnosis; no deployed latency,author-score reproduction,cache mechanism or sender-choice generalization.
+checkpoint_run: experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001
+data: experiments/deadline_comm/external_biases/data
+output: experiments/deadline_comm/external_deadline/runs/mnist_deadline_20261123_002
+seeds: [0,1,2]
+arm: both
+pair_count: 1024
+pair_seed: 231125
+split: official_test_t10k_only
+readiness_us: [100,300,600,900]
+deadlines_us: [250,500,750,1000,1250]
+wire_bytes: 17
+symbol_payload_bytes: 1
+header_bytes: 16
+bandwidth_bytes_s: 100000
+propagation_us: 50
+restore_readiness_us: 0
+reception_deadline_only: true
+wall_seconds: 600
+threads: 1
+status: registered_before_reading_external_outcomes
+random_admission_seed: 231126
+random_admission_contract: At each deadline independently permute the timely mask without labels or source information; use exactly the same offered count as informed admission and same potential readiness; do not suppress late random offers before charging.
+random_admission_estimand: Paired informed-minus-random exact expected reward at equal mean offered bytes per independent episode; report action-distribution TV and received opportunity.
+source_amendment: Prospectively follow independently registered parallel continuation manifest; original validation criterion unchanged; use explicit frozen checkpoint paths in manifest.
+registration_amendment: Written before external outcomes were inspected; adds rate-matched random control to test incremental practical decision beyond structural Full-admit identity.
+```
