@@ -1,0 +1,27 @@
+{
+  "text_size_tex_pt": 10,
+  "figure_data_identical": [
+    "seed_distribution.pdf",
+    "diagnostics.pdf",
+    "receiver_adaptation.pdf"
+  ],
+  "titles_and_heading_hierarchy_preserved": true,
+  "math_scripts_preserved": true,
+  "documents": {
+    "kbs_main": {
+      "pages": 15,
+      "tables_unchanged": 11,
+      "scientific_body_unchanged": true,
+      "no_small_nonheading_text": true,
+      "no_overfull_or_missing_references": true
+    },
+    "kbs_supplement": {
+      "pages": 9,
+      "tables_unchanged": 7,
+      "scientific_body_unchanged": true,
+      "no_small_nonheading_text": true,
+      "no_overfull_or_missing_references": true
+    }
+  },
+  "figure_fonts_and_page_bounds_verified": true
+}

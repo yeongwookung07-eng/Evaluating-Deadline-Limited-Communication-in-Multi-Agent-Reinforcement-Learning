@@ -38,7 +38,7 @@ def write_source_zip():
     inputs = [
         PAPER / filename for filename in (
             "cas-dc.cls", "cas-common.sty", "cas-model2-names.bst", "elsarticle-num.bst", "references.bib",
-            "build.py",
+            "build.py", "plot_uniform_figures.py", "figure_inputs.json",
         )
     ]
     for name in DOCUMENTS:

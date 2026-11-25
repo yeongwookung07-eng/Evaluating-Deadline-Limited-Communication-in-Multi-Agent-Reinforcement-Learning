@@ -4,6 +4,12 @@
 \usepackage{lmodern,microtype,xurl}
 \hypersetup{hidelinks}
 \setlength{\emergencystretch}{1em}
+
+% Common 10pt text size; headings and mathematical scripts retain their hierarchy.
+\let\small\normalsize
+\let\footnotesize\normalsize
+\stmausetup{size=\normalsize}
+\AtBeginDocument{\renewcommand{\bibfont}{\normalsize}}
 \graphicspath{{figures/}}
 \newcommand{\ind}{\mathbf{1}}
 \begin{document}
@@ -30,9 +36,9 @@ Multi-agent reinforcement learning \sep Communication scheduling \sep Deadline c
   \begingroup
   \let\thefootnote\relax
   \footnotetext{\raggedright
-    \begin{tabular}{@{}l@{\ }l@{}}
-      \textit{Email addresses:} & \texttt{yeongwoo@konkuk.ac.kr} (Y. Kung);\\
-                               & \texttt{ygha@konkuk.ac.kr} (Y. Ha)
+    \begin{tabular}{@{}l@{}}
+      \textit{Email addresses:}\\ \texttt{yeongwoo@konkuk.ac.kr} (Y. Kung);\\
+      \texttt{ygha@konkuk.ac.kr} (Y. Ha)
     \end{tabular}}%
   \endgroup}
 
@@ -123,7 +129,7 @@ For Hallway and broadcast we report signed paired effects across seeds. We compa
 
 Table~\ref{tab:cohorts} identifies the checkpoint and pairing unit for each claim. In particular, the 400 Hallway comparisons reuse the same ten training seeds across resets and decay settings. Their count documents the coverage of the trace check. Between-seed uncertainty in return is estimated from the ten seed means.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Learning references and matched interventions. Each row describes a separate comparison. The learning procedure and the object held fixed determine the interpretation of each intervention.}\label{tab:cohorts}
 \begin{tabularx}{\textwidth}{@{}p{0.16\textwidth}XX@{}}
 \toprule
@@ -147,7 +153,7 @@ The remaining analysis concerns what the trained policies receive and use. Hidde
 \paragraph{Communication access and priority are different comparisons}
 Table~\ref{tab:learning_selection} separates the channel-access contrast used by DIAL and CommNet from the access-rule contrast used by SchedNet~\citep{foerster2016learning,sukhbaatar2016learning,kim2019schedule}. Each Hallway arm starts from fresh weights and receives the same 1,500-update budget and Oracle support. Ideal Full supplies fresh messages independently of channel capacity; No-Comm has no messages. Their positive paired gaps coexist with inconclusive DAC--RR contrasts in all three matched training and deployment conditions. Learning to benefit from channel access therefore does not establish that a particular priority improves on capacity-capped RR.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Learned channel access versus learned access-rule choice in Hallway. All rows use ten training seeds, Oracle assistance and 50 paired evaluation resets per seed. No-Comm and Ideal Full are mean $\pm$ sample SD; contrasts are paired seed means with unadjusted percentile-bootstrap 95\% intervals. The DAC--RR contrast compares independently trained configurations with measured readiness.}\label{tab:learning_selection}
 \begin{tabular}{lrrrr}\toprule
 Condition & No-Comm & Ideal Full & Ideal $-$ No-Comm [CI] & DAC $-$ RR [CI]\\\midrule
@@ -170,7 +176,7 @@ Changing only the access rule at the one-packet boundary also matters. On the sa
 
 When the Medium link delivers two updates per step, an evaluator looking only at counts and scores can miss the first change in control. Table~\ref{tab:history_match} follows the same ten checkpoints and resets from the offered load to the received information and the outcome. At the second decision, Full delivers senders $\{1,2\}$ while RR delivers $\{2,3\}$ in every pair. Among the 259 pairs with equal episodic return, 222 nevertheless have different action histories. Comparing the first divergence with the checkpoint, reset, decay and readiness held fixed locates an upstream change in the received information. Neither equal received counts nor equal return establishes that the controller used the same information.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Fixed-policy Hallway comparisons against Full. Each row contains ten Full-trained seeds, 20 resets and two matched cache decays (400 pairs). A history matches only if it agrees throughout the episode, including duration. In the two-packet condition the received count agrees at every common step, even when episode lengths differ. The saving is offered bytes per step.}\label{tab:history_match}
 \begin{tabular}{llrrrr}\toprule
 Link and deadline & Rule & Saving & Same count history & Same sender history & Same return\\\midrule
@@ -200,10 +206,10 @@ First, at 750 microseconds, always offering costs 17 bytes per episode. Offering
 
 Third, Full and timing-informed admission deliver identical inputs and action distributions on every pair at all five deadlines. Randomly permuting the admission mask across episodes preserves the offered count exactly and changes which offers arrive. At 750 microseconds, delivery falls from 50.00\% to 25.29\% and accuracy to 18.78\%. Timing-informed admission recovers 10.59 points at the same average offered cost, with paired seed gains of 10.03, 9.61 and 12.12 points. Equalizing offered cost leaves different amounts of useful communication available to the same listener. The gain disappears at the endpoints where every offer would miss or every offer would arrive (Table~\ref{tab:external_deadlines}). As a separate counterfactual at 750 microseconds, setting preparation time to zero while continuing to offer all 17 bytes restores 48.56\% accuracy, a 19.19-point gain [13.77, 24.60] over deadline-limited Full. The cost of achieving that speedup on hardware is unknown.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Frozen MNIST-sum policies under five modeled reception deadlines. Full always offers 17 bytes per episode. Informed and random admission offer the same mean bytes at each deadline. Accuracy is expected correct-sum reward in percent. Gains are paired percentage points with unadjusted 95\% $t$ intervals across three seeds.}\label{tab:external_deadlines}
 \begin{tabular}{rrrrr}\toprule
-Deadline ($\mu$s) & Informed/random bytes & Full and informed accuracy & Random accuracy & Informed $-$ random [95\% CI]\\\midrule
+Deadline ($\mu$s) & \shortstack[r]{Informed/random\\bytes} & \shortstack[r]{Full and informed\\accuracy} & \shortstack[r]{Random\\accuracy} & \shortstack[r]{Informed $-$ random\\{[95\% CI]}}\\\midrule
 250 & 0.00 & 9.61 & 9.61 & 0.00 [0.00, 0.00]\\
 500 & 4.25 & 20.21 & 12.22 & 7.99 [5.29, 10.69]\\
 750 & 8.50 & 29.37 & 18.78 & 10.59 [7.25, 13.92]\\
@@ -237,7 +243,7 @@ Let $X_{s,e}$ be the sampled states in episode $e$ of seed $s$. Within a seed, t
 \end{align}
 Both final estimates weight the ten seeds equally. The first gives more weight to longer factual episodes; the second asks about the average sampled decision in an equally weighted episode. It remains a one-decision intervention under the factual state distribution. Replacing the scheduler on every future step would create a different distribution.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \setlength{\tabcolsep}{4pt}
 \caption{A sender can matter without the factual rule having a resolved advantage. Each row uses ten training seeds and ten evaluation resets per seed. Effect is the seed-mean percentage of sampled states with different feasible-subset returns. The last two columns estimate Eq.~\eqref{eq:subset_contrast} under the two weightings. Brackets are unadjusted 95\% Student-$t$ intervals across seeds; branches are paired alternatives.}\label{tab:sender_weighting}
 \begin{tabular}{llrlll}\toprule
@@ -254,7 +260,7 @@ The two state-weighted intervals above zero belong to Slow/DAC and Medium/RR, no
 \paragraph{Removing an update asks a different question}
 Message interventions of the kind motivated by Lowe et al.~\citep{lowe2019pitfalls} can test dependence on received communication. We also withheld each actually delivered fresh sender update in turn at the sampled states. The attempt remained charged and no substitute filled its reception slot; the cache retained that sender's prior entry. The original scheduler resumed after the intervention. This changes the fresh received count, whereas Eq.~\eqref{eq:subset_contrast} holds the count fixed.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Withholding one actual fresh update in the same frozen-policy cohort. Values first average over withheld senders within each sampled state, then states within seed, then ten seeds. Intervals are descriptive paired Student-$t$ intervals over seed means. The final column is the correspondingly weighted percentage of withholding branches with a changed suffix return.}\label{tab:withholding}
 \begin{tabular}{llrrr}\toprule
 Condition & Weights & Withheld $-$ factual return [95\% CI] & Mean absolute change & Changed branches (\%)\\\midrule
@@ -277,7 +283,7 @@ TMC retains buffered messages between transmissions~\citep{zhang2020succinct}, a
 \paragraph{Switching after an identical history}
 After the common RR prefix, suffix return changes in 0 of 400 Slow/5 ms episodes and 15 of 400 Medium/2 ms episodes. Early termination is retained (Supplementary Section~S3). In the slow condition, 126 pairs nevertheless differ in delivered sets and 94 in actions on common suffix steps. Of 373 survivors, 38 have no unresolved group, 296 have one and 39 have two, with nine steps remaining. An executed global-state action reference verifies unused attainable reward in 335/400 pairs. This reference changes actions and can exploit state unavailable to the deployed policies. Thus identical messages, universal termination and reward saturation do not explain the zero return contrast. The same finite-horizon return can thus hide different later information and actions, even when additional reward remains attainable.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Changing the same access rule at different points in a trajectory. All differences are DAC minus RR with the indicated frozen weights and fixed readiness. Each row has ten training seeds and 20 paired resets per seed. The prefix comparison includes episodes that terminate before full sender coverage; its intervals use the ten seed means. Cold-start values are means.}\label{tab:history_by_cohort}
 \begin{tabular}{llrrr}\toprule
 Condition & Weights & Switch at reset & Switch after shared history [95\% CI] & Prefix survivors\\\midrule
@@ -295,7 +301,7 @@ The remaining-opportunity reference helps interpret the zero slow-link contrast.
 
 The contrast depends on when the access rule is changed. Table~\ref{tab:which_switch} compares three ways of asking whether priority access helps in the same slow-link setting. Training and deploying under each rule measures the combined change in weights and access. Holding RR-trained weights fixed and switching at reset measures the change over an entire episode. Switching after the common prefix measures the remaining effect at the states reached by RR. The shrinking contrast follows a change in the intervention and the states at which it is applied. The common prefix matches the whole past trajectory, so a separate intervention is needed to identify an effect of receiver memory.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{What changes when priority replaces RR? Three existing Slow/5 ms comparisons, each with ten training seeds. The first row uses measured readiness and 50 resets per seed (paired bootstrap interval). The other rows use the same RR checkpoints, fixed readiness and 20 resets per seed. The shared-prefix row retains early terminations.}\label{tab:which_switch}
 \begin{tabularx}{\textwidth}{@{}XXr@{}}
 \toprule
@@ -310,7 +316,7 @@ Freeze the same RR-trained policy & Switch after common RR history & $0.00$ in a
 \paragraph{Receiver memory changes actions at a flat reward endpoint}
 The temporal-reuse mechanism in TMC~\citep{zhang2020succinct} makes cached information a plausible explanation. We test it directly at the shared-history endpoint.
 A separate intervention crosses the two subsequent access rules with keeping the cache or clearing its payloads and validity timestamps at the same RR-prefix endpoint. We retain the environment state, recurrent state, receiver cache, credit, sender ages, cursor and remaining horizon before applying the memory intervention. In Slow/5 ms we replayed ten RR checkpoints on 20 resets each, keeping the 17 early terminations in the episode averages. The retained-cache branches reproduce the original suffixes. Clearing memory changed subsequent action histories in 154/200 RR and 155/200 DAC pairs. Every observed suffix return was zero in all four branches. A return-only comparison would miss a strong behavioral response to memory removal. Because suffix reward is zero throughout, this comparison cannot determine whether memory mediated the earlier return contrast. Matching a history and erasing a cache answer different questions; neither licenses assigning the whole scheduler difference to initialization.
-\begin{table}[pos=t]\centering\small
+\begin{table}[pos=t]\centering\normalsize
 \caption{Direct memory removal at the common Slow/5 ms RR-prefix endpoint: ten RR checkpoints and 200 resets, including 17 early terminations. All four retained/reset $\times$ RR/DAC branches have zero suffix return in every episode. Action differences compare cleared with retained memory under the same subsequent access rule.}\label{tab:memory_reset}
 \begin{tabular}{lrr}\toprule
 Later access & Changed histories & Changed returns\\\midrule
@@ -344,7 +350,7 @@ With source-aware access, accuracy rose from 65.08\% to 87.74\% (+22.67 points [
 \includegraphics[width=\linewidth]{receiver_adaptation.pdf}
 \caption{Change in acting accuracy on new broadcast episodes after fitting follower heads. Circles show each training seed's gain over the unchanged head, diamonds the ten-seed mean, and bars paired 95\% $t$ intervals. Normal RR supplies a current source update on 40\% of steps. Source-aware selection supplies it on all steps and incurs extra diagnostic CPU cost.}\label{fig:adaptation}
 \end{figure}
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Receiver adaptation with a matched shuffled-label control. Each access regime uses ten seeds, ten fit episodes and 20 fresh evaluation episodes per arm and seed. Accuracy and deadline misses are seed means in percent. The unchanged-input probe is fitted on the separate fit episodes and evaluated on inputs from the unchanged actor. All acting arms retain the same admission schedule within each regime.}\label{tab:receiver_controls}
 \begin{tabular}{llrr}\toprule
 Access & Receiver & Accuracy (\%) & Action deadline misses (\%)\\\midrule
@@ -369,7 +375,7 @@ The receiver intervention completes the distinction raised by the delivery tests
 \section{Implications for Communication Evaluation}\label{sec:discussion}
 The experiments expose successive ambiguities in the same inference. A reduction in offered traffic can remove only late attempts. Equal received counts can then hide different sender histories, and equal return can hide different actions. Even after sender identity is shown to matter, the factual priority may have no advantage over uniform feasible choices. Matching the whole preceding history changes the question again. Finally, timely information can remain underused by the acting receiver. Calling all of these outcomes ``communication efficiency'' is reasonable as a description of system cost and reward; assigning them all to useful message selection is not.
 
-\begin{table*}[pos=t]\centering\small
+\begin{table*}[pos=t]\centering\normalsize
 \caption{Four stages for attributing a communication-efficiency result. Each comparison resolves a different ambiguity between offered traffic and control.}\label{tab:evaluation_protocol}
 \begin{tabularx}{\textwidth}{@{}p{0.17\textwidth}XX@{}}
 \toprule
