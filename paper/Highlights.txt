@@ -1,0 +1,5 @@
+- An 80% traffic saving preserved all delivery and control histories in 400 pairs.
+- Equal packet counts and equal returns concealed different control histories.
+- Sender sensitivity did not establish an episode-weighted priority advantage.
+- Preparation time changed reception opportunities on the same nominal link.
+- Delivery and receiver interventions located distinct losses of useful information.

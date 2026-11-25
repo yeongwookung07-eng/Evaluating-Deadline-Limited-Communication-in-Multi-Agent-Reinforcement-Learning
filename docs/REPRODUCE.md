@@ -9,7 +9,7 @@ python -m pip install -r requirements.txt
 python experiments/prepare_inputs.py
 ```
 
-The repository includes 375 checkpoints and 103 NumPy input archives, together with recorded summaries and traces. [The manifest](../results/manifest.json) lists each packaged file's original path, size and SHA-256. Preparation verifies every entry and creates independent copies at the paths used by the original modules. It refuses to overwrite a different existing file. Allow roughly another 0.8 GB for these working copies. To check files without copying, use `python experiments/prepare_inputs.py --check-only`.
+The repository includes 375 checkpoints and 103 NumPy input archives in `data/`, together with recorded summaries and traces. [The manifest](../results/manifest.json) lists each packaged file's original path, size and SHA-256. Preparation verifies every entry and creates independent copies at the paths used by the original modules. It refuses to overwrite a different existing file. Allow roughly another 0.8 GB for these working copies. To check files without copying, use `python experiments/prepare_inputs.py --check-only`.
 
 Original YAML configurations are in [the configuration catalogue](CONFIGURATION.md). They preserve seeds, budgets, checkpoint paths and controls.
 
@@ -41,7 +41,7 @@ python experiments/fetch_mnist.py
 python experiments/verify_results.py --external-data experiments/deadline_comm/external_biases/data
 ```
 
-See `python experiments/fetch_mnist.py --help` for a custom destination. The inference command uses saved models and original test inputs to regenerate external-game results without training. Default verification already checks saved probabilities and labels included in `results/`.
+See `python experiments/fetch_mnist.py --help` for a custom destination. The inference command uses saved models and original test inputs to regenerate external-game results without training. Default verification already checks saved probabilities and labels included in `data/`.
 
 The six common 1,500-update continuation states and six selected 12,000-update states are included. `experiments/reproduce_external_continuation.py` prints continuation commands by default; its `--execute` option starts training and is unnecessary for verification.
 
@@ -64,3 +64,7 @@ On 2026-11-24, a separate copy containing only the public repository files passe
 - LaTeX build produced the 13-page main paper and 9-page supplement.
 
 No new training, GPU computation or StarCraft II run was used. These checks validate the included comparisons; they do not rerun every training history or reproduce the original hardware timings.
+
+## November 25 layout and paper update
+
+The 103 generated NumPy archives now live in `data/`; `prepare_inputs.py` resolves the updated manifest without changing scientific bytes. Validation completed: 5,703 asset hashes, 375 CPU checkpoint loads, 100 probe cells, 2,654 sender states, 800 shared prefixes, 2,400 structural pairs and 1,200 receiver episodes; saved external-game probability checks match. CPU tests: 56 passed, 1 skip for the unbundled early integration-smoke artifacts. The paper rebuilds to 14 main and 10 supplementary pages. No new training or GPU/simulator experiment ran.

@@ -1,6 +1,6 @@
 # Recorded results and analysis inputs
 
-This directory contains existing experiment summaries, paired traces, receiver-input arrays, training logs and validation outcomes. [manifest.json](manifest.json) maps packaged files to their original paths and records sizes and SHA-256 hashes. Model tensors are stored in [checkpoints](../checkpoints/README.md).
+This directory contains existing experiment summaries, paired traces, training logs and validation outcomes. [manifest.json](manifest.json) maps packaged files to their original paths and records sizes and SHA-256 hashes. Generated NumPy inputs are stored in [data](../data/README.md). Model tensors are stored in [checkpoints](../checkpoints/README.md).
 
 | Directory | Contents |
 | --- | --- |

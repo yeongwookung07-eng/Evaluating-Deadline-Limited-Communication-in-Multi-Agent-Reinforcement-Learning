@@ -20,13 +20,20 @@ Preparation verifies the included files and copies them to the original experime
 
 | Directory | Contents |
 | --- | --- |
+| [data](data/README.md) | Generated analysis inputs and receiver-feature arrays |
 | [experiments](experiments/README.md) | Experiment implementations, YAML settings and reproduction commands |
 | [docs](docs/RESEARCH.md) | Research question, experiment map, findings and references |
 | [models](models/README.md) | Recurrent-agent, replay, TD and QMIX components |
-| [results](results/README.md) | Recorded summaries, paired traces, receiver inputs and file hashes |
+| [results](results/README.md) | Recorded summaries, paired traces and file hashes |
 | [tests](tests/README.md) | Tests of delivery, cache, learning and replay contracts |
 | [paper](paper/README.md) | Main paper, supplement, figures and LaTeX source |
 | [checkpoints](checkpoints/README.md) | Saved Hallway, broadcast/XOR, receiver, MNIST-sum and SMACv2 models |
+
+## Paper and contact
+
+[Main paper](paper/kbs_main.pdf) · [Supplement S1–S6](paper/kbs_supplement.pdf) · [LaTeX sources](paper/kbs_source.zip).
+
+Yeong-woo Kung: yeongwoo@konkuk.ac.kr. Corresponding author Young-guk Ha: ygha@konkuk.ac.kr.
 
 ## Analysis
 

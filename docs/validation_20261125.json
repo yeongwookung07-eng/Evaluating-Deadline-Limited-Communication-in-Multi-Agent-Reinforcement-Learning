@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-25 KST",
+  "asset_hashes": 5703,
+  "checkpoints_cpu_loaded": 375,
+  "data_npz_archives": 103,
+  "data_bytes": 57167165,
+  "tests_passed": 56,
+  "tests_skipped": 1,
+  "skip_reason": "Unbundled early integration smoke artifacts",
+  "recompute_matched": true,
+  "paper_pages": 14,
+  "supplement_pages": 10,
+  "commands": [
+    "python experiments/prepare_inputs.py --check-only",
+    "python experiments/verify_results.py --recompute --tests",
+    "cd paper && python build.py"
+  ],
+  "training_started": false
+}

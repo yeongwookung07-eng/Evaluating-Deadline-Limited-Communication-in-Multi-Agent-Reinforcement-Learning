@@ -18,3 +18,5 @@ __pycache__/
 /paper/*.spl
 /paper/*.abs
 /paper/validation.json
+
+/experiments/deadline_comm/external_biases/reference_provenance.json

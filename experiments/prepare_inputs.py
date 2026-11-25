@@ -30,7 +30,7 @@ def prepare(check_only=False):
     manifest = json.loads((ROOT / 'results/manifest.json').read_text())
     copied = 0
     for row in manifest['files']:
-        source = inside(row['path'], {'results', 'checkpoints'})
+        source = inside(row['path'], {'data', 'results', 'checkpoints'})
         if source.stat().st_size != row['bytes'] or digest(source) != row['sha256']:
             raise ValueError(f'Bundled asset mismatch: {row["path"]}')
         if check_only:

@@ -25,7 +25,7 @@ def compile_document(name, output_log):
 
     log = (PAPER / f"{name}.log").read_text()
     for warning in ("undefined references", "undefined citations", "multiply defined",
-                    "Missing character", "Overfull", "Rerun to get cross-references right"):
+                    "Missing character", "Author undefined", "Overfull", "Rerun to get cross-references right"):
         if warning in log:
             raise ValueError(f"{name}.log: {warning}")
     pdf_text = subprocess.check_output(
@@ -37,7 +37,7 @@ def compile_document(name, output_log):
 def write_source_zip():
     inputs = [
         PAPER / filename for filename in (
-            "cas-dc.cls", "cas-common.sty", "cas-model2-names.bst", "references.bib",
+            "cas-dc.cls", "cas-common.sty", "cas-model2-names.bst", "elsarticle-num.bst", "references.bib",
             "build.py",
         )
     ]
