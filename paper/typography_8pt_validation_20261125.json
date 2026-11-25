@@ -1,0 +1,19 @@
+{
+  "text_size_tex_pt": 8,
+  "figure_heading_size_tex_pt": 10,
+  "titles_and_section_heading_sizes_preserved": true,
+  "all_plot_data_identical": true,
+  "documents": {
+    "kbs_main": {
+      "pages": 11,
+      "entire_document_body_unchanged": true,
+      "no_small_nonheading_text": true
+    },
+    "kbs_supplement": {
+      "pages": 7,
+      "entire_document_body_unchanged": true,
+      "no_small_nonheading_text": true
+    }
+  },
+  "total_pages": 18
+}

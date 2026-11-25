@@ -5,7 +5,16 @@
 \hypersetup{hidelinks}
 \setlength{\emergencystretch}{1em}
 
-% Common 10pt text size; headings and mathematical scripts retain their hierarchy.
+% Common 8pt text size; title and section-heading sizes are unchanged.
+\makeatletter
+\renewcommand{\normalsize}{%
+  \@setfontsize\normalsize{8pt}{10pt}%
+  \abovedisplayskip 8pt plus 2pt minus 4pt%
+  \abovedisplayshortskip 0pt plus 2pt%
+  \belowdisplayshortskip 5pt plus 2pt minus 2pt%
+  \belowdisplayskip \abovedisplayskip}
+\makeatother
+\normalsize
 \let\small\normalsize
 \let\footnotesize\normalsize
 \stmausetup{size=\normalsize}

@@ -1,7 +1,7 @@
 # Paper and supplement
 
-- [Main paper](kbs_main.pdf): 15 pages, including references.
-- [Supplement](kbs_supplement.pdf): 9 pages.
+- [Main paper](kbs_main.pdf): 11 pages, including references.
+- [Supplement](kbs_supplement.pdf): 7 pages.
 - [LaTeX source archive](kbs_source.zip).
 
 Source files, bibliography, figures and style files are included here. With the required LaTeX tools installed, run `python build.py` from this directory to build both PDFs. Historical filenames are retained.
@@ -15,3 +15,5 @@ Typography update (2026-11-25): non-heading text and figure labels use 10pt thro
 Author-role correction (2026-11-25): Young-guk Ha’s current CRediT roles are Supervision; Project administration; Writing – review & editing. The funding-acquisition role was removed at the author’s request.
 
 Analysis prose revision (2026-11-25): revised the Abstract’s protocol sentence (226 words total), the Introduction’s claim paragraph and three Section 6 discussion paragraphs to connect the controls and interpretations more naturally. No tables, equations, numerical findings, citations or scope limitations changed. See `analysis_prose_validation_20261125.json`.
+
+Current 8pt edition (2026-11-25, author request): main 11 pages and supplement 7 pages; total 18. Non-heading text and plot labels use 8pt; title/section and figure-heading sizes are preserved. No prose, citations, results or plotted numerical data changed. See `typography_8pt_validation_20261125.json`. Earlier dated size/page descriptions are historical.

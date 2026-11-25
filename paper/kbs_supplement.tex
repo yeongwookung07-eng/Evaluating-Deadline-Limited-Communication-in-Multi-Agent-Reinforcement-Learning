@@ -1,10 +1,19 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[margin=24mm]{geometry}
-\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,adjustbox,placeins,lmodern,microtype,xurl}
+\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,adjustbox,placeins,lmodern,microtype,xurl,etoolbox}
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage[hidelinks]{hyperref}
 
-% Common 10pt text size; headings and mathematical scripts retain their hierarchy.
+% Common 8pt text size; title and section-heading sizes are unchanged.
+\makeatletter
+\renewcommand{\normalsize}{%
+  \@setfontsize\normalsize{8pt}{10pt}%
+  \abovedisplayskip 8pt plus 2pt minus 4pt%
+  \abovedisplayshortskip 0pt plus 2pt%
+  \belowdisplayshortskip 5pt plus 2pt minus 2pt%
+  \belowdisplayskip \abovedisplayskip}
+\makeatother
+\normalsize
 \let\small\normalsize
 \let\footnotesize\normalsize
 \graphicspath{{figures/}}
@@ -20,6 +29,10 @@
 \small Young-guk Ha: \texttt{ygha@konkuk.ac.kr}}
 \date{}
 \renewcommand{\large}{\fontsize{12pt}{14pt}\selectfont}
+% Preserve the article class's 10pt run-in and third-level headings.
+\patchcmd{\subsubsection}{\normalsize}{\fontsize{10pt}{12pt}\selectfont}{}{}
+\patchcmd{\paragraph}{\normalsize}{\fontsize{10pt}{12pt}\selectfont}{}{}
+\patchcmd{\subparagraph}{\normalsize}{\fontsize{10pt}{12pt}\selectfont}{}{}
 \begin{document}
 \maketitle
 \section{Access rules, training and replay}\label{app:settings}

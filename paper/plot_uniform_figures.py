@@ -1,4 +1,4 @@
-"""Render KBS figures at final print width with a common 10 TeX-point text size.
+"""Render KBS figures at final print width with a common 8 TeX-point text size.
 
 Uses frozen figure_inputs.json; runs no training or statistical estimation.
 """
@@ -10,14 +10,14 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 HERE=Path(__file__).resolve().parent
 OUT=HERE/'figures'
-TEXT=10*72/72.27
+TEXT=8*72/72.27
 MAIN_WIDTH=(210-2*18.1)/25.4
 SUPP_WIDTH=(210-2*24)/25.4
 def main():
  inputs=json.loads((HERE/'figure_inputs.json').read_text())
  d=inputs['diagnostics']
  old={'raw_seed_results':inputs['seeds']}
- plt.rcParams.update({'font.size':TEXT,'axes.labelsize':TEXT,'axes.titlesize':TEXT,'xtick.labelsize':TEXT,'ytick.labelsize':TEXT,'legend.fontsize':TEXT,'pdf.fonttype':42})
+ plt.rcParams.update({'font.size':TEXT,'axes.labelsize':TEXT,'axes.titlesize':10*72/72.27,'xtick.labelsize':TEXT,'ytick.labelsize':TEXT,'legend.fontsize':TEXT,'pdf.fonttype':42})
  colors={'rr_cap':'tab:blue','dac':'tab:orange','full':'tab:green','periodic':'tab:purple'}
  names={'rr_cap':'RR','dac':'DAC','full':'Full','periodic':'Periodic'}
  fig,axs=plt.subplots(1,3,figsize=(SUPP_WIDTH,2.8),sharey=True)
