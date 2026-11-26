@@ -13,3 +13,7 @@ This directory contains existing experiment summaries, paired traces, training l
 Run `python experiments/prepare_inputs.py` to verify and copy files to their original input locations. Packaged observations stay here; recomputation uses separate working copies and temporary outputs. Use a new directory for new observations.
 
 [The findings](../docs/RESULTS.md) explain estimates, uncertainty and failed checks. [Setup](../docs/REPRODUCE.md) describes which statistics can be regenerated and which evaluations require separate datasets or simulators.
+
+## JAAMAS deployment robustness
+
+`runs/mnist_uncertain_readiness_20261126_001/` stores the exact uncertainty/cost summaries; `runs/broadcast_hard_deadline_20261126_001/` contains three process runs,18,000episode traces,360,000steps, summaries and independent validation. The manifest now includes5,741assets; original observations are preserved. New NPZ inputs reside under `data/runs/`. [Interpretation](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md).

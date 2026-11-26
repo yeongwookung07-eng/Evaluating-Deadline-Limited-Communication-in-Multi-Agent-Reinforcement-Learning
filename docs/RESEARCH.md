@@ -33,3 +33,7 @@ A shared RR prefix matches environment state, recurrent state, cache, scheduler 
 - **SMACv2/XOR:** negative learning and replay outcomes remain part of the results. A technical smoke does not establish a learned multi-seed deployment effect.
 
 The study does not establish a new learning objective, native VBC/TMC/SchedNet superiority, universal communication necessity or a generally superior DAC scheduler. The experiments probe interpretations of evaluation practice on the specified tasks and policies. [References](REFERENCES.md).
+
+## JAAMAS scope update
+
+The evaluation-framework contribution is unchanged. Frozen-policy checks now assess modeled readiness uncertainty/decision overhead and actually rejected late actions. Benefits are conditional and can disappear or reverse; no measured predictor, physical actuator guarantee or standard-benchmark generalization is established. [Protocol](../experiments/deadline_comm/deployment_robustness/README.md).

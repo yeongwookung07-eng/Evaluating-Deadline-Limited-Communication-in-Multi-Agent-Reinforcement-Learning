@@ -1,0 +1,12 @@
+output: experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001
+source_run: experiments/deadline_comm/external_deadline/runs/mnist_deadline_20261123_002
+checkpoint_run: experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001
+data: experiments/deadline_comm/external_biases/data
+seeds: [0, 1, 2]
+deadlines_us: [250, 500, 750, 1000, 1250]
+noise_sd_us: [0, 50, 100, 200, 400, 800]
+bias_us: [-200, 0, 200]
+decision_cost_us: [0, 50, 100, 200, 400]
+primary: {deadline_us: 750, noise_sd_us: 100, bias_us: 0, decision_cost_us: 100}
+wall_seconds: 600
+threads: 1

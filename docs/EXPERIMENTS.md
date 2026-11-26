@@ -30,3 +30,7 @@ python experiments/verify_results.py --recompute --tests
 The verification command checks the packaged files, loads checkpoints, recomputes sender/history and receiver statistics, compares saved external-game probabilities and runs a small frozen-policy replay in temporary directories. It does not train policies. [Detailed commands and dependencies](REPRODUCE.md).
 
 For a new experiment, copy its YAML and choose a new output directory. The recorded output paths already contain the completed observations after preparation. The original experiment implementations remain under their existing module names; shared GRU, replay and TD infrastructure is under `models/shared/`.
+
+## JAAMAS extension — 2026-11-26
+
+[Uncertain readiness and causal late-action rejection](../experiments/deadline_comm/deployment_robustness/README.md): frozen MNIST-sum3seeds and broadcast10seeds, existing adapted/shuffled heads. Entry points `deployment_robustness.mnist_uncertain_readiness` / `broadcast_hard_deadline`; settings `mnist_uncertain_readiness.yaml` / `broadcast_hard_deadline.yaml`.450modeled timing cells and18,000fresh broadcast episodes. [Complete results](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md).

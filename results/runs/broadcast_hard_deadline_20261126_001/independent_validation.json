@@ -1,0 +1,17 @@
+{
+  "mnist": {
+    "passed": true,
+    "example_cells": 1382400,
+    "probabilities_by_independent_erfc": true,
+    "all_summary_intervals": true,
+    "source_hashes": true
+  },
+  "broadcast": {
+    "passed": true,
+    "episodes": 18000,
+    "steps": 360000,
+    "fallbacks_rewards_timing_delivery_verified": true,
+    "seed_level_aggregation": true,
+    "source_hashes": true
+  }
+}

@@ -36,3 +36,5 @@ The YAML files contain the recorded seeds, training/evaluation budgets, checkpoi
 - [tmlr_readiness.yaml](../experiments/deadline_comm/configs/tmlr_readiness.yaml)
 - [tmlr_receiver_probe.yaml](../experiments/deadline_comm/configs/tmlr_receiver_probe.yaml)
 - [training_controls.yaml](../experiments/deadline_comm/configs/training_controls.yaml)
+
+JAAMAS extension adds `experiments/deadline_comm/configs/mnist_uncertain_readiness.yaml` and `broadcast_hard_deadline.yaml`. They preserve the prospectively fixed settings and point to recorded output paths; use a copied config with a unique output for a new evaluation.

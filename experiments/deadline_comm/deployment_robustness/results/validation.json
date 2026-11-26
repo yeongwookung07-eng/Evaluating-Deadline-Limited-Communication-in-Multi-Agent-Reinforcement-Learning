@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-26 KST",
+  "tests": {
+    "passed": 22,
+    "suite": "deployment_robustness + external_deadline + receiver_adaptation + tmlr intervention regression"
+  },
+  "independent": {
+    "mnist": {
+      "passed": true,
+      "example_cells": 1382400,
+      "probabilities_by_independent_erfc": true,
+      "all_summary_intervals": true,
+      "source_hashes": true
+    },
+    "broadcast": {
+      "passed": true,
+      "episodes": 18000,
+      "steps": 360000,
+      "fallbacks_rewards_timing_delivery_verified": true,
+      "seed_level_aggregation": true,
+      "source_hashes": true
+    }
+  },
+  "versions": {
+    "python": "3.13.12",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.4",
+    "scipy": "1.18.0"
+  },
+  "code_config_sha256": {
+    "experiments/deadline_comm/deployment_robustness/verify_results.py": "8fbf7afa0d5fdb14d2c850387f824aff166566a1e5d82d588b344f6bbfde239d",
+    "experiments/deadline_comm/deployment_robustness/broadcast_hard_deadline.py": "47b1bb6bb104316baeb8e0b85a3e84675283992b202e712ef86c8dcd417af5db",
+    "experiments/deadline_comm/deployment_robustness/mnist_uncertain_readiness.py": "7f8efe13767eb98cb12e6fa4daecbf0e9735f5c891971cc8782b3b0c420edc98",
+    "experiments/deadline_comm/deployment_robustness/report.py": "3e9ca058f2847ad9f21c4bcd3386f04e004b42cd49afd8aedef6539c040c6e6e",
+    "experiments/deadline_comm/deployment_robustness/tests/test_contracts.py": "8c0943547f0b3ca144cb466642c5f5436e12b943a52584c13c36c9a83dd9c993",
+    "experiments/deadline_comm/configs/mnist_uncertain_readiness.yaml": "3a1ffe29a13004bda931389b34148d77d00f0917e399983397265b4507882252",
+    "experiments/deadline_comm/configs/broadcast_hard_deadline.yaml": "9128847070ae382dc0f5593f6e47fc73946b1086ac7af719a53e6d559a3da6a5"
+  },
+  "new_training": false,
+  "gpu_used": false,
+  "manuscript_modified": false
+}

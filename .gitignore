@@ -20,3 +20,12 @@ __pycache__/
 /paper/validation.json
 
 /experiments/deadline_comm/external_biases/reference_provenance.json
+
+# Rebuilt submission/reviewer bundles and LaTeX scratch files
+/dist/
+/paper/*.toc
+/paper/*_source.zip
+/paper/jaamas_*.pdf
+/paper/information_sheet.pdf
+/paper/cover_letter.pdf
+/paper/statements_and_declarations.pdf

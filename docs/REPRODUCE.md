@@ -72,3 +72,11 @@ The 103 generated NumPy archives now live in `data/`; `prepare_inputs.py` resolv
 Typography-only update (2026-11-25): `paper/build.py` now produces a 15-page main paper and 9-page supplement with common 10pt text, including figure labels. Scientific text, all 18 tables and plotted numeric primitives match the preceding edition. See `paper/typography_validation_20261125.json`. The earlier dated build results above remain historical.
 
 Author-requested 8pt edition (2026-11-25): the current build yields an 11-page main paper and 7-page supplement (18 total). Only typesetting and plotted text sizes changed; body source and scientific plot values are preserved. See `paper/typography_8pt_validation_20261125.json`.
+
+## Current JAAMAS edition — November26
+
+Active documents: [JAAMAS submission files](../submission/jaamas/README.md). Earlier dated KBS builds above remain historical. The new manifest has5,741assets and106NPZ files, with375unchanged checkpoints. The usual `prepare_inputs.py` and `verify_results.py --recompute --tests` commands include the new exact timing model and18,000hard-fallback rollout audits. These audits use saved observations, not a new measured CPU campaign. Raw MNIST is unnecessary for saved-result verification.
+
+To regenerate the two new evaluations, first copy their YAML files and select unique output paths; the recorded directories are never overwritten. MNIST requires the separately fetched raw images, and measured broadcast timings depend on host load. Full commands, budgets and limitations: [component README](../experiments/deadline_comm/deployment_robustness/README.md). To compile and package documents: `python scripts/package_jaamas.py`. To create portable reviewer materials too: `python scripts/package_jaamas.py --skip-build --reviewer`.
+
+Validation completed for this JAAMAS edition: all5,741asset hashes,375checkpoint loads, retained paired/probe/replay checks and the new full raw audits pass. CPU tests: **63passed,1skipped** (unbundled early integration-smoke inputs). A separately extracted source ZIP rebuilds all five document texts identically. No training/GPU work. See `docs/validation_jaamas_20261126.json` and `paper/submission_validation.json`.

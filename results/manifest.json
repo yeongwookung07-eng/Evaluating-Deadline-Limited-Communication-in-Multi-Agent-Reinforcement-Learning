@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-25",
-  "scope": "Recorded communication-analysis inputs, outputs and checkpoints",
+  "date": "2026-11-26",
+  "scope": "JAAMAS evidence, including frozen-policy readiness uncertainty and actual late-action fallback",
   "files": [
     {
       "original": "evidence/editorial/manifest.json",
@@ -34219,6 +34219,234 @@
       "path": "results/tmlr_revision/results/summary.json",
       "bytes": 239574,
       "sha256": "187a61b7eb08ee4db06cd08d36bf6217b1e3f27d266592f6750f16700a3597ff"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/input_hashes.json",
+      "path": "results/runs/mnist_uncertain_readiness_20261126_001/input_hashes.json",
+      "bytes": 2578,
+      "sha256": "e09b23c232c2e7352f3c46849969abcbeedb9eea1ab1f81da837bf5316309afd"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/registration.json",
+      "path": "results/runs/mnist_uncertain_readiness_20261126_001/registration.json",
+      "bytes": 970,
+      "sha256": "3721a93b05c0423dab80a33a2e2f36306fa3bec8dbc6a4edc66585653595f9c2"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/results.json",
+      "path": "results/runs/mnist_uncertain_readiness_20261126_001/results.json",
+      "bytes": 3280911,
+      "sha256": "47f83a96204dc9e231f8e341bef8a0b5a1f53ed03f781d66124e760adee3c158"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/seed0_cells.npz",
+      "path": "data/runs/mnist_uncertain_readiness_20261126_001/seed0_cells.npz",
+      "bytes": 4986668,
+      "sha256": "29e1817a93a67ea542606e62bdd49d8476a4334291c4d978be3f0aeb42cffcdd"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/seed1_cells.npz",
+      "path": "data/runs/mnist_uncertain_readiness_20261126_001/seed1_cells.npz",
+      "bytes": 4982257,
+      "sha256": "3fe8aaeb579091a6329677f3b2506636be8e435178612be5f24051db508527bb"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/seed2_cells.npz",
+      "path": "data/runs/mnist_uncertain_readiness_20261126_001/seed2_cells.npz",
+      "bytes": 4995338,
+      "sha256": "2fc7cdd7c2c9881772b7dd3de34072e802b61f5c4b4ad5fc814f7f94a746a4eb"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/status.json",
+      "path": "results/runs/mnist_uncertain_readiness_20261126_001/status.json",
+      "bytes": 81,
+      "sha256": "5310268ae9dda16b3117496e458892fe967feeac51b02af5680ab7b97c3157f1"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001/validation.json",
+      "path": "results/runs/mnist_uncertain_readiness_20261126_001/validation.json",
+      "bytes": 204,
+      "sha256": "9f485f0072eab6185dd9eaea0252f6272272a6f98d8a0b49c9260451d07c9154"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/independent_validation.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/independent_validation.json",
+      "bytes": 383,
+      "sha256": "2540495576d43de7478582b8612fa325b7be30a1f22627fae51cbc4f5cd49d2b"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/episodes.jsonl.gz",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/episodes.jsonl.gz",
+      "bytes": 6134464,
+      "sha256": "3cc8b0721826e760ca1819624079883f16d00767e35b9befa23859acb391aed5"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/host.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/host.json",
+      "bytes": 547,
+      "sha256": "76d388869a577ad405668f913811c7b2038211f547390fd07e91e9b707603dce"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/input_hashes.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/input_hashes.json",
+      "bytes": 8673,
+      "sha256": "973a28b325a9be756f0a801dbcb686031fb8c28bc178b260aaa6fab691a9f57b"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/registration.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/registration.json",
+      "bytes": 856,
+      "sha256": "385f76118a0712e70207a54f7af479853c477260212ee7caf0be6f31cb57ca7c"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/results.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/results.json",
+      "bytes": 150651,
+      "sha256": "e5e615d828abb9fe8942b814960a4b0c19635d301a3d330ae94e0e55556d80ee"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/status.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/status.json",
+      "bytes": 119,
+      "sha256": "aa479f2da7cd292b4b6cfbf81bca8f9b8fc9870b635d8d38f1c0b4753cda3a0f"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat0/validation.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat0/validation.json",
+      "bytes": 291,
+      "sha256": "769dfb1f3ebbbab0b76b694e0bd90b7a5726f5d60d9799248fbabf579003e61e"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/episodes.jsonl.gz",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/episodes.jsonl.gz",
+      "bytes": 4794171,
+      "sha256": "999cdbcc8ee495817133475cb709ef66e3a241561bdbe3e16e8879246815d4a2"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/host.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/host.json",
+      "bytes": 547,
+      "sha256": "4a7c8d4a2020a75a129324fd91400dccee31f9aa3911ea00b5e2538bf688f591"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/input_hashes.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/input_hashes.json",
+      "bytes": 5123,
+      "sha256": "e06cd4d7643ae9795ab39b7cc7603d2295b1d2713e826ca078df5d7afc13b44a"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/registration.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/registration.json",
+      "bytes": 856,
+      "sha256": "97b88ac3cd6e47ad6551bd6a00021ce4a5b7c831499b5733ff63e7053213b5fc"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/results.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/results.json",
+      "bytes": 112889,
+      "sha256": "cc5d0c54d660de45434df514ddc90a2614cd5c26411367cd1c8098957c8c9f8b"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/status.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/status.json",
+      "bytes": 120,
+      "sha256": "9b917573faef881c9609df7da8971dba3aa715bd94c1741c27e0277193bf2a45"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat1/validation.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat1/validation.json",
+      "bytes": 207,
+      "sha256": "887b3ea702e0b53fb04f6463a1cf1dc0fb2876c254987986976f6ce07d0f9dfe"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/episodes.jsonl.gz",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/episodes.jsonl.gz",
+      "bytes": 4782695,
+      "sha256": "25aa902a49558843ebeec4b7796ac26bef0a150b83ff603e9b407fc1801e8757"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/host.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/host.json",
+      "bytes": 547,
+      "sha256": "659c93acaf97c439488e8763e7b69e575c2e7c429a9ef48080808493fba6be3d"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/input_hashes.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/input_hashes.json",
+      "bytes": 5123,
+      "sha256": "e06cd4d7643ae9795ab39b7cc7603d2295b1d2713e826ca078df5d7afc13b44a"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/registration.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/registration.json",
+      "bytes": 856,
+      "sha256": "477472e59db0c3db8b98d7e3ed72281d6e5c9a2d3867723e133862d61ed96c95"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/results.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/results.json",
+      "bytes": 113203,
+      "sha256": "b0f08947374e514a97ec5ad041ecddda7216e73c9fcd5c120583cc8145dbd722"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/status.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/status.json",
+      "bytes": 118,
+      "sha256": "9f4a0097d3dbd9fbacacbcd4310ff81babf5756fca0064ba8b81c4e6c2ba6531"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/repeat2/validation.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/repeat2/validation.json",
+      "bytes": 207,
+      "sha256": "887b3ea702e0b53fb04f6463a1cf1dc0fb2876c254987986976f6ce07d0f9dfe"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/episodes.jsonl.gz",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/episodes.jsonl.gz",
+      "bytes": 68331,
+      "sha256": "970e190e0a5be04aa45443512ff54b80ddaec86599a2a5b1689774d4d16d1eab"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/host.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/host.json",
+      "bytes": 547,
+      "sha256": "b170e825abe91b84f4b5e0c5bc85df71e8e1f4784457539b05e299c6137105ca"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/input_hashes.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/input_hashes.json",
+      "bytes": 8673,
+      "sha256": "973a28b325a9be756f0a801dbcb686031fb8c28bc178b260aaa6fab691a9f57b"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/registration.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/registration.json",
+      "bytes": 855,
+      "sha256": "2402bad99c2970fef1edea09cae154fef29526a142391b50d17fc85663f5de49"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/results.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/results.json",
+      "bytes": 15002,
+      "sha256": "e6d1b4925a44feef95e8aee0b1702a84d89343706f79d5cb649e311c15f36c02"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/status.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/status.json",
+      "bytes": 115,
+      "sha256": "4ecae712f787aff51cf195957e54f5d37dad52878ffad0aa42e4ba0e1012eb13"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/smoke/validation.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/smoke/validation.json",
+      "bytes": 291,
+      "sha256": "769dfb1f3ebbbab0b76b694e0bd90b7a5726f5d60d9799248fbabf579003e61e"
+    },
+    {
+      "original": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001/summary.json",
+      "path": "results/runs/broadcast_hard_deadline_20261126_001/summary.json",
+      "bytes": 224758,
+      "sha256": "0e5b865d11716104e16357cee5ca2326149bf8905496863958b9b9a23b0dcc8b"
     }
   ]
 }

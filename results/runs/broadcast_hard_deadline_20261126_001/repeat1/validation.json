@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": {
+    "reference_controls": "repeat0/validation.json"
+  },
+  "source_hashes_unchanged": true,
+  "weights_unchanged": true,
+  "no_late_candidates_applied_in_hard_arms": true
+}

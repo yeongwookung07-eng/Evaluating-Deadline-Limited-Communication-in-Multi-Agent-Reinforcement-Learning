@@ -1,0 +1,42 @@
+{
+  "output": "experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001",
+  "checkpoint_template": "experiments/deadline_comm/runs/hidden_mechanism_20261119_001/broadcast_n5_seed{seed}_rr_cap/final.pt",
+  "head_run": "experiments/deadline_comm/runs/receiver_head_adaptation_20261123_001",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "heads": [
+    "original",
+    "adapted",
+    "shuffled"
+  ],
+  "fallbacks": [
+    "ordinary",
+    "hold",
+    "zero"
+  ],
+  "post_cost_us": [
+    0,
+    250,
+    500
+  ],
+  "repeats": 3,
+  "episodes": 20,
+  "reset_base": 26112600,
+  "warmup_episodes": 2,
+  "deadline_ms": 2.0,
+  "wall_seconds_per_repeat": 600,
+  "source_aware_diagnostic": true,
+  "repeat": 0,
+  "smoke": true,
+  "entry_sha256": "47b1bb6bb104316baeb8e0b85a3e84675283992b202e712ef86c8dcd417af5db"
+}

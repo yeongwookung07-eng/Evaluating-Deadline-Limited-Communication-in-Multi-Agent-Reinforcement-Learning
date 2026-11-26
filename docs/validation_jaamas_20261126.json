@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-26 KST",
+  "asset_hashes": 5741,
+  "checkpoints": 375,
+  "tests_passed": 63,
+  "tests_skipped": 1,
+  "skip_reason": "Unbundled early smoke_eval_003 integration artifacts",
+  "new_broadcast_episodes": 18000,
+  "new_broadcast_steps": 360000,
+  "new_mnist_example_cells": 1382400,
+  "complete_log_sha256": "1673169f3afc45d692ed829861e614c1ff881cdb5c21e9d81ea2fa0769fd407a",
+  "training_executed": false,
+  "gpu_used": false
+}

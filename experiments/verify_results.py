@@ -176,6 +176,7 @@ def main():
         receiver_audit()
         external_models()
         deadline_saved_inputs()
+        run(['-m','experiments.deadline_comm.deployment_robustness.verify_results','--mnist','experiments/deadline_comm/runs/mnist_uncertain_readiness_20261126_001','--broadcast','experiments/deadline_comm/runs/broadcast_hard_deadline_20261126_001'])
         run(['experiments/reproduce_external_continuation.py','--output',str(Path(tempfile.gettempdir())/'communication-external-preview-unused')])
     if args.tests:
         run(['-m','pytest','-q','-p','no:cacheprovider','tests'])

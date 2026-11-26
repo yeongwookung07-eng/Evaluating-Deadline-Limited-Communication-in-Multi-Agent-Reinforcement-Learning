@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checkpoint_reinference": true,
+  "paired_example_cell_checks": 1382400,
+  "original_inputs_unchanged": true,
+  "known_timing_identity": true,
+  "equal_expected_wire_budget": true
+}

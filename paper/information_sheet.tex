@@ -1,0 +1,37 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}\large\textbf{JAAMAS Information Sheet}\\[5pt]\normalsize
+Evaluating Deadline-Limited Communication in Multi-Agent Reinforcement Learning: Delivery, Computation, and Control\\[5pt]
+Yeong-woo Kung and Young-guk Ha\\Regular Paper
+\end{center}
+\textbf{1. Main claim and importance to autonomous agents and multi-agent systems}
+
+Under action deadlines and persistent reception, offered traffic and episodic return do not identify the control contribution of message selection. Admission, timely delivery, sender identity, inherited reception history, selector computation and receiver use are distinct mechanisms. We provide matched-policy interventions organized into four stages: validate learned communication, account for delivery and computation, isolate sender choice, and test downstream information use.
+
+The contribution is an empirical evaluation framework for interpreting communication efficiency in learning agents. It helps distinguish a valid traffic saving from evidence that a selector chose more useful information. It is not a new learning objective or a claim of universal scheduler superiority. The controls expose alternative explanations that aggregate traffic and return cannot resolve.
+
+\textbf{2. Evidence supporting the claim}
+
+In Oracle-assisted five-agent Hallway, 400 paired episodes preserve every delivered update, action and reward while round-robin admission reduces offered traffic by 80\%. With two received packets per step, sender histories differ despite equal counts; 222 of 259 equal-return pairs have different action histories. Feasible same-count sender substitutions change suffix return in 13.9--18.9\% of sampled states, but all four episode-weighted priority-versus-uniform confidence intervals include zero. Common-history branches and direct receiver-memory resets distinguish behavioral changes from reward effects.
+
+Frozen-policy robustness checks test readiness uncertainty and actual action rejection. In MNIST-sum, unbiased readiness-estimate noise of 100 microseconds (standard deviation) plus 100 microseconds of decision cost retains a 9.25-point accuracy advantage [6.64, 11.85] over equal-traffic random admission without that extra cost. At 800/400 microseconds the advantage reverses to $-1.35$ points [$-1.87$,$-0.82$]. In normal-access broadcast, a saved supervised receiver head retains a 5.63-point gain [1.80, 9.46] when late actions are replaced by the previous action. Three CPU processes pass the paired comparisons against original and shuffled-label heads. Adding 500 microseconds makes every candidate late and removes the gain; privileged source-aware access also loses its apparent gain under actual rejection. All 450 uncertainty settings and 18,000 fresh broadcast episodes are retained, including failures.
+
+The evidence concerns the specified checkpoints, tasks, channel model and CPU host. Hallway admits an optimal zero-message public-clock controller, so its learned communication gap does not establish task-level necessity. The failed XOR gate, early SMACv2 learning failure, later SMACv2 replay failure and limited technical smoke remain disclosed. Generalization to standard sequential MARL benchmarks is open.
+
+\textbf{3. Closest related contributions and relationship}
+
+Lowe et al., ``On the Pitfalls of Measuring Emergent Communication'' (AAMAS, 2019), distinguish signaling from listening and motivate message interventions. Eccles et al., ``Biases for Emergent Communication in Multi-agent Reinforcement Learning'' (NeurIPS, 2019), study learning biases and communication-use diagnostics. We retain these distinctions and add controls for how admission, computation and reception histories determine the input available to the listener; the MNIST-sum reconstruction links our analysis to their published task.
+
+Zhang et al., ``Efficient Communication in Multi-Agent Reinforcement Learning via Variance Based Control'' (NeurIPS, 2019), TMC, ``Succinct and Robust Multi-Agent Communication With Temporal Message Control'' (NeurIPS, 2020), and Kim et al., ``Learning to Schedule Communication in Multi-agent Reinforcement Learning'' (ICLR, 2019). These works evaluate communication reduction or access selection. Our fixed-checkpoint interventions ask which reception changes explain such cost--performance outcomes, without asserting failures of those methods on their native tasks.
+
+Zhu, Dastani and Wang, ``A survey of multi-agent deep reinforcement learning with communication'' (\textit{Autonomous Agents and Multi-Agent Systems} 38, article 4, 2024; doi:10.1007/s10458-023-09633-6), organizes communication design choices. Hu et al., ``Event-Triggered Communication Network With Limited-Bandwidth Constraint for Multi-Agent Reinforcement Learning'' (\textit{IEEE Transactions on Neural Networks and Learning Systems} 34(8), 3966--3978, 2023), studies bandwidth-constrained triggering. Our contribution is the connected attribution protocol and controlled evidence for interpreting such communication outcomes rather than a replacement communication algorithm.
+
+\textbf{4. Prior publication and added value}
+
+The authors report no prior conference or journal publication of this work. The retained KBS-format manuscript is an earlier preparation of the same study, not a claimed prior publication. No conference-extension claim is made.
+\end{document}

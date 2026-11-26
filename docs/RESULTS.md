@@ -26,3 +26,7 @@ XOR failed its learning criterion in all ten seeds. An early SMACv2 pilot also f
 ## Scope of interpretation
 
 Hallway uses Oracle-assisted five-agent policies. Broadcast normal access and privileged source-aware access remain separate. Receiver adaptation adds supervised labels and permits feedback to later messages and source actions. MNIST-sum admission knows modeled readiness and is one-step. CPU measurements cover one host. The study does not claim a new learning method or generally superior scheduler.
+
+## Current JAAMAS evidence extension
+
+The [new report](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md) gives +9.25pp [6.64,11.85] admission gain at the primary noisy-readiness/cost setting, reversing to−1.35pp [−1.87,−0.82] at high error/cost. Normal hard-hold receiver adaptation retains+5.63pp [1.80,9.46] with three CPU processes, while all-late/high-cost and privileged source-aware conditions lose all benefit. No new training. The [JAAMAS manuscript](../submission/jaamas/Main_Manuscript.pdf) now incorporates both supported and failed conditions.

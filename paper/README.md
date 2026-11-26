@@ -1,19 +1,9 @@
-# Paper and supplement
+# JAAMAS manuscript sources
 
-- [Main paper](kbs_main.pdf): 11 pages, including references.
-- [Supplement](kbs_supplement.pdf): 7 pages.
-- [LaTeX source archive](kbs_source.zip).
+Current target: Autonomous Agents and Multi-Agent Systems, Regular Paper. The official Springer Nature class and bibliography style remain unchanged. `jaamas_main.tex` and `jaamas_supplement.tex` are the editable main/supplement; information sheet, cover letter and declaration-copy sources are adjacent.
 
-Source files, bibliography, figures and style files are included here. With the required LaTeX tools installed, run `python build.py` from this directory to build both PDFs. Historical filenames are retained.
+The main paper includes the frozen-policy readiness uncertainty and hard-action fallback results. The supplement provides S1–S7, with controls, seeds, costs, exact expectation formulas and failure boundaries. The original KBS edition is retained under [archive/kbs_20261126](archive/kbs_20261126/README.md); its dated validation records do not describe this edition.
 
-The paper analyzes delivery, computation and control in deadline-limited MARL communication. Experiment code, recorded outputs and checkpoints are in sibling directories; [the experiment map](../docs/EXPERIMENTS.md) and [findings](../docs/RESULTS.md) provide a Markdown guide.
+Run `python scripts/package_jaamas.py` from the repository root to compile all documents and refresh [submission files](../submission/jaamas/README.md), source ZIP and checksums. Requirements: Python, pdflatex, BibTeX, Poppler pdfinfo. To build sources only, run `python paper/build.py`. Current build: main27pages, supplement17pages, Information Sheet2pages, cover letter1page; abstract216words and5keywords. Build checks reject unresolved references, missing characters, overfull boxes and an Information Sheet outside1–2pages.
 
-The November 25 edition includes 29 references in citation order, both author emails, the postal address, a 222-word abstract, aligned email/equation layout, CRediT and separate data/code availability. LaTeX requires `xurl` for long URLs. No new scientific measurements are introduced.
-
-Typography update (2026-11-25): non-heading text and figure labels use 10pt throughout both PDFs. Mathematical scripts retain standard sizing. All scientific prose, 18 tables and plotted numerical data were verified unchanged. See `typography_validation_20261125.json`. To redraw the figures from the bundled frozen inputs, run `python plot_uniform_figures.py` (NumPy/Matplotlib), then `python build.py`. No training is needed.
-
-Author-role correction (2026-11-25): Young-guk Ha’s current CRediT roles are Supervision; Project administration; Writing – review & editing. The funding-acquisition role was removed at the author’s request.
-
-Analysis prose revision (2026-11-25): revised the Abstract’s protocol sentence (226 words total), the Introduction’s claim paragraph and three Section 6 discussion paragraphs to connect the controls and interpretations more naturally. No tables, equations, numerical findings, citations or scope limitations changed. See `analysis_prose_validation_20261125.json`.
-
-Current 8pt edition (2026-11-25, author request): main 11 pages and supplement 7 pages; total 18. Non-heading text and plot labels use 8pt; title/section and figure-heading sizes are preserved. No prose, citations, results or plotted numerical data changed. See `typography_8pt_validation_20261125.json`. Earlier dated size/page descriptions are historical.
+Scientific evidence: [robustness report](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md), [earlier results](../docs/RESULTS.md). The submission checklist distinguishes prepared files from author approval and journal submission.
