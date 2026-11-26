@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "table_ids": [
+    "tab:external_deadlines",
+    "tab:receiver_controls",
+    "tab:uncertain_readiness",
+    "tab:hard_action"
+  ],
+  "computed_rows": 23,
+  "distinct_printed_rows": 22,
+  "receiver_probe_rows_in_this_export": false,
+  "primary_hard_hold": {
+    "access": "normal",
+    "fallback": "hold",
+    "post_cost_us": 0,
+    "original_pct": 57.6875,
+    "adapted_pct": 63.314583333333324,
+    "gain_pp": 5.627083333333335,
+    "ci_low": 1.7974719388906006,
+    "ci_high": 9.45669472777607,
+    "original_miss_pct": 0.1,
+    "adapted_miss_pct": 0.05833333333333335,
+    "printed": "Hold & 0 & 57.69 & 63.31 & 5.63 [1.80,9.46]"
+  },
+  "source_aware": [
+    {
+      "access": "source_aware",
+      "fallback": "ordinary",
+      "post_cost_us": 0,
+      "original_pct": 66.425,
+      "adapted_pct": 86.56875,
+      "gain_pp": 20.14375,
+      "ci_low": 10.391611786969206,
+      "ci_high": 29.895888213030794,
+      "original_miss_pct": 100.0,
+      "adapted_miss_pct": 100.0
+    },
+    {
+      "access": "source_aware",
+      "fallback": "hold",
+      "post_cost_us": 0,
+      "original_pct": 47.75,
+      "adapted_pct": 47.75,
+      "gain_pp": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "original_miss_pct": 100.0,
+      "adapted_miss_pct": 100.0
+    },
+    {
+      "access": "source_aware",
+      "fallback": "zero",
+      "post_cost_us": 0,
+      "original_pct": 47.75,
+      "adapted_pct": 47.75,
+      "gain_pp": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "original_miss_pct": 100.0,
+      "adapted_miss_pct": 100.0
+    }
+  ],
+  "training": false,
+  "new_latency_measurement": false,
+  "manuscript_sha256": {
+    "jaamas_main.tex": "1c46f300da637dc9951d1afb4a8739aa30c1b76301abee942e96087f912f07dd",
+    "jaamas_supplement.tex": "ec7537860f0f9a6bcb4144bcc952aaa4c67aff080339aad10d5d0ea9fb8c7a21"
+  }
+}

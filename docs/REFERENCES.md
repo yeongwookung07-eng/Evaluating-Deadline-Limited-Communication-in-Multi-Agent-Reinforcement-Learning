@@ -58,3 +58,7 @@ All 29 active entries in [references.bib](../paper/references.bib) are cited in 
 | `schuirmann1987comparison` | Two one-sided tests used for exploratory equivalence; post-hoc margin remains explicit. | https://doi.org/10.1007/BF01068419 |
 | `hoerl1970ridge` | Ridge regression used in the held-out linear decoder. | https://doi.org/10.1080/00401706.1970.10488634 |
 | `alain2016understanding` | Separately trained linear probes as diagnostics of fixed representations; our ridge decoder is an adaptation, not a reproduction of their classifiers. | https://arxiv.org/abs/1610.01644 |
+
+| `peters2025emergent` | Journal-level review of emergent-language evaluation metrics. Main Related Work and Information Sheet distinguish that taxonomy from controlled deadline/history/execution interventions; not a native deadline baseline or a novelty proof. | https://link.springer.com/article/10.1007/s10458-025-09691-y |
+
+Publisher sections 6.6, 7.2.1 and 8 checked on 2026-11-26. Lowe et al. remains the closest direct message-use diagnostic; Zhu and Peters provide complementary journal-level analysis.

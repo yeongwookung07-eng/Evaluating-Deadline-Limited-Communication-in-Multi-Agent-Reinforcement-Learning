@@ -1,0 +1,10 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+  "prefix": "/tmp/jaamas_clean_revision_20261126/venv",
+  "base_prefix": "/home/sclab/miniconda3",
+  "venv_configuration": "home = /home/sclab/miniconda3/bin\ninclude-system-site-packages = false\nversion = 3.13.12\nexecutable = /home/sclab/miniconda3/bin/python3.13\ncommand = /home/sclab/miniconda3/bin/python -m venv /tmp/jaamas_clean_revision_20261126/venv\n",
+  "torch": "2.15.0+cpu",
+  "torch_cuda": null,
+  "system_site_packages": false
+}

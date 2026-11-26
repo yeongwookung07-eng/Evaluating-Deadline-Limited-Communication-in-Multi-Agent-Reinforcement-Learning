@@ -1,0 +1,121 @@
+PASS: 375 checkpoints load on CPU (31318 tensors).
+{"fresh_states": 2654, "prefix_episodes": 800, "timing": [{"arm": "rr_cap", "total_steps": 1270, "credit_below_three": 638, "credit_at_least_three": 632, "ready_le310_given_credit": 216, "attempt_three_but_deliver_less": 415, "deliver_three": 216, "admission_below_three_with_credit": 1}, {"arm": "dac", "total_steps": 1296, "credit_below_three": 426, "credit_at_least_three": 870, "ready_le310_given_credit": 0, "attempt_three_but_deliver_less": 357, "admission_below_three_with_credit": 513}]}
+PASS: all paired-analysis fields match the frozen result (float tolerance 1e-10 relative / 1e-12 absolute).
+No training, checkpoint evaluation, or modification of recorded results.
+PASS: hashes, decompression and model state loading: {'checkpoint': 280, 'receiver_input': 100, 'identity_trace': 240, 'training_trace': 280}
+PASS: all four probe types and policy accounting match in 100 cells
+PASS: seed-0 RR/DAC fresh-subset replay, Slow/5 ms and Medium/2 ms; temporary outputs removed
+{"output": "/tmp/reviewer-structural-3wpvb6os/result", "identity_cells": 12, "identity_pairs": 2400, "prefix_pairs": 800, "timing_cells": 56, "elapsed_seconds": 1.4044622909277678}
+{
+  "mnist": {
+    "passed": true,
+    "example_cells": 1382400,
+    "probabilities_by_independent_erfc": true,
+    "all_summary_intervals": true,
+    "source_hashes": true
+  },
+  "broadcast": {
+    "passed": true,
+    "episodes": 18000,
+    "steps": 360000,
+    "fallbacks_rewards_timing_delivery_verified": true,
+    "seed_level_aggregation": true,
+    "source_hashes": true
+  }
+}
+{
+  "mode": "dry_run_no_training",
+  "common_checkpoint_count": 6,
+  "first_stage_commands": [
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "0",
+      "no_bias",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed0_no_bias_1500.pt",
+      "1500",
+      "3000"
+    ],
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "0",
+      "both",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed0_both_1500.pt",
+      "1500",
+      "3000"
+    ],
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "1",
+      "no_bias",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed1_no_bias_1500.pt",
+      "1500",
+      "3000"
+    ],
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "1",
+      "both",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed1_both_1500.pt",
+      "1500",
+      "3000"
+    ],
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "2",
+      "no_bias",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed2_no_bias_1500.pt",
+      "1500",
+      "3000"
+    ],
+    [
+      "/tmp/jaamas_clean_revision_20261126/venv/bin/python",
+      "-m",
+      "experiments.deadline_comm.external_biases.mnist_parallel_continuation",
+      "--config",
+      "/tmp/communication-external-preview-unused/continuation.yaml",
+      "--worker",
+      "2",
+      "both",
+      "/tmp/jaamas_final_review_20261126/experiments/deadline_comm/external_biases/runs/mnist_sum_parallel_20261123_001/seed2_both_1500.pt",
+      "1500",
+      "3000"
+    ]
+  ],
+  "gate": "All three both-bias seeds pass validation before stopping; original no-bias controls advance equally."
+}
+.........................................s......................         [100%]
+63 passed, 1 skipped in 3.33s
+PASS: 5741 asset hashes; 5740 local input copies prepared.
+PASS: structural/history/timing summary recomputes from exact raw inputs.
+PASS: receiver actual actions/rewards, return and matched delivery; 1,200 episodes.
+PASS: six external final speaker/listener checkpoints match selected milestone.
+PASS: six common1500 checkpoints for optional no-PID continuation.
+External seed 0: independent deployment pair RNG; realized old/new test-pair overlap=0.
+External seed 1: independent deployment pair RNG; realized old/new test-pair overlap=0.
+External seed 2: independent deployment pair RNG; realized old/new test-pair overlap=0.
+PASS: external exact marginal, influence, reception and rate-matched random controls from saved arrays.

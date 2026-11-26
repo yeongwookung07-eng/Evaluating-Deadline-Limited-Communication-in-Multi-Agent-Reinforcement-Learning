@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -139,6 +139,25 @@ vol. \bseriesno{32}
 \endbibitem
 
 %%% 7
+\bibitem[\protect\citeauthoryear{Peters et~al.}{2025}]{peters2025emergent}
+\begin{barticle}
+\bauthor{\bsnm{Peters}, \binits{J.}},
+\bauthor{\bsnm{Puiseau}, \binits{C.}},
+\bauthor{\bsnm{Tercan}, \binits{H.}},
+\bauthor{\bsnm{Gopikrishnan}, \binits{A.}},
+\bauthor{\bsnm{Carvalho}, \binits{G.A.}},
+\bauthor{\bsnm{Bitter}, \binits{C.}},
+\bauthor{\bsnm{Meisen}, \binits{T.}}:
+\batitle{Emergent language: a survey and taxonomy}.
+\bjtitle{Autonomous Agents and Multi-Agent Systems}
+\bvolume{39},
+\bfpage{18}
+(\byear{2025})
+\doiurl{10.1007/s10458-025-09691-y}
+\end{barticle}
+\endbibitem
+
+%%% 8
 \bibitem[\protect\citeauthoryear{Foerster et~al.}{2016}]{foerster2016learning}
 \begin{bchapter}
 \bauthor{\bsnm{Foerster}, \binits{J.N.}},
@@ -152,7 +171,7 @@ In: \bbtitle{Advances in Neural Information Processing Systems}
 \end{bchapter}
 \endbibitem
 
-%%% 8
+%%% 9
 \bibitem[\protect\citeauthoryear{Sukhbaatar
   et~al.}{2016}]{sukhbaatar2016learning}
 \begin{bchapter}
@@ -166,7 +185,7 @@ In: \bbtitle{Advances in Neural Information Processing Systems}
 \end{bchapter}
 \endbibitem
 
-%%% 9
+%%% 10
 \bibitem[\protect\citeauthoryear{Das et~al.}{2019}]{das2019tarmac}
 \begin{bchapter}
 \bauthor{\bsnm{Das}, \binits{A.}},
@@ -185,7 +204,7 @@ pp. \bfpage{1538}--\blpage{1546}
 \end{bchapter}
 \endbibitem
 
-%%% 10
+%%% 11
 \bibitem[\protect\citeauthoryear{Hu et~al.}{2023}]{hu2023event}
 \begin{barticle}
 \bauthor{\bsnm{Hu}, \binits{G.}},
@@ -203,7 +222,7 @@ pp. \bfpage{1538}--\blpage{1546}
 \end{barticle}
 \endbibitem
 
-%%% 11
+%%% 12
 \bibitem[\protect\citeauthoryear{Wang et~al.}{2020}]{wang2020imac}
 \begin{bchapter}
 \bauthor{\bsnm{Wang}, \binits{R.}},
@@ -224,7 +243,7 @@ pp. \bfpage{9908}--\blpage{9918}
 \end{bchapter}
 \endbibitem
 
-%%% 12
+%%% 13
 \bibitem[\protect\citeauthoryear{Yuan et~al.}{2023}]{yuan2023dacom}
 \begin{bchapter}
 \bauthor{\bsnm{Yuan}, \binits{T.}},
@@ -242,7 +261,7 @@ pp. \bfpage{11763}--\blpage{11771}
 \end{bchapter}
 \endbibitem
 
-%%% 13
+%%% 14
 \bibitem[\protect\citeauthoryear{Kaul et~al.}{2012}]{kaul2012real}
 \begin{bchapter}
 \bauthor{\bsnm{Kaul}, \binits{S.}},
@@ -256,7 +275,7 @@ In: \bbtitle{IEEE INFOCOM}
 \end{bchapter}
 \endbibitem
 
-%%% 14
+%%% 15
 \bibitem[\protect\citeauthoryear{Ayan et~al.}{2022}]{ayan2022semantics}
 \begin{barticle}
 \bauthor{\bsnm{Ayan}, \binits{O.}},
@@ -273,7 +292,7 @@ In: \bbtitle{IEEE INFOCOM}
 \end{barticle}
 \endbibitem
 
-%%% 15
+%%% 16
 \bibitem[\protect\citeauthoryear{Cho et~al.}{2014}]{cho2014learning}
 \begin{bchapter}
 \bauthor{\bsnm{Cho}, \binits{K.}},
@@ -294,7 +313,7 @@ pp. \bfpage{1724}--\blpage{1734}
 \end{bchapter}
 \endbibitem
 
-%%% 16
+%%% 17
 \bibitem[\protect\citeauthoryear{Rashid et~al.}{2018}]{rashid2018qmix}
 \begin{bchapter}
 \bauthor{\bsnm{Rashid}, \binits{T.}},
@@ -313,7 +332,7 @@ pp. \bfpage{4295}--\blpage{4304}
 \end{bchapter}
 \endbibitem
 
-%%% 17
+%%% 18
 \bibitem[\protect\citeauthoryear{Kingma and Ba}{2015}]{kingma2015adam}
 \begin{bchapter}
 \bauthor{\bsnm{Kingma}, \binits{D.P.}},
@@ -325,7 +344,7 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{bchapter}
 \endbibitem
 
-%%% 18
+%%% 19
 \bibitem[\protect\citeauthoryear{van Hasselt
   et~al.}{2016}]{hasselt2016deepdouble}
 \begin{bchapter}
@@ -339,7 +358,7 @@ In: \bbtitle{Proceedings of the AAAI Conference on Artificial Intelligence}
 \end{bchapter}
 \endbibitem
 
-%%% 19
+%%% 20
 \bibitem[\protect\citeauthoryear{Agarwal et~al.}{2021}]{agarwal2021deep}
 \begin{bchapter}
 \bauthor{\bsnm{Agarwal}, \binits{R.}},
@@ -356,7 +375,7 @@ pp. \bfpage{29304}--\blpage{29320}
 \end{bchapter}
 \endbibitem
 
-%%% 20
+%%% 21
 \bibitem[\protect\citeauthoryear{Efron}{1987}]{efron1987better}
 \begin{barticle}
 \bauthor{\bsnm{Efron}, \binits{B.}}:
@@ -369,7 +388,7 @@ pp. \bfpage{29304}--\blpage{29320}
 \end{barticle}
 \endbibitem
 
-%%% 21
+%%% 22
 \bibitem[\protect\citeauthoryear{Holm}{1979}]{holm1979simple}
 \begin{barticle}
 \bauthor{\bsnm{Holm}, \binits{S.}}:
@@ -381,7 +400,7 @@ pp. \bfpage{29304}--\blpage{29320}
 \end{barticle}
 \endbibitem
 
-%%% 22
+%%% 23
 \bibitem[\protect\citeauthoryear{Schuirmann}{1987}]{schuirmann1987comparison}
 \begin{barticle}
 \bauthor{\bsnm{Schuirmann}, \binits{D.J.}}:
@@ -395,7 +414,7 @@ pp. \bfpage{29304}--\blpage{29320}
 \end{barticle}
 \endbibitem
 
-%%% 23
+%%% 24
 \bibitem[\protect\citeauthoryear{LeCun et~al.}{1998}]{lecun1998gradient}
 \begin{barticle}
 \bauthor{\bsnm{LeCun}, \binits{Y.}},
@@ -411,7 +430,7 @@ pp. \bfpage{29304}--\blpage{29320}
 \end{barticle}
 \endbibitem
 
-%%% 24
+%%% 25
 \bibitem[\protect\citeauthoryear{Wang et~al.}{2022}]{wang2022casec}
 \begin{bchapter}
 \bauthor{\bsnm{Wang}, \binits{T.}},
@@ -427,7 +446,7 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{bchapter}
 \endbibitem
 
-%%% 25
+%%% 26
 \bibitem[\protect\citeauthoryear{Williams}{1992}]{williams1992simple}
 \begin{barticle}
 \bauthor{\bsnm{Williams}, \binits{R.J.}}:
@@ -441,7 +460,7 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 27
 \bibitem[\protect\citeauthoryear{Alain and
   Bengio}{2016}]{alain2016understanding}
 \begin{botherref}
@@ -454,7 +473,7 @@ arXiv preprint arXiv:1610.01644
 \end{botherref}
 \endbibitem
 
-%%% 27
+%%% 28
 \bibitem[\protect\citeauthoryear{Hoerl and Kennard}{1970}]{hoerl1970ridge}
 \begin{barticle}
 \bauthor{\bsnm{Hoerl}, \binits{A.E.}},
@@ -468,7 +487,7 @@ arXiv preprint arXiv:1610.01644
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 29
 \bibitem[\protect\citeauthoryear{Ellis et~al.}{2023}]{ellis2023smacv2}
 \begin{bchapter}
 \bauthor{\bsnm{Ellis}, \binits{B.}},

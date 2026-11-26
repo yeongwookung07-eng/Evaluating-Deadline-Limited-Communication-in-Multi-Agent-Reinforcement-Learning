@@ -4,6 +4,7 @@
 - [Experiment map and controls](EXPERIMENTS.md)
 - [Recorded findings and limitations](RESULTS.md)
 - [Setup, verification and external inputs](REPRODUCE.md)
+- [Paper table reproduction and exact coverage](TABLE_REPRODUCTION.md)
 - [Original YAML settings](CONFIGURATION.md)
 - [References and attribution](REFERENCES.md)
 

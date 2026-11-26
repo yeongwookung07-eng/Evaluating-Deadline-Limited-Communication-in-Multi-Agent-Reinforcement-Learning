@@ -5,6 +5,7 @@
 | Helper | Purpose |
 | --- | --- |
 | `prepare_inputs.py` | Verify file hashes and restore original input paths |
+| `reproduce_paper_tables.py` | Reaggregate selected manuscript rows to CSV and reject printed-value mismatches; [coverage](../docs/TABLE_REPRODUCTION.md) |
 | `verify_results.py` | Recompute recorded analyses, optionally run tests and external inference |
 | `verify_statistics.py` | Reaggregate sender, history and weighting comparisons |
 | `verify_models.py` | Load policies, recompute probes and run a small frozen replay |

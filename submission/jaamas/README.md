@@ -4,7 +4,7 @@ Regular Paper용 LaTeX 제출 자료다. 문서 ZIP을 풀고 각 파일을 투�
 
 | 파일 | 제출 역할 | 내용 및 상태 |
 |---|---|---|
-| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 27쪽, Springer Nature 형식, 초록216단어, 키워드5개 |
+| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 28쪽, Springer Nature 형식, 초록216단어, 키워드5개 |
 | [Manuscript_Source.zip](Manuscript_Source.zip) | LaTeX 원본 | `jaamas_main.tex`를 주 문서로 지정. `.bib`, 그림, 수정 없는 공식 class/style, 부록 및 문서 소스 포함 |
 | [Information_Sheet.pdf](Information_Sheet.pdf) | 필수 Information Sheet | 2쪽: Main Claim, Evidence, Related Work, Previous Publications |
 | [Cover_Letter.pdf](Cover_Letter.pdf) | 편집자 서신 | 1쪽, 기여·저널 적합성·첨부 자료 |
@@ -20,3 +20,5 @@ Word 원고는 LaTeX 소스의 대체 형식이므로 별도로 만들지 않았
 본문 선언은 저자가 확인한 연구비 없음, 이해상충 없음, 저자 기여를 반영한다. Information Sheet는 이전 학술대회·학술지 출판이 없다는 확인 내용을 사용한다. 공동저자 최종 승인과 중복 투고 여부는 실제 투고 시 제출자가 답한다. 승인·제출 완료를 대신 선언하지 않는다.
 
 공식 근거: [JAAMAS Submission Guidelines](https://link.springer.com/journal/10458/submission-guidelines), 2026-11-26 확인. Information Sheet의 네 질문, 150–250단어 초록, 4–6개 키워드, 편집 가능한 소스와 관련 선언 요건을 확인했다. 투고 시스템에서 요구하는 Author Contributions/Competing Interests도 별도로 입력한다. 모든 포털 필드가 자동으로 검증되었다는 뜻은 아니다.
+
+이번 검토 수정: 본문 5.8의 기본 hard-fallback 초과율 0.100%/0.058%와 적용 범위를 명시했다. 서론·Information Sheet의 식별 결과와 가까운 저널 분석 연구의 관계를 보강했고, Figure 1 글자를 확대했다. 부록 표지에 저널명을 넣고 Methods에 실제 AI 보조 사용 범위를 기재했다. [깨끗한 설치 및 주요 표 검증](../../docs/TABLE_REPRODUCTION.md)은 별도로 실행할 수 있다. LaTeX 원본과 선언문은 준비됐지만 실제 투고 시스템 업로드/입력 여부는 확인하지 않았다.

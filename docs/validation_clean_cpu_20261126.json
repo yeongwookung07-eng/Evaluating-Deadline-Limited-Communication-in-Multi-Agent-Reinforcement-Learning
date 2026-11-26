@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-26",
+  "public_source_commit": "d44c3715a94cd5922064a3afaccf30b7630bb4f8",
+  "public_archive_url": "https://codeload.github.com/yeongwookung07-eng/Evaluating-Deadline-Limited-Communication-in-Multi-Agent-Reinforcement-Learning/zip/d44c3715a94cd5922064a3afaccf30b7630bb4f8",
+  "base_public_source_verification": {
+    "fresh_extract": true,
+    "new_isolated_venv": true,
+    "inherited_site_packages": false,
+    "exit_code": 0,
+    "asset_hashes": 5741,
+    "checkpoint_files": 375,
+    "tests_passed": 63,
+    "tests_skipped": 1,
+    "skip_reason": "Unbundled early smoke_eval_003 fixtures"
+  },
+  "environment": {
+    "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+    "prefix": "/tmp/jaamas_clean_revision_20261126/venv",
+    "base_prefix": "/home/sclab/miniconda3",
+    "venv_configuration": "home = /home/sclab/miniconda3/bin\ninclude-system-site-packages = false\nversion = 3.13.12\nexecutable = /home/sclab/miniconda3/bin/python3.13\ncommand = /home/sclab/miniconda3/bin/python -m venv /tmp/jaamas_clean_revision_20261126/venv\n",
+    "torch": "2.15.0+cpu",
+    "torch_cuda": null,
+    "system_site_packages": false
+  },
+  "revision_table_check": {
+    "source": "Public d44 archive plus the revised table helper and two manuscript .tex files",
+    "passed": true,
+    "calculated_rows": 23,
+    "distinct_printed_rows": 22,
+    "full_table_exports": [
+      "external_deadlines",
+      "uncertain_readiness",
+      "hard_action"
+    ],
+    "partial_table_export": "receiver_controls: six acting rows; two probe rows excluded",
+    "miss_rates_and_source_aware_boundary": true,
+    "display_rounding": "Decimal half-up for exact count percentages; avoids binary float tie artifacts",
+    "initial_attempts": "First checks caught half-way float formatting at 56.575, 1.625 and 5.575; formatter corrected, scientific arrays and paper values unchanged."
+  },
+  "new_training": false,
+  "gpu_computation": false,
+  "new_latency_measurement": false,
+  "logs": "validation_clean_cpu_20261126/",
+  "final_package_validation": {
+    "fresh_reviewer_archive_extraction": true,
+    "complete_verification_passed": true,
+    "tables_passed": true,
+    "tests_passed": 63,
+    "tests_skipped": 1,
+    "scientific_assets_checked": 5741,
+    "checkpoint_files": 375,
+    "raw_table_inputs_from_public_archive": true,
+    "manuscript_mutation_detection_passed": true,
+    "source_zip_rebuild": "All five extracted PDF texts identical",
+    "new_training": false,
+    "gpu_computation": false,
+    "new_latency_measurement": false,
+    "notes": "After this execution only documentation/evidence logs and their packaging inclusion changed; scientific bytes and verifier/table code are unchanged."
+  }
+}

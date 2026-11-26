@@ -1,0 +1,36 @@
+{
+  "jaamas_main": {
+    "identical_extracted_text": true,
+    "text_sha256": "df255bc444fa8e7f2cfaa2bab05d754c99dd2a1dcbe95ca6a1cd9b84e0563a50"
+  },
+  "jaamas_supplement": {
+    "identical_extracted_text": true,
+    "text_sha256": "8dd727dcd6419263f61658724b17967639feb45b56925dfae0e5a7a6928ba943"
+  },
+  "information_sheet": {
+    "identical_extracted_text": true,
+    "text_sha256": "a1ca6f9f078f29cc612c3784b40ec56f2908704b36a9952e6d529626384a2e1c"
+  },
+  "cover_letter": {
+    "identical_extracted_text": true,
+    "text_sha256": "eb6409afa3ae80378fe323cdced613581f1c5e4ad519740df3ca5c32bbeb363c"
+  },
+  "statements_and_declarations": {
+    "identical_extracted_text": true,
+    "text_sha256": "d042cd06362c968c2e45e6343b29eed97385dd380024a54d806696ed4d41a823"
+  },
+  "files": [
+    "build.py",
+    "build_validation.json",
+    "cover_letter.tex",
+    "figure_inputs.json",
+    "information_sheet.tex",
+    "jaamas_main.tex",
+    "jaamas_supplement.tex",
+    "plot_diagnostics.py",
+    "references.bib",
+    "sn-jnl.cls",
+    "sn-mathphys-num.bst",
+    "statements_and_declarations.tex"
+  ]
+}

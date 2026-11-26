@@ -2,16 +2,24 @@
 
 ## Install and prepare
 
-The code uses Python, PyTorch, NumPy, PyYAML, SciPy and Matplotlib; pytest runs the tests. The recorded work used Python 3.13.12, PyTorch 2.11.0+cu128 and NumPy 2.4.4. Verification runs on CPU.
+The verified clean installation uses Linux x86-64, Python 3.13.12 and CPU-only PyTorch 2.15.0. It starts from a fresh GitHub source download with no inherited Python packages. The original research environment (PyTorch 2.11.0+cu128, NumPy 2.4.4) is a separate provenance record; it is not required for the saved-result audit.
+
+Run from the root of a fresh clone or extracted GitHub source ZIP:
 
 ```bash
-python -m pip install -r requirements.txt
-python experiments/prepare_inputs.py
+python3.13 -m venv .venv
+source .venv/bin/activate
+python -m pip install torch==2.15.0+cpu --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements.txt -c constraints-cpu-verified.txt
+python experiments/verify_results.py --recompute --tests
+python experiments/reproduce_paper_tables.py
 ```
 
-The repository includes 375 checkpoints and 103 NumPy input archives in `data/`, together with recorded summaries and traces. [The manifest](../results/manifest.json) lists each packaged file's original path, size and SHA-256. Preparation verifies every entry and creates independent copies at the paths used by the original modules. It refuses to overwrite a different existing file. Allow roughly another 0.8 GB for these working copies. To check files without copying, use `python experiments/prepare_inputs.py --check-only`.
+The constraints file records the package versions actually tested. Other Python/platform combinations are not certified. The main verification command prepares its inputs automatically. The table command then writes `results/local_recompute/paper_tables/{external_deadlines,receiver_controls_acting_rows,uncertain_readiness,hard_action}.csv` and `verification.json`, checks printed manuscript values and exits nonzero on a difference. [Table mapping and scope](TABLE_REPRODUCTION.md) distinguish reaggregation, model inference and a new experiment.
 
-Original YAML configurations are in [the configuration catalogue](CONFIGURATION.md). They preserve seeds, budgets, checkpoint paths and controls.
+The repository includes 375 checkpoints and 106 generated NumPy archives, together with summaries and traces. [The manifest](../results/manifest.json) lists 5,741 scientific assets with original paths, sizes and SHA-256. Preparation verifies every entry and creates independent working copies at original paths, refusing to overwrite different files. Allow about 0.8 GB for the extra working copies, in addition to the download and Python environment. For a hash-only check: `python experiments/prepare_inputs.py --check-only`.
+
+Original YAML configurations are in [the configuration catalogue](CONFIGURATION.md). They preserve seeds, budgets, checkpoint paths and controls. No GPU, raw MNIST download, StarCraft II installation or training is required for the default commands above. Document compilation separately requires LaTeX and Poppler; see [paper build](../paper/README.md).
 
 ## Verify the recorded analysis
 
@@ -80,3 +88,7 @@ Active documents: [JAAMAS submission files](../submission/jaamas/README.md). Ear
 To regenerate the two new evaluations, first copy their YAML files and select unique output paths; the recorded directories are never overwritten. MNIST requires the separately fetched raw images, and measured broadcast timings depend on host load. Full commands, budgets and limitations: [component README](../experiments/deadline_comm/deployment_robustness/README.md). To compile and package documents: `python scripts/package_jaamas.py`. To create portable reviewer materials too: `python scripts/package_jaamas.py --skip-build --reviewer`.
 
 Validation completed for this JAAMAS edition: all5,741asset hashes,375checkpoint loads, retained paired/probe/replay checks and the new full raw audits pass. CPU tests: **63passed,1skipped** (unbundled early integration-smoke inputs). A separately extracted source ZIP rebuilds all five document texts identically. No training/GPU work. See `docs/validation_jaamas_20261126.json` and `paper/submission_validation.json`.
+
+## Clean isolated CPU installation and revised package — November 26
+
+An actual GitHub source ZIP at commit `d44c371` was extracted independently of the research workspace. A new venv with `include-system-site-packages = false` installed CPU PyTorch and the requirements successfully. Complete verification passed with 5,741 asset hashes, 375 CPU checkpoint files and 63 passing tests (one unbundled-fixture skip). The revised reviewer package was then separately extracted and passed both the complete verifier and the table-export command in that isolated environment. [Machine-readable evidence and logs](validation_clean_cpu_20261126.json) distinguish these two checks. The source ZIP alone also rebuilds all five PDFs with identical extracted text. Saved numerical results are reproducible within this declared scope; historical training trajectories, two receiver-probe export rows and hardware latency invariance are not claimed by the table helper.

@@ -8,7 +8,7 @@ import subprocess
 import sys
 import zipfile
 ROOT=Path(__file__).resolve().parents[1]
-SOURCES=['jaamas_main.tex','jaamas_supplement.tex','information_sheet.tex','cover_letter.tex','statements_and_declarations.tex','references.bib','sn-jnl.cls','sn-mathphys-num.bst','diagnostics.pdf','receiver_adaptation.pdf','seed_distribution.pdf','robustness.pdf','build.py']
+SOURCES=['jaamas_main.tex','jaamas_supplement.tex','information_sheet.tex','cover_letter.tex','statements_and_declarations.tex','references.bib','sn-jnl.cls','sn-mathphys-num.bst','diagnostics.pdf','receiver_adaptation.pdf','seed_distribution.pdf','robustness.pdf','build.py','plot_diagnostics.py','figure_inputs.json']
 PDFS={'jaamas_main.pdf':'Main_Manuscript.pdf','jaamas_supplement.pdf':'Supplementary.pdf','information_sheet.pdf':'Information_Sheet.pdf','cover_letter.pdf':'Cover_Letter.pdf','statements_and_declarations.pdf':'Statements_and_Declarations.pdf'}
 
 
@@ -46,10 +46,12 @@ def main():
     if any(v in parts for v in ['__pycache__','.pytest_cache','.venv','runs']):
      if parts[0] not in ('data','results','checkpoints'):continue
     if parts[0]=='experiments' and ('repro_assets' in parts or ('tmlr_revision' in parts and 'results' in parts) or ('external_biases' in parts and 'data' in parts)):continue
-    if p.suffix in ['.pyc','.aux','.blg','.log','.out','.abs','.spl','.toc']:continue
+    if p.suffix in ['.pyc','.aux','.blg','.log','.out','.abs','.spl','.toc']:
+     # Preserve published clean-install evidence; exclude LaTeX/runtime scratch.
+     if not (parts[0]=='docs' and p.suffix=='.log'):continue
     if p==target or p.name=='Reviewer_Archive.zip':continue
     files.append(p)
-  files += [p for p in ROOT.iterdir() if p.is_file() and p.name in ['README.md','requirements.txt','.gitignore']]
+  files += [p for p in ROOT.iterdir() if p.is_file() and p.name in ['README.md','requirements.txt','constraints-cpu-verified.txt','.gitignore']]
   with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
    lines=[]
    for p in sorted(set(files)):
