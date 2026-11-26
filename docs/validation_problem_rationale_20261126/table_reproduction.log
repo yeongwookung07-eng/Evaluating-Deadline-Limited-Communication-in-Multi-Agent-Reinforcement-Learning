@@ -1,0 +1,5 @@
+PASS: tab:external_deadlines: 5 reaggregated rows match the manuscript.
+PASS: tab:receiver_controls: 6 reaggregated rows match the manuscript.
+PASS: tab:uncertain_readiness: 4 reaggregated rows match the manuscript.
+PASS: tab:hard_action: 8 reaggregated rows match the manuscript.
+PASS: primary miss rates and source-aware failure boundary. Output: /tmp/jaamas_rationale_tables_20261126

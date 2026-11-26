@@ -10,7 +10,7 @@ This repository contains the manuscript, submission documents, research code, ge
 
 | File or item | Status | Purpose |
 |---|---|---|
-| [Main_Manuscript.pdf](submission/jaamas/Main_Manuscript.pdf) | Prepared | Springer Nature manuscript, 216-word abstract, five keywords |
+| [Main_Manuscript.pdf](submission/jaamas/Main_Manuscript.pdf) | Prepared | Springer Nature manuscript, 232-word abstract, five keywords |
 | [Manuscript_Source.zip](submission/jaamas/Manuscript_Source.zip) | Prepared; required for this LaTeX submission | Editable main/supplement sources, bibliography, figures, class/style and build helper |
 | [Information_Sheet.pdf](submission/jaamas/Information_Sheet.pdf) | Prepared; required | Two pages answering claim, evidence, closest work and prior publication |
 | [Cover_Letter.pdf](submission/jaamas/Cover_Letter.pdf) | Prepared | Contribution and relevance to JAAMAS |
@@ -62,3 +62,5 @@ The reviewer ZIP is written to `dist/Reviewer_Archive.zip`, not committed as a l
 | [docs](docs/README.md) | Research map, interpretation, references and setup |
 
 Yeong-woo Kung: yeongwoo@konkuk.ac.kr. Corresponding author Young-guk Ha: ygha@konkuk.ac.kr.
+
+Current manuscript revision: research need → attribution question → reasons for the existing controls → observed findings and limits. [Paper rationale and evidence map](paper/problem_rationale_evidence_map.json). This is an editorial rewrite based on the KBS source and completed work; numerical evidence is unchanged.

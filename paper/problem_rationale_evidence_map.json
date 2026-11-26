@@ -1,0 +1,110 @@
+{
+  "purpose": "Trace the rewritten motivation and analysis rationale to completed work only; no new experiment or external reference.",
+  "reference_manuscript": "experiments/deadline_comm/publication/kbs/kbs_main.tex",
+  "entries": [
+    {
+      "question": "Why do cost and return alone leave the mechanism ambiguous?",
+      "new_locations": [
+        "Introduction",
+        "sec:problem"
+      ],
+      "existing_support": [
+        "KBS Introduction",
+        "tab:history_match",
+        "tab:receiver_controls"
+      ],
+      "inference_limit": "Separate system performance from a supported explanation; no claim that existing metrics are useless."
+    },
+    {
+      "question": "Did the reference learn to benefit from communication?",
+      "new_locations": [
+        "sec:problem stage 1",
+        "sec:learning"
+      ],
+      "existing_support": [
+        "tab:learning_selection",
+        "KBS local-clock control",
+        "experiments/deadline_comm/external_deadline/README.md"
+      ],
+      "inference_limit": "A learned channel gap is distinct from task-level communication necessity."
+    },
+    {
+      "question": "Does traffic suppression change received information?",
+      "new_locations": [
+        "sec:problem stage 2",
+        "sec:identity",
+        "sec:eccles"
+      ],
+      "existing_support": [
+        "tab:history_match",
+        "tab:external_deadlines",
+        "experiments/deadline_comm/attribution_boundaries/README.md"
+      ],
+      "inference_limit": "Full/RR identity is conditional on queue order/readiness; equal bytes or counts are weaker controls."
+    },
+    {
+      "question": "Does sender identity matter, and does the factual choice use the opportunity?",
+      "new_locations": [
+        "sec:problem stage 3",
+        "sec:selection"
+      ],
+      "existing_support": [
+        "tab:sender_weighting",
+        "tab:withholding",
+        "KBS same-count replay"
+      ],
+      "inference_limit": "Sensitivity and factual-minus-uniform advantage are separate; retain state/episode weighting and unresolved episode-level intervals."
+    },
+    {
+      "question": "What does a common history control, and what does cache removal test?",
+      "new_locations": [
+        "sec:problem stage 3",
+        "sec:history",
+        "sec:discussion"
+      ],
+      "existing_support": [
+        "tab:history_by_cohort",
+        "tab:which_switch",
+        "tab:memory_reset",
+        "experiments/deadline_comm/attribution_boundaries/README.md"
+      ],
+      "inference_limit": "A matched prefix controls the whole past; cache removal changes behavior but does not establish mediation of the historical return gap."
+    },
+    {
+      "question": "Does implementation cost change reception opportunity?",
+      "new_locations": [
+        "sec:problem stage 2",
+        "sec:timing"
+      ],
+      "existing_support": [
+        "KBS measured/fixed readiness and three-process timing comparisons"
+      ],
+      "inference_limit": "Selector overhead and lost packet opportunities are distinguished; host-conditional timing retained."
+    },
+    {
+      "question": "Does readable information improve acting, and why use shuffled labels?",
+      "new_locations": [
+        "sec:problem stage 4",
+        "sec:receiver_decision"
+      ],
+      "existing_support": [
+        "tab:receiver_controls",
+        "experiments/deadline_comm/receiver_adaptation/README.md"
+      ],
+      "inference_limit": "Supervised head change has a closed-loop total effect; same access does not imply fixed later message contents."
+    },
+    {
+      "question": "Do favorable effects survive the stated timing/execution assumptions?",
+      "new_locations": [
+        "sec:deployment_robustness",
+        "sec:discussion"
+      ],
+      "existing_support": [
+        "experiments/deadline_comm/deployment_robustness/README.md",
+        "tab:uncertain_readiness",
+        "tab:hard_action"
+      ],
+      "inference_limit": "Modeled readiness uncertainty/cost and fresh fixed-head hard-fallback rollouts; no implemented predictor or physical real-time guarantee."
+    }
+  ]
+}

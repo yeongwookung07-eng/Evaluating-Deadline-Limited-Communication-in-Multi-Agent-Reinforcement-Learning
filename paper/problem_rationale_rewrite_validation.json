@@ -1,0 +1,69 @@
+{
+  "kind": "editorial restructuring only",
+  "reference": "experiments/deadline_comm/publication/kbs/kbs_main.tex",
+  "reference_sha256": "5220ab77faa290bd1998107a043dd4daee7dc575b74d8655f68302f38b23182f",
+  "before_jaamas_sha256": "1c46f300da637dc9951d1afb4a8739aa30c1b76301abee942e96087f912f07dd",
+  "public_before_commit": "2b4f2c0cf9f9b6c08da9f578421dc12cb9030dd9",
+  "new_experiments": false,
+  "new_references": false,
+  "status": "completed",
+  "abstract_words": 232,
+  "keywords": 5,
+  "main_preserved_table_labels": [
+    "tab:cohorts",
+    "tab:learning_selection",
+    "tab:history_match",
+    "tab:external_deadlines",
+    "tab:sender_weighting",
+    "tab:withholding",
+    "tab:history_by_cohort",
+    "tab:which_switch",
+    "tab:memory_reset",
+    "tab:receiver_controls"
+  ],
+  "supplement_source_identical": true,
+  "displayed_equations_identical_ignoring_order": true,
+  "result_section_numeric_tokens_identical": true,
+  "figures_identical": true,
+  "bibliography_identical": true,
+  "kbs_source_identical": true,
+  "active_references": 29,
+  "protocol_table_moved_before_experiments": true,
+  "protocol_table_rewritten_to_questions_and_controls": true,
+  "build": {
+    "jaamas_main": {
+      "pages": 31,
+      "warnings": []
+    },
+    "jaamas_supplement": {
+      "pages": 17,
+      "warnings": []
+    },
+    "information_sheet": {
+      "pages": 2,
+      "warnings": []
+    },
+    "cover_letter": {
+      "pages": 1,
+      "warnings": []
+    },
+    "statements_and_declarations": {
+      "pages": 1,
+      "warnings": []
+    }
+  },
+  "table_reproduction": {
+    "passed": true,
+    "computed_rows": 23,
+    "distinct_printed_rows": 22,
+    "partial_receiver_table": "six acting rows; two probe rows not exported",
+    "log": "docs/validation_problem_rationale_20261126/table_reproduction.log"
+  },
+  "source_zip_rebuild": {
+    "passed": true,
+    "five_pdf_texts_identical": true,
+    "receipt": "paper/problem_rationale_source_rebuild.json"
+  },
+  "validation_scope": "Editorial checks and selected-table reaggregation only; training/evaluator code unchanged. Earlier complete CPU test/environment records remain historical receipts.",
+  "new_numeric_results": false
+}

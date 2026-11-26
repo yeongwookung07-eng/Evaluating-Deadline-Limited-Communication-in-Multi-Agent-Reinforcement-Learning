@@ -11,3 +11,5 @@
 These documents explain the existing communication-analysis study. Actual inputs and outputs are in `results/`, trained weights in `checkpoints/`, and the main paper and supplement in `paper/`.
 
 Current submission: [JAAMAS checklist](../submission/jaamas/README.md). [Deployment robustness report](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md) supplies the newest evidence and negative conditions.
+
+Current manuscript reasoning: [problem definition and evidence map](../paper/problem_rationale_evidence_map.json). Editorial rewrite and retained numerical evidence: [validation](../paper/problem_rationale_rewrite_validation.json).

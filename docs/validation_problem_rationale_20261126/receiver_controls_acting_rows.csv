@@ -1,0 +1,7 @@
+access,arm,accuracy_pct,miss_pct,printed
+normal,original,56.574999999999996,1.6249999999999998,Normal RR & Unchanged & 56.58 & 1.63
+normal,adapted,63.006249999999994,3.5250000000000004,Normal RR & True-label adaptation & 63.01 & 3.53
+normal,shuffled,48.1,2.0500000000000003,Normal RR & Shuffled-label adaptation & 48.10 & 2.05
+source_aware,original,65.075,100.0,Source-aware & Unchanged & 65.08 & 100.00
+source_aware,adapted,87.74375,100.0,Source-aware & True-label adaptation & 87.74 & 100.00
+source_aware,shuffled,51.00625000000001,100.0,Source-aware & Shuffled-label adaptation & 51.01 & 100.00
