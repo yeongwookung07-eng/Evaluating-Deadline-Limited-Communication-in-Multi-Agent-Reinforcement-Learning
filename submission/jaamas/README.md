@@ -4,7 +4,7 @@ Regular Paper용 LaTeX 제출 자료다. 문서 ZIP을 풀고 각 파일을 투�
 
 | 파일 | 제출 역할 | 내용 및 상태 |
 |---|---|---|
-| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 31쪽, Springer Nature 형식, 초록232단어, 키워드5개 |
+| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 30쪽, Springer Nature 형식, 초록232단어, 키워드5개 |
 | [Manuscript_Source.zip](Manuscript_Source.zip) | LaTeX 원본 | `jaamas_main.tex`를 주 문서로 지정. `.bib`, 그림, 수정 없는 공식 class/style, 부록 및 문서 소스 포함 |
 | [Information_Sheet.pdf](Information_Sheet.pdf) | 필수 Information Sheet | 2쪽: Main Claim, Evidence, Related Work, Previous Publications |
 | [Cover_Letter.pdf](Cover_Letter.pdf) | 편집자 서신 | 1쪽, 기여·저널 적합성·첨부 자료 |
