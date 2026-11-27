@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-27",
+  "new_training_or_experiment": false,
+  "submitted_or_pushed": false,
+  "documents": {
+    "jaamas_main": {
+      "pages": 20,
+      "tables_figures_equations_unchanged": true,
+      "figure_centers": [
+        {
+          "page": 10,
+          "center_error_pt": 0.0053
+        },
+        {
+          "page": 14,
+          "center_error_pt": 0.0114
+        },
+        {
+          "page": 15,
+          "center_error_pt": 0.0012
+        },
+        {
+          "page": 16,
+          "center_error_pt": 0.0053
+        }
+      ]
+    },
+    "jaamas_supplement": {
+      "pages": 19,
+      "tables_figures_equations_unchanged": true,
+      "figure_centers": [
+        {
+          "page": 6,
+          "center_error_pt": 0.0091
+        },
+        {
+          "page": 14,
+          "center_error_pt": 0.008
+        },
+        {
+          "page": 15,
+          "center_error_pt": 0.0036
+        },
+        {
+          "page": 16,
+          "center_error_pt": 0.0155
+        },
+        {
+          "page": 17,
+          "center_error_pt": 0.0109
+        }
+      ]
+    }
+  },
+  "abstract_word_count": 222,
+  "all_numerical_tables_math_and_original_plot_files_preserved": true,
+  "build": {
+    "jaamas_main": {
+      "pages": 20,
+      "warnings": []
+    },
+    "jaamas_supplement": {
+      "pages": 19,
+      "warnings": []
+    },
+    "information_sheet": {
+      "pages": 2,
+      "warnings": []
+    },
+    "cover_letter": {
+      "pages": 1,
+      "warnings": []
+    },
+    "statements_and_declarations": {
+      "pages": 1,
+      "warnings": []
+    },
+    "title_page": {
+      "pages": 1,
+      "warnings": []
+    }
+  },
+  "standalone_source_rebuild_all_six_pdf_texts_identical": true,
+  "reaggregated_tables_output": "/tmp/jaamas_rewrite_table_checks_20261127"
+}

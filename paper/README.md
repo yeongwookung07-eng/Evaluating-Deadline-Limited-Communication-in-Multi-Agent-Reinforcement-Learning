@@ -1,15 +1,103 @@
-# JAAMAS manuscript sources
+# JAAMAS submission edition
 
-Current target: Autonomous Agents and Multi-Agent Systems, Regular Paper. The official Springer Nature class and bibliography style remain unchanged. `jaamas_main.tex` and `jaamas_supplement.tex` are the editable main/supplement; information sheet, cover letter and declaration-copy sources are adjacent.
+**Latest revision — 2026-11-27:** completed literature-grounded analysis. Main **20 pages including references, declarations and final author information**; supplement 19 pages. Page 1: title, Yeong-woo Kung / Young-guk Ha, Abstract; no Highlights or contact block. Full author information is on page 20; separate `Title_Page.pdf` supplies submission metadata required by the journal. Text left-aligned; figures/tables centered. All 9 main tables, 4 main figures, numerical tables/equations/figure assets and 29 bibliography entries preserved. No new experiment or training. Evidence mapping: `literature_grounding_20261127.json`; validation: `literature_rewrite_validation_20261127.json`. Earlier dated descriptions below are historical.
 
-The main paper includes the frozen-policy readiness uncertainty and hard-action fallback results. The supplement provides S1–S7, with controls, seeds, costs, exact expectation formulas and failure boundaries. The original KBS edition is retained under [archive/kbs_20261126](archive/kbs_20261126/README.md); its dated validation records do not describe this edition.
+**Historical alignment update (2026-11-27):** all manuscript prose and front matter, Highlights and captions are left-aligned (ragged right); figures and tables remain centered. Main 20 pages, supplement 19 pages. Content, table cells, equations and plotted values are unchanged. `journal-reading-layout.sty` applies the shared presentation rules. Snapshot: `pre_left_text_alignment_20261127.zip`; validation: `left_alignment_validation_20261127.json`. Earlier alignment/page-count descriptions below are historical.
 
-Run `python scripts/package_jaamas.py` from the repository root to compile all documents and refresh [submission files](../submission/jaamas/README.md), source ZIP and checksums. Requirements: Python, pdflatex, BibTeX, Poppler pdfinfo. To build sources only, run `python paper/build.py`. Current build: main 30 pages, supplement 17 pages, Information Sheet 2 pages, cover letter 1 page; abstract 232 words and 5 keywords. Build checks reject unresolved references, missing characters, overfull boxes and an Information Sheet outside1–2pages.
+**Latest update — Highlights front page (2026-11-27):** page 1 contains five research highlights; title/authors/abstract begin on page 2. Total main length remains 20 pages, with 9 tables and 4 figures. Supplement S1–S8 now has 18 pages, 11 tables and 5 figures; the unchanged detailed diagnostic figure moved to S8. Validation: `highlights_frontpage_validation_20261127.json`. Earlier counts below describe preceding editions.
 
-Scientific evidence: [robustness report](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md), [earlier results](../docs/RESULTS.md). The submission checklist distinguishes prepared files from author approval and journal submission.
+**Current edition — 2026-11-27:** main **20 pages including references and declarations**, supplement **17 pages (S1–S8)**. Main: 9 tables, 5 result figures and 29 references. Same 155 × 235 mm centered layout and 9.5 pt type. Introduction now states the problem and three findings; methods/design are consolidated, repeated interpretation shortened, and two tables/two plots plus two accounting equations relocated to S8. All 20 table bodies, 12 display-math blocks and 9 original plotted assets are preserved across the pair. Main scientific prose is edited, not byte-identical. Sources/bibliography entries remain unchanged; citation numbers follow their new order. Validation: `twenty_page_validation_20261127.json`; relocation: `twenty_page_relocation_20261127.json`. All preceding edition descriptions below are historical.
 
-Review revision (2026-11-26): primary hard-hold miss rates and their scope are explicit in Section 5.8; Introduction/Information Sheet clarify identification findings and the relationship to journal-level metric reviews; Methods records actual AI assistance; the supplement cover names the journal. Figure 1 has 10pt axis labels and 9pt ticks/legend at 119mm width. `python paper/plot_diagnostics.py` uses frozen `figure_inputs.json` and records its numeric primitives; it launches no experiment. Source ZIP includes both files. [Selected table reproduction](../docs/TABLE_REPRODUCTION.md) checks printed numbers against saved arrays/action traces.
+**Current layout:** author-requested reference-paper proportions, 155 × 235 mm with equal 16-mm side margins. Main 31 pages; supplement 15 pages. Scientific text/results remain unchanged; headings use sentence case. Current verification: `reference_layout_validation_20261126.json`. Earlier edition descriptions below are historical.
 
-The current problem-and-rationale rewrite (2026-11-26) uses the retained KBS manuscript and completed evidence. Section 3 now defines the attribution question and paired intervention effect, then explains the controls before implementation/results. The four-stage table states questions and controls; each result subsection explains why its comparison is needed. Abstract, Introduction, Discussion, Conclusion, Information Sheet and cover letter follow the same argument. No new experiment or reference. Ten other main tables, all supplementary source, result numbers, equations and figure data are unchanged. [Evidence map](problem_rationale_evidence_map.json); [content/build checks](problem_rationale_rewrite_validation.json). The earlier review records describe their dated28-page edition.
+## Current copyedit and reference check — 2026-11-26
+
+Corrected the weighting-section reference and the sender-sensitivity figure reference; replaced manual main-section numbers with labels. Standardized labeled/Student-$t$/$p$ spelling and repaired an ambiguous plural pronoun. Funding, interests and author roles retain the confirmed wording. Main, standalone and portal declarations now use the same order and wording; clarified that MNIST download instructions belong to the repository. No scientific table cells, equations, numerical results, figures or bibliography entries changed. Earlier dated status paragraphs below are historical. Current status supersedes their figure counts and declaration descriptions.
+
+Snapshot: `pre_copyedit_20261126.zip`. Build: `python experiments/deadline_comm/publication/jaamas/build.py`. Validation: `copyedit_validation_20261126.json`.
+
+Current edition includes the completed frozen-policy readiness-uncertainty and hard-action-fallback studies, retaining all earlier evidence and limitations. The official Springer Nature class/style remain unchanged. Earlier25/14-page documents and their exact preparation records are preserved in `pre_deployment_robustness_20261126.zip`. The historical KBS source is unchanged.
+
+## Upload files and format
+
+The standardized upload files are in [the separate submission folder](../../../../JAAMAS_submission_20261126/README.md) and the public worktree's [submission directory](../../../../github_analysis/submission/jaamas/README.md):
+
+- `Main_Manuscript.pdf`:20 pages, 222-word abstract, five keywords, references and declarations; full author information on the final page.
+- `Title_Page.pdf`:separate one-page title, author, affiliation and corresponding-contact metadata.
+- `Manuscript_Source.zip`:editable main/supplement,figures,bibliography,official class/style and build helper. Primary source `jaamas_main.tex`.
+- `Information_Sheet.pdf`:2pages, main claim, concrete evidence, closest related work and prior publication.
+- `Cover_Letter.pdf`:1page.
+- `Supplementary.pdf`:17pages,sectionsS1–S7.
+- `Statements_and_Declarations.pdf`:1page, convenience copy of declarations already inside the main manuscript; `DECLARATIONS.md` supplies portal text.
+- `Reviewer_Archive.zip`:optional full code/data/checkpoint/result archive in the local submission folder; generated by `github_analysis/scripts/package_jaamas.py --reviewer`. It is not committed as a large duplicate of the GitHub repository.
+- `PERMISSIONS.md`:provenance/conditional permission record. No fictitious permission grant.
+
+Word is an alternative to this chosen LaTeX workflow, so no Word manuscript is supplied. Highlights and Graphical Abstract are omitted from the active checklist. Existing KBS materials remain preserved.
+
+## Evidence and status
+
+The [follow-up report](../../deployment_robustness/results/RESULTS.md) records+9.25pp primary noisy-readiness admission gain and+5.63pp normal hard-hold receiver gain, together with error/cost reversals and zero-gain all-late conditions. The original scientific table bodies remain intact; new analyses are in the main subsection `sec:deployment_robustness` and supplementaryS7. No new training or evaluation was performed for this packaging task.
+
+Author-confirmed no funding,no competing interests,no prior conference/journal publication and the existing contribution roles are retained. At the author's latest request, Methods now discloses OpenAI Codex assistance with research software, validation, aggregation and manuscript preparation; no unknown model version or unverified human approval is invented. Final co-author approval and exclusive consideration remain portal declarations for the submitting author; no submission is asserted.
+
+## Build and validation
+
+Build local documents: `python experiments/deadline_comm/publication/jaamas/build.py`. Build/package the public version: `cd github_analysis && python scripts/package_jaamas.py`. All five PDFs compile without unresolved references,missing characters or overfull boxes. A fresh extraction of `Manuscript_Source.zip` rebuilds all five PDFs with identical extracted text. See `jaamas_submission_validation_20261126.json` and `build_validation.json`. Original dated `content_validation.json` applies only to the preserved pre-extension edition.
+
+The public checkout verifies5,741assets and375checkpoints, all earlier paired/probe/replay evidence and the new1,382,400MNIST example cells plus18,000broadcast episodes.63tests pass,1artifact-dependent early-smoke test skips. No GPU or training. Public publish status is recorded in `docs/GITHUB_ANALYSIS_UPLOAD_20261124.md`; local readiness does not assert a successful push.
+
+Official guidance checked on2026-11-26: https://link.springer.com/journal/10458/submission-guidelines . Official template provenance remains in `provenance.json`. The user's supplied checklist and the guide agree on the Information Sheet,abstract/keywords,editable source and declaration requirements. This record does not certify every portal field.
+
+## Review corrections and clean installation — 2026-11-26
+
+The current revision adds primary hard-hold miss fractions (0.100% original; 0.058% adapted) and the rare-overrun interpretation in Section 5.8; sharpens the Introduction/Information Sheet mechanism claim; relates it to Peters et al.'s 2025 JAAMAS metric survey; discloses actual AI assistance in Methods; and adds the journal name to the supplement cover. Figure 1 now uses 10pt axes and 9pt ticks/legend at the final 119mm width, from identical frozen values. `plot_diagnostics.py` regenerates it. The preceding edition is preserved in `pre_review_fixes_20261126.zip` and `JAAMAS_submission_20261126_before_review/` at repository root. No scientific experiment or training was added.
+
+An independently downloaded public source archive was installed in an isolated Python 3.13.12 venv with CPU-only PyTorch. All 5,741 asset hashes and 375 checkpoint loads pass; 63 tests pass, one unavailable early-smoke fixture skips. The new `github_analysis/experiments/reproduce_paper_tables.py` recomputes 22 printed rows across four tables and verifies the actual LaTeX values, with exact coverage and exclusions in `github_analysis/docs/TABLE_REPRODUCTION.md`. See that directory's clean-install validation record. This is saved-data reaggregation, not retraining or an assertion of hardware-time invariance.
+
+The revised reviewer package also passed both commands after a fresh extraction into another directory in the isolated CPU venv. The final editable source ZIP independently rebuilds all five PDFs with identical text; 11 main and 9 supplementary table blocks remain unchanged. That preceding review edition has 28/17/2/1/1 pages with no layout or reference warnings.
+
+## Current problem-and-rationale rewrite — 2026-11-26
+
+Rewritten at the author's request using the KBS manuscript and completed experiment records only. Abstract/Introduction now lead with why a cost–performance outcome needs an explanation to guide which component to change. Section 3 states the research question and the paired intervention quantity, explains why each existing control addresses a specific ambiguity, and places the four-stage protocol before implementation and results. Each analysis subsection connects its intervention to that question; Discussion/Conclusion explain what is supported and what remains unresolved. Information Sheet and cover letter are aligned.
+
+Main 31 pages, supplement 17 pages, Information Sheet 2 pages, cover/declarations 1 page each; abstract 232 words, 5 keywords. All ten non-protocol main tables, the entire supplementary source, displayed mathematical expressions, result-section numeric tokens, four figures and bibliography are unchanged. The protocol table is moved and rewritten as questions/controls. Existing measured/fixed readiness, supervised head feedback, state/episode weighting, null memory-return findings, failed learning/replay gates and hard-fallback limitations remain explicit. No new source, experiment, training, model or numerical result.
+
+[KBS-to-claim evidence map](problem_rationale_evidence_map.json) and [validation](problem_rationale_rewrite_validation.json) document the scope. The preceding28-page edition is preserved in `pre_problem_rationale_rewrite_20261126.zip` and the root folder `JAAMAS_submission_20261126_before_problem_rewrite/`.
 
 2026-11-26 author-requested edit: removed the AI-use paragraph from the active manuscript. The preceding source/PDF are preserved locally. Scientific results are unchanged.
+
+## Findings-led revision — 2026-11-26
+
+Applied the author’s supplied editorial direction to the latest JAAMAS source: a findings-led 218-word abstract, sequential questions in the Introduction, explicit Related Work positioning, renamed framework/results sections, transitions between analyses, and an interpretation-focused Discussion and Conclusion. Six new vector figures visualize the four-stage framework, delivery identity, equal-cost admission, sender sensitivity versus advantage, receiver decoding versus acting, and hard-fallback cost boundaries. Existing two main figures and all 11 table bodies are retained. Current main: 34 pages; supplement: 17 pages.
+
+`python plot_findings.py` regenerates the six figures from the printed validated table values and explicitly identified prose results; `findings_figure_inputs.json` records the values, units and sources. Probe accuracy is separated from acting accuracy; state sensitivity from episode-weighted advantage; fixed-readiness receiver results from the later hard-fallback cohort. `python build.py` builds all five documents. No new experiment, training, configuration, model, or reference. Scope and failed learning/replay gates remain explicit.
+
+Validation: [findings_revision_validation.json](findings_revision_validation.json); all 11 table bodies, 7 displayed equation/align blocks, supplementary source, bibliography and official class/style are unchanged. All five builds pass without reference or overflow warnings. New-figure PDF pages were visually inspected. Previous source/PDF: `pre_findings_revision_20261126.zip`; previous submission folder: `JAAMAS_submission_20261126_before_findings_revision/` at repository root.
+
+## Result-only figures — 2026-11-26
+
+Removed the explanatory four-stage flowchart at the author’s request. Its explanatory caption remains as prose; figure references now use the existing protocol table. All experimental plots, table bodies, equations and other prose are preserved. The renderer and source-package list no longer generate or include the flowchart. Previous source/PDF and diagram are preserved in `pre_framework_removal_20261126.zip`.
+
+Validation: `framework_removal_validation.json`; main 33 pages, supplement 17 pages, all five builds without layout/reference warnings. Submission PDF and editable source ZIP synchronized.
+
+Table 10 layout correction (2026-11-26): removed inherited footnote-size text and compressed column spacing; the memory-removal table now spans the text width with normal-size cells. Caption wording and all data are unchanged. Snapshot: `pre_memory_table_layout_20261126.zip`.
+
+Copyedit closure: main 33 pages, supplement 17 pages; all five documents compile without warnings. Tables (11 main, 9 supplement), equations, figures, numeric tokens, bibliography and citation order are preserved. An extracted submission source independently rebuilds all five PDFs with identical text. Main declaration page 30 and standalone page 1 visually checked. No external reference-metadata re-audit or new scientific run.
+
+Figure 7 label placement (2026-11-26): removed the annotation arrow and centered “All candidates late” above the 500-microsecond point, on two lines with enough space to avoid the plotted curve. Numerical inputs, uncertainty intervals, caption and manuscript source are unchanged. Graph visually checked; five-document build passes. Snapshot: `pre_execution_label_20261126.zip`.
+
+## Reference-paper layout — 2026-11-26
+
+Author-requested presentation revision based on the supplied Liu et al., “Improving scalability of multi-agent deep reinforcement learning with suboptimal human knowledge,” JAAMAS 40, 2 (2026), DOI 10.1007/s10458-025-09729-1. Local reference: `docs/coordination_computation_discussion_20261112/s10458-025-09729-1 (1).pdf`. Its measured page is 155 × 235 mm, text width approximately 123 mm, body 9.5 pt. The new `journal-reading-layout.sty` applies a centered 123-mm text block with equal 16-mm side margins, Times-compatible body text and compact sans-serif headings, full-width abstract/captions, and centered floats. Main section headings use sentence case. Scientific prose, numbers, tables and plotted inputs are retained. Official class/style are preserved; this is an author-prepared reading layout, not a publisher-issued proof. Earlier layout descriptions are historical. Snapshot: `pre_reference_layout_20261126.zip`.
+
+Reference-layout closure: every main/supplement figure is centered to within 0.02 PDF points, all text stays inside the side margins, and no LaTeX warnings remain. All scientific prose, 20 table bodies, equations, numerical plotting inputs and original figure PDFs are preserved. The dedicated style is included in portable source packages.
+
+## 20-page editorial revision — 2026-11-27
+
+Completed at the author’s request: 20 main-document pages including references/declarations, with supplement separate. Follow the supplied Liu et al. paper’s problem–contribution–method–experiment–conclusion organization. Condense repeated interpretation; relocate detailed controls and duplicate visualizations to Supplementary S8. Preserve all original numerical table cells, figure assets, equations, supervision disclosures and negative results across the document pair. No training or scientific experiment. Snapshot: `pre_20page_revision_20261127.zip`.
+
+20-page validation: all references resolve and both documents compile without warnings; the unchanged figure data regenerate from the edited main tables. Saved-observation reaggregation reproduces 22 distinct printed rows across four tables and the primary deadline-miss/failure controls. This is an editorial revision with saved-data verification, not new training, new trajectories or new timing measurements. Previous 31-page main/15-page supplement: `pre_20page_revision_20261127.zip`.
+
+## Highlights first page — 2026-11-27
+
+At the author’s request, a dedicated first page gives five highlights covering the four-stage framework, Full–RR identity, unresolved sender advantage, equal-cost MNIST admission and conditional supervised receiver benefit. Title/authors/abstract follow on page 2. The full-page diagnostics plot is retained unchanged in Supplementary S8 to keep the main PDF at 20 pages. All numerical findings and diagram assets are preserved; the normal font size and geometry remain unchanged. Snapshot: `pre_highlights_frontpage_20261127.zip`.

@@ -1,0 +1,59 @@
+% Author-requested reading layout, measured from Liu et al. (2026).
+% The official sn-jnl class is unchanged. No publisher identity/acceptance metadata.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{journal-reading-layout}[2026/11/26 Centered journal-size layout]
+\RequirePackage[T1]{fontenc}
+\RequirePackage{mathptmx}
+\RequirePackage[scaled=.94]{helvet}
+\RequirePackage{etoolbox}
+\RequirePackage{ragged2e}
+\hypersetup{bookmarksdepth=2}
+\geometry{reset,paperwidth=155mm,paperheight=235mm,left=16mm,right=16mm,
+ top=25mm,bottom=24mm,bindingoffset=0mm,headheight=10pt,headsep=8pt,footskip=14pt}
+\makeatletter
+\@fleqnfalse
+\renewcommand\normalsize{\@setfontsize\normalsize{9.5bp}{12bp}%
+ \abovedisplayskip=7pt plus2pt minus2pt\belowdisplayskip=7pt plus2pt minus2pt
+ \abovedisplayshortskip=3pt plus1pt\belowdisplayshortskip=4pt plus1pt}
+\renewcommand\small{\@setfontsize\small{8.5bp}{10.5bp}}
+\renewcommand\footnotesize{\@setfontsize\footnotesize{8bp}{9.5bp}}
+\def\Titlefont{\normalfont\sffamily\bfseries\fontsize{13bp}{16bp}\selectfont\RaggedRight}
+\def\Authorfont{\normalfont\sffamily\bfseries\fontsize{9.5bp}{12bp}\selectfont\RaggedRight}
+\def\addressfont{\normalfont\fontsize{8bp}{10bp}\selectfont\RaggedRight}
+\def\abstractheadfont{\normalfont\sffamily\bfseries\fontsize{9.5bp}{12bp}\selectfont\raggedright}
+\def\abstractfont{\normalfont\fontsize{9.5bp}{12bp}\selectfont
+ \RaggedRight}
+\def\keywordfont{\normalfont\fontsize{8.5bp}{10.5bp}\selectfont
+ \RaggedRight}
+\def\sectionfont{\normalfont\sffamily\bfseries\fontsize{11bp}{13bp}\selectfont\raggedright}
+\def\subsectionfont{\normalfont\sffamily\bfseries\fontsize{10bp}{12bp}\selectfont\raggedright}
+\def\subsubsectionfont{\normalfont\sffamily\bfseries\fontsize{9.5bp}{12bp}\selectfont\raggedright}
+\def\paragraphfont{\normalfont\bfseries\fontsize{9.5bp}{12bp}\selectfont\raggedright}
+% Remove submission-only front-matter gaps, retaining author/contact information.
+\patchcmd{\@maketitle}{\vskip21pt}{\vskip0pt}{}{\PackageError{journal-reading-layout}{Title patch failed}{}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip0pt}{}{\PackageError{journal-reading-layout}{Title patch failed}{}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip12pt}{}{\PackageError{journal-reading-layout}{Author patch failed}{}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip8pt}{}{\PackageError{journal-reading-layout}{Contact patch failed}{}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip8pt}{}{\PackageError{journal-reading-layout}{Abstract patch failed}{}}
+\patchcmd{\@maketitle}{\vskip36pt}{\vskip12pt}{}{\PackageError{journal-reading-layout}{Title end patch failed}{}}
+% Full-width captions; natural-width tables remain centered within the text area.
+\renewenvironment{table}[1][tbp]{\begin{tableorg}[#1]\centering\small}{\end{tableorg}}
+\long\def\@tablecaption#1#2{{\small\RaggedRight\noindent\textbf{#1}\hspace{.7em}#2\par}}
+\long\def\@figurecaption#1#2{{\small\RaggedRight\noindent\textbf{#1}\hspace{.7em}#2\par}}
+\setlength\abovecaptionskip{5pt}
+\setlength\belowcaptionskip{5pt}
+\setlength\textfloatsep{12pt plus2pt minus2pt}
+\setlength\intextsep{10pt plus2pt minus2pt}
+\setlength\floatsep{10pt plus2pt minus2pt}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.8}
+\renewcommand\textfraction{.08}
+\renewcommand\floatpagefraction{.7}
+\def\ps@headings{\let\@oddhead\@empty\let\@evenhead\@empty
+ \def\@oddfoot{\hfil\normalfont\small\thepage\hfil}\let\@evenfoot\@oddfoot}
+\let\ps@titlepage\ps@headings
+\setlength\bibsep{3pt plus1pt}
+\def\bibfont{\normalfont\small\RaggedRight}
+\AtBeginDocument{\normalsize\RaggedRight\setlength\parindent{0pt}\setlength\parskip{0pt}}
+\renewcommand{\tabularxcolumn}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\makeatother

@@ -1,5 +1,6 @@
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 \usepackage{textcomp,xcolor,amsmath,amssymb,graphicx,booktabs,tabularx,longtable,adjustbox,placeins,xurl}
+\usepackage{journal-reading-layout}
 \hypersetup{hidelinks}
 \let\burl\url
 \setlength{\emergencystretch}{2em}
@@ -12,7 +13,7 @@
 \affil[1]{\orgdiv{Smart Computing Laboratory, Department of Computer Science \& Engineering}, \orgname{Konkuk University}, \orgaddress{\street{120 Neungdong-ro, Gwangjin-gu}, \city{Seoul}, \postcode{05029}, \country{Republic of Korea}}}
 
 \maketitle
-\begin{center}\textbf{Autonomous Agents and Multi-Agent Systems}\end{center}
+{\RaggedRight\textbf{Autonomous Agents and Multi-Agent Systems}\par}
 \renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
@@ -38,7 +39,7 @@ Five agents form groups of sizes two and three. A successful group contributes 1
 Final checkpoints are evaluated on 50 paired held-out resets in Slow/5 ms, Medium/2 ms, Medium/5 ms and Medium/1.5 ms: 720 seed-level cells and 36,000 episode returns. All seeds remain in primary summaries. There is no best-checkpoint or successful-seed selection. Ideal Full overrides delivery failure to supply fresh messages; it is a reference condition rather than an optimal-return bound. RR uses the same credit, link cap and cache decay as DAC, advances its cursor by admitted sender count, and avoids local-Q priority computation. Equal caps do not imply identical actual bytes when CPU costs or trajectories differ.
 
 \subsection{Statistical and timing controls}
-Means and sample SD are computed across independent training seeds. Paired bootstrap resamples seed differences 10,000 times; the BCa sensitivity check uses bias correction and acceleration~\citep{efron1987better}. Episode repetitions do not increase the number of independent training seeds. A supplemental post-hoc exact two-sided sign-flip analysis uses Holm correction~\citep{holm1979simple} separately over three matched-condition Ideal--No-Comm contrasts and the twelve DAC--RR deployment contrasts. Sign-flip inference requires exchangeability under the null, or symmetric paired differences; it is not a distribution-free guarantee. Unadjusted bootstrap intervals and corrected p-values are labeled separately.
+Means and sample SD are computed across independent training seeds. Paired bootstrap resamples seed differences 10,000 times; the BCa sensitivity check uses bias correction and acceleration~\citep{efron1987better}. Episode repetitions do not increase the number of independent training seeds. A supplemental post-hoc exact two-sided sign-flip analysis uses Holm correction~\citep{holm1979simple} separately over three matched-condition Ideal--No-Comm contrasts and the twelve DAC--RR deployment contrasts. Sign-flip inference requires exchangeability under the null, or symmetric paired differences; it is not a distribution-free guarantee. Unadjusted bootstrap intervals and corrected $p$-values are labeled separately.
 
 CPU evaluation uses one thread, excludes two warmup episodes, disables automatic garbage collection during rollouts and collects outside them. The post-reception reserve is fixed at 0.45 ms. No CPU timing claim is derived from GPU optimization. A separate matched-checkpoint diagnostic fixes preparation time at 0.5 ms for admission and transport while recording actual computation separately. This isolates a common reception opportunity; its virtual timing is not deployable latency.
 \paragraph{Primary Hallway learning} Adam~\citep{kingma2015adam} learning rate is $5\times10^{-4}$, discount 0.99, global gradient clip 10, and hard target synchronization every 100 updates. A fresh policy has shared GRU~\citep{cho2014learning} width 64, message width 8 and QMIX mixing~\citep{rashid2018qmix}; Double-Q targets~\citep{hasselt2016deepdouble} use the online network to select the next action and the target network to evaluate that action. The online replay holds 2,000 episodes; 50 Oracle episodes populate a separate demonstration pool. Each 16-episode batch contains 4 demonstration and 12 online episodes, with replacement only while a stratum is too small. One online episode is collected per update; 1,500 updates therefore need not represent equal environment-step counts. The original worker uses exploration $1-0.95u/1499$ at zero-based update $u$. The TD objective adds 0.5 times demonstration cross entropy. Target synchronization and exploration count updates, not environment transitions. All final checkpoints are evaluated, without successful-seed filtering.
@@ -102,7 +103,7 @@ Slow/5 ms & -1.40 & [-3.29,0.49] & [-3.26,-0.08] & 0.678 & 2.59\\
 Medium/2 ms & +0.74 & [-1.11,2.59] & [-1.77,1.78] & 0.379 & 2.54\\
 Medium/5 ms & -0.84 & [-3.47,1.79] & [-2.96,1.36] & 0.447 & 3.60\\
 \bottomrule\end{tabular}}\end{table}
-Table~\ref{tab:sensitivity} shows that BCa and t intervals disagree on zero exclusion for Slow/5 ms, demonstrating method sensitivity at ten seeds. No matched condition passes the exploratory $\pm1$ equivalence criterion, evaluated with two one-sided tests~\citep{schuirmann1987comparison}. The intervals are unadjusted and the sensitivity analysis does not replace the multiplicity-controlled primary analysis.
+Table~\ref{tab:sensitivity} shows that BCa and Student-$t$ intervals disagree on zero exclusion for Slow/5 ms, demonstrating method sensitivity at ten seeds. No matched condition passes the exploratory $\pm1$ equivalence criterion, evaluated with two one-sided tests~\citep{schuirmann1987comparison}. The intervals are unadjusted and the sensitivity analysis does not replace the multiplicity-controlled primary analysis.
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{seed_distribution.pdf}
 \caption{Ten independently trained seed means for each of Full, Periodic, RR and DAC in each matched condition; horizontal marks show the mean. Episode repetitions are not independent training replicates.}
 \label{fig:seed_distribution}
@@ -141,7 +142,7 @@ Define the paired factual-minus-uniform contrast at state $x$ as
 \[
 \Delta_x=V_x(A_{\rm factual})-|\mathcal A_{k(x)}|^{-1}\sum_{A\in\mathcal A_{k(x)}}V_x(A).
 \]
-This enumerates a one-decision uniform reference, not a trained random scheduler. Equal-state weighting averages states within each seed; equal-episode weighting first averages states within episodes, then episodes within seeds. Both weight ten seeds equally; intervals use unadjusted Student-t inference with 9 degrees of freedom. Empty strata are not zero-imputed. Table~\ref{tab:robust_strata} shows the change of estimand explicitly. The 224 sampled states with no unresolved group have zero range. No factual episode incurred the simultaneous-arrival penalty. One of 19,875 saved counterfactual suffix totals is negative; nonnegative totals can still conceal intermediate penalties, so these checks do not remove all dependence on Hallway's transition rules.
+This enumerates a one-decision uniform reference, not a trained random scheduler. Equal-state weighting averages states within each seed; equal-episode weighting first averages states within episodes, then episodes within seeds. Both weight ten seeds equally; intervals use unadjusted Student-$t$ inference with 9 degrees of freedom. Empty strata are not zero-imputed. Table~\ref{tab:robust_strata} shows the change of estimand explicitly. The 224 sampled states with no unresolved group have zero range. No factual episode incurred the simultaneous-arrival penalty. One of 19,875 saved counterfactual suffix totals is negative; nonnegative totals can still conceal intermediate penalties, so these checks do not remove all dependence on Hallway's transition rules.
 
 \begin{table}[htbp]\centering\setlength{\tabcolsep}{1.3pt}\footnotesize
 \caption{Fresh-subset sensitivity. Effect columns are percentages: original equal-state weighting, equal-episode weighting, and equal-state weighting restricted to unresolved tasks. All three weight seeds equally. Direct factual minus uniform-subset suffix return uses the identical sampled state and received count; unadjusted 95\% t intervals over ten seeds. Episode weighting first averages sampled states within an episode.}\label{tab:robust_strata}
@@ -254,6 +255,73 @@ Normal primary hold candidate-miss rates are 0.100\% original and 0.058\% adapte
 
 \subsection{Correctness and execution cost}
 The campaign includes 18,000 evaluated broadcast episodes and 360,000 steps, excluding warmups, the 72-episode smoke and historical checks. It exactly recovers 120 earlier fixed-ready episodes for actions, rewards, sender identities, source timestamps and bytes. No-miss controls reproduce ordinary behavior; forced-all-miss controls verify fallback execution and actual-action recurrent feedback. All source checkpoint/head hashes and model parameters remain unchanged. Twenty-two focused tests pass. An independent saved-result audit reconstructs all broadcast reset bits, fallback actions, rewards, arrival cutoffs, traffic and seed intervals, and 1,382,400 MNIST example/setting/seed calculations using a separate Gaussian probability expression. Main evaluation wall times are 6.01 seconds for MNIST and 237.93/139.30/138.16 seconds for the three broadcast processes. No GPU, new fitting or training is used.
+
+\FloatBarrier
+\section{Additional controls and diagnostic figures}\label{app:additional_controls}
+These materials retain detailed controls and complementary views of the main-text results. They use the same completed experiments and frozen evidence; relocating them does not change their numerical contents or estimands.
+\subsection{Receiver aggregation and cost accounting}
+Delivery replaces sender $j$'s cache with $m_j^t$ and its source timestamp with $t$; otherwise both persist. Initially caches are zero and invalid. Validity $v_j^t$ distinguishes never-received entries from fresh zero payloads; receiver age $\tau_j^t$ is time since the valid source timestamp. For receiver $i$,
+\begingroup
+\makeatletter\@fleqnfalse\makeatother
+\abovedisplayshortskip=\abovedisplayskip
+\belowdisplayshortskip=\belowdisplayskip
+\begin{equation}
+ g_i^t=\frac{\sum_{j\ne i}v_j^t\lambda^{\tau_j^t}c_j^t}{\max(1,\sum_{j\ne i}v_j^t)}.
+\end{equation}
+\endgroup
+The action head uses $[h_i^t;g_i^t;\log(1+\bar\tau_i^t);n_i^t/(N-1)]$, with valid-neighbor count $n_i^t$ and mean valid age $\bar\tau_i^t$. The denominator counts valid senders, not decay weights. A delivery changes the message content, aggregate scaling and metadata available to the action head.
+
+For measured steps $\mathcal T$ and received count $M_t$, offered load, payload goodput and waste are
+\begin{equation}
+\begin{aligned} L_{\rm off}&=\frac{S\sum_tK_t}{|\mathcal T|}, &G_{\rm pay}&=\frac{P\sum_tM_t}{|\mathcal T|},\\ \rho_{\rm drop}&=1-\frac{\sum_tM_t}{\sum_tK_t}.\end{aligned}
+\end{equation}
+Each broadcast is counted once, not per receiver. Waste is undefined when no packets are attempted. Return, load, goodput, cache validity/age, computation and deadline misses measure different outcomes.
+
+
+\FloatBarrier
+\subsection{Delivery and sender diagnostics}
+Withholding retains the offered cost and prior cache entry but omits one fresh received update. Signed and absolute effects answer different questions from feasible same-count replacement.
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{delivery_identity.pdf}
+\caption{Communication savings with behavioral identity in the fixed-readiness Slow/5 ms Hallway comparison. Full offers five 48-byte packets and RR one; both deliver one 32-byte payload. All 400 paired episodes preserve delivered sender histories, cache tensors, actions, rewards and return under matched weights, resets and cache decay.}\label{fig:delivery_identity}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{sender_selection.pdf}
+\caption{Sender sensitivity and selection advantage are distinct. Left: seed-mean percentage of states whose feasible sender subsets yield different suffix returns. Right: factual-minus-uniform contrast with equal episode weighting. Bars are unadjusted 95\% seed-level $t$ intervals from the main-text sender-weighting table; all four advantage intervals include zero. The panels have different units and estimands.}\label{fig:sender_selection}
+\end{figure}
+
+\begin{table}[htbp]\centering\normalsize
+\caption{Withholding one actual fresh update in the same frozen-policy cohort. Values first average over withheld senders within each sampled state, then states within seed, then ten seeds. Intervals are descriptive paired Student-$t$ intervals over seed means. The final column is the correspondingly weighted percentage of withholding branches with a changed suffix return.}\label{tab:withholding}
+{\footnotesize\setlength{\tabcolsep}{1.3pt}\begin{tabular}{llrrr}\toprule
+Condition & Weights & Withheld $-$ factual return [95\% CI] & Mean absolute change & Changed branches (\%)\\\midrule
+Slow/5 ms & RR & $0.063$ [$-0.318$, $0.444$] & 1.088 & 10.9\\
+Slow/5 ms & DAC & $-0.230$ [$-0.472$, $0.012$] & 0.646 & 6.5\\
+Medium/2 ms & RR & $-0.158$ [$-0.380$, $0.064$] & 0.663 & 6.4\\
+Medium/2 ms & DAC & $0.242$ [$-0.017$, $0.501$] & 0.554 & 4.6\\
+\bottomrule\end{tabular}}
+\end{table}
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{diagnostics.pdf}
+\caption{Primary-checkpoint diagnostics. (a) Each point is one seed's mean feasible-subset suffix-return range. (b) Slow/5 ms only, cold and common-prefix DAC--RR effects on the same frozen policy, with early termination retained. (c) Medium link, primary Medium/2 ms-trained RR/DAC checkpoints, mean delivered packets over ten seeds under measured (solid) or fixed (dashed) readiness. Seed-specific curves are retained in the supplementary summary; this panel shows means without uncertainty bands. These are distinct interventions, not pooled training cohorts.}\label{fig:controlled}
+\end{figure}
+
+\FloatBarrier
+\subsection{Access-switch controls}
+\begin{table}[htbp]\centering\normalsize
+\caption{What changes when priority replaces RR? Three existing Slow/5 ms comparisons, each with ten training seeds. The first row uses measured readiness and 50 resets per seed (paired bootstrap interval). The other rows use the same RR checkpoints, fixed readiness and 20 resets per seed. The shared-prefix row retains early terminations.}\label{tab:which_switch}
+\begin{tabularx}{\textwidth}{@{}XXr@{}}
+\toprule
+Policy weights & Change to access & Mean priority minus RR return\\\midrule
+Train independently under each rule & Deploy each policy under its training rule & $-1.40$ [$-3.06$, $0.08$]\\
+Freeze the RR-trained policy & Switch at episode reset & $-0.85$\\
+Freeze the same RR-trained policy & Switch after common RR history & $0.00$ in all 200 pairs\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
 
 \FloatBarrier
 \bibliography{references}

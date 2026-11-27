@@ -1,0 +1,161 @@
+{
+  "target": "20 main pages including title, declarations and references; supplement separate",
+  "reference_use": "Supplied Liu et al. (2026) paper: problem/contribution-led introduction, method\u2013experiment\u2013conclusion flow and journal typography; no transferred scientific claims",
+  "preservation": {
+    "tabular_blocks": 16,
+    "tabularx_blocks": 3,
+    "tabular*_blocks": 1,
+    "equation_blocks": 8,
+    "align_blocks": 4,
+    "bibliography_geometry_font_size_and_plot_inputs": true,
+    "original_supplement_s1_s7_and_declarations": true,
+    "all_original_figure_assets": true
+  },
+  "documents": {
+    "jaamas_main": {
+      "pages": 20,
+      "tables": 9,
+      "figures": 5,
+      "citations": 29,
+      "warnings": [],
+      "text_outside_side_margins": []
+    },
+    "jaamas_supplement": {
+      "pages": 17,
+      "tables": 11,
+      "figures": 4,
+      "citations": 15,
+      "warnings": [],
+      "text_outside_side_margins": []
+    }
+  },
+  "figure_regeneration_inputs_identical": true,
+  "relocation": {
+    "retained_in_main": [
+      "eq:episode_effect",
+      "tab:evaluation_protocol",
+      "eq:step",
+      "tab:cohorts",
+      "tab:learning_selection",
+      "tab:history_match",
+      "eq:mnist_delivery",
+      "tab:external_deadlines",
+      "fig:admission",
+      "eq:subset_contrast",
+      "eq:subset_weighting",
+      "tab:sender_weighting",
+      "tab:history_by_cohort",
+      "tab:memory_reset",
+      "fig:controlled",
+      "tab:receiver_controls",
+      "fig:receiver_utilization",
+      "fig:adaptation",
+      "fig:execution_boundary"
+    ],
+    "relocated_to_s8": [
+      "equation_1",
+      "equation_2",
+      "fig:delivery_identity",
+      "fig:sender_selection",
+      "tab:withholding",
+      "tab:which_switch"
+    ],
+    "scientific_experiment": false
+  },
+  "new_scientific_experiment_or_training": false,
+  "saved_result_reaggregation": {
+    "passed": true,
+    "table_ids": [
+      "tab:external_deadlines",
+      "tab:receiver_controls",
+      "tab:uncertain_readiness",
+      "tab:hard_action"
+    ],
+    "computed_rows": 23,
+    "distinct_printed_rows": 22,
+    "receiver_probe_rows_in_this_export": false,
+    "primary_hard_hold": {
+      "access": "normal",
+      "fallback": "hold",
+      "post_cost_us": 0,
+      "original_pct": 57.6875,
+      "adapted_pct": 63.314583333333324,
+      "gain_pp": 5.627083333333335,
+      "ci_low": 1.7974719388906006,
+      "ci_high": 9.45669472777607,
+      "original_miss_pct": 0.1,
+      "adapted_miss_pct": 0.05833333333333335,
+      "printed": "Hold & 0 & 57.69 & 63.31 & 5.63 [1.80,9.46]"
+    },
+    "source_aware": [
+      {
+        "access": "source_aware",
+        "fallback": "ordinary",
+        "post_cost_us": 0,
+        "original_pct": 66.425,
+        "adapted_pct": 86.56875,
+        "gain_pp": 20.14375,
+        "ci_low": 10.391611786969206,
+        "ci_high": 29.895888213030794,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      },
+      {
+        "access": "source_aware",
+        "fallback": "hold",
+        "post_cost_us": 0,
+        "original_pct": 47.75,
+        "adapted_pct": 47.75,
+        "gain_pp": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      },
+      {
+        "access": "source_aware",
+        "fallback": "zero",
+        "post_cost_us": 0,
+        "original_pct": 47.75,
+        "adapted_pct": 47.75,
+        "gain_pp": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      }
+    ],
+    "training": false,
+    "new_latency_measurement": false,
+    "manuscript_sha256": {
+      "jaamas_main.tex": "fb1ccef8d9a4207001ab19d1db5c882afdfc3cb9e9609d97805d6aed6cdb6eb9",
+      "jaamas_supplement.tex": "4ab94613cd3808600ba1904a1a02fb9a2d433f9af0abcd918ac09191dfb6f9ce"
+    }
+  },
+  "visual_review": "All 20 main pages and supplementary S8 inspected; equation group kept on one page.",
+  "standalone_source_rebuild": {
+    "all_five_pdf_texts_identical": true,
+    "build": {
+      "jaamas_main": {
+        "pages": 20,
+        "warnings": []
+      },
+      "jaamas_supplement": {
+        "pages": 17,
+        "warnings": []
+      },
+      "information_sheet": {
+        "pages": 2,
+        "warnings": []
+      },
+      "cover_letter": {
+        "pages": 1,
+        "warnings": []
+      },
+      "statements_and_declarations": {
+        "pages": 1,
+        "warnings": []
+      }
+    }
+  }
+}

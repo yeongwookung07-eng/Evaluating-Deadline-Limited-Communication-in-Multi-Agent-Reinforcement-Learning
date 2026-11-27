@@ -8,8 +8,8 @@ import subprocess
 import sys
 import zipfile
 ROOT=Path(__file__).resolve().parents[1]
-SOURCES=['jaamas_main.tex','jaamas_supplement.tex','information_sheet.tex','cover_letter.tex','statements_and_declarations.tex','references.bib','sn-jnl.cls','sn-mathphys-num.bst','diagnostics.pdf','receiver_adaptation.pdf','seed_distribution.pdf','robustness.pdf','build.py','plot_diagnostics.py','figure_inputs.json']
-PDFS={'jaamas_main.pdf':'Main_Manuscript.pdf','jaamas_supplement.pdf':'Supplementary.pdf','information_sheet.pdf':'Information_Sheet.pdf','cover_letter.pdf':'Cover_Letter.pdf','statements_and_declarations.pdf':'Statements_and_Declarations.pdf'}
+SOURCES=['title_page.tex','jaamas_main.tex','jaamas_supplement.tex','information_sheet.tex','cover_letter.tex','statements_and_declarations.tex','references.bib','sn-jnl.cls','journal-reading-layout.sty','sn-mathphys-num.bst','diagnostics.pdf','receiver_adaptation.pdf','seed_distribution.pdf','robustness.pdf','build.py','plot_diagnostics.py','figure_inputs.json','delivery_identity.pdf','equal_cost_admission.pdf','sender_selection.pdf','receiver_utilization.pdf','execution_boundary.pdf','plot_findings.py','findings_figure_inputs.json']
+PDFS={'title_page.pdf':'Title_Page.pdf','jaamas_main.pdf':'Main_Manuscript.pdf','jaamas_supplement.pdf':'Supplementary.pdf','information_sheet.pdf':'Information_Sheet.pdf','cover_letter.pdf':'Cover_Letter.pdf','statements_and_declarations.pdf':'Statements_and_Declarations.pdf'}
 
 
 def digest(p):
@@ -26,7 +26,7 @@ def main():
  for source,name in PDFS.items():shutil.copy2(paper/source,out/name)
  with zipfile.ZipFile(out/'Manuscript_Source.zip','w',zipfile.ZIP_DEFLATED) as z:
   for name in SOURCES:z.write(paper/name,name)
-  z.writestr('README.txt','JAAMAS editable sources. Primary manuscript: jaamas_main.tex. Supplement: jaamas_supplement.tex. Build all five PDFs: python build.py (pdflatex, BibTeX, pdfinfo required). The publisher class/style are unchanged.\n')
+  z.writestr('README.txt','JAAMAS editable sources. Primary manuscript: jaamas_main.tex. Supplement: jaamas_supplement.tex. Build all six PDFs: python build.py (pdflatex, BibTeX, pdfinfo required). The publisher class/style are unchanged.\n')
  files=[out/name for name in PDFS.values()]+[out/'Manuscript_Source.zip']+[p for p in out.glob('*.md')]
  (out/'SHA256SUMS.txt').write_text(''.join(f'{digest(p)}  {p.name}\n' for p in sorted(files)))
  with zipfile.ZipFile(out/'JAAMAS_Submission.zip','w',zipfile.ZIP_DEFLATED) as z:

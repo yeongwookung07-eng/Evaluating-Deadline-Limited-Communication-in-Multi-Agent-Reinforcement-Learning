@@ -2,7 +2,7 @@
 from pathlib import Path
 import subprocess, json, re
 P=Path(__file__).resolve().parent
-names=['jaamas_main','jaamas_supplement','information_sheet','cover_letter','statements_and_declarations']
+names=['jaamas_main','jaamas_supplement','information_sheet','cover_letter','statements_and_declarations','title_page']
 def run(args):
  r=subprocess.run(args,cwd=P,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
  if r.returncode: raise RuntimeError(r.stdout[-5000:])
