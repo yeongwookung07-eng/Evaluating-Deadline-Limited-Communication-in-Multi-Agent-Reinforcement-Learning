@@ -1,7 +1,10 @@
 % Author-requested reading layout, measured from Liu et al. (2026).
 % The official sn-jnl class is unchanged. No publisher identity/acceptance metadata.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{journal-reading-layout}[2026/11/26 Centered journal-size layout]
+\ProvidesPackage{journal-reading-layout}[2026/11/28 Journal reading layout]
+\newif\ifcompactmain
+\DeclareOption{compactmain}{\compactmaintrue}
+\ProcessOptions\relax
 \RequirePackage[T1]{fontenc}
 \RequirePackage{mathptmx}
 \RequirePackage[scaled=.94]{helvet}
@@ -54,6 +57,16 @@
 \let\ps@titlepage\ps@headings
 \setlength\bibsep{3pt plus1pt}
 \def\bibfont{\normalfont\small\RaggedRight}
+% Opt in from the main manuscript only. One PostScript point (bp) matches
+% the unit reported by PDF viewers. Keep captions and table text at 8 bp.
+\ifcompactmain
+  \renewcommand\normalsize{\@setfontsize\normalsize{8bp}{10.5bp}%
+    \abovedisplayskip=6pt plus2pt minus2pt\belowdisplayskip=6pt plus2pt minus2pt
+    \abovedisplayshortskip=3pt plus1pt\belowdisplayshortskip=4pt plus1pt}
+  \renewcommand\small{\@setfontsize\small{8bp}{10bp}}
+  \def\abstractfont{\normalfont\normalsize\RaggedRight}
+  \def\keywordfont{\normalfont\small\RaggedRight}
+\fi
 \AtBeginDocument{\normalsize\RaggedRight\setlength\parindent{0pt}\setlength\parskip{0pt}}
 \renewcommand{\tabularxcolumn}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \makeatother

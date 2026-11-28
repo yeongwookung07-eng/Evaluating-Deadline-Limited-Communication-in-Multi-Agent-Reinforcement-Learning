@@ -1,0 +1,144 @@
+{
+  "edition": "JAAMAS pre-submission critical review, 2026-11-28",
+  "abstract_words": 211,
+  "main_references": 31,
+  "build": {
+    "jaamas_main": {
+      "pages": 15,
+      "warnings": []
+    },
+    "jaamas_supplement": {
+      "pages": 19,
+      "warnings": []
+    },
+    "information_sheet": {
+      "pages": 2,
+      "warnings": []
+    },
+    "cover_letter": {
+      "pages": 1,
+      "warnings": []
+    },
+    "statements_and_declarations": {
+      "pages": 1,
+      "warnings": []
+    },
+    "title_page": {
+      "pages": 1,
+      "warnings": []
+    }
+  },
+  "all_original_main_tables_figures_and_display_equations_identical": true,
+  "plots": [
+    {
+      "page": 7,
+      "center_error_pt": 0.0048
+    },
+    {
+      "page": 10,
+      "center_error_pt": 0.0112
+    },
+    {
+      "page": 10,
+      "center_error_pt": 0.0022
+    },
+    {
+      "page": 11,
+      "center_error_pt": 0.0048
+    }
+  ],
+  "rendered_characters_by_font_size": {
+    "12.2": 114,
+    "8.9": 99,
+    "8.0": 41776,
+    "10.3": 204,
+    "9.4": 787,
+    "5.9": 173,
+    "11.5": 8,
+    "4.8": 11,
+    "9.9": 92,
+    "7.9": 28,
+    "7.4": 100,
+    "8.2": 12,
+    "10.0": 85,
+    "9.5": 73
+  },
+  "author_information_page": 15,
+  "training_runs": 0,
+  "standalone_source_rebuild_pdf_texts_match": 6,
+  "findings_figure_inputs_reproduced": true,
+  "reaggregated_tables": {
+    "passed": true,
+    "table_ids": [
+      "tab:external_deadlines",
+      "tab:receiver_controls",
+      "tab:uncertain_readiness",
+      "tab:hard_action"
+    ],
+    "computed_rows": 23,
+    "distinct_printed_rows": 22,
+    "receiver_probe_rows_in_this_export": false,
+    "primary_hard_hold": {
+      "access": "normal",
+      "fallback": "hold",
+      "post_cost_us": 0,
+      "original_pct": 57.6875,
+      "adapted_pct": 63.314583333333324,
+      "gain_pp": 5.627083333333335,
+      "ci_low": 1.7974719388906006,
+      "ci_high": 9.45669472777607,
+      "original_miss_pct": 0.1,
+      "adapted_miss_pct": 0.05833333333333335,
+      "printed": "Hold & 0 & 57.69 & 63.31 & 5.63 [1.80,9.46]"
+    },
+    "source_aware": [
+      {
+        "access": "source_aware",
+        "fallback": "ordinary",
+        "post_cost_us": 0,
+        "original_pct": 66.425,
+        "adapted_pct": 86.56875,
+        "gain_pp": 20.14375,
+        "ci_low": 10.391611786969206,
+        "ci_high": 29.895888213030794,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      },
+      {
+        "access": "source_aware",
+        "fallback": "hold",
+        "post_cost_us": 0,
+        "original_pct": 47.75,
+        "adapted_pct": 47.75,
+        "gain_pp": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      },
+      {
+        "access": "source_aware",
+        "fallback": "zero",
+        "post_cost_us": 0,
+        "original_pct": 47.75,
+        "adapted_pct": 47.75,
+        "gain_pp": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "original_miss_pct": 100.0,
+        "adapted_miss_pct": 100.0
+      }
+    ],
+    "training": false,
+    "new_latency_measurement": false,
+    "manuscript_sha256": {
+      "jaamas_main.tex": "65a372ffc3434c73e6c876735f2e83284dada6df59f7ef5298d4b7f839d6aca4",
+      "jaamas_supplement.tex": "f49187abad813cd7ff374a366244c044b34c646d3528abfb9ac787b31729b424"
+    }
+  },
+  "paired_statistics_match_frozen_record": true,
+  "fresh_decision_states_in_statistics": 2654,
+  "common_prefix_episodes_in_statistics": 800,
+  "manuscript_sha256": "e4e896b2b6b4bf5cf9102e074800a2f4dfde58d4421641c63f26b575888db8a6",
+  "internal_review_file": "jaamas_mock_review_ko_20261128.pdf"
+}

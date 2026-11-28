@@ -4,17 +4,19 @@
 
 This repository contains the manuscript, submission documents, research code, generated data, trained checkpoints and recorded results. The study separates offered traffic, timely delivery, sender choice, inherited reception history, computation and receiver use. It reports conditional benefits and failure boundaries, not a generally superior scheduler.
 
+The two sequential sender studies use three restored policies per task. Terran substitutions changed immediate joint actions at 22/30 decisions and realized suffix returns at 27/30. Round robin minus uniform was +0.352 [-0.345, 1.050] in native return units. Native Predator–Prey changed realized return at 22/139 sampled decisions, with a factual-minus-uniform episode contrast of +0.831 [−1.428, 3.090]. Its learning control passed and the zero-payload comparison was unresolved. [Raw audit and fresh-run commands](docs/SEQUENTIAL_SENDER_REPLAY.md).
+
 ## JAAMAS submission files
 
 [Download document bundle](submission/jaamas/JAAMAS_Submission.zip) · [Submission checklist](submission/jaamas/README.md)
 
 | File or item | Status | Purpose |
 |---|---|---|
-| [Main_Manuscript.pdf](submission/jaamas/Main_Manuscript.pdf) | Prepared | Springer Nature manuscript, 232-word abstract, five keywords |
+| [Main_Manuscript.pdf](submission/jaamas/Main_Manuscript.pdf) | Prepared | 15-page manuscript, 220-word abstract, five keywords |
 | [Manuscript_Source.zip](submission/jaamas/Manuscript_Source.zip) | Prepared; required for this LaTeX submission | Editable main/supplement sources, bibliography, figures, class/style and build helper |
 | [Information_Sheet.pdf](submission/jaamas/Information_Sheet.pdf) | Prepared; required | Two pages answering claim, evidence, closest work and prior publication |
 | [Cover_Letter.pdf](submission/jaamas/Cover_Letter.pdf) | Prepared | Contribution and relevance to JAAMAS |
-| [Supplementary.pdf](submission/jaamas/Supplementary.pdf) | Prepared | Sections S1–S7, including uncertainty and hard-action checks |
+| [Supplementary.pdf](submission/jaamas/Supplementary.pdf) | Prepared | 22 pages, sections S1–S9, including three-seed sequential sender experiments |
 | [Statements_and_Declarations.pdf](submission/jaamas/Statements_and_Declarations.pdf) | Included in manuscript; separate copy supplied | Funding, interests, contributions, data and code availability |
 | Reviewer_Archive.zip | Optional; generate locally | Complete code, data, checkpoints and results; see command below |
 | [Permissions record](submission/jaamas/PERMISSIONS.md) | Conditional | Provenance and any applicable permission evidence |
@@ -38,7 +40,7 @@ python experiments/verify_results.py --recompute --tests
 python experiments/reproduce_paper_tables.py
 ```
 
-A fresh isolated CPU environment passed 5,741 asset hashes, 375 checkpoint loads and 63 tests (one documented skip). The last command writes four CSVs and `verification.json` under `results/local_recompute/paper_tables/`, and fails on a mismatch with the manuscript. It reproduces 22 distinct printed rows across four tables; the two receiver-probe rows are outside this export. See the [table/source map and exact coverage](docs/TABLE_REPRODUCTION.md).
+The earlier pre-transfer CPU validation passed 5,741 asset hashes, 375 checkpoint loads and 63 tests (one documented skip). The last command writes four CSVs and `verification.json` under `results/local_recompute/paper_tables/`, and fails on a mismatch with the manuscript. It reproduces 22 distinct printed rows across four tables; the two receiver-probe rows are outside this export. See the [table/source map and exact coverage](docs/TABLE_REPRODUCTION.md).
 
 Verification checks recorded observations without training. Raw MNIST and the StarCraft II runtime are separate dependencies. Follow [reproduction instructions](docs/REPRODUCE.md). Rebuild documents and optionally generate the large portable reviewer ZIP:
 

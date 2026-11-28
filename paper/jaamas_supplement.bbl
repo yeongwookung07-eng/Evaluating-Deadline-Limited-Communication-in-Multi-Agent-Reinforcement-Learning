@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -84,7 +84,7 @@ In: \bbtitle{International Conference on Learning Representations}
 \bibitem[\protect\citeauthoryear{Cho et~al.}{2014}]{cho2014learning}
 \begin{bchapter}
 \bauthor{\bsnm{Cho}, \binits{K.}},
-\bauthor{\bsnm{Merri{\"e}nboer}, \binits{B.}},
+\bauthor{\bsnm{{van Merri{\"e}nboer}}, \binits{B.}},
 \bauthor{\bsnm{Gulcehre}, \binits{C.}},
 \bauthor{\bsnm{Bahdanau}, \binits{D.}},
 \bauthor{\bsnm{Bougares}, \binits{F.}},
@@ -106,7 +106,7 @@ pp. \bfpage{1724}--\blpage{1734}
 \begin{bchapter}
 \bauthor{\bsnm{Rashid}, \binits{T.}},
 \bauthor{\bsnm{Samvelyan}, \binits{M.}},
-\bauthor{\bsnm{Schroeder}, \binits{C.}},
+\bauthor{\bsnm{{Schroeder de Witt}}, \binits{C.}},
 \bauthor{\bsnm{Farquhar}, \binits{G.}},
 \bauthor{\bsnm{Foerster}, \binits{J.}},
 \bauthor{\bsnm{Whiteson}, \binits{S.}}:
@@ -121,10 +121,10 @@ pp. \bfpage{4295}--\blpage{4304}
 \endbibitem
 
 %%% 6
-\bibitem[\protect\citeauthoryear{van Hasselt
+\bibitem[\protect\citeauthoryear{{van Hasselt}
   et~al.}{2016}]{hasselt2016deepdouble}
 \begin{bchapter}
-\bauthor{\bsnm{Hasselt}, \binits{H.}},
+\bauthor{\bsnm{{van Hasselt}}, \binits{H.}},
 \bauthor{\bsnm{Guez}, \binits{A.}},
 \bauthor{\bsnm{Silver}, \binits{D.}}:
 \bctitle{Deep reinforcement learning with double {Q}-learning}.
@@ -274,6 +274,24 @@ vol. \bseriesno{32}
 (\byear{1992})
 \doiurl{10.1007/BF00992696}
 \end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Kim et~al.}{2019}]{kim2019schedule}
+\begin{bchapter}
+\bauthor{\bsnm{Kim}, \binits{D.}},
+\bauthor{\bsnm{Moon}, \binits{S.}},
+\bauthor{\bsnm{Hostallero}, \binits{D.}},
+\bauthor{\bsnm{Kang}, \binits{W.J.}},
+\bauthor{\bsnm{Lee}, \binits{T.}},
+\bauthor{\bsnm{Son}, \binits{K.}},
+\bauthor{\bsnm{Yi}, \binits{Y.}}:
+\bctitle{Learning to schedule communication in multi-agent reinforcement
+  learning}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2019}).
+\burl{https://arxiv.org/abs/1902.01554}
+\end{bchapter}
 \endbibitem
 
 \end{thebibliography}

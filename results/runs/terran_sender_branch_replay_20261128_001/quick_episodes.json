@@ -1,0 +1,278 @@
+[
+  {
+    "seed": 0,
+    "reset": 28112800,
+    "mode": "quick",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.1724137931034483,
+    "factual_sender": 3,
+    "natural_action": [
+      8,
+      3,
+      3,
+      8,
+      9
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "633bf8826ed8e77e8ca961efc99fbbb4501c9ea31ec0f2d18438686e73e2d3e6",
+    "prefix_cache": "533adfd159790ad7b9bd28c2b03ef8470088cbea30cdb318c6086154598e5bc5",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "ea2625b025af7f7dda4d1928000e35d4ba5b14410b2b27e74de888bdfb10e364",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "7f90dcfb6855c033a1bfd89b734d8a1440ea5b6be4fa70b6281634c063465a9e",
+    "input_state": "3aa6f5c9863eeba747e95e42310abea7874d4560b1ab88aeb8375b22af4fc496",
+    "action_changed": true,
+    "factual_suffix": 4.490385910560347,
+    "factual_suffix_steps": 31,
+    "valid": false,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": {
+          "expected": "5ca27bab83b10350a4b101552b3081b105fee5fcd01f3fc582195f7232f8b595",
+          "obtained": "a56c6bb5bc3035b23619a6e14061034c3d6c96958398cdbbfa9028a955506485"
+        },
+        "factual_replay": {
+          "t": 8,
+          "fields": [
+            "reward",
+            "post_obs",
+            "post_state",
+            "post_mask",
+            "post_native"
+          ],
+          "differences": {
+            "reward": [
+              "",
+              0.1724137931034483,
+              0.0
+            ],
+            "post_obs": [
+              "",
+              "86f8e9aa0a31d338ff76e753778e217a0cd02f099f21251496928427c6f44df5",
+              "fbda771d8403dde6a6fc0e192bde28c680badb327514b5790bb51955587ae816"
+            ],
+            "post_state": [
+              "",
+              "f2b53e4a12ce90a04cdff95aa12f44fd49148beceed908301f637da500a512ba",
+              "61812a145867b1dea98aa63ee5611ca8b23d306d11b1ca0ea697f5be0a648628"
+            ],
+            "post_mask": [
+              "",
+              "4a55e5d27e95617e04e70ec2e22bd7a19e987c070d14bf03cd75209b6d038975",
+              "abeb4dfc689ab14d3b3bc3179d608217a488b06034b20d85839faf834eccfd18"
+            ],
+            "post_native": [
+              "",
+              "e39557c817ae99801a94829887f74589e963508bec4fba5a2659b41e853f506b",
+              "46170170b270724fd1b1c645e30d91566c603100359a3525c2aef0a2c8daaff9"
+            ]
+          }
+        },
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "return_": 4.20020373114224,
+        "steps": 31,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": null
+  }
+]

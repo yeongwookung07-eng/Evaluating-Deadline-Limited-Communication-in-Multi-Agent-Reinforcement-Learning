@@ -2,13 +2,13 @@
 
 These statements match the manuscript and the separate declarations PDF. Copy relevant fields into the journal portal; this file is not a submission receipt.
 
-**Funding:** No specific funding was received for this work.
+**Funding:** This research received no specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
 **Competing interests:** The authors declare no competing interests.
 
 **Author contributions:** Yeong-woo Kung: Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Writing – original draft. Young-guk Ha: Supervision, Project administration, Writing – review & editing.
 
-**Data availability:** The generated data, trained checkpoints and evaluation outputs are available in the data/, checkpoints/ and results/ directories of the repository linked below, with a file-level checksum manifest and reproduction instructions. A portable reviewer archive can also be generated from that repository. Raw MNIST images are obtained separately using the repository's checksum-verified download instructions; the StarCraft II runtime is not redistributed.
+**Data availability:** This study used simulated trajectories from Hallway, hidden-source broadcast, SMACv2 Terran and SchedNet Predator–Prey, and MNIST digit pairs for the summation game. The recorded data include policy observations, sender identities, actions and rewards, with delivery timestamps and computation times in the deadline experiments.
 
 **Code availability:** The code for this study is available at https://github.com/yeongwookung07-eng/Evaluating-Deadline-Limited-Communication-in-Multi-Agent-Reinforcement-Learning.
 

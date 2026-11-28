@@ -1,0 +1,18 @@
+{
+  "config": {
+    "runtime": "experiments/deadline_comm/runs/smacv2_runtime_20261119_001",
+    "python": "/home/sclab/miniconda3/envs/deit_moe/bin/python",
+    "upstream_commit": "577ab5a2cff2391f8df582da5731ea9cd6adf3c6",
+    "source_url": "https://codeload.github.com/oxwhirl/smacv2/zip/577ab5a2cff2391f8df582da5731ea9cd6adf3c6",
+    "sc2_url": "https://blzdistsc2-a.akamaihd.net/Linux/SC2.4.10.zip",
+    "maps_url": "https://github.com/oxwhirl/smacv2/releases/download/maps/SMAC_Maps.zip",
+    "setup_wall_seconds": 1800,
+    "smoke_output": "experiments/deadline_comm/runs/smacv2_smoke_20261119_001"
+  },
+  "sha256": {
+    "SC2.4.10.zip": "1052f249f30a242bf5e17cc3315324919f9689307ca6dbcdb30bb41ea3004884",
+    "SMAC_Maps.zip": "e507cc53b49f0ac334732d62628a42e0be2c53e9df29eeeaf608bb861a2a76cd",
+    "smacv2.zip": "88dcd74df21dd93ad4c845b4b0a3ef1ac3f399584dc39f18cd85fa1b17dbbfe6"
+  },
+  "sc2path": "/home/sclab/scalable_marl/experiments/deadline_comm/runs/smacv2_runtime_20261119_001/StarCraftII"
+}

@@ -1,0 +1,12 @@
+{
+  "question": "On three archived native SchedNet policies in predator_prey_obs, does replacing a single scheduled sender change return, and do native choices outperform uniform same-count alternatives?",
+  "seeds": [0, 1, 2],
+  "first_reset": 28112800,
+  "resets": 24,
+  "branch_steps": [0, 20],
+  "horizon": 50,
+  "runtime_seconds": 1500,
+  "source": "experiments/deadline_comm/reviewer_validation/native_schednet",
+  "checkpoint_root": "experiments/deadline_comm/runs/review_native_20261119_001",
+  "output": "experiments/deadline_comm/runs/native_predator_sender_20261128_001"
+}

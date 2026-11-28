@@ -1,0 +1,31 @@
+{
+  "config": {
+    "output": "experiments/deadline_comm/runs/terran_sender_branch_replay_20261128_001",
+    "runtime": "experiments/deadline_comm/runs/smacv2_runtime_20261119_001",
+    "checkpoint_map": "experiments/deadline_comm/runs/smacv2_protocol_20261121_001/checkpoints.json",
+    "evaluation_config": "experiments/deadline_comm/configs/smacv2_protocol.yaml",
+    "scenario": "terran",
+    "training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "fresh_reset_base": 28112800,
+    "episodes_per_seed": 10,
+    "branch_step": 8,
+    "condition": "slow_5ms",
+    "readiness": "fixed",
+    "diagnostic_reset": 52999901,
+    "diagnostic_checkpoint": 1,
+    "historical_repeats": 3,
+    "technical_reset": 28112799,
+    "wall_seconds": 1500
+  },
+  "config_hash": "89d33dd57ab32846b5ffdf646b28e1e716552c8c6bb081e44f89c723dac962a5",
+  "checkpoint_hashes": {
+    "0": "3121c53fd50f8c606cf66658cec6d89c4a9193e231edf242a7415d50b97b93e2",
+    "1": "771ccbad720b452aed2e10975bcf706b1e51871b9cf001f5b99f878f7f0ea477",
+    "2": "f3691cd09a7c4197f69627fe8df562d6fd67912d3eefbdb8f62bffd240a804dc"
+  },
+  "init_time": 1795796764.906181
+}

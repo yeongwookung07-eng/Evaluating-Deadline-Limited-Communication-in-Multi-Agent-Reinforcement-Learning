@@ -1,0 +1,91 @@
+{
+  "edition": "JAAMAS manuscript proof corrections, 2026-11-28",
+  "build": {
+    "jaamas_main": {
+      "pages": 15,
+      "warnings": []
+    },
+    "jaamas_supplement": {
+      "pages": 22,
+      "warnings": []
+    },
+    "information_sheet": {
+      "pages": 2,
+      "warnings": []
+    },
+    "cover_letter": {
+      "pages": 1,
+      "warnings": []
+    },
+    "statements_and_declarations": {
+      "pages": 1,
+      "warnings": []
+    },
+    "title_page": {
+      "pages": 1,
+      "warnings": []
+    }
+  },
+  "abstract_words": 220,
+  "main_labels_and_pages": {
+    "tab:cohorts": [
+      "2",
+      5
+    ],
+    "fig:receiver_utilization": [
+      "2",
+      10
+    ],
+    "fig:adaptation": [
+      "3",
+      10
+    ],
+    "tab:receiver_controls": [
+      "9",
+      11
+    ],
+    "sec:receiver_decision": [
+      "5.6",
+      9
+    ]
+  },
+  "supplement_table_labels_and_pages": {
+    "tab:terran-branch-seeds": [
+      "S12",
+      19
+    ],
+    "tab:external-native-sender": [
+      "S13",
+      20
+    ]
+  },
+  "verified_surnames": {
+    "6": [
+      "de Freitas"
+    ],
+    "18": [
+      "Waubert de Puiseau",
+      "Lucas de Carvalho"
+    ],
+    "19": [
+      "van Merriënboer"
+    ],
+    "20": [
+      "Schroeder de Witt"
+    ],
+    "22": [
+      "van Hasselt"
+    ]
+  },
+  "primary_author_sources": {
+    "6": "https://proceedings.neurips.cc/paper/2016/hash/c7635bfd99248a2cdef8249ef7bfbef4-Abstract.html",
+    "18": "https://link.springer.com/article/10.1007/s10458-025-09691-y",
+    "19": "https://aclanthology.org/D14-1179/",
+    "20": "https://proceedings.mlr.press/v80/rashid18a/rashid18a.pdf",
+    "22": "https://arxiv.org/abs/1509.06461"
+  },
+  "Methods_disclosure": "OpenAI Codex",
+  "source_rebuild_matching_documents": 6,
+  "code_figure_inputs_identical": true,
+  "new_experiments_or_training": false
+}

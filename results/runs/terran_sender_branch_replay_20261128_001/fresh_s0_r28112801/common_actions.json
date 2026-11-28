@@ -1,0 +1,207 @@
+{
+  "seed": 0,
+  "reset": 28112801,
+  "mode": "fresh",
+  "branch_step": 8,
+  "reached": true,
+  "prefix_reward": 0.0,
+  "factual_sender": 3,
+  "natural_action": [
+    4,
+    4,
+    4,
+    3,
+    1
+  ],
+  "candidates": [
+    {
+      "sender": 0,
+      "action": [
+        3,
+        4,
+        3,
+        4,
+        1
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          8,
+          6,
+          7,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 1,
+      "action": [
+        3,
+        4,
+        3,
+        4,
+        1
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          8,
+          7,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 2,
+      "action": [
+        3,
+        4,
+        3,
+        4,
+        1
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          8,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 3,
+      "action": [
+        4,
+        4,
+        4,
+        3,
+        1
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          7,
+          8,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 4,
+      "action": [
+        4,
+        4,
+        4,
+        4,
+        1
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          7,
+          3,
+          8
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    }
+  ],
+  "prefix_hidden": "d57497db9318194ff718faf41b46fc533efa33c26ac619eb64d0af86932a0655",
+  "prefix_cache": "e29fd8bef0657c214e5b56aff00c11a513d716d7f4ebc7cb672d3ad5cfee4b0f",
+  "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+  "prefix_previous": "15566c54a7657fd6b72778fdbb2f49bd739805451188a4db8b9b90fea5b211bc",
+  "available": [
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  ],
+  "input_observation": "a541ef0895aef8a545f4846d9043a6a7464e5afb97345ef27adc2388158dede8",
+  "input_state": "ac79aca431586c2e7f1d31bbbd63f933fd4bfb110bfe624e1f0215d4972e003a",
+  "action_changed": true
+}

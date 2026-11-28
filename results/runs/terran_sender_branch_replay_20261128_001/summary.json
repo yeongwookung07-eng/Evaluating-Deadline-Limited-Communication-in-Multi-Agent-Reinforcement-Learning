@@ -1,0 +1,42 @@
+{
+  "mode": "fresh",
+  "elapsed": 1039.7113956590183,
+  "valid": true,
+  "per_seed": [
+    {
+      "seed": 0,
+      "episodes": 10,
+      "reached": 10,
+      "episodes_action_changed": 10,
+      "changed_nonfactual_actions": 36,
+      "nonfactual_branches": 40,
+      "changed_nonfactual_returns": 38,
+      "mean_factual_minus_uniform": 0.549209607715296
+    },
+    {
+      "seed": 1,
+      "episodes": 10,
+      "reached": 10,
+      "episodes_action_changed": 7,
+      "changed_nonfactual_actions": 21,
+      "nonfactual_branches": 40,
+      "changed_nonfactual_returns": 25,
+      "mean_factual_minus_uniform": 0.4768332339733227
+    },
+    {
+      "seed": 2,
+      "episodes": 10,
+      "reached": 10,
+      "episodes_action_changed": 5,
+      "changed_nonfactual_actions": 14,
+      "nonfactual_branches": 40,
+      "changed_nonfactual_returns": 35,
+      "mean_factual_minus_uniform": 0.03095374621225231
+    }
+  ],
+  "mean_factual_minus_uniform": 0.352332195966957,
+  "seed_t95": [
+    -0.34487753432802026,
+    1.0495419262619343
+  ]
+}

@@ -1,5 +1,35 @@
 # JAAMAS submission edition
 
+**Manuscript proof corrections, 2026-11-28.** Section 4 discloses how OpenAI Codex assisted with software, validation, plotting and manuscript preparation. Table 2 covers the five study cohorts, including the training gates and comparison conditions for Terran and native Predator–Prey. Section 5.6 cites Figure 2 for normal-access accuracy, Table 9 for source-aware accuracy and misses, and Figure 3 for seed-level gains. The cross-references to supplementary Sections S8 and S9 were checked against this edition. Six author surnames in the numbered reference lists were verified against the primary papers. [Main PDF](jaamas_main.pdf) · [Supplement](jaamas_supplement.pdf) · [Proof checks](editorial_proof_validation_20261128.json).
+
+**Sequential sender studies, 2026-11-28.** Section 5.8 and supplementary Section S9 report two completed CPU evaluations on separately trained three-seed banks. Terran substitutions changed immediate joint actions at 22/30 decisions and realized suffix returns at 27/30. Round robin minus uniform was +0.352 [-0.345, 1.050] in native return units. Native Predator–Prey changed realized return at 22/139 sampled decisions, with a factual-minus-uniform episode contrast of +0.831 [−1.428, 3.090]. Its learning control passed and the zero-payload comparison was unresolved. The checks cover three frozen policies per task, common fresh reset panels and one prespecified Terran decision time. Confidence intervals are descriptive over training seeds, conditional on the reset panel. [Main PDF](jaamas_main.pdf) · [Supplement](jaamas_supplement.pdf) · [Standalone raw auditor](audit_sender_transfers.py) · [Audit records](sequential_sender_raw_audit_20261128.json). Earlier entries below document prior editions.
+
+**Current 15-page review edition (2026-11-28).** Main text 8 pt, 15 pages including references and author details. Supplement 19 pages. The revised paper foregrounds the matched Hallway counterexample, specifies the queue identity conditions and the MNIST denominator, and bounds the receiver effect by seed, supervision and deadline regime. The public literature comparison adds Gao et al. (2025, 2026). Main has 211 abstract words, 9 tables, 4 figures and 31 references. [Internal mock review](jaamas_mock_review_ko_20261128.pdf) and [validation](review_15page_validation_20261128.json). Prior edition: `pre_15page_review_20261128.zip`. Earlier dated entries are historical.
+
+**2026-11-28 author layout:** final-page author names are followed by role/email bullet points, with a separate shared-affiliation bullet. All author details retained; main 20 pages; no build warnings.
+
+**2026-11-28 Funding wording:** main, title page, standalone and portal declarations now state: “This research received no specific grant from funding agencies in the public, commercial, or not-for-profit sectors.” Main remains 20 pages; clean build.
+
+**2026-11-28 data and closing sections:** data paragraph describes Hallway/broadcast trajectories, MNIST inputs and supplementary SMACv2 checks; standalone and portal declarations synchronized. Section 6 is Discussion and limitations; Section 7 is Conclusion. Results, tables, equations and figures unchanged; main 20 pages, clean build.
+
+**2026-11-28 Figures 1–4 size:** all four main result images now display at 0.85\linewidth, preserving aspect ratios and centering. Captions, prose, source plot assets and results unchanged. Main 20 pages; no build warnings.
+
+**2026-11-28 Figure 1 size:** display width reduced from 1.0 to 0.85\linewidth; centered, aspect ratio preserved. Caption, prose and plot asset unchanged. Main 20 pages; clean build.
+
+**2026-11-28 experiment setup:** Added Section 4.1 Experiment setup summarizing task roles and matching. Existing subsections are now 4.2–4.5; their text is unchanged. Main 20 pages, no build warnings. Snapshot: `pre_experiment_setup_20261128.zip`.
+
+**2026-11-28 Problem Definition update:** Section 3 now defines the analytical problem (3.1), communication/receiver state (3.2), and computation/deadlines (3.3). Sections 4–6, declarations and experimental results unchanged. Author information is compacted on the final page with all details retained. Main 20 pages; no build warnings. Snapshot: `pre_problem_definition_20261128.zip`; validation: `problem_definition_validation_20261128.json`.
+
+**2026-11-28 structure update:** Section 3 is Preliminaries (problem/policies, reception/computation/deadlines); Section 4 is Evaluation framework and experimental design (protocol, paired interventions, tasks, timing/uncertainty); Section 5 Results unchanged. All math/table bodies/figure blocks preserved. Main 20 pages; final page combines the end of references and author information. Snapshot: `pre_preliminaries_restructure_20261128.zip`; validation: `preliminaries_validation_20261128.json`.
+
+**2026-11-28 subsection update:** Related Work now has numbered subsections 2.1 Learned communication and efficiency; 2.2 Scheduling rules and time-constrained decisions; 2.3 Evaluation of receiver capabilities and evaluation gap. The former gap paragraph is retained under 2.3. Prose/results unchanged; main 20 pages; no build warnings.
+
+**2026-11-28 Related Work rewrite:** four thematic paragraphs describe communication learning/efficiency, scheduling rules/timing, receiver-capability evaluation, and the evaluation gap addressed by our controls. Only Section 2 changed; the abstract, results, tables and figures remain unchanged. Main 20 pages; no build warnings. Snapshot: `pre_related_work_narrative_20261128.zip`; validation: `related_work_validation_20261128.json`.
+
+**2026-11-28:** Section 2 renamed to `Related work`; section content unchanged. Main remains 20 pages; build has no reference/layout warnings.
+
+**2026-11-27 abstract update:** 236-word narrative abstract now follows background → problem → analytical approach → findings → implications. Only the abstract changed; main remains 20 pages. Validation: `narrative_abstract_validation_20261127.json`.
+
 **Latest revision — 2026-11-27:** completed literature-grounded analysis. Main **20 pages including references, declarations and final author information**; supplement 19 pages. Page 1: title, Yeong-woo Kung / Young-guk Ha, Abstract; no Highlights or contact block. Full author information is on page 20; separate `Title_Page.pdf` supplies submission metadata required by the journal. Text left-aligned; figures/tables centered. All 9 main tables, 4 main figures, numerical tables/equations/figure assets and 29 bibliography entries preserved. No new experiment or training. Evidence mapping: `literature_grounding_20261127.json`; validation: `literature_rewrite_validation_20261127.json`. Earlier dated descriptions below are historical.
 
 **Historical alignment update (2026-11-27):** all manuscript prose and front matter, Highlights and captions are left-aligned (ragged right); figures and tables remain centered. Main 20 pages, supplement 19 pages. Content, table cells, equations and plotted values are unchanged. `journal-reading-layout.sty` applies the shared presentation rules. Snapshot: `pre_left_text_alignment_20261127.zip`; validation: `left_alignment_validation_20261127.json`. Earlier alignment/page-count descriptions below are historical.
@@ -22,7 +52,7 @@ Current edition includes the completed frozen-policy readiness-uncertainty and h
 
 The standardized upload files are in [the separate submission folder](../../../../JAAMAS_submission_20261126/README.md) and the public worktree's [submission directory](../../../../github_analysis/submission/jaamas/README.md):
 
-- `Main_Manuscript.pdf`:20 pages, 222-word abstract, five keywords, references and declarations; full author information on the final page.
+- `Main_Manuscript.pdf`:20 pages, 236-word abstract, five keywords, references and declarations; full author information on the final page.
 - `Title_Page.pdf`:separate one-page title, author, affiliation and corresponding-contact metadata.
 - `Manuscript_Source.zip`:editable main/supplement,figures,bibliography,official class/style and build helper. Primary source `jaamas_main.tex`.
 - `Information_Sheet.pdf`:2pages, main claim, concrete evidence, closest related work and prior publication.

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-28",
+  "changed_section": "Related work only",
+  "organization": [
+    "Learned communication and efficiency",
+    "Scheduling rules and time-constrained decisions",
+    "Evaluation of receiver capabilities",
+    "Evaluation gap and our approach"
+  ],
+  "main_pages": 20,
+  "warnings": [],
+  "other_source_content_unchanged": true,
+  "evidence_basis": "literature_grounding_20261127.json",
+  "additional_primary_checks": [
+    "https://arxiv.org/abs/1605.06676",
+    "https://arxiv.org/abs/1605.07736",
+    "https://arxiv.org/abs/1810.11187"
+  ],
+  "new_experiment": false
+}

@@ -1,0 +1,68 @@
+{
+  "config": {
+    "question": "On three archived native SchedNet policies in predator_prey_obs, does replacing a single scheduled sender change return, and do native choices outperform uniform same-count alternatives?",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "first_reset": 28112800,
+    "resets": 24,
+    "branch_steps": [
+      0,
+      20
+    ],
+    "horizon": 50,
+    "runtime_seconds": 1500,
+    "source": "experiments/deadline_comm/reviewer_validation/native_schednet",
+    "checkpoint_root": "experiments/deadline_comm/runs/review_native_20261119_001",
+    "output": "experiments/deadline_comm/runs/native_predator_sender_20261128_001"
+  },
+  "smoke": false,
+  "script_sha256": "a5f846eb2cd0d1814ed22f42c72c7adc5fd68d93acc2ab6c4f471e92eb1f2737",
+  "config_sha256": "c7f082239a45954e9f01986012821e1020522b8102bb0f575e964f42f9d4e905",
+  "status": "complete",
+  "device": "cpu",
+  "threads": 1,
+  "source_commit": "ffa03007cc654000a859856401231a986a01fbd0",
+  "source_manifest_sha256": "dbbab711908639bd528ea31428e0278b131c4295025a127c6041c6dc0b2fd7dc",
+  "native_flags": {
+    "scenario": "predator_prey_obs",
+    "sch_type": "top",
+    "s_num": 1,
+    "n_predator": 4,
+    "n_prey": 1,
+    "hetero": 1,
+    "map_size": 7,
+    "obs_range": 1,
+    "max_step": 50
+  },
+  "tensorflow": "2.15.1",
+  "numpy": "1.23.5",
+  "scheduled_tensors": [
+    "actor_/aggr0/scheduled:0",
+    "actor_/aggr1/scheduled:0",
+    "actor_/aggr2/scheduled:0",
+    "actor_/aggr3/scheduled:0"
+  ],
+  "checkpoints": {
+    "0": {
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-0-1119180305-50000.data-00000-of-00001": "9b9206417a0073003b8c8c7dca29c4fcff32c3b57032c643e6cb1b988f5a35f4",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-0-1119180305-50000.index": "a11ee3e51e306cd2f56630be147b5f9b5bb5a6297e7cc625e00f5d8ed5fee272",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-0-1119180305-50000.meta": "7f4aa0dca198a17b7411433584fe95208c4bee988f550c6e4a17d2bbd42e2f18"
+    },
+    "1": {
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-1-1119181512-50000.data-00000-of-00001": "af40970712cbfa378dc4a445bee44a752576e15a0eb57a731f651cdf50cdb8e6",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-1-1119181512-50000.index": "e3116b3ed306504f4def6a875f04bcb42f52bfa60aabe2f34afb1d3701a8882a",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-1-1119181512-50000.meta": "26416b06f055feaa6f2053c3e9270034dbb71051c5f492cf8f46ec2cf12139ea"
+    },
+    "2": {
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-2-1119182726-50000.data-00000-of-00001": "c053b3f8ad947f7a96fd5092950a17963d36bc3a1ed6b9965389c968ad56fbfb",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-2-1119182726-50000.index": "cd9ad1111d34da10812d27be4cce615d7fba1ee27933c3e06fa504baced7f950",
+      "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-2-1119182726-50000.meta": "28c5a0b61e3e0b179d606725584b8667b0245a9adb3143f8e0de29c6589fcab9"
+    }
+  },
+  "seconds": 161.47655689693056,
+  "cpu_seconds": 162.066277375,
+  "peak_rss_kib": 469936
+}

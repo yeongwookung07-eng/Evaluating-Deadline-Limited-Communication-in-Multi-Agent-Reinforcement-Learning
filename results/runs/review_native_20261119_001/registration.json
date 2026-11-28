@@ -1,0 +1,16 @@
+{
+  "output": "experiments/deadline_comm/runs/review_native_20261119_001",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "controls": [
+    "native",
+    "round_robin"
+  ],
+  "steps": 50000,
+  "testing_steps": 2500,
+  "wall_hours": 4,
+  "scope": "Native author SchedNet Predator-Prey training versus rotating schedule; not a matched DAC/deadline comparison or original paper-score reproduction."
+}

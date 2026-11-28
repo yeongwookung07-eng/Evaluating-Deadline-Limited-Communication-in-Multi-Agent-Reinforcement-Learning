@@ -179,8 +179,8 @@ Medium/2 ms & RR & 54.98 & 64.17 & 99.91\\
 Medium/2 ms & DAC & 53.35 & 65.09 & 100.00\\
 \bottomrule\end{tabular}}\end{table}
 \FloatBarrier
-\section{SMACv2 learning and replay checks}
-We use the procedural SMACv2 benchmark~\citep{ellis2023smacv2}. The initial Ideal Full pilot used three seeds each in Terran and Protoss. Final win rates of 3.125--9.375\% after approximately 100,000 environment steps fell below its preset criterion. A separate Terran continuation passed at 300,000 steps (17/64, 14/64 and 19/64 wins). Independent-engine replay then failed at seed 1 after 320 evaluation episodes, precluding the paired scheduler comparison.
+\section{SMACv2 learning and replay checks}\label{app:smac_replay}
+We use the procedural SMACv2 benchmark~\citep{ellis2023smacv2}. The initial Ideal Full pilot used three seeds each in Terran and Protoss. Final win rates of 3.125--9.375\% after approximately 100,000 environment steps fell below its preset criterion. A separate Terran continuation passed at 300,000 steps (17/64, 14/64 and 19/64 wins). Independent-engine replay then failed at seed 1 after 320 evaluation episodes, precluding the historical paired scheduler comparison. Section~\ref{app:sequential} tests fresh one-decision interventions using a repaired observation reader.
 
 The separate Terran 5v5 smoke checked 20 single-episode cells (1,046 steps) on one seed-0 checkpoint, crossing five deployments, two links and fixed versus measured readiness. With readiness fixed at 0.5 ms in Slow/5 ms, Full and shadow RR matched sender identities, timestamps, caches, recurrent states and actions for all 47 steps. Offered traffic fell from 240 to 48 wire B/step at the same 32 payload B/step. At Medium/2 ms both delivered 64 payload B/step, but Full delivered $\{1,2\}$ and RR $\{2,3\}$ at the second decision. The shadow sees factual environment inputs, so its subsequent trace cannot estimate an independent return. This smoke verifies the instrumentation.
 
@@ -303,6 +303,8 @@ Medium/2 ms & DAC & $0.242$ [$-0.017$, $0.501$] & 0.554 & 4.6\\
 \end{table}
 
 
+On the Medium link with measured readiness, 0/0, 17.5/0 and 49.3/49.8\% of decisions delivered at least three packets under RR/DAC at 2.00, 2.25 and 2.50~ms, respectively. Each rate averages ten episodes per seed, then ten seeds. Figure~\ref{fig:controlled}(c) shows mean delivered packets per decision across the deadline sweep.
+
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{diagnostics.pdf}
 \caption{Primary-checkpoint diagnostics. (a) Each point is one seed's mean feasible-subset suffix-return range. (b) Slow/5 ms only, cold and common-prefix DAC--RR effects on the same frozen policy, with early termination retained. (c) Medium link, primary Medium/2 ms-trained RR/DAC checkpoints, mean delivered packets over ten seeds under measured (solid) or fixed (dashed) readiness. Seed-specific curves are retained in the supplementary summary; this panel shows means without uncertainty bands. These are distinct interventions, not pooled training cohorts.}\label{fig:controlled}
 \end{figure}
@@ -322,6 +324,49 @@ Freeze the same RR-trained policy & Switch after common RR history & $0.00$ in a
 \end{table}
 
 
+
+\FloatBarrier
+\FloatBarrier
+\section{Matched sender substitutions in two sequential environments}\label{app:sequential}
+\subsection{SMACv2 Terran 5v5}
+We retained all three 300,000-step policies from the historical learning gate in Section~\ref{app:smac_replay}. That gate tests task performance against an untrained reference. The 320 episodes from the interrupted deployment comparison remain excluded. Fresh evaluations use a modeled 20,000~B/s link, 5~ms reception deadline, 0.5~ms readiness and unit cache retention. At zero-based decision 8, one slot admits 48 offered wire bytes and delivers 32 payload bytes. We enumerate all five sender identities under the existing agent-index convention, including an inactive agent if present. All 150 candidates at the sampled decisions had live-agent action availability. Each trajectory resumes round robin at the same cursor and credit after the intervened step. At decision 8 the rotating schedule always selects agent index 3 (zero-based). This contrast measures that slot against the five possible choices at this time. The checkpoints originally learned with ideal full access. The endpoint is undiscounted native scaled combat reward. The registered episode-weighted contrast assigns zero to an episode ending before step 8.
+
+\paragraph{Historical diagnosis.} We reran checkpoint 1 at the historical reset 52999901 in three fresh engines. With identical scenario seeds but different ambient random states, the first observed difference was the enemy-visibility assignment at step 5. In one repeat an observation feature and recurrent state diverged by step 13, although all three 38-step episodes returned 11.9055. The benchmark observation reader updates visibility bookkeeping and consumes randomness. Giving observation reads the adapter's own random state reproduced all three trajectories down to the native unit records. The archived historical pair contains digests, so this diagnosis identifies a reproduced mechanism.
+
+\paragraph{Choosing a valid replay.} The game engine accepted save and restore requests. At the first validation state the forced-original action after restore produced a different immediate reward. We retained this failed attempt and used the registered alternative of starting each arm in a fresh engine with the repaired observation reader. The natural and forced-original paths must agree throughout the suffix. Comparisons include the native unit stream, observations, available actions, cache, hidden state, actions, rewards and termination. All five alternatives must agree through the pre-intervention state. We also compute all five immediate joint actions on the same in-memory policy input, independently of suffix replay. Host timings are excluded from trajectory equality. Only a complete pass across the cohort licenses the paired return analysis.
+
+
+\paragraph{Matched results.} All three checkpoints reached step 8 on all ten fresh resets, with all 150 sender branches passing the pre-decision checks and all 30 forced-original suffixes reproducing the natural trajectories. Table~\ref{tab:terran-branch-seeds} gives the counts of decisions with at least one alternative that changed each endpoint. The cutoff $10^{-8}$ for a realized return change gave the same counts as direct numerical inequality. Different sender choices changed the win/loss outcome at 2 of 30 decisions. At 5 decisions all five immediate actions agreed despite different later returns. This observation leaves the respective contributions of retained payload, recurrent state and subsequent feedback unresolved. Across checkpoints the predeclared round-robin-minus-uniform contrast was $+0.35$ [$-0.34$, $1.05$] in native reward units. Its interval describes checkpoint variation conditional on the ten shared resets. Of 120 nonfactual branches, 71 changed the immediate joint action and 98 changed suffix return. The smallest nonzero absolute return difference was 0.0293. Eight of 30 factual branches won. Across 1,606 matched transitions preceding physical-action divergence (including pairs with equal actions), physical state and reward agreed through each shared action.
+
+\begin{table}[htbp]\centering
+\caption{Terran sender substitutions after eight round-robin steps. The action is the immediate joint action. Return and win concern the complete suffix. Each numerator counts decisions, and each denominator counts matched resets within one frozen training seed. The final column gives the factual sender's suffix return minus the mean over all five sender choices.}\label{tab:terran-branch-seeds}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Seed & Action changed & Return changed & Win changed & Mean contrast\\\midrule
+0 & 10/10 & 10/10 & 2/10 & +0.549\\
+1 & 7/10 & 7/10 & 0/10 & +0.477\\
+2 & 5/10 & 10/10 & 0/10 & +0.031\\
+\bottomrule\end{tabular}
+\end{table}
+
+\subsection{Native SchedNet Predator--Prey}
+Four predators observe different portions of a $7\times7$ grid. The prey moves stochastically. The native terminal flag is set when all four predators can see the prey. Each episode ends on that flag or at 50 steps. The upstream trainer uses four predator rewards for learning. Its evaluation logger sums the native five-component reward vector, including the prey component. Our prespecified endpoint follows that evaluation convention over the suffix. Three locally trained 50,000-step checkpoints from the SchedNet author implementation~\citep{kim2019schedule} supply one two-component encoding per step. The factual scheduler takes its greedy top-one choice. The predator actors and prey keep their native sampling. Each alternative forces one sender once, then resumes the factual scheduling rule. The forced mask affects both the current encoding and the schedule history available on later decisions. This native test imposes no transport latency or action deadline.
+
+Of 72 resets, 67 reached the second target decision. All 556 forced prefixes and all 139 forced-factual full trajectories agreed with their corresponding originals. Replacing the received encoding by an identical copy throughout the episode also reproduced all 72 factual trajectories. Together with the zero-payload and random-action controls, the 844 trajectories contained 40,437 environment steps. Different senders changed the ensuing predator action sequence at 44 of 139 decisions and the realized suffix return at 22. Fourteen decisions changed the immediate joint predator action. The episode-weighted fraction of return-sensitive decisions was 17.36\% [1.55, 33.17]. Factual, zero-payload and random-action runs reached the native terminal condition on 10, 8 and 3 of 72 resets, respectively. Random-action runs share the same resets and random streams across checkpoints. Their repeated results enter each seed's paired difference once.
+
+\begin{table}[htbp]\centering
+\caption{Paired effects in native Predator--Prey, in undiscounted native evaluation-return units. Each seed uses the same 24 reset identifiers. The final column is an unadjusted descriptive 95\% $t$ interval on three training-seed means. The episode-weighted sender contrast averages the available decisions within a reset before averaging resets.}\label{tab:external-native-sender}
+\begin{tabular}{@{}lrrrrl@{}}\toprule
+Comparison & Seed 0 & Seed 1 & Seed 2 & Mean & 95\% interval\\\midrule
+Factual $-$ random actions & 8.325 & 13.925 & 10.042 & 10.764 & [3.637, 17.891]\\
+Factual $-$ zero payload & 0.375 & 2.267 & 0.383 & 1.008 & [$-1.699$, 3.715]\\
+Factual $-$ uniform sender, episode & $-0.010$ & 1.796 & 0.708 & 0.831 & [$-1.428$, 3.090]\\
+Factual $-$ uniform sender, state & $-0.011$ & 0.862 & 0.481 & 0.444 & [$-0.643$, 1.531]\\
+\bottomrule\end{tabular}
+\end{table}
+
+As a post hoc check, we reaggregated the same logged transitions using only the four predator rewards supplied to learning. The number of return-sensitive decisions stayed at 22/139. Episode-weighted factual-minus-uniform effects were $-0.010$, $+1.765$ and $+0.708$ by seed, with mean $+0.821$ [$-1.397$, $3.039$].
+
+The prespecified positive-effect rule required three positive seed differences and a lower interval bound above zero. The learned-policy comparison with random predator actions passed. The incremental benefit of retaining the received payload and the advantage of the learned sender over uniform alternatives both remained unresolved (Table~\ref{tab:external-native-sender}). The message ablation preserves the scheduling mechanism and its history. Within-decision sensitivity describes a realized contrast for one matched stream of random draws. Returns and their units are specific to this scenario.
 
 \FloatBarrier
 \bibliography{references}

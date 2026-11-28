@@ -1,0 +1,16 @@
+output: experiments/deadline_comm/runs/terran_sender_branch_replay_20261128_001
+runtime: experiments/deadline_comm/runs/smacv2_runtime_20261119_001
+checkpoint_map: experiments/deadline_comm/runs/smacv2_protocol_20261121_001/checkpoints.json
+evaluation_config: experiments/deadline_comm/configs/smacv2_protocol.yaml
+scenario: terran
+training_seeds: [0, 1, 2]
+fresh_reset_base: 28112800
+episodes_per_seed: 10
+branch_step: 8
+condition: slow_5ms
+readiness: fixed
+diagnostic_reset: 52999901
+diagnostic_checkpoint: 1
+historical_repeats: 3
+technical_reset: 28112799
+wall_seconds: 1500

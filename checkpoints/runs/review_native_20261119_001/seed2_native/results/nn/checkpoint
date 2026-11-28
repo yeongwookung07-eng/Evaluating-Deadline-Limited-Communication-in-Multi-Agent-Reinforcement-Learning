@@ -1,0 +1,2 @@
+model_checkpoint_path: "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-2-1119182726-50000"
+all_model_checkpoint_paths: "n-4-s-predator_prey_obs-map-7-or-1-a-schednet-clr-0.0001-alr-1e-05-hc-64-cp-2-ss-False-es-False-as-False-sn-1-sched-schedule-s_type-top-seed-2-1119182726-50000"

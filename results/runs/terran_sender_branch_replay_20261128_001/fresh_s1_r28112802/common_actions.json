@@ -1,0 +1,207 @@
+{
+  "seed": 1,
+  "reset": 28112802,
+  "mode": "fresh",
+  "branch_step": 8,
+  "reached": true,
+  "prefix_reward": 3.918918918918919,
+  "factual_sender": 3,
+  "natural_action": [
+    8,
+    8,
+    5,
+    8,
+    7
+  ],
+  "candidates": [
+    {
+      "sender": 0,
+      "action": [
+        8,
+        8,
+        5,
+        8,
+        7
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          8,
+          6,
+          7,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 1,
+      "action": [
+        8,
+        8,
+        5,
+        8,
+        8
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          8,
+          7,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 2,
+      "action": [
+        8,
+        8,
+        5,
+        8,
+        7
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          8,
+          3,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 3,
+      "action": [
+        8,
+        8,
+        5,
+        8,
+        7
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          7,
+          8,
+          4
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    },
+    {
+      "sender": 4,
+      "action": [
+        8,
+        8,
+        5,
+        8,
+        7
+      ],
+      "offered_bytes": 48,
+      "payload_bytes": 32,
+      "source": [
+        [
+          5,
+          6,
+          7,
+          3,
+          8
+        ]
+      ],
+      "cursor_after": 4,
+      "budget_after": 96
+    }
+  ],
+  "prefix_hidden": "47ac1fb9902a4103715fbfd1fe3b602847ee6931412d11b9f3e2fa2dbd79ed53",
+  "prefix_cache": "0dc67a70208a18124a4081b261edddf29d0a928d8ec052eb01a521e0c3e4ef53",
+  "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+  "prefix_previous": "8e11607634debcce5d0ad35239df402824930177f1d3ea2c662925fd7e73b713",
+  "available": [
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  ],
+  "input_observation": "2766671777b715746a8e9c77997790b62d0ec37fdee444c52aee6290a494bb26",
+  "input_state": "7954957b3f8c875fa9d721987bee51341367e2dfffab1c809f99de5a706f714a",
+  "action_changed": true
+}

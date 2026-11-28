@@ -1,0 +1,9752 @@
+[
+  {
+    "seed": 0,
+    "reset": 28112800,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.1724137931034483,
+    "factual_sender": 3,
+    "natural_action": [
+      8,
+      3,
+      3,
+      8,
+      9
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "633bf8826ed8e77e8ca961efc99fbbb4501c9ea31ec0f2d18438686e73e2d3e6",
+    "prefix_cache": "533adfd159790ad7b9bd28c2b03ef8470088cbea30cdb318c6086154598e5bc5",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "ea2625b025af7f7dda4d1928000e35d4ba5b14410b2b27e74de888bdfb10e364",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "7f90dcfb6855c033a1bfd89b734d8a1440ea5b6be4fa70b6281634c063465a9e",
+    "input_state": "3aa6f5c9863eeba747e95e42310abea7874d4560b1ab88aeb8375b22af4fc496",
+    "action_changed": true,
+    "factual_suffix": 4.490385910560347,
+    "factual_suffix_steps": 31,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "return_": 4.490385910560347,
+        "steps": 31,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          9
+        ],
+        "return_": 4.748063712284484,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          3,
+          3,
+          8,
+          1
+        ],
+        "return_": 5.226831896551725,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "return_": 4.461089035560345,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          3,
+          5,
+          8,
+          1
+        ],
+        "return_": 4.1500875538793105,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.1249057112068952
+  },
+  {
+    "seed": 0,
+    "reset": 28112801,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      4,
+      3,
+      1
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "d57497db9318194ff718faf41b46fc533efa33c26ac619eb64d0af86932a0655",
+    "prefix_cache": "e29fd8bef0657c214e5b56aff00c11a513d716d7f4ebc7cb672d3ad5cfee4b0f",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "15566c54a7657fd6b72778fdbb2f49bd739805451188a4db8b9b90fea5b211bc",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "a541ef0895aef8a545f4846d9043a6a7464e5afb97345ef27adc2388158dede8",
+    "input_state": "ac79aca431586c2e7f1d31bbbd63f933fd4bfb110bfe624e1f0215d4972e003a",
+    "action_changed": true,
+    "factual_suffix": 12.913385826771652,
+    "factual_suffix_steps": 54,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "return_": 12.913385826771652,
+        "steps": 54,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "return_": 8.818897637795276,
+        "steps": 47,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "return_": 8.818897637795276,
+        "steps": 47,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          4,
+          3,
+          4,
+          1
+        ],
+        "return_": 8.818897637795276,
+        "steps": 47,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          1
+        ],
+        "return_": 9.795275590551185,
+        "steps": 43,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 3.08031496062992
+  },
+  {
+    "seed": 0,
+    "reset": 28112802,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 3.918918918918919,
+    "factual_sender": 3,
+    "natural_action": [
+      8,
+      8,
+      6,
+      8,
+      6
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          6,
+          8,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "a9a7c47598056aca4285fc76e400ba4c9cfc3be8e87d11d53d5b5f4066393140",
+    "prefix_cache": "db53736896a3c5cc96227752c84ea3cf42e1bca6037ee51c59de6d0f68c6a6cf",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "68fb5e1cb7f87883d516ec834bf3d197d89c7486a0a38072bd56aae0783088fd",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "4e445b651c861d2a8af59cfcf8cf74b96f1dbbedbdf74265371617c3647598e7",
+    "input_state": "8405de802ce4664b7686b177d87cfe9957b149813bc7bc0724f8320f241f3cb3",
+    "action_changed": true,
+    "factual_suffix": 12.531421558277028,
+    "factual_suffix_steps": 32,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          6,
+          8,
+          6
+        ],
+        "return_": 12.531421558277028,
+        "steps": 32,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "return_": 12.48585304054054,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "return_": 12.48585304054054,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "return_": 12.48585304054054,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          3,
+          6,
+          8,
+          6
+        ],
+        "return_": 12.48585304054054,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.03645481418918983
+  },
+  {
+    "seed": 0,
+    "reset": 28112803,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.945945945945946,
+    "factual_sender": 3,
+    "natural_action": [
+      10,
+      3,
+      10,
+      10,
+      10
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          2,
+          10,
+          10,
+          10
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          2,
+          10,
+          10,
+          10
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "7e2b1654c85883f2684dab508450ffdd4ff0c0b021113aa886719d0778139887",
+    "prefix_cache": "eeacf53a399033766171e35fc48e54b96f503f28b9674fb1682f89fbd81c1800",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "213c5bf9ffb214ce1d414b3ad5aabeecab737325fbe2b4af706ffbbf0768521c",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ]
+    ],
+    "input_observation": "84330c208a257d6c1cbe07bee833aca0183b74a2d484aa6b53aa495dc43b1246",
+    "input_state": "509332977abb7a8c99706343afb1088fc7e97b931bbb7c82c6c637e79a4f689d",
+    "action_changed": true,
+    "factual_suffix": 18.05405405405405,
+    "factual_suffix_steps": 29,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "return_": 18.05405405405405,
+        "steps": 29,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "return_": 18.05405405405405,
+        "steps": 29,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          2,
+          10,
+          10,
+          10
+        ],
+        "return_": 10.162162162162158,
+        "steps": 39,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          2,
+          10,
+          10,
+          10
+        ],
+        "return_": 10.162162162162158,
+        "steps": 39,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          10
+        ],
+        "return_": 18.05405405405405,
+        "steps": 29,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 3.1567567567567547
+  },
+  {
+    "seed": 0,
+    "reset": 28112804,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.4342857142857143,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      2,
+      2,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          1,
+          1,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          2,
+          1,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          2,
+          2,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          2,
+          2,
+          1,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "1cb0387b7463eb8d0090cb2eb1170fcead64248e5a4df9ae095999cdb691b30d",
+    "prefix_cache": "fe8e25088ba11fdd9a6bfe33627a86101eb7ee0a0be0d293943a1de7529379ad",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "63edcc894cb5733088475f9b66a4c6e05d6981650bbe1c117887e188f1c95ad6",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "d7a1f65a5c896f48839da8a951be777682e176cdf6aedda5b5139acddddadf37",
+    "input_state": "b3692a36a1932843806404efe09882c80baa0ad2d34607d60afa3da4a5229b40",
+    "action_changed": true,
+    "factual_suffix": 7.9085714285714275,
+    "factual_suffix_steps": 26,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          2,
+          2,
+          4
+        ],
+        "return_": 7.9085714285714275,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "return_": 7.039999999999999,
+        "steps": 28,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          1,
+          1,
+          2
+        ],
+        "return_": 6.1257142857142854,
+        "steps": 22,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          2,
+          1,
+          2
+        ],
+        "return_": 6.994285714285714,
+        "steps": 25,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          2,
+          2,
+          1,
+          2
+        ],
+        "return_": 7.039999999999999,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.886857142857143
+  },
+  {
+    "seed": 0,
+    "reset": 28112805,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.5954959753787878,
+    "factual_sender": 3,
+    "natural_action": [
+      2,
+      2,
+      7,
+      1,
+      9
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          2,
+          7,
+          9,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          2,
+          2,
+          7,
+          1,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "cae322df07c9fdc39358b8aeed0058eeb13269ca000401b24f9c6fdfd83e69b9",
+    "prefix_cache": "90357cab5c4e0f0deb8bdff3f76c965261a3f2a1b6c5c4cb0cb76a8bbc9a162b",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "53a0aa7777258f61c56e963bb19ed9a36167ef7e87cdd94cce2571eaba312654",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "80aa4ce913cd9a862ce4661a0eeafec5dd0546bf48977b47f904c6671265dda1",
+    "input_state": "abaddd6971ed903d636b93fad57cc5e7dc86cb73d1fd71af33a0a84e406ff5cc",
+    "action_changed": true,
+    "factual_suffix": 6.438284209280301,
+    "factual_suffix_steps": 50,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          2,
+          2,
+          7,
+          1,
+          9
+        ],
+        "return_": 6.438284209280301,
+        "steps": 50,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "return_": 7.0907981178977275,
+        "steps": 50,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          2,
+          7,
+          9,
+          1
+        ],
+        "return_": 15.550736860795457,
+        "steps": 40,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "return_": 7.0907981178977275,
+        "steps": 50,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          2,
+          7,
+          6,
+          1
+        ],
+        "return_": 8.043316465435606,
+        "steps": 53,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -2.404502544981062
+  },
+  {
+    "seed": 0,
+    "reset": 28112806,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.30303030303030304,
+    "factual_sender": 3,
+    "natural_action": [
+      8,
+      8,
+      2,
+      8,
+      2
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          3,
+          8,
+          2,
+          8,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          5,
+          2,
+          8,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          8,
+          2,
+          8,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          2,
+          8,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          5,
+          2,
+          8,
+          2
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "94460932d774fe3744a1ef407c7b83512831e46a028761b2345008c37a7d632e",
+    "prefix_cache": "b8d591764dbcc4050c3b77b3df74cf737713918b2c9d4d82035a819eb01d3e94",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "d597a55977acf2e5330f88d81291c44eb5eca1485a2b6ee70f6f031eefd04855",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "3cb70a87196af0832f8f0202768fb521b25e7aaeb9e1442aa69825b689d299ed",
+    "input_state": "5164a93e46339dd0550b087dd567eda4cc796ce7b28b34a59c6626d9b620eb44",
+    "action_changed": true,
+    "factual_suffix": 4.984611742424242,
+    "factual_suffix_steps": 35,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          2,
+          8,
+          2
+        ],
+        "return_": 4.984611742424242,
+        "steps": 35,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          3,
+          8,
+          2,
+          8,
+          2
+        ],
+        "return_": 6.300218986742424,
+        "steps": 44,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          5,
+          2,
+          8,
+          2
+        ],
+        "return_": 6.11322206439394,
+        "steps": 46,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          8,
+          2,
+          8,
+          2
+        ],
+        "return_": 6.300218986742424,
+        "steps": 44,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          5,
+          2,
+          8,
+          2
+        ],
+        "return_": 6.169833096590907,
+        "steps": 45,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.9890092329545457
+  },
+  {
+    "seed": 0,
+    "reset": 28112807,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.1515151515151516,
+    "factual_sender": 3,
+    "natural_action": [
+      3,
+      4,
+      3,
+      5,
+      7
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          3,
+          4,
+          3,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          5,
+          3,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          3,
+          3,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          3,
+          4,
+          3,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          3,
+          3,
+          3,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "b594ea45aed495d98e1bf0831d1fc37ff4560d48f16bd846b74ec8b561eb7808",
+    "prefix_cache": "fc2caea3c27c7bf1e3de7e56e2b30e0ec78f10d4d88ff714f30b1c1dac43dfec",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "2441164ae57fee855c3564b2530567e5a7a4b704b217318fce3714af85555ffd",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "d4448d15f9c066233148b5b32713e7fb2f4e6f3a4f537f1d686ea55a02a6efbd",
+    "input_state": "2a7af364f7fc10592055e16e1ef63d904429e81c41cf7018680eb586e1335381",
+    "action_changed": true,
+    "factual_suffix": 3.2549937855113624,
+    "factual_suffix_steps": 55,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          3,
+          4,
+          3,
+          5,
+          7
+        ],
+        "return_": 3.2549937855113624,
+        "steps": 55,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          3,
+          4,
+          3,
+          5,
+          7
+        ],
+        "return_": 1.819705847537879,
+        "steps": 28,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          5,
+          3,
+          5,
+          7
+        ],
+        "return_": 1.6644324100378791,
+        "steps": 33,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          3,
+          3,
+          5,
+          7
+        ],
+        "return_": 1.361402107007576,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          3,
+          3,
+          3,
+          5,
+          7
+        ],
+        "return_": 1.3443714488636365,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 1.366012665719696
+  },
+  {
+    "seed": 0,
+    "reset": 28112808,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.8111888111888113,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      8,
+      1,
+      3,
+      5
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          8,
+          1,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "845cccf5fd5c541bc5ac2418ae9470fce33eda8f1a8be312320a472f551c6a99",
+    "prefix_cache": "6436f7e3443669e48867e735a24ec007380020c0f80952629a6c133f72657d3c",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "3686aa6a699c6dc029790bd0de7ebf8cb80afb6d14080634b91bed8dc7a223f0",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "71bd54b3fe9886c865e3af5893e0557f817013e9c2d5d595d08419c3b90991af",
+    "input_state": "c0cb797091c995df30ecbc004f1c7b5eeb5a4723b6f38018f6f11d81576ce03d",
+    "action_changed": true,
+    "factual_suffix": 5.1468531468531475,
+    "factual_suffix_steps": 21,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          8,
+          1,
+          3,
+          5
+        ],
+        "return_": 5.1468531468531475,
+        "steps": 21,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "return_": 6.06993006993007,
+        "steps": 22,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "return_": 6.06993006993007,
+        "steps": 22,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "return_": 6.2377622377622375,
+        "steps": 22,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          8,
+          1,
+          4,
+          5
+        ],
+        "return_": 6.06993006993007,
+        "steps": 22,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.7720279720279715
+  },
+  {
+    "seed": 0,
+    "reset": 28112809,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.4634146341463415,
+    "factual_sender": 3,
+    "natural_action": [
+      6,
+      2,
+      10,
+      1,
+      3
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          3,
+          2,
+          3,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          6,
+          2,
+          10,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "2ff4832ec81af322e078ec668c66bae1d15eaf982894bd5438e1e632ef9db008",
+    "prefix_cache": "86a5add1c03072effc683f430249b5c1d59608107f14b27f39dac93d72a3754e",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "4c94b9ed03604446a72fc4aab9f77fba8f57e173aa6d190d32eec29a0588d7a2",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "c3195d5332ea4b6e18b45aaf3feb896dba1432fb5b5f1aa484c7958b6978711f",
+    "input_state": "d69b421bbe669dd3c87ce82b30778caf6177844131c5718b6265d70fec0b8925",
+    "action_changed": true,
+    "factual_suffix": 9.569097751524389,
+    "factual_suffix_steps": 61,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          6,
+          2,
+          10,
+          1,
+          3
+        ],
+        "return_": 9.569097751524389,
+        "steps": 61,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          3,
+          2,
+          3,
+          1,
+          3
+        ],
+        "return_": 7.038395579268291,
+        "steps": 31,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "return_": 7.995450647865853,
+        "steps": 54,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "return_": 11.78937214176829,
+        "steps": 67,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          2,
+          3,
+          1,
+          3
+        ],
+        "return_": 5.172446646341461,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 1.2561451981707314
+  },
+  {
+    "seed": 1,
+    "reset": 28112800,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.1724137931034483,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      6,
+      5,
+      6
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "5d78b910b62a0835a869717b914f4a2389412912e19e8f47fa81a4cf7155fb36",
+    "prefix_cache": "248ed4c5c6dd85b764bb84d123d4803fe25c4cdd2b43811ccc418d39edef6b2b",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "0ff0018d88af2029d90c182a44c8822149220bf6200ab936fae7ed7391b169ab",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "16d7debaec21f5a02e40de72aa48a7cff939faa788bad7b6cf827e32997d05f6",
+    "input_state": "0429daca8161a0d68fbfd799239f8bb5f1a6e5f3700438c3d512391e1887f82c",
+    "action_changed": true,
+    "factual_suffix": 6.379184065193967,
+    "factual_suffix_steps": 29,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          6
+        ],
+        "return_": 6.379184065193967,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          6
+        ],
+        "return_": 5.443999191810345,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "return_": 5.443999191810345,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "return_": 5.443999191810345,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          6,
+          5,
+          9
+        ],
+        "return_": 5.443999191810345,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.7481478987068977
+  },
+  {
+    "seed": 1,
+    "reset": 28112801,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      5,
+      4,
+      4,
+      3,
+      5
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "a58e6eeb430e510153218257211b25636767bf6c7db8ecf755cb3db0517f820f",
+    "prefix_cache": "0c30bcc09acb0dafeaa0574c9d08aa140d1280b340f07abb585c24014bdba699",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "973a00af7d435d3f8f2a24060adec45f27331e207aa965f21242522225e9f0c3",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "dc6ae763ce9925af96ebe380cbf185a6202a03daac33bf9b9720dab8ebd6c9d2",
+    "input_state": "9787adf29535e30843ff4f4803f7aa16c118c2e02eeacf772b1d91cb6894e6ee",
+    "action_changed": false,
+    "factual_suffix": 8.818897637795276,
+    "factual_suffix_steps": 29,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "return_": 8.818897637795276,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "return_": 8.818897637795276,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "return_": 8.818897637795276,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "return_": 8.818897637795276,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          5,
+          4,
+          4,
+          3,
+          5
+        ],
+        "return_": 8.818897637795276,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.0
+  },
+  {
+    "seed": 1,
+    "reset": 28112802,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 3.918918918918919,
+    "factual_sender": 3,
+    "natural_action": [
+      8,
+      8,
+      5,
+      8,
+      7
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "47ac1fb9902a4103715fbfd1fe3b602847ee6931412d11b9f3e2fa2dbd79ed53",
+    "prefix_cache": "0dc67a70208a18124a4081b261edddf29d0a928d8ec052eb01a521e0c3e4ef53",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "8e11607634debcce5d0ad35239df402824930177f1d3ea2c662925fd7e73b713",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "2766671777b715746a8e9c77997790b62d0ec37fdee444c52aee6290a494bb26",
+    "input_state": "7954957b3f8c875fa9d721987bee51341367e2dfffab1c809f99de5a706f714a",
+    "action_changed": true,
+    "factual_suffix": 12.933686127533782,
+    "factual_suffix_steps": 31,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "return_": 12.933686127533782,
+        "steps": 31,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "return_": 12.933686127533782,
+        "steps": 31,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          8
+        ],
+        "return_": 13.099200274493242,
+        "steps": 31,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "return_": 12.933686127533782,
+        "steps": 31,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          8,
+          8,
+          5,
+          8,
+          7
+        ],
+        "return_": 12.933686127533782,
+        "steps": 31,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.033102829391891575
+  },
+  {
+    "seed": 1,
+    "reset": 28112803,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.1171171171171173,
+    "factual_sender": 3,
+    "natural_action": [
+      10,
+      3,
+      5,
+      7,
+      7
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "2639d92976567be529d5949cd90f6bf87bfdf22c3c4467e37488172332766a9d",
+    "prefix_cache": "04679ba3a4d2ba6e9d256d5bb40a6c7e379a1e6e0ecea083f4090f7efbcea6a9",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "6a434bae1bdcf84e6b98146c28edd08f794d15605f200a07ccb758a3bb642127",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "0895c39d45c4abf5f3c9f4a2437d25656842f75251e60c1d3788c6bf755991f1",
+    "input_state": "d0705a499f99caa921fa928db0f4d8e4ebb33c24dd5076c28587ed029e7a1b36",
+    "action_changed": false,
+    "factual_suffix": 18.882882882882885,
+    "factual_suffix_steps": 26,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "return_": 18.882882882882885,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "return_": 18.882882882882885,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "return_": 18.882882882882885,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "return_": 18.882882882882885,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          3,
+          5,
+          7,
+          7
+        ],
+        "return_": 18.882882882882885,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.0
+  },
+  {
+    "seed": 1,
+    "reset": 28112804,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      2,
+      3,
+      3,
+      3,
+      5
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          2,
+          3,
+          3,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "0565a63d78a5126c51790cf53e4b08497ccce9606a671df0db58b9210dbfc02c",
+    "prefix_cache": "121c2fd1f3217446be71782d46d00efb6022904b6c3959a5601b2adf83ae14ac",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "85ba15ec1fc4b0d92dd5c72ab0e3397f0b12b67372b4604b1025ab2cd9479edb",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "316c33cd8c80200a8b243a7cf3a89d867ad075e6fb49e1763f11540e49021c83",
+    "input_state": "7c0ccd9ed1311cfc5721098f38caaf8c1d109a11d1c8c4aad7595909e711e8e6",
+    "action_changed": true,
+    "factual_suffix": 10.514285714285714,
+    "factual_suffix_steps": 30,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          2,
+          3,
+          3,
+          3,
+          5
+        ],
+        "return_": 10.514285714285714,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "return_": 13.165714285714285,
+        "steps": 36,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "return_": 13.165714285714285,
+        "steps": 36,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "return_": 13.165714285714285,
+        "steps": 36,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          5,
+          3,
+          3,
+          5
+        ],
+        "return_": 13.165714285714285,
+        "steps": 36,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -2.1211428571428588
+  },
+  {
+    "seed": 1,
+    "reset": 28112805,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 2.1562204071969693,
+    "factual_sender": 3,
+    "natural_action": [
+      9,
+      6,
+      7,
+      6,
+      7
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "d37f59d6d31eeb36ae652f2e360b388fc64d035a5c76f10867d8c19215eb1174",
+    "prefix_cache": "c69562b04b23d56e54c531422f3ec928d8091761f55ebe108339e42eb2535c63",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "82627ebceb7e5a1a7a93c302c736b5405b85a67fd41e3e2768e3d0dd0cf54b18",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "a7e84eff1ac5b3e953e34e6ecc2a6ce763f8410b41683018164372586f02906c",
+    "input_state": "1f7e72dad85cac9ed6caef149124db9aa72aa8017434e99a45e10d223925befc",
+    "action_changed": false,
+    "factual_suffix": 15.187899502840912,
+    "factual_suffix_steps": 44,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "return_": 15.187899502840912,
+        "steps": 44,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "return_": 15.187899502840912,
+        "steps": 44,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "return_": 15.187899502840912,
+        "steps": 44,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "return_": 15.187899502840912,
+        "steps": 44,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          9,
+          6,
+          7,
+          6,
+          7
+        ],
+        "return_": 15.187899502840912,
+        "steps": 44,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.0
+  },
+  {
+    "seed": 1,
+    "reset": 28112806,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.6972064393939393,
+    "factual_sender": 3,
+    "natural_action": [
+      9,
+      2,
+      8,
+      7,
+      8
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          7,
+          1,
+          8,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          9,
+          2,
+          8,
+          7,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "fe71360ed5d1a82e0c4cb3f20b3497f2cfbf7b0a9a95cded9428be1c95c36367",
+    "prefix_cache": "e02a48fc17bc2fa490f7bea4f33e0931485dd29038b7396bb109e12b18e6445c",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "d91b4d128eccfe97daac4d022b76988bd3ec2c3fc551dd1165bd5aa98a2e1645",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "eea74a9cd7942baeb6e42b7e7e1a6ea4494fba6bbae12612a4494f1b2ca6f76d",
+    "input_state": "e7933aa9c63be00dfc5ae407d1528e604aa10f8b53f5e9e6dd5c890100c5f68b",
+    "action_changed": true,
+    "factual_suffix": 13.23866595643939,
+    "factual_suffix_steps": 96,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          9,
+          2,
+          8,
+          7,
+          8
+        ],
+        "return_": 13.23866595643939,
+        "steps": 96,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "return_": 5.053222656250002,
+        "steps": 43,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "return_": 5.053222656250002,
+        "steps": 43,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          7,
+          1,
+          8,
+          7,
+          7
+        ],
+        "return_": 4.9398896188446955,
+        "steps": 37,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          7,
+          2,
+          8,
+          7,
+          7
+        ],
+        "return_": 5.053222656250002,
+        "steps": 43,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 6.571021247632572
+  },
+  {
+    "seed": 1,
+    "reset": 28112807,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      5,
+      5,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          5,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "880c6e0dc34329e13e31aef7cde8460780a5d9052f372a25c6d23efbe7c1cd1d",
+    "prefix_cache": "5d5796356e377f0993e4a83d9e0ac29b196fb06211986c7e03f4f2f4669fb891",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "3ff588b64911a256da9bff1ca064b699313ba8be8909f4cc2eeb435ebf0118fd",
+    "available": [
+      [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "0a37366983cb80a7092839046841ee764e5694b4c30a43adf546f8d153b5c2a3",
+    "input_state": "95db1792beaa7f3fe5293aae293d8b9169d5a03102bc98c62aa79caf3f28c50e",
+    "action_changed": true,
+    "factual_suffix": 4.130489464962121,
+    "factual_suffix_steps": 32,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          5,
+          5,
+          4
+        ],
+        "return_": 4.130489464962121,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "return_": 4.28989109848485,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "return_": 4.28989109848485,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          5,
+          5,
+          7
+        ],
+        "return_": 4.5323153409090935,
+        "steps": 35,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          5,
+          5,
+          5,
+          7
+        ],
+        "return_": 4.28989109848485,
+        "steps": 32,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.17600615530303276
+  },
+  {
+    "seed": 1,
+    "reset": 28112808,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      2,
+      4,
+      5,
+      5,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          2,
+          4,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          2,
+          4,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "049fed501d0c6eefa47bb5e2352f4a4fe44e93df0700f3dafa1a48d6918c7614",
+    "prefix_cache": "0280a5ab1cae2865737418d837c63265d0b31dc4a8fae51c09b7c7b1bde7e217",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "84259c1504410928a23b6da8b4462c3bfb67d525dde7e2804fd0137165b2921f",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "a817a43a1356965227d5526f5f8a032a207beff914240500e69c18b54359636d",
+    "input_state": "08ddb20c8920b8102dde9d287fa34ae049ab699ece5b8206d4a3f754f64071e7",
+    "action_changed": true,
+    "factual_suffix": 8.55944055944056,
+    "factual_suffix_steps": 26,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          2,
+          4,
+          5,
+          5,
+          4
+        ],
+        "return_": 8.55944055944056,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          2,
+          4,
+          5,
+          5,
+          4
+        ],
+        "return_": 7.692307692307694,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "return_": 7.804195804195806,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "return_": 7.748251748251749,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          5,
+          5,
+          5,
+          4
+        ],
+        "return_": 7.748251748251749,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.6489510489510479
+  },
+  {
+    "seed": 1,
+    "reset": 28112809,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.4634146341463415,
+    "factual_sender": 3,
+    "natural_action": [
+      2,
+      8,
+      8,
+      2,
+      9
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          2,
+          8,
+          8,
+          7,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          8,
+          8,
+          7,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "ca4b16e286058e60eecd194c743e6a0fc1ec69eddd3df65166d3a3a6629eb630",
+    "prefix_cache": "0f9b5f97576b4dc452b0b8a0cc73402c454022cba3df5ff547a426ea2377d73b",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "62e044b5f97681f4d60bac1d21210a186b9492dd5239ec62d169273dfd99ef8c",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "68442d66d605a028d94a371939602c7c254f90d484372241e86dbc671074bb27",
+    "input_state": "2518ff7be2eaf3e0ca8fdc1ea15d6df103483a0eb9888dda196eef0f6af87274",
+    "action_changed": true,
+    "factual_suffix": 16.29211128048781,
+    "factual_suffix_steps": 26,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "return_": 16.29211128048781,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          2,
+          8,
+          8,
+          7,
+          9
+        ],
+        "return_": 16.401772103658537,
+        "steps": 30,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          2,
+          8,
+          8,
+          7,
+          9
+        ],
+        "return_": 16.484017721036587,
+        "steps": 26,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "return_": 18.315167682926827,
+        "steps": 57,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          2,
+          8,
+          8,
+          2,
+          9
+        ],
+        "return_": 18.315167682926827,
+        "steps": 57,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.8695360137195074
+  },
+  {
+    "seed": 2,
+    "reset": 28112800,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "f94a92ae7c38bc00a6bd533ee5b01bfd240aaf307423eabea47d32fa027d8843",
+    "prefix_cache": "1787a496dacde6ee1452fa8e03c3f2495382bcbe0d96d4788f1e7b3a13a000b5",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "34f10def819fe35372706d4c842d8fe49a291e938b8e5aaf091c14aaa94ab55a",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "84db352cf29df1da171cd120cc466bab6de693a17021ea8e26a08b7e4b9e110f",
+    "input_state": "19e1889d535040e9d57f179782e4aa8085ed5d924b75c8e96831b935bc8681ca",
+    "action_changed": false,
+    "factual_suffix": 6.503215921336208,
+    "factual_suffix_steps": 30,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 6.503215921336208,
+        "steps": 30,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 5.826660156250002,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 5.826660156250002,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 5.826660156250002,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 5.826660156250002,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.5412446120689651
+  },
+  {
+    "seed": 2,
+    "reset": 28112801,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.0,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "51332261be341b074d25f1bc2786961c5fccb02a6b4cfebf30f5d67aee11757b",
+    "prefix_cache": "2494ea70e1e7928f6d996e18aff2d458cab7a58028605870a01364c37ec804ed",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "34f10def819fe35372706d4c842d8fe49a291e938b8e5aaf091c14aaa94ab55a",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "fe3ce29845a8c7d3479dc0979f2c6f84c51c39e602270f5b6e71ec2b47cd330a",
+    "input_state": "8e363ad8cba2c35e4e8f517d59764b49789c8d3acaa4483239df5b60d442864e",
+    "action_changed": false,
+    "factual_suffix": 8.283464566929135,
+    "factual_suffix_steps": 26,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 8.283464566929135,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 8.88188976377953,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 8.88188976377953,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 8.88188976377953,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "return_": 8.88188976377953,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.47874015748031695
+  },
+  {
+    "seed": 2,
+    "reset": 28112802,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 3.6486486486486487,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      6,
+      3,
+      3,
+      6
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "eebe6aa90e44c9bdc1245c02240c1c7235679296587843ed553665fcdf2b9e79",
+    "prefix_cache": "65d337b7395ef4a01c9f87b6dd7c944b77bad2385346cb12d3ca0d4dd2e3d8f3",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "3a3db75bdb42b19d85e0d93b16e160f160867882fd7a39350c3ab795b48b914e",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "bafbe906d7a6d38461b8f5dfba9bb045cbdef5995520858a2a490c98ceb94868",
+    "input_state": "b421dbebd189891447c6cc500c6d3033ab98bc2d953c08cd2c8a9e3fdd639fa4",
+    "action_changed": false,
+    "factual_suffix": 14.552681587837839,
+    "factual_suffix_steps": 42,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "return_": 14.552681587837839,
+        "steps": 42,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "return_": 13.242187499999996,
+        "steps": 32,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "return_": 13.242187499999996,
+        "steps": 32,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "return_": 14.552681587837839,
+        "steps": 42,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          6,
+          3,
+          3,
+          6
+        ],
+        "return_": 13.242187499999996,
+        "steps": 32,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.7862964527027057
+  },
+  {
+    "seed": 2,
+    "reset": 28112803,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.2252252252252251,
+    "factual_sender": 3,
+    "natural_action": [
+      10,
+      4,
+      10,
+      10,
+      3
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "688fd56ebe918eced5e5e03ec21bc9b2225a1f0a5656dec66319021d9a6d68e3",
+    "prefix_cache": "21efe7a64337828ca8f3d5144811c9842e0de6549146910c908f7e41bf0f5180",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "b1c2b047f93d0b5d651f296c3aec76edabcc6caac65b7f2f54a94977b7895903",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "2592de61e62eba2010d50097221395b42ce0e0b14dbb4d9e9d4b198a9c9df4db",
+    "input_state": "f22437507a14ad336ade4dedc45e06c9495369ed9bd04c21ef15e02a9004465b",
+    "action_changed": true,
+    "factual_suffix": 8.756756756756754,
+    "factual_suffix_steps": 27,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "return_": 8.756756756756754,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "return_": 8.756756756756754,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          10,
+          3,
+          10,
+          10,
+          3
+        ],
+        "return_": 7.351351351351351,
+        "steps": 25,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "return_": 8.756756756756754,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          10,
+          4,
+          10,
+          10,
+          3
+        ],
+        "return_": 8.756756756756754,
+        "steps": 27,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.28108108108108
+  },
+  {
+    "seed": 2,
+    "reset": 28112804,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.737142857142857,
+    "factual_sender": 3,
+    "natural_action": [
+      6,
+      3,
+      3,
+      4,
+      4
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          3,
+          7,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "a86f9407511557e05a9e9be051a88da46ee40f9107ccc980adeeb5a264c90123",
+    "prefix_cache": "820b7a960c6c52e7407156149085d1a8b7d9e7875a118972ebb371158a06f4ac",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "5bffa940d174daa2ae17046851b4429dd61bbbaedd5478f64ed34d24eedc39cc",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "977c0007ebbfc7ace5ff870074374ec83192df53e0410a62ba9a88c13e913870",
+    "input_state": "b93502387e0e078b0606b0e94c94eb629ad38e62eea8aa94880af965be1415ea",
+    "action_changed": true,
+    "factual_suffix": 9.165714285714285,
+    "factual_suffix_steps": 23,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "return_": 9.165714285714285,
+        "steps": 23,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "return_": 10.125714285714285,
+        "steps": 28,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          3,
+          7,
+          4,
+          4
+        ],
+        "return_": 10.125714285714286,
+        "steps": 26,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "return_": 11.474285714285713,
+        "steps": 33,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          3,
+          3,
+          4,
+          4
+        ],
+        "return_": 10.125714285714285,
+        "steps": 28,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -1.0377142857142854
+  },
+  {
+    "seed": 2,
+    "reset": 28112805,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 2.790113044507576,
+    "factual_sender": 3,
+    "natural_action": [
+      7,
+      7,
+      7,
+      6,
+      7
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "adc0545b16c8353ffe15c0654f0a6c29d6b1e2dc1fdabf58243d4866aac8db99",
+    "prefix_cache": "7e28ad03ce6e46820eafa6863e075fd620b54eb7bb70669729eaa803ee53aca8",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "2c06a28f061f49167ff369b7bba4698d22f9e985d5fa9528a80a67f8e3dc6bce",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "cbdf2af3da33255222e5aefe613e6c7b718a3d21503652ebd262dc34487557d0",
+    "input_state": "a6423f753c82cc8c69f3c39d7ab4ed693a04174f49d0d133c07d09b5037954c8",
+    "action_changed": false,
+    "factual_suffix": 17.61862275094698,
+    "factual_suffix_steps": 83,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "return_": 17.61862275094698,
+        "steps": 83,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "return_": 17.209886955492426,
+        "steps": 72,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "return_": 17.209886955492426,
+        "steps": 72,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "return_": 17.209886955492426,
+        "steps": 72,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "return_": 17.209886955492426,
+        "steps": 72,
+        "won": true,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.3269886363636445
+  },
+  {
+    "seed": 2,
+    "reset": 28112806,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.2840169270833333,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      9,
+      4,
+      2,
+      9
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          9,
+          4,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "5815584a9b2f9a8f7fbf0789dce455c71cbf9ee558bdd50316e01919a464f00f",
+    "prefix_cache": "de02d948582d49f84bae0a9af7a28260338a952f863cdf3c71eed1bccd1d294a",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "16b902588bb330057c773fe1c1e4cb0f6324186bf694bd88a1005bccbd158476",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ]
+    ],
+    "input_observation": "0482931fd741faca9ee8095631da7b22aeab8be92d0240292e39b0124d050986",
+    "input_state": "ad7f77fba3c7eecb64d6857b43cb3f3e0144ee25db231559d3dba1ccfd8629bc",
+    "action_changed": true,
+    "factual_suffix": 5.882324218749999,
+    "factual_suffix_steps": 46,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          9,
+          4,
+          2,
+          9
+        ],
+        "return_": 5.882324218749999,
+        "steps": 46,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "return_": 5.763094815340908,
+        "steps": 44,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "return_": 5.763094815340908,
+        "steps": 44,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "return_": 8.87701231060606,
+        "steps": 90,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          3,
+          9,
+          4,
+          2,
+          9
+        ],
+        "return_": 5.763094815340908,
+        "steps": 44,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.5273999763257571
+  },
+  {
+    "seed": 2,
+    "reset": 28112807,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.5151515151515151,
+    "factual_sender": 3,
+    "natural_action": [
+      9,
+      4,
+      8,
+      3,
+      3
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          9,
+          4,
+          4,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          9,
+          4,
+          4,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          9,
+          4,
+          4,
+          1,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          9,
+          4,
+          8,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          9,
+          4,
+          4,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "ccb46538eae80782a5920cf571a533a434ed785385030132790101e25ea7ef1d",
+    "prefix_cache": "2e9451d7405eb9e18c3e548ab57a7afbd28f11a56fdfe9cbdf3d52467932990b",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "1269f48ca40399a26c4f30777e1efcfed6601635d2a1b6a693217c8ffa1b3175",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "3c008541983d5ac5a061e585ad903111a04051031ce45a98039ef615c430e6ac",
+    "input_state": "57119139babbaf217941cc7e1702979c40f0a3f7240e5053cf57a67b9588743b",
+    "action_changed": true,
+    "factual_suffix": 2.2949366714015147,
+    "factual_suffix_steps": 19,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          9,
+          4,
+          8,
+          3,
+          3
+        ],
+        "return_": 2.2949366714015147,
+        "steps": 19,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          9,
+          4,
+          4,
+          1,
+          3
+        ],
+        "return_": 2.2288115530303023,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          9,
+          4,
+          4,
+          3,
+          3
+        ],
+        "return_": 2.001420454545455,
+        "steps": 20,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          9,
+          4,
+          4,
+          1,
+          3
+        ],
+        "return_": 2.1133552320075757,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          9,
+          4,
+          4,
+          3,
+          3
+        ],
+        "return_": 2.001420454545455,
+        "steps": 20,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.16694779829545414
+  },
+  {
+    "seed": 2,
+    "reset": 28112808,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 1.5944055944055944,
+    "factual_sender": 3,
+    "natural_action": [
+      4,
+      8,
+      4,
+      4,
+      8
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "b542bbc92a584d5a476ea8fce17225ee76d0fecca8618af1dcb52629d1f77539",
+    "prefix_cache": "a25ef3e0b1282acb50f24c90a06d20d41b628f4e4a55648538d15e7b38d1be35",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "66d2a846b9dccd9dc8dcc93a15671929c7b0f160e563544d59482f70c592cadb",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "afe792455e325ba25740345e5d2094265240c80b30dc3c46564e9b673a546234",
+    "input_state": "8c7926b47b53e301f1fd7cf2e534e6a90382978a87310b2d6b4ce13407c65007",
+    "action_changed": false,
+    "factual_suffix": 10.321678321678322,
+    "factual_suffix_steps": 24,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "return_": 10.321678321678322,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "return_": 10.881118881118882,
+        "steps": 29,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "return_": 10.321678321678322,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "return_": 10.433566433566433,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          4,
+          8,
+          4,
+          4,
+          8
+        ],
+        "return_": 10.433566433566433,
+        "steps": 24,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": -0.15664335664335738
+  },
+  {
+    "seed": 2,
+    "reset": 28112809,
+    "mode": "fresh",
+    "branch_step": 8,
+    "reached": true,
+    "prefix_reward": 0.4634146341463415,
+    "factual_sender": 3,
+    "natural_action": [
+      6,
+      2,
+      10,
+      3,
+      3
+    ],
+    "candidates": [
+      {
+        "sender": 0,
+        "action": [
+          6,
+          2,
+          3,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            8,
+            6,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            8,
+            7,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            8,
+            3,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 3,
+        "action": [
+          6,
+          2,
+          10,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            8,
+            4
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "offered_bytes": 48,
+        "payload_bytes": 32,
+        "source": [
+          [
+            5,
+            6,
+            7,
+            3,
+            8
+          ]
+        ],
+        "cursor_after": 4,
+        "budget_after": 96
+      }
+    ],
+    "prefix_hidden": "c21ccc76792924cc0e19ea1c75bcd5a2cbcd37f192848ada2e455ca53e53bf87",
+    "prefix_cache": "6cd87c51574a8171593262d81f9fdc81f10bc9881d460c94c88611be0190fbc9",
+    "prefix_timestamps": "693b32e05600f70c46e583ffb9570a15825fd106c885f9c754367fa260a5f402",
+    "prefix_previous": "fa91a4ba03433708f566fa847d4da60998644b6d7b8be4dfa8fb6779474df171",
+    "available": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "input_observation": "82d8287f89e9e47ac9b5ccccade17a2bc62d8b201b805cae92f329074ef47405",
+    "input_state": "d4dc6b8ded08be76c925f0379ecc169947bba165bdb9697cca41ab74b23c6730",
+    "action_changed": true,
+    "factual_suffix": 9.813190739329267,
+    "factual_suffix_steps": 43,
+    "valid": true,
+    "replay_checks": [
+      {
+        "sender": 3,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 0,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 1,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 2,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      },
+      {
+        "sender": 4,
+        "prefix_or_live_state": null,
+        "factual_replay": null,
+        "same_as_physical_action": true
+      }
+    ],
+    "branches": [
+      {
+        "sender": 3,
+        "action": [
+          6,
+          2,
+          10,
+          3,
+          3
+        ],
+        "return_": 9.813190739329267,
+        "steps": 43,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 0,
+        "action": [
+          6,
+          2,
+          3,
+          3,
+          3
+        ],
+        "return_": 8.184546493902438,
+        "steps": 35,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 1,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "return_": 9.367378048780486,
+        "steps": 38,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 2,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "return_": 10.99091320503049,
+        "steps": 69,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      },
+      {
+        "sender": 4,
+        "action": [
+          6,
+          4,
+          3,
+          3,
+          3
+        ],
+        "return_": 8.672541920731705,
+        "steps": 38,
+        "won": false,
+        "cursor_before": 3,
+        "offered_bytes": 48,
+        "delivered_payload_bytes": 32
+      }
+    ],
+    "factual_minus_uniform": 0.40747665777439046
+  }
+]

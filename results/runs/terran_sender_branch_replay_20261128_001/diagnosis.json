@@ -1,0 +1,92 @@
+[
+  {
+    "adapter": "SMACAdapter",
+    "repeat": 0,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": null,
+    "legacy_fields": null
+  },
+  {
+    "adapter": "SMACAdapter",
+    "repeat": 1,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": {
+      "t": 5,
+      "fields": [
+        "wrapper_visibility"
+      ],
+      "differences": {
+        "wrapper_visibility": [
+          "/owners/1",
+          1,
+          3
+        ]
+      }
+    },
+    "legacy_fields": null
+  },
+  {
+    "adapter": "SMACAdapter",
+    "repeat": 2,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": {
+      "t": 5,
+      "fields": [
+        "wrapper_visibility"
+      ],
+      "differences": {
+        "wrapper_visibility": [
+          "/owners/1",
+          1,
+          3
+        ]
+      }
+    },
+    "legacy_fields": {
+      "t": 13,
+      "fields": [
+        "pre_obs",
+        "hidden"
+      ],
+      "differences": {
+        "pre_obs": [
+          "/1/4",
+          0.0,
+          1.0
+        ],
+        "hidden": [
+          "/0/1/0",
+          0.3963789939880371,
+          0.5588057041168213
+        ]
+      }
+    }
+  },
+  {
+    "adapter": "ScopedSMAC",
+    "repeat": 0,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": null,
+    "legacy_fields": null
+  },
+  {
+    "adapter": "ScopedSMAC",
+    "repeat": 1,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": null,
+    "legacy_fields": null
+  },
+  {
+    "adapter": "ScopedSMAC",
+    "repeat": 2,
+    "steps": 38,
+    "return_": 11.905511811023622,
+    "exact": null,
+    "legacy_fields": null
+  }
+]

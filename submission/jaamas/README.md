@@ -1,5 +1,15 @@
 # JAAMAS 제출 체크리스트 — 2026-11-27
 
+**2026-11-28 현재 투고용 파일.** 초록 220단어, 본문 8pt, 참고문헌·저자 정보 포함 15쪽, 부록 22쪽(S9에 Terran 5v5와 Predator–Prey의 검증 및 시드별 결과 수록). Information Sheet와 Cover Letter에 같은 조건의 짝비교와 적용 범위를 명시했다. 아래 날짜별 수정 기록은 이전 판의 이력이다.
+
+**2026-11-28 최신본:** 3 Problem Definition: 3.1 Problem formulation / 3.2 Communication and receiver state / 3.3 Computation and deadlines. 4절 이후 결과 유지. 저자 정보 포함 전체 20쪽.
+
+**2026-11-28 구성 수정:** 3 Preliminaries / 4 Evaluation framework and experimental design / 5 Results. 총 20쪽; 마지막 페이지에는 참고문헌 끝부분과 저자 정보. 결과·수식·표·그림 보존.
+
+**2026-11-28 최신 수정:** Related Work를 연구 계열·스케줄링 규칙·수신자 역량 평가·우리 분석의 연결로 재작성. 나머지 본문과 실험 결과는 유지. 본문 20쪽.
+
+**2026-11-27 abstract update:** 236-word narrative abstract now follows background → problem → analytical approach → findings → implications. Only the abstract changed; main remains 20 pages. Validation: `narrative_abstract_validation_20261127.json`.
+
 **최신본 (2026-11-27):** 본문 20쪽(참고문헌·선언문·마지막 저자 정보 포함), 부록 19쪽. 첫 페이지는 제목·두 저자 이름·Abstract. 첫 페이지 Highlights/이메일 문구는 삭제. 선행연구 근거 → 분석 질문 → 실제 통제 실험 → 결과와 한계로 재작성. `Title_Page.pdf`는 지침상 필요한 소속·교신저자 연락처를 담은 별도 제출용 표지. 아래 이전 편집 기록의 첫 페이지 설명은 과거 버전임.
 
 **이전 정렬 기록:** 모든 본문·표지 정보·Highlights·캡션은 왼쪽 정렬, 그림·표 자체는 중앙 정렬. 본문 전체 20쪽, 부록 19쪽. 내용과 수치는 그대로이며 정렬과 줄바꿈만 변경했다.
@@ -14,11 +24,11 @@ Regular Paper용 LaTeX 제출 자료다. 문서 ZIP을 풀고 각 파일을 투�
 
 | 파일 | 제출 역할 | 내용 및 상태 |
 |---|---|---|
-| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 20쪽, Springer Nature 형식, 초록222단어, 키워드5개 |
+| [Main_Manuscript.pdf](Main_Manuscript.pdf) | 심사용 본문 | 15쪽, 본문 8pt, 초록 211단어, 키워드 5개 |
 | [Manuscript_Source.zip](Manuscript_Source.zip) | LaTeX 원본 | `jaamas_main.tex`를 주 문서로 지정. `.bib`, 그림, 수정 없는 공식 class/style, 부록 및 문서 소스 포함 |
 | [Information_Sheet.pdf](Information_Sheet.pdf) | 필수 Information Sheet | 2쪽: Main Claim, Evidence, Related Work, Previous Publications |
 | [Cover_Letter.pdf](Cover_Letter.pdf) | 편집자 서신 | 1쪽, 기여·저널 적합성·첨부 자료 |
-| [Supplementary.pdf](Supplementary.pdf) | 추가 분석 | 19쪽, S1–S8; 후속 평가와 실패 조건 포함 |
+| [Supplementary.pdf](Supplementary.pdf) | 추가 분석 | 22쪽, S1–S9. 두 순차 환경의 재생 통제와 학습 시드별 효과 포함 |
 | [Statements_and_Declarations.pdf](Statements_and_Declarations.pdf) | 선언문 사본 | 2쪽 이내. 같은 내용이 본문에도 포함됨 |
 | [DECLARATIONS.md](DECLARATIONS.md) | 시스템 입력용 텍스트 | 연구비·이해상충·저자 기여·데이터·코드 공개 |
 | [PERMISSIONS.md](PERMISSIONS.md) | 해당 시 권한 확인 | 원저작 그림·표와 외부 코드/데이터 출처 구분 |

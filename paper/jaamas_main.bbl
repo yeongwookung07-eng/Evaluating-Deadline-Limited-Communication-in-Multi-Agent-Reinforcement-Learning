@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{29}
+\begin{thebibliography}{31}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -106,63 +106,33 @@ pp. \bfpage{693}--\blpage{701}
 \endbibitem
 
 %%% 5
-\bibitem[\protect\citeauthoryear{Eccles et~al.}{2019}]{eccles2019biases}
+\bibitem[\protect\citeauthoryear{Ellis et~al.}{2023}]{ellis2023smacv2}
 \begin{bchapter}
-\bauthor{\bsnm{Eccles}, \binits{T.}},
-\bauthor{\bsnm{Bachrach}, \binits{Y.}},
-\bauthor{\bsnm{Lever}, \binits{G.}},
-\bauthor{\bsnm{Lazaridou}, \binits{A.}},
-\bauthor{\bsnm{Graepel}, \binits{T.}}:
-\bctitle{Biases for emergent communication in multi-agent reinforcement
-  learning}.
+\bauthor{\bsnm{Ellis}, \binits{B.}},
+\bauthor{\bsnm{Cook}, \binits{J.}},
+\bauthor{\bsnm{Moalla}, \binits{S.}},
+\bauthor{\bsnm{Samvelyan}, \binits{M.}},
+\bauthor{\bsnm{Sun}, \binits{M.}},
+\bauthor{\bsnm{Mahajan}, \binits{A.}},
+\bauthor{\bsnm{Foerster}, \binits{J.}},
+\bauthor{\bsnm{Whiteson}, \binits{S.}}:
+\bctitle{{SMACv2}: An improved benchmark for cooperative multi-agent
+  reinforcement learning}.
 In: \bbtitle{Advances in Neural Information Processing Systems},
-vol. \bseriesno{32}
-(\byear{2019}).
-\burl{https://proceedings.neurips.cc/paper/2019/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}
+vol. \bseriesno{36},
+pp. \bfpage{37567}--\blpage{37593}
+(\byear{2023}).
+\doiurl{10.52202/075280-1634} .
+\burl{https://arxiv.org/abs/2212.07489}
 \end{bchapter}
 \endbibitem
 
 %%% 6
-\bibitem[\protect\citeauthoryear{Zhu et~al.}{2024}]{zhu2024survey}
-\begin{barticle}
-\bauthor{\bsnm{Zhu}, \binits{C.}},
-\bauthor{\bsnm{Dastani}, \binits{M.}},
-\bauthor{\bsnm{Wang}, \binits{S.}}:
-\batitle{A survey of multi-agent deep reinforcement learning with
-  communication}.
-\bjtitle{Autonomous Agents and Multi-Agent Systems}
-\bvolume{38},
-\bfpage{4}
-(\byear{2024})
-\doiurl{10.1007/s10458-023-09633-6}
-\end{barticle}
-\endbibitem
-
-%%% 7
-\bibitem[\protect\citeauthoryear{Peters et~al.}{2025}]{peters2025emergent}
-\begin{barticle}
-\bauthor{\bsnm{Peters}, \binits{J.}},
-\bauthor{\bsnm{Puiseau}, \binits{C.}},
-\bauthor{\bsnm{Tercan}, \binits{H.}},
-\bauthor{\bsnm{Gopikrishnan}, \binits{A.}},
-\bauthor{\bsnm{Carvalho}, \binits{G.A.}},
-\bauthor{\bsnm{Bitter}, \binits{C.}},
-\bauthor{\bsnm{Meisen}, \binits{T.}}:
-\batitle{Emergent language: a survey and taxonomy}.
-\bjtitle{Autonomous Agents and Multi-Agent Systems}
-\bvolume{39},
-\bfpage{18}
-(\byear{2025})
-\doiurl{10.1007/s10458-025-09691-y}
-\end{barticle}
-\endbibitem
-
-%%% 8
 \bibitem[\protect\citeauthoryear{Foerster et~al.}{2016}]{foerster2016learning}
 \begin{bchapter}
 \bauthor{\bsnm{Foerster}, \binits{J.N.}},
 \bauthor{\bsnm{Assael}, \binits{Y.M.}},
-\bauthor{\bsnm{Freitas}, \binits{N.}},
+\bauthor{\bsnm{{de Freitas}}, \binits{N.}},
 \bauthor{\bsnm{Whiteson}, \binits{S.}}:
 \bctitle{Learning to communicate with deep multi-agent reinforcement learning}.
 In: \bbtitle{Advances in Neural Information Processing Systems}
@@ -171,7 +141,7 @@ In: \bbtitle{Advances in Neural Information Processing Systems}
 \end{bchapter}
 \endbibitem
 
-%%% 9
+%%% 7
 \bibitem[\protect\citeauthoryear{Sukhbaatar
   et~al.}{2016}]{sukhbaatar2016learning}
 \begin{bchapter}
@@ -185,7 +155,7 @@ In: \bbtitle{Advances in Neural Information Processing Systems}
 \end{bchapter}
 \endbibitem
 
-%%% 10
+%%% 8
 \bibitem[\protect\citeauthoryear{Das et~al.}{2019}]{das2019tarmac}
 \begin{bchapter}
 \bauthor{\bsnm{Das}, \binits{A.}},
@@ -204,7 +174,7 @@ pp. \bfpage{1538}--\blpage{1546}
 \end{bchapter}
 \endbibitem
 
-%%% 11
+%%% 9
 \bibitem[\protect\citeauthoryear{Hu et~al.}{2023}]{hu2023event}
 \begin{barticle}
 \bauthor{\bsnm{Hu}, \binits{G.}},
@@ -222,7 +192,7 @@ pp. \bfpage{1538}--\blpage{1546}
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 10
 \bibitem[\protect\citeauthoryear{Wang et~al.}{2020}]{wang2020imac}
 \begin{bchapter}
 \bauthor{\bsnm{Wang}, \binits{R.}},
@@ -243,7 +213,71 @@ pp. \bfpage{9908}--\blpage{9918}
 \end{bchapter}
 \endbibitem
 
+%%% 11
+\bibitem[\protect\citeauthoryear{Zhu et~al.}{2024}]{zhu2024survey}
+\begin{barticle}
+\bauthor{\bsnm{Zhu}, \binits{C.}},
+\bauthor{\bsnm{Dastani}, \binits{M.}},
+\bauthor{\bsnm{Wang}, \binits{S.}}:
+\batitle{A survey of multi-agent deep reinforcement learning with
+  communication}.
+\bjtitle{Autonomous Agents and Multi-Agent Systems}
+\bvolume{38},
+\bfpage{4}
+(\byear{2024})
+\doiurl{10.1007/s10458-023-09633-6}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Gao et~al.}{2025}]{gao2025cmv}
+\begin{barticle}
+\bauthor{\bsnm{Gao}, \binits{Z.}},
+\bauthor{\bsnm{Qu}, \binits{C.}},
+\bauthor{\bsnm{Hao}, \binits{Y.}},
+\bauthor{\bsnm{Ke}, \binits{L.}}:
+\batitle{Communication in multiagent reinforcement learning via counterfactual
+  message value}.
+\bjtitle{IEEE Transactions on Systems, Man, and Cybernetics: Systems}
+\bvolume{55}(\bissue{11}),
+\bfpage{8152}--\blpage{8165}
+(\byear{2025})
+\doiurl{10.1109/TSMC.2025.3604230}
+\end{barticle}
+\endbibitem
+
 %%% 13
+\bibitem[\protect\citeauthoryear{Kaul et~al.}{2012}]{kaul2012real}
+\begin{bchapter}
+\bauthor{\bsnm{Kaul}, \binits{S.}},
+\bauthor{\bsnm{Yates}, \binits{R.}},
+\bauthor{\bsnm{Gruteser}, \binits{M.}}:
+\bctitle{Real-time status: How often should one update?}
+In: \bbtitle{IEEE INFOCOM}
+(\byear{2012}).
+\doiurl{10.1109/INFCOM.2012.6195689} .
+\burl{https://www.winlab.rutgers.edu/%7Egruteser/papers/sanjitnew.pdf}
+\end{bchapter}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Ayan et~al.}{2022}]{ayan2022semantics}
+\begin{barticle}
+\bauthor{\bsnm{Ayan}, \binits{O.}},
+\bauthor{\bsnm{Kutsevol}, \binits{P.}},
+\bauthor{\bsnm{Ozkan}, \binits{H.Y.}},
+\bauthor{\bsnm{Kellerer}, \binits{W.}}:
+\batitle{Semantics- and task-oriented scheduling for networked control systems
+  in practice}.
+\bjtitle{IEEE Access}
+\bvolume{10},
+\bfpage{115673}--\blpage{115690}
+(\byear{2022})
+\doiurl{10.1109/ACCESS.2022.3218410}
+\end{barticle}
+\endbibitem
+
+%%% 15
 \bibitem[\protect\citeauthoryear{Yuan et~al.}{2023}]{yuan2023dacom}
 \begin{bchapter}
 \bauthor{\bsnm{Yuan}, \binits{T.}},
@@ -261,42 +295,62 @@ pp. \bfpage{11763}--\blpage{11771}
 \end{bchapter}
 \endbibitem
 
-%%% 14
-\bibitem[\protect\citeauthoryear{Kaul et~al.}{2012}]{kaul2012real}
+%%% 16
+\bibitem[\protect\citeauthoryear{Gao et~al.}{2026}]{gao2026delay}
+\begin{botherref}
+\oauthor{\bsnm{Gao}, \binits{Z.}},
+\oauthor{\bsnm{Liang}, \binits{H.}},
+\oauthor{\bsnm{Hao}, \binits{L.}},
+\oauthor{\bsnm{Ke}, \binits{L.}}:
+Communication Gain and Delay Cost Under Cross-Timestep Delays in Cooperative
+  Multi-Agent Reinforcement Learning.
+arXiv:2604.03785v3 (preprint)
+(2026).
+\url{https://arxiv.org/abs/2604.03785v3}
+\end{botherref}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Eccles et~al.}{2019}]{eccles2019biases}
 \begin{bchapter}
-\bauthor{\bsnm{Kaul}, \binits{S.}},
-\bauthor{\bsnm{Yates}, \binits{R.}},
-\bauthor{\bsnm{Gruteser}, \binits{M.}}:
-\bctitle{Real-time status: How often should one update?}
-In: \bbtitle{IEEE INFOCOM}
-(\byear{2012}).
-\doiurl{10.1109/INFCOM.2012.6195689} .
-\burl{https://www.winlab.rutgers.edu/%7Egruteser/papers/sanjitnew.pdf}
+\bauthor{\bsnm{Eccles}, \binits{T.}},
+\bauthor{\bsnm{Bachrach}, \binits{Y.}},
+\bauthor{\bsnm{Lever}, \binits{G.}},
+\bauthor{\bsnm{Lazaridou}, \binits{A.}},
+\bauthor{\bsnm{Graepel}, \binits{T.}}:
+\bctitle{Biases for emergent communication in multi-agent reinforcement
+  learning}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{32}
+(\byear{2019}).
+\burl{https://proceedings.neurips.cc/paper/2019/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}
 \end{bchapter}
 \endbibitem
 
-%%% 15
-\bibitem[\protect\citeauthoryear{Ayan et~al.}{2022}]{ayan2022semantics}
+%%% 18
+\bibitem[\protect\citeauthoryear{Peters et~al.}{2025}]{peters2025emergent}
 \begin{barticle}
-\bauthor{\bsnm{Ayan}, \binits{O.}},
-\bauthor{\bsnm{Kutsevol}, \binits{P.}},
-\bauthor{\bsnm{Ozkan}, \binits{H.Y.}},
-\bauthor{\bsnm{Kellerer}, \binits{W.}}:
-\batitle{Semantics- and task-oriented scheduling for networked control systems
-  in practice}.
-\bjtitle{IEEE Access}
-\bvolume{10},
-\bfpage{115673}--\blpage{115690}
-(\byear{2022})
-\doiurl{10.1109/ACCESS.2022.3218410}
+\bauthor{\bsnm{Peters}, \binits{J.}},
+\bauthor{\bsnm{{Waubert de Puiseau}}, \binits{C.}},
+\bauthor{\bsnm{Tercan}, \binits{H.}},
+\bauthor{\bsnm{Gopikrishnan}, \binits{A.}},
+\bauthor{\bsnm{{Lucas de Carvalho}}, \binits{G.A.}},
+\bauthor{\bsnm{Bitter}, \binits{C.}},
+\bauthor{\bsnm{Meisen}, \binits{T.}}:
+\batitle{Emergent language: a survey and taxonomy}.
+\bjtitle{Autonomous Agents and Multi-Agent Systems}
+\bvolume{39},
+\bfpage{18}
+(\byear{2025})
+\doiurl{10.1007/s10458-025-09691-y}
 \end{barticle}
 \endbibitem
 
-%%% 16
+%%% 19
 \bibitem[\protect\citeauthoryear{Cho et~al.}{2014}]{cho2014learning}
 \begin{bchapter}
 \bauthor{\bsnm{Cho}, \binits{K.}},
-\bauthor{\bsnm{Merri{\"e}nboer}, \binits{B.}},
+\bauthor{\bsnm{{van Merri{\"e}nboer}}, \binits{B.}},
 \bauthor{\bsnm{Gulcehre}, \binits{C.}},
 \bauthor{\bsnm{Bahdanau}, \binits{D.}},
 \bauthor{\bsnm{Bougares}, \binits{F.}},
@@ -313,12 +367,12 @@ pp. \bfpage{1724}--\blpage{1734}
 \end{bchapter}
 \endbibitem
 
-%%% 17
+%%% 20
 \bibitem[\protect\citeauthoryear{Rashid et~al.}{2018}]{rashid2018qmix}
 \begin{bchapter}
 \bauthor{\bsnm{Rashid}, \binits{T.}},
 \bauthor{\bsnm{Samvelyan}, \binits{M.}},
-\bauthor{\bsnm{Schroeder}, \binits{C.}},
+\bauthor{\bsnm{{Schroeder de Witt}}, \binits{C.}},
 \bauthor{\bsnm{Farquhar}, \binits{G.}},
 \bauthor{\bsnm{Foerster}, \binits{J.}},
 \bauthor{\bsnm{Whiteson}, \binits{S.}}:
@@ -332,7 +386,7 @@ pp. \bfpage{4295}--\blpage{4304}
 \end{bchapter}
 \endbibitem
 
-%%% 18
+%%% 21
 \bibitem[\protect\citeauthoryear{Kingma and Ba}{2015}]{kingma2015adam}
 \begin{bchapter}
 \bauthor{\bsnm{Kingma}, \binits{D.P.}},
@@ -344,11 +398,11 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{bchapter}
 \endbibitem
 
-%%% 19
-\bibitem[\protect\citeauthoryear{van Hasselt
+%%% 22
+\bibitem[\protect\citeauthoryear{{van Hasselt}
   et~al.}{2016}]{hasselt2016deepdouble}
 \begin{bchapter}
-\bauthor{\bsnm{Hasselt}, \binits{H.}},
+\bauthor{\bsnm{{van Hasselt}}, \binits{H.}},
 \bauthor{\bsnm{Guez}, \binits{A.}},
 \bauthor{\bsnm{Silver}, \binits{D.}}:
 \bctitle{Deep reinforcement learning with double {Q}-learning}.
@@ -358,60 +412,20 @@ In: \bbtitle{Proceedings of the AAAI Conference on Artificial Intelligence}
 \end{bchapter}
 \endbibitem
 
-%%% 20
-\bibitem[\protect\citeauthoryear{Agarwal et~al.}{2021}]{agarwal2021deep}
-\begin{bchapter}
-\bauthor{\bsnm{Agarwal}, \binits{R.}},
-\bauthor{\bsnm{Schwarzer}, \binits{M.}},
-\bauthor{\bsnm{Castro}, \binits{P.S.}},
-\bauthor{\bsnm{Courville}, \binits{A.C.}},
-\bauthor{\bsnm{Bellemare}, \binits{M.}}:
-\bctitle{Deep reinforcement learning at the edge of the statistical precipice}.
-In: \bbtitle{Advances in Neural Information Processing Systems},
-vol. \bseriesno{34},
-pp. \bfpage{29304}--\blpage{29320}
-(\byear{2021}).
-\burl{https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html}
-\end{bchapter}
-\endbibitem
-
-%%% 21
-\bibitem[\protect\citeauthoryear{Efron}{1987}]{efron1987better}
-\begin{barticle}
-\bauthor{\bsnm{Efron}, \binits{B.}}:
-\batitle{Better bootstrap confidence intervals}.
-\bjtitle{Journal of the American Statistical Association}
-\bvolume{82}(\bissue{397}),
-\bfpage{171}--\blpage{185}
-(\byear{1987})
-\doiurl{10.1080/01621459.1987.10478410}
-\end{barticle}
-\endbibitem
-
-%%% 22
-\bibitem[\protect\citeauthoryear{Holm}{1979}]{holm1979simple}
-\begin{barticle}
-\bauthor{\bsnm{Holm}, \binits{S.}}:
-\batitle{A simple sequentially rejective multiple test procedure}.
-\bjtitle{Scandinavian Journal of Statistics}
-\bvolume{6}(\bissue{2}),
-\bfpage{65}--\blpage{70}
-(\byear{1979})
-\end{barticle}
-\endbibitem
-
 %%% 23
-\bibitem[\protect\citeauthoryear{Schuirmann}{1987}]{schuirmann1987comparison}
-\begin{barticle}
-\bauthor{\bsnm{Schuirmann}, \binits{D.J.}}:
-\batitle{A comparison of the two one-sided tests procedure and the power
-  approach for assessing the equivalence of average bioavailability}.
-\bjtitle{Journal of Pharmacokinetics and Biopharmaceutics}
-\bvolume{15}(\bissue{6}),
-\bfpage{657}--\blpage{680}
-(\byear{1987})
-\doiurl{10.1007/BF01068419}
-\end{barticle}
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2022}]{wang2022casec}
+\begin{bchapter}
+\bauthor{\bsnm{Wang}, \binits{T.}},
+\bauthor{\bsnm{Zeng}, \binits{L.}},
+\bauthor{\bsnm{Dong}, \binits{W.}},
+\bauthor{\bsnm{Yang}, \binits{Q.}},
+\bauthor{\bsnm{Yu}, \binits{Y.}},
+\bauthor{\bsnm{Zhang}, \binits{C.}}:
+\bctitle{Context-aware sparse deep coordination graphs}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2022}).
+\burl{https://arxiv.org/abs/2106.02886}
+\end{bchapter}
 \endbibitem
 
 %%% 24
@@ -431,22 +445,6 @@ pp. \bfpage{29304}--\blpage{29320}
 \endbibitem
 
 %%% 25
-\bibitem[\protect\citeauthoryear{Wang et~al.}{2022}]{wang2022casec}
-\begin{bchapter}
-\bauthor{\bsnm{Wang}, \binits{T.}},
-\bauthor{\bsnm{Zeng}, \binits{L.}},
-\bauthor{\bsnm{Dong}, \binits{W.}},
-\bauthor{\bsnm{Yang}, \binits{Q.}},
-\bauthor{\bsnm{Yu}, \binits{Y.}},
-\bauthor{\bsnm{Zhang}, \binits{C.}}:
-\bctitle{Context-aware sparse deep coordination graphs}.
-In: \bbtitle{International Conference on Learning Representations}
-(\byear{2022}).
-\burl{https://arxiv.org/abs/2106.02886}
-\end{bchapter}
-\endbibitem
-
-%%% 26
 \bibitem[\protect\citeauthoryear{Williams}{1992}]{williams1992simple}
 \begin{barticle}
 \bauthor{\bsnm{Williams}, \binits{R.J.}}:
@@ -460,7 +458,63 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{barticle}
 \endbibitem
 
+%%% 26
+\bibitem[\protect\citeauthoryear{Agarwal et~al.}{2021}]{agarwal2021deep}
+\begin{bchapter}
+\bauthor{\bsnm{Agarwal}, \binits{R.}},
+\bauthor{\bsnm{Schwarzer}, \binits{M.}},
+\bauthor{\bsnm{Castro}, \binits{P.S.}},
+\bauthor{\bsnm{Courville}, \binits{A.C.}},
+\bauthor{\bsnm{Bellemare}, \binits{M.}}:
+\bctitle{Deep reinforcement learning at the edge of the statistical precipice}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{34},
+pp. \bfpage{29304}--\blpage{29320}
+(\byear{2021}).
+\burl{https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html}
+\end{bchapter}
+\endbibitem
+
 %%% 27
+\bibitem[\protect\citeauthoryear{Efron}{1987}]{efron1987better}
+\begin{barticle}
+\bauthor{\bsnm{Efron}, \binits{B.}}:
+\batitle{Better bootstrap confidence intervals}.
+\bjtitle{Journal of the American Statistical Association}
+\bvolume{82}(\bissue{397}),
+\bfpage{171}--\blpage{185}
+(\byear{1987})
+\doiurl{10.1080/01621459.1987.10478410}
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{Holm}{1979}]{holm1979simple}
+\begin{barticle}
+\bauthor{\bsnm{Holm}, \binits{S.}}:
+\batitle{A simple sequentially rejective multiple test procedure}.
+\bjtitle{Scandinavian Journal of Statistics}
+\bvolume{6}(\bissue{2}),
+\bfpage{65}--\blpage{70}
+(\byear{1979})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Schuirmann}{1987}]{schuirmann1987comparison}
+\begin{barticle}
+\bauthor{\bsnm{Schuirmann}, \binits{D.J.}}:
+\batitle{A comparison of the two one-sided tests procedure and the power
+  approach for assessing the equivalence of average bioavailability}.
+\bjtitle{Journal of Pharmacokinetics and Biopharmaceutics}
+\bvolume{15}(\bissue{6}),
+\bfpage{657}--\blpage{680}
+(\byear{1987})
+\doiurl{10.1007/BF01068419}
+\end{barticle}
+\endbibitem
+
+%%% 30
 \bibitem[\protect\citeauthoryear{Alain and
   Bengio}{2016}]{alain2016understanding}
 \begin{botherref}
@@ -473,7 +527,7 @@ arXiv preprint arXiv:1610.01644
 \end{botherref}
 \endbibitem
 
-%%% 28
+%%% 31
 \bibitem[\protect\citeauthoryear{Hoerl and Kennard}{1970}]{hoerl1970ridge}
 \begin{barticle}
 \bauthor{\bsnm{Hoerl}, \binits{A.E.}},
@@ -485,28 +539,6 @@ arXiv preprint arXiv:1610.01644
 (\byear{1970})
 \doiurl{10.1080/00401706.1970.10488634}
 \end{barticle}
-\endbibitem
-
-%%% 29
-\bibitem[\protect\citeauthoryear{Ellis et~al.}{2023}]{ellis2023smacv2}
-\begin{bchapter}
-\bauthor{\bsnm{Ellis}, \binits{B.}},
-\bauthor{\bsnm{Cook}, \binits{J.}},
-\bauthor{\bsnm{Moalla}, \binits{S.}},
-\bauthor{\bsnm{Samvelyan}, \binits{M.}},
-\bauthor{\bsnm{Sun}, \binits{M.}},
-\bauthor{\bsnm{Mahajan}, \binits{A.}},
-\bauthor{\bsnm{Foerster}, \binits{J.}},
-\bauthor{\bsnm{Whiteson}, \binits{S.}}:
-\bctitle{{SMACv2}: An improved benchmark for cooperative multi-agent
-  reinforcement learning}.
-In: \bbtitle{Advances in Neural Information Processing Systems},
-vol. \bseriesno{36},
-pp. \bfpage{37567}--\blpage{37593}
-(\byear{2023}).
-\doiurl{10.52202/075280-1634} .
-\burl{https://arxiv.org/abs/2212.07489}
-\end{bchapter}
 \endbibitem
 
 \end{thebibliography}
