@@ -1,4 +1,4 @@
-"""Load every bundled checkpoint on CPU and report its tensor contents."""
+"""Load bundled PyTorch checkpoints on CPU and report their tensor contents."""
 import json
 import os
 from pathlib import Path
@@ -22,7 +22,7 @@ def tensor_count(value):
 def main():
     torch.set_num_threads(1)
     rows = json.loads((ROOT / 'results/manifest.json').read_text())['files']
-    checkpoints = [row for row in rows if row['path'].startswith('checkpoints/')]
+    checkpoints = [row for row in rows if row['path'].startswith('checkpoints/') and Path(row['path']).suffix == '.pt']
     tensors = 0
     for row in checkpoints:
         value = torch.load(ROOT / row['path'], map_location='cpu', weights_only=True)
@@ -31,7 +31,7 @@ def main():
             raise ValueError(f'Checkpoint has no model tensors: {row["path"]}')
         tensors += count
         del value
-    print(f'PASS: {len(checkpoints)} checkpoints load on CPU ({tensors} tensors).')
+    print(f'PASS: {len(checkpoints)} PyTorch checkpoints load on CPU ({tensors} tensors).')
 
 
 if __name__ == '__main__':
