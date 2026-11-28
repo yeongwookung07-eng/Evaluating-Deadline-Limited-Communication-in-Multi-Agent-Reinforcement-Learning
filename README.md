@@ -12,7 +12,7 @@ This study asks how to trace a difference in traffic or reward back to the decis
 
 **Computation and receiver behavior.** In the MNIST-sum digit game, admitting a packet when it was expected to be ready improved accuracy at equal offered traffic. The gain reversed when readiness estimates were sufficiently noisy and costly to compute. In a separate broadcast task with a 2 ms deadline, fitting the receiver on labeled examples improved executed accuracy by 5.63 percentage points when overruns were rare. With 500 microseconds of added processing, every candidate missed the deadline and each receiver repeated its previous action. [Timing and fallback experiments](experiments/deadline_comm/deployment_robustness/results/RESULTS.md)
 
-## Reading the evidence
+## Results
 
 A sender comparison in this study changes one decision and then resumes the original scheduling rule. The reported uncertainty is calculated across independently trained policies. The many replayed branches within a policy share its weights and initial conditions. The packet deadlines and measured computation costs apply to the tested settings. Predator–Prey uses its native sender slot and has no transport deadline.
 
