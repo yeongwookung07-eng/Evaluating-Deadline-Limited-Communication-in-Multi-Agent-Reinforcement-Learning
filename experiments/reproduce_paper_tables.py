@@ -167,8 +167,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "results/local_recompute/paper_tables")
     args = parser.parse_args()
-    main_source = (ROOT / "paper/jaamas_main.tex").read_text()
-    supp_source = (ROOT / "paper/jaamas_supplement.tex").read_text()
+    main_source = (ROOT / "results/table_sources/jaamas_main.tex").read_text()
+    supp_source = (ROOT / "results/table_sources/jaamas_supplement.tex").read_text()
     hard, source_aware = hard_fallback()
     tables = {"external_deadlines": (main_source, external()),
               "receiver_controls_acting_rows": (main_source, receiver()),
@@ -196,7 +196,7 @@ def main():
                   receiver_probe_rows_in_this_export=False, primary_hard_hold=primary,
                   source_aware=source_aware, training=False, new_latency_measurement=False,
                   manuscript_sha256={p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-                                     for p in [ROOT / "paper/jaamas_main.tex", ROOT / "paper/jaamas_supplement.tex"]})
+                                     for p in [ROOT / "results/table_sources/jaamas_main.tex", ROOT / "results/table_sources/jaamas_supplement.tex"]})
     (args.output / "verification.json").write_text(json.dumps(report, indent=2) + "\n")
     print(f"PASS: primary miss rates and source-aware failure boundary. Output: {args.output}")
 

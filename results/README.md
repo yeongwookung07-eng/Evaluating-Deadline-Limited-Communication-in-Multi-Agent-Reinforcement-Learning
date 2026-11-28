@@ -1,6 +1,6 @@
 # Recorded results and analysis inputs
 
-This directory contains existing experiment summaries, paired traces, training logs and validation outcomes. [manifest.json](manifest.json) maps packaged files to their original paths and records sizes and SHA-256 hashes. Generated NumPy inputs are stored in [data](../data/README.md). Model tensors are stored in [checkpoints](../checkpoints/README.md).
+This directory contains existing experiment summaries, paired traces, training logs and validation outcomes. [manifest.json](manifest.json) maps packaged files to their original paths and records sizes and SHA-256 hashes. Generated NumPy inputs are stored in [data](data/README.md). Model tensors are stored in [checkpoints](../checkpoints/README.md).
 
 | Directory | Contents |
 | --- | --- |
@@ -12,8 +12,10 @@ This directory contains existing experiment summaries, paired traces, training l
 
 Run `python experiments/prepare_inputs.py` to verify and copy files to their original input locations. Packaged observations stay here; recomputation uses separate working copies and temporary outputs. Use a new directory for new observations.
 
-[The findings](../docs/RESULTS.md) explain estimates, uncertainty and failed checks. [Setup](../docs/REPRODUCE.md) describes which statistics can be regenerated and which evaluations require separate datasets or simulators.
+[The findings](../experiments/docs/RESULTS.md) explain estimates, uncertainty and failed checks. [Setup](../experiments/docs/REPRODUCE.md) describes which statistics can be regenerated and which evaluations require separate datasets or simulators.
+
+The table verifier reads the printed values from the two archived LaTeX sources in [table_sources](table_sources).
 
 ## JAAMAS deployment robustness
 
-`runs/mnist_uncertain_readiness_20261126_001/` stores the exact uncertainty/cost summaries; `runs/broadcast_hard_deadline_20261126_001/` contains three process runs,18,000episode traces,360,000steps, summaries and independent validation. The manifest now includes5,741assets; original observations are preserved. New NPZ inputs reside under `data/runs/`. [Interpretation](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md).
+`runs/mnist_uncertain_readiness_20261126_001/` stores the exact uncertainty/cost summaries; `runs/broadcast_hard_deadline_20261126_001/` contains three process runs,18,000episode traces,360,000steps, summaries and independent validation. The manifest now includes5,741assets; original observations are preserved. New NPZ inputs reside under `results/data/runs/`. [Interpretation](../experiments/deadline_comm/deployment_robustness/results/RESULTS.md).

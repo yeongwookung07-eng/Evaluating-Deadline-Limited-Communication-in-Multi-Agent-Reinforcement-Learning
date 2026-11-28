@@ -29,3 +29,8 @@ __pycache__/
 /paper/information_sheet.pdf
 /paper/cover_letter.pdf
 /paper/statements_and_declarations.pdf
+
+# Local copies of previously released publication files
+/paper/
+/submission/
+/scripts/
