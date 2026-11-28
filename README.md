@@ -8,6 +8,8 @@ The two sequential sender studies use three restored policies per task. Terran s
 
 ## JAAMAS submission files
 
+Edit the main manuscript on Overleaf by importing the [single-document project](paper/JAAMAS_Main_Overleaf.zip). Its main document is `main.tex` and its compiler is pdfLaTeX.
+
 [Download document bundle](submission/jaamas/JAAMAS_Submission.zip) · [Submission checklist](submission/jaamas/README.md)
 
 | File or item | Status | Purpose |
